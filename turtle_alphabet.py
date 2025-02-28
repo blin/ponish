@@ -20,24 +20,37 @@ class BoxRelativePoint:
     from_left_pct: pct_norm
 
 
+def box_relative_to_absolute(rel: BoxRelativePoint, box_corner: Point, box_size_px: int) -> Point:
+    return Point(
+        from_top_px=box_corner.from_top_px + (box_size_px * rel.from_top_pct),
+        from_left_px=box_corner.from_left_px + (box_size_px * rel.from_left_pct),
+    )
+
+
 @dataclass
 class PolarLine:
     angle_deg: float
     magnitude_pct: pct_norm
 
 
+@dataclass
+class CubicBezier:
+    p1: BoxRelativePoint
+    p2: BoxRelativePoint
+    p3: BoxRelativePoint
+    p4: BoxRelativePoint
+
+
 PenUp = Literal["pen-up"]
 PenDown = Literal["pen-down"]
 
-GlyphAction = PolarLine | PenUp | PenDown
+GlyphAction = PolarLine | CubicBezier | PenUp | PenDown
 
 
 @dataclass
 class Glyph:
     start_pos: BoxRelativePoint
     draw_actions: list[GlyphAction]
-
-
 
 
 @dataclass
@@ -52,11 +65,66 @@ class Page:
     current_line_left_px: int
 
 
+def cubic_bezier(points: list[Point], t: float) -> tuple[int, int]:
+    """
+    Calculate a point on a cubic Bezier curve for a given parameter t.
+
+    Args:
+        points: List of 4 points, where each point is a tuple (x, y)
+        t: Parameter value between 0 and 1
+
+    Returns:
+        A tuple (x, y) representing a point on the Bezier curve
+    """
+    x0, y0 = points[0].from_left_px, points[0].from_top_px
+    x1, y1 = points[1].from_left_px, points[1].from_top_px
+    x2, y2 = points[2].from_left_px, points[2].from_top_px
+    x3, y3 = points[3].from_left_px, points[3].from_top_px
+
+    # Calculate x coordinate
+    x = (1 - t) * ((1 - t) * ((1 - t) * x0 + t * x1) + t * ((1 - t) * x1 + t * x2)) + t * (
+        (1 - t) * ((1 - t) * x1 + t * x2) + t * ((1 - t) * x2 + t * x3)
+    )
+
+    # Calculate y coordinate
+    y = (1 - t) * ((1 - t) * ((1 - t) * y0 + t * y1) + t * ((1 - t) * y1 + t * y2)) + t * (
+        (1 - t) * ((1 - t) * y1 + t * y2) + t * ((1 - t) * y2 + t * y3)
+    )
+
+    return (x, y)
+
+
+def draw_cubic_bezier(turt: Turtle, page: Page, curve: CubicBezier) -> None:
+    box_top_px = turt.y
+    box_left_px = turt.x
+    for i in range(21):
+        t = i / 20
+        p1 = box_relative_to_absolute(
+            curve.p1, Point(from_top_px=box_top_px, from_left_px=box_left_px), page.unit_size_px
+        )
+        p2 = box_relative_to_absolute(
+            curve.p2, Point(from_top_px=box_top_px, from_left_px=box_left_px), page.unit_size_px
+        )
+        p3 = box_relative_to_absolute(
+            curve.p3, Point(from_top_px=box_top_px, from_left_px=box_left_px), page.unit_size_px
+        )
+        p4 = box_relative_to_absolute(
+            curve.p4, Point(from_top_px=box_top_px, from_left_px=box_left_px), page.unit_size_px
+        )
+        x, y = cubic_bezier([p1, p2, p3, p4], t)
+        if i == 0:
+            turt.jump_to(x, y)
+            continue
+        turt.move_to(x, y)
+
+
 def draw_action(t: Turtle, page: Page, action: GlyphAction) -> None:
     match action:
         case PolarLine(angle_deg=angle, magnitude_pct=magnitude):
             t.heading = -angle
             t.forward(page.unit_size_px * magnitude)
+        case CubicBezier(p1=p1, p2=p2, p3=p3, p4=p4) as crv:
+            draw_cubic_bezier(t, page, crv)
         case "pen-up":
             t.pen_up()
         case "pen-down":
@@ -123,9 +191,13 @@ def advance_glyph(t: Turtle, page: Page) -> None:
     t.pen_down()
 
 
-
 # %%
 characters = dict()
+
+up = 90
+right = 0
+down = -90
+left = 180
 
 characters["A-1"] = Glyph(
     start_pos=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.0),
@@ -152,24 +224,29 @@ characters["C"] = Glyph(
     ],
 )
 
-# D - TODO: cubic bezier
 characters["D"] = Glyph(
     start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=0, magnitude_pct=0.25),
-        PolarLine(angle_deg=-90, magnitude_pct=1.0),
-        PolarLine(angle_deg=180, magnitude_pct=0.25),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
+            p2=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.6),
+            p3=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.6),
+            p4=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.0),
+        )
     ],
 )
 
 # E
 characters["E"] = Glyph(
-    start_pos=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.25),
+    start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=70, magnitude_pct=0.9),
-        PolarLine(angle_deg=180, magnitude_pct=0.3),
-        PolarLine(angle_deg=-90, magnitude_pct=0.3),
-        PolarLine(angle_deg=0, magnitude_pct=0.4),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.6),
+            p2=BoxRelativePoint(from_top_pct=0.0, from_left_pct=1.0),
+            p3=BoxRelativePoint(from_top_pct=0.6, from_left_pct=0.0),
+            p4=BoxRelativePoint(from_top_pct=0.6, from_left_pct=0.7),
+        ),
+        PolarLine(angle_deg=right, magnitude_pct=0.4),
     ],
 )
 
@@ -182,14 +259,16 @@ characters["F"] = Glyph(
     ],
 )
 
-# G - TODO: cubic bezier
 characters["G"] = Glyph(
     start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=-90, magnitude_pct=0.4),
-        PolarLine(angle_deg=0, magnitude_pct=0.5),
-        PolarLine(angle_deg=90, magnitude_pct=0.4),
-        PolarLine(angle_deg=-90, magnitude_pct=1.0),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
+            p2=BoxRelativePoint(from_top_pct=0.5, from_left_pct=0.0),
+            p3=BoxRelativePoint(from_top_pct=0.5, from_left_pct=0.5),
+            p4=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.5),
+        ),
+        PolarLine(angle_deg=down, magnitude_pct=1.0),
     ],
 )
 
@@ -220,23 +299,28 @@ characters["J"] = Glyph(
     ],
 )
 
-# K - TODO: cubic bezier
 characters["K"] = Glyph(
-    start_pos=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.0),
+    start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=90, magnitude_pct=0.75),
-        PolarLine(angle_deg=0, magnitude_pct=1.0),
-        PolarLine(angle_deg=-90, magnitude_pct=0.75),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.0),
+            p2=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
+            p3=BoxRelativePoint(from_top_pct=0.0, from_left_pct=1.0),
+            p4=BoxRelativePoint(from_top_pct=1.0, from_left_pct=1.0),
+        )
     ],
 )
 
-# L - TODO: cubic bezier
+
 characters["L"] = Glyph(
-    start_pos=BoxRelativePoint(from_top_pct=0.25, from_left_pct=0.0),
+    start_pos=BoxRelativePoint(from_top_pct=0.2, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=-90, magnitude_pct=0.75),
-        PolarLine(angle_deg=0, magnitude_pct=1.0),
-        PolarLine(angle_deg=90, magnitude_pct=0.75),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
+            p2=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.0),
+            p3=BoxRelativePoint(from_top_pct=1.0, from_left_pct=1.0),
+            p4=BoxRelativePoint(from_top_pct=0.0, from_left_pct=1.0),
+        )
     ],
 )
 
@@ -257,64 +341,75 @@ characters["N"] = Glyph(
 )
 
 # O
-# TODO: cubic bezier
 characters["O"] = Glyph(
-    start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.25),
+    start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=180, magnitude_pct=0.25),
-        PolarLine(angle_deg=-90, magnitude_pct=1.0),
-        PolarLine(angle_deg=0, magnitude_pct=0.25),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.6),
+            p2=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
+            p3=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.0),
+            p4=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.6),
+        ),
     ],
 )
 
 # P
-# TODO: cubic bezier
 characters["P"] = Glyph(
-    start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.3),
+    start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=-90, magnitude_pct=0.3),
-        PolarLine(angle_deg=180, magnitude_pct=0.3),
-        PolarLine(angle_deg=90, magnitude_pct=0.3),
-        PolarLine(angle_deg=0, magnitude_pct=1.0),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.5),
+            p2=BoxRelativePoint(from_top_pct=0.0, from_left_pct=1.0),
+            p3=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.0),
+            p4=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.3),
+        ),
+        PolarLine(angle_deg=right, magnitude_pct=0.9),
     ],
 )
-up = 90
-right = 0
-down = -90
-left = 180
 
 # Q
-# TODO: cubic bezier
 characters["Q"] = Glyph(
-    start_pos=BoxRelativePoint(from_top_pct=0.3, from_left_pct=0.3),
+    start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=left, magnitude_pct=0.3),
-        PolarLine(angle_deg=up, magnitude_pct=0.3),
-        PolarLine(angle_deg=right, magnitude_pct=0.3),
-        PolarLine(angle_deg=down, magnitude_pct=1.0),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=0.4, from_left_pct=1.0),
+            p2=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.4),
+            p3=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.4),
+            p4=BoxRelativePoint(from_top_pct=0.4, from_left_pct=1.0),
+        ),
+        PolarLine(angle_deg=down, magnitude_pct=0.5),
     ],
 )
 
 # R
-# TODO: cubic bezier
+# TODO: Need to re-do bezier so that it can follow a polar line :(
 characters["R"] = Glyph(
     start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.0),
+            p2=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
+            p3=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
+            p4=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.5),
+        ),
+        "pen-up",
+        PolarLine(angle_deg=left, magnitude_pct=0.5),
+        "pen-down",
         PolarLine(angle_deg=down, magnitude_pct=1.0),
-        PolarLine(angle_deg=up, magnitude_pct=0.9),
-        PolarLine(angle_deg=right, magnitude_pct=0.3),
     ],
 )
 
 # S
-# TODO: cubic bezier
 characters["S"] = Glyph(
-    start_pos=BoxRelativePoint(from_top_pct=0.3, from_left_pct=0.0),
+    start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=right, magnitude_pct=0.3),
-        PolarLine(angle_deg=up, magnitude_pct=0.3),
-        PolarLine(angle_deg=left, magnitude_pct=0.3),
-        PolarLine(angle_deg=down, magnitude_pct=1.0),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=0.4, from_left_pct=0.0),
+            p2=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.4),
+            p3=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.4),
+            p4=BoxRelativePoint(from_top_pct=0.4, from_left_pct=0.0),
+        ),
+        PolarLine(angle_deg=down, magnitude_pct=0.5),
     ],
 )
 
@@ -327,13 +422,15 @@ characters["T"] = Glyph(
 )
 
 # U
-# TODO: cubic bezier
 characters["U"] = Glyph(
     start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=-60, magnitude_pct=1.1),
-        PolarLine(angle_deg=left, magnitude_pct=0.4),
-        PolarLine(angle_deg=60, magnitude_pct=1.1),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.3),
+            p2=BoxRelativePoint(from_top_pct=1.0, from_left_pct=1.0),
+            p3=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.0),
+            p4=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.7),
+        ),
     ],
 )
 
@@ -375,7 +472,7 @@ characters["Y"] = Glyph(
         "pen-up",
         PolarLine(angle_deg=50, magnitude_pct=0.5),
         "pen-down",
-        PolarLine(angle_deg=180+50, magnitude_pct=1.3),
+        PolarLine(angle_deg=180 + 50, magnitude_pct=1.3),
     ],
 )
 
@@ -384,7 +481,7 @@ characters["Z"] = Glyph(
     start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.5),
     draw_actions=[
         PolarLine(angle_deg=right, magnitude_pct=0.5),
-        PolarLine(angle_deg=180+60, magnitude_pct=1.1),
+        PolarLine(angle_deg=180 + 60, magnitude_pct=1.1),
         PolarLine(angle_deg=right, magnitude_pct=0.5),
     ],
 )
@@ -394,23 +491,27 @@ characters["Z"] = Glyph(
 characters["TH"] = Glyph(
     start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=right, magnitude_pct=0.5),
-        PolarLine(angle_deg=down, magnitude_pct=1.0),
-        PolarLine(angle_deg=left, magnitude_pct=0.5),
-        PolarLine(angle_deg=up, magnitude_pct=1.0),
-        PolarLine(angle_deg=right, magnitude_pct=0.5),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=0.5, from_left_pct=0.5),
+            p2=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.0),
+            p3=BoxRelativePoint(from_top_pct=1.0, from_left_pct=1.0),
+            p4=BoxRelativePoint(from_top_pct=0.5, from_left_pct=0.5),
+        ),
     ],
 )
 
 # SH
-# TODO: cubic bezier
+# TODO: wrong direction fix
 characters["SH"] = Glyph(
-    start_pos=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.3),
+    start_pos=BoxRelativePoint(from_top_pct=0.3, from_left_pct=0.0),
     draw_actions=[
-        PolarLine(angle_deg=down, magnitude_pct=1.0),
-        PolarLine(angle_deg=left, magnitude_pct=0.3),
-        PolarLine(angle_deg=up, magnitude_pct=0.3),
-        PolarLine(angle_deg=right, magnitude_pct=0.3),
+        CubicBezier(
+            p1=BoxRelativePoint(from_top_pct=0.4, from_left_pct=1.0),
+            p2=BoxRelativePoint(from_top_pct=1.0, from_left_pct=0.4),
+            p3=BoxRelativePoint(from_top_pct=0.0, from_left_pct=0.4),
+            p4=BoxRelativePoint(from_top_pct=0.4, from_left_pct=1.0),
+        ),
+        PolarLine(angle_deg=up, magnitude_pct=0.5),
     ],
 )
 
@@ -439,9 +540,6 @@ for char in characters.values():
         p.current_line_bottom_px += p.unit_size_px * 4
         p.current_line_left_px = p.unit_size_px
         establish_line(t, p)
-
-
-
 
 # %%
 t.hide()
