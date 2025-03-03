@@ -95,7 +95,7 @@ class Direction(Enum):
 # Characters that only use PolarLine draw actions
 chars_without_curves = dict()
 
-chars_without_curves["A-1"] = Glyph(
+chars_without_curves["A"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
