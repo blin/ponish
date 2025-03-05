@@ -1,38 +1,33 @@
 # %%
-from itertools import batched
-from string import ascii_uppercase
+import re
 
 from jupyturtle.jupyturtle import Drawing, Turtle
 
 from draw import (
     Page,
-    advance_glyph,
     draw_glyph,
-    establish_line,
 )
 from glyphs import (
     characters,
 )
 
 
-def make_page(unit_size_px: int) -> Page:
-    return Page(
-        unit_size_px=unit_size_px,
-        current_line_bottom_px=unit_size_px * 4,
-        current_line_left_px=unit_size_px,
-    )
+def get_svg(t: Turtle) -> str:
+    svg = t.get_SVG()
+    svg = svg.replace("<svg", '<svg xmlns="http://www.w3.org/2000/svg"')
+    svg = re.sub(r"'$", "", svg, flags=re.MULTILINE)
+    svg = re.sub(r"^$\n", "", svg, flags=re.MULTILINE)
+    return svg
 
 
-for i, batch in enumerate(batched(ascii_uppercase, 7)):
-    page_width = 350
-    drawing = Drawing(width=page_width, height=80)
+for char_id, char in characters.items():
+    page_width = 60
+    drawing = Drawing(width=30, height=40)
+    p = Page(unit_size_px=20, current_line_bottom_px=30, current_line_left_px=10)
     t = Turtle(delay=0.00, drawing=drawing)
-    p = make_page(unit_size_px=30)
 
-    establish_line(t, p)
-    for char in batch:
-        glyph = characters[char]
-        draw_glyph(t, p, glyph, pos="A")
-        advance_glyph(t, p)
-    with open(f"manual/alphabet_{i}.svg", "w") as f:
-        f.write(t.get_SVG())
+    draw_glyph(t, p, char, pos="O")
+    t.hide()
+    svg = get_svg(t)
+    with open(f"manual/alphabet/{char_id}.svg", "w") as f:
+        f.write(svg)

@@ -95,11 +95,18 @@ class Direction(Enum):
 # Characters that only use PolarLine draw actions
 chars_without_curves = dict()
 
-chars_without_curves["A"] = Glyph(
+chars_without_curves["A-two-legs"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
+    ],
+)
+
+chars_without_curves["A-one-leg"] = Glyph(
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
     ],
 )
 
@@ -399,4 +406,4 @@ chars_with_curves["SH"] = Glyph(
 
 
 # Combine both dictionaries to create the final characters dictionary
-characters = {**chars_without_curves, **chars_with_curves}
+characters: dict[str, Glyph] = {**chars_without_curves, **chars_with_curves}

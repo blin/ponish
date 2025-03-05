@@ -9,7 +9,8 @@ counterparts; A, for example has 3 strokes, like so, on the far left:
 WARNING: image is missing. The image depcits a classic block way of writing "A"
 and two Ponish ways of writing "A".
 
-1. two strokes forming a "hat" `^` with the third stroke joining the "legs" of the hat.
+1. two strokes forming a "hat" `^` with the third stroke joining the "legs" of
+   the hat.
 2. two strokes forming just a "hat" `^`
 3. one stroke forming left "leg" of a "hat" `^`
 
@@ -21,7 +22,8 @@ B, as well requires 3, but in Ponish, only 1. Observe:
 WARNING: image is missing. The image depcits a classic block way of writing "B"
 and the Ponish ways of writing "B".
 
-1. downward stroke forming the `|` "back" of "B" with two arcs forming the "bowls"
+1. downward stroke forming the `|` "back" of "B" with two arcs forming the
+   "bowls"
 2. downward stroke forming the `|` "back" of "B"
 
 And those aren't the only ones which are different. In fact, the entire alphabet
@@ -32,21 +34,34 @@ the normal Roman letters, and compare them to the number required for their
 Ponish counterparts via the complete chart below, and see for yourselves just
 how much writing is being saved with just a new alphabet.
 
-A B C D E F G
-
-![A B C D E F G](./alphabet_0.svg)
-
-H I J K L M N
-
-![H I J K L M](./alphabet_1.svg)
-
-O P Q R S T U
-
-![O P Q R S T U](./alphabet_2.svg)
-
-V W X Y Z
-
-![V W X Y Z](./alphabet_3.svg)
+| Character | Image                                                             |
+| --------- | ----------------------------------------------------------------- |
+| A         | ![A](./alphabet/A-two-legs.svg) or ![A](./alphabet/A-one-leg.svg) |
+| B         | ![B](./alphabet/B.svg)                                            |
+| C         | ![C](./alphabet/C.svg)                                            |
+| D         | ![D](./alphabet/D.svg)                                            |
+| E         | ![E](./alphabet/E.svg)                                            |
+| F         | ![F](./alphabet/F.svg)                                            |
+| G         | ![G](./alphabet/G.svg)                                            |
+| H         | ![H](./alphabet/H.svg)                                            |
+| I         | ![I](./alphabet/I.svg)                                            |
+| J         | ![J](./alphabet/J.svg)                                            |
+| K         | ![K](./alphabet/K.svg)                                            |
+| L         | ![L](./alphabet/L.svg)                                            |
+| M         | ![M](./alphabet/M.svg)                                            |
+| N         | ![N](./alphabet/N.svg)                                            |
+| O         | ![O](./alphabet/O.svg)                                            |
+| P         | ![P](./alphabet/P.svg)                                            |
+| Q         | ![Q](./alphabet/Q.svg)                                            |
+| R         | ![R](./alphabet/R.svg)                                            |
+| S         | ![S](./alphabet/S.svg)                                            |
+| T         | ![T](./alphabet/T.svg)                                            |
+| U         | ![U](./alphabet/U.svg)                                            |
+| V         | ![V](./alphabet/V.svg)                                            |
+| W         | ![W](./alphabet/W.svg)                                            |
+| X         | ![X](./alphabet/X.svg)                                            |
+| Y         | ![Y](./alphabet/Y.svg)                                            |
+| Z         | ![Z](./alphabet/Z.svg)                                            |
 
 You notice that A has 2 ways it can be written. This will be explained later,
 but the important thing to keep in mind now, and always, is that each way is
