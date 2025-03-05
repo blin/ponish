@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from enum import Enum, auto
-from typing import Literal
+from typing import Literal, Union
 
 
 @dataclass
@@ -64,8 +64,12 @@ class Glyph:
     draw_actions: list[GlyphAction]
 
 
-VowelPosition = Literal["A", "I", "O"]
-Position = Literal["cont"] | VowelPosition
+class VowelPosition(Enum):
+    A = "A"
+    I = "I" 
+    O = "O"
+
+Position = Union[Literal["cont"], VowelPosition]
 
 
 class Direction(Enum):

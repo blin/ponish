@@ -160,18 +160,18 @@ def find_box_corner(page: Page, vowel_pos: VowelPosition) -> Point:
     us = page.unit_size_px
     box_top_px = 0
     match vowel_pos:
-        case "A":
+        case VowelPosition.A:
             box_top_px = lb - us * 3
-        case "I":
+        case VowelPosition.I:
             box_top_px = lb - us * 2
-        case "O":
+        case VowelPosition.O:
             box_top_px = lb - us * 1
     return Point(y=box_top_px, x=ll)
 
 
 def draw_glyph(t: Turtle, page: Page, glyph: Glyph, pos: Position) -> None:
     match pos:
-        case "A" | "I" | "O" as v:
+        case VowelPosition.A | VowelPosition.I | VowelPosition.O as v:
             t.pen_up()
 
             box = find_box_corner(page, vowel_pos=v)
