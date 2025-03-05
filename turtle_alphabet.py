@@ -8,6 +8,7 @@ from draw import (
     draw_glyph,
 )
 from glyphs import (
+    VowelPosition,
     characters,
 )
 
@@ -21,12 +22,11 @@ def get_svg(t: Turtle) -> str:
 
 
 for char_id, char in characters.items():
-    page_width = 60
     drawing = Drawing(width=30, height=40)
     p = Page(unit_size_px=20, current_line_bottom_px=30, current_line_left_px=10)
     t = Turtle(delay=0.00, drawing=drawing)
 
-    draw_glyph(t, p, char, pos="O")
+    draw_glyph(t, p, char, pos=VowelPosition.O)
     t.hide()
     svg = get_svg(t)
     with open(f"manual/alphabet/{char_id}.svg", "w") as f:

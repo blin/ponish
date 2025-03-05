@@ -69,6 +69,7 @@ class VowelPosition(Enum):
     I = auto()
     O = auto()
 
+
 Position = Union[Literal["cont"], VowelPosition]
 
 
@@ -185,8 +186,8 @@ chars_without_curves["T"] = Glyph(
 chars_without_curves["V"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
-        PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.9),
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.9),
     ],
 )
 
