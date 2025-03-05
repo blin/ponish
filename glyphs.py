@@ -197,11 +197,11 @@ chars_without_curves["W"] = Glyph(
 chars_without_curves["X"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
     draw_actions=[
-        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.4),
+        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.0),
         PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.7),
         PenAction.PLACE,
-        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=1.4),
+        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=1.0),
     ],
 )
 
@@ -279,7 +279,7 @@ chars_with_curves["K"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=[
         Circle(
-            rel_radius=0.5,
+            rel_radius=0.4,
             extent_deg=180,
             rotation=Rotation.CW,
             heading_deg=Direction.N.value,
@@ -291,7 +291,7 @@ chars_with_curves["L"] = Glyph(
     start_pos=RelPoint(rel_y=0.5, rel_x=0.0),
     draw_actions=[
         Circle(
-            rel_radius=0.5,
+            rel_radius=0.4,
             extent_deg=180,
             rotation=Rotation.CCW,
             heading_deg=Direction.S.value,
@@ -312,7 +312,7 @@ chars_with_curves["O"] = Glyph(
 )
 
 chars_with_curves["P"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    start_pos=RelPoint(rel_y=0.5, rel_x=0.0),
     draw_actions=[
         Circle(
             rel_radius=0.2,
@@ -325,7 +325,7 @@ chars_with_curves["P"] = Glyph(
 )
 
 chars_with_curves["Q"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    start_pos=RelPoint(rel_y=0.3, rel_x=0.5),
     draw_actions=[
         Circle(
             rel_radius=0.2,
