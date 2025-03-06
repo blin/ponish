@@ -191,6 +191,6 @@ def establish_line(t: Turtle, page: Page) -> None:
 
 def advance_glyph(t: Turtle, page: Page) -> None:
     t.pen_up()
-    page.current_line_left_px = t.x + page.unit_size_px
+    page.current_line_left_px = t.x + (page.unit_size_px/2)
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()

@@ -108,6 +108,8 @@ chars_without_curves["A-two-legs"] = Glyph(
     ],
 )
 
+chars_without_curves["A"] = chars_without_curves["A-two-legs"]
+
 chars_without_curves["A-one-leg"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=[
@@ -395,6 +397,8 @@ chars_with_curves["TH"] = Glyph(
         ),
     ],
 )
+
+chars_with_curves["ð"] = chars_with_curves["TH"]
 
 chars_with_curves["SH"] = Glyph(
     start_pos=RelPoint(rel_y=0.3, rel_x=0.0),
