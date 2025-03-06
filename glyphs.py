@@ -65,9 +65,9 @@ class Glyph:
 
 
 class VowelPosition(Enum):
-    A = auto()
-    I = auto()
-    O = auto()
+    AE = auto()
+    IY = auto()
+    OU = auto()
 
 
 Position = Union[Literal["cont"], VowelPosition]

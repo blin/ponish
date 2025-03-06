@@ -55,9 +55,7 @@ class Page:
     current_line_left_px: int
 
 
-def calc_bezier(
-    p1: Point, p2: Point, p3: Point, p4: Point, t: float
-) -> tuple[int, int]:
+def calc_bezier(p1: Point, p2: Point, p3: Point, p4: Point, t: float) -> tuple[int, int]:
     """
     Calculate a point on a cubic Bezier curve for a given parameter t.
 
@@ -115,9 +113,7 @@ def draw_circle(t: Turtle, circle: Circle, page: Page) -> None:
     t.heading = -circle.heading_deg  # Negative because turtle heading is clockwise
 
     # Calculate the number of steps based on the extent
-    steps = max(
-        int(abs(circle.extent_deg) / 5), 1
-    )  # At least 1 step, otherwise 5 degrees per step
+    steps = max(int(abs(circle.extent_deg) / 5), 1)  # At least 1 step, otherwise 5 degrees per step
     angle_per_step = circle.extent_deg / steps
 
     # Calculate the side length for a regular polygon approximating the circle
@@ -160,18 +156,18 @@ def find_box_corner(page: Page, vowel_pos: VowelPosition) -> Point:
     us = page.unit_size_px
     box_top_px = 0
     match vowel_pos:
-        case VowelPosition.A:
+        case VowelPosition.AE:
             box_top_px = lb - us * 3
-        case VowelPosition.I:
+        case VowelPosition.IY:
             box_top_px = lb - us * 2
-        case VowelPosition.O:
+        case VowelPosition.OU:
             box_top_px = lb - us * 1
     return Point(y=box_top_px, x=ll)
 
 
 def draw_glyph(t: Turtle, page: Page, glyph: Glyph, pos: Position) -> None:
     match pos:
-        case VowelPosition.A | VowelPosition.I | VowelPosition.O as v:
+        case VowelPosition.AE | VowelPosition.IY | VowelPosition.OU as v:
             t.pen_up()
 
             box = find_box_corner(page, vowel_pos=v)

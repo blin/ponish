@@ -8,3 +8,10 @@ dependencies = [
     "jupyturtle>=2024.4.1",
     "ruff>=0.9.9",
 ]
+
+[tool.ruff]
+
+line-length = 100
+
+[tool.ruff.lint]
+select = ["I"]
