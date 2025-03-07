@@ -53,6 +53,7 @@ class Page:
     unit_size_px: int
     current_line_bottom_px: int
     current_line_left_px: int
+    furthest_from_left_px: int = 0
 
 
 def calc_bezier(p1: Point, p2: Point, p3: Point, p4: Point, t: float) -> tuple[int, int]:
@@ -108,6 +109,12 @@ def draw_cubic_bezier(turt: Turtle, page: Page, curve: RelCubicBezier) -> None:
         turt.move_to(x, y)
 
 
+def draw_forward(t: Turtle, p: Page, distance_px: int) -> None:
+    p.furthest_from_left_px = max(p.furthest_from_left_px, t.x)
+    t.forward(distance_px)
+    p.furthest_from_left_px = max(p.furthest_from_left_px, t.x)
+
+
 def draw_circle(t: Turtle, circle: Circle, page: Page) -> None:
     # Set initial heading
     t.heading = -circle.heading_deg  # Negative because turtle heading is clockwise
@@ -127,7 +134,7 @@ def draw_circle(t: Turtle, circle: Circle, page: Page) -> None:
     side_length = 2 * radius_px * math.sin(step_angle_rad / 2)
 
     for _ in range(steps):
-        t.forward(side_length)
+        draw_forward(t, page, side_length)
         match circle.rotation:
             case Rotation.CCW:
                 t.heading -= angle_per_step
@@ -135,11 +142,15 @@ def draw_circle(t: Turtle, circle: Circle, page: Page) -> None:
                 t.heading += angle_per_step
 
 
+def draw_polar_line(t: Turtle, p: Page, line: PolarLine) -> None:
+    t.heading = -line.angle_deg
+    draw_forward(t, p, p.unit_size_px * line.rel_magnitude)
+
+
 def draw_action(t: Turtle, page: Page, action: GlyphAction) -> None:
     match action:
-        case PolarLine(angle_deg=angle, rel_magnitude=magnitude):
-            t.heading = -angle
-            t.forward(page.unit_size_px * magnitude)
+        case PolarLine() as l:
+            draw_polar_line(t, page, l)
         case RelCubicBezier() as crv:
             draw_cubic_bezier(t, page, crv)
         case Circle() as c:
@@ -192,5 +203,12 @@ def establish_line(t: Turtle, page: Page) -> None:
 def advance_glyph(t: Turtle, page: Page) -> None:
     t.pen_up()
     page.current_line_left_px = t.x + (page.unit_size_px / 2)
+    t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
+    t.pen_down()
+
+
+def advance_after_glyph(t: Turtle, page: Page, g: Glyph) -> None:
+    t.pen_up()
+    page.current_line_left_px = page.furthest_from_left_px + (page.unit_size_px / 3)
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()
