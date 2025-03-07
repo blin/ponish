@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "ipython>=9.0.1",
     "jupyturtle>=2024.4.1",
     "ruff>=0.9.9",
 ]

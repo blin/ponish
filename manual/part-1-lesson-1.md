@@ -62,6 +62,9 @@ how much writing is being saved with just a new alphabet.
 | X         | ![X](./alphabet/X.svg)                                            |
 | Y         | ![Y](./alphabet/Y.svg)                                            |
 | Z         | ![Z](./alphabet/Z.svg)                                            |
+| SH        | ![SH](./alphabet/SH.svg)                                          |
+| TH        | ![TH](./alphabet/TH.svg)                                          |
+| CH        | ![CH](./alphabet/CH.svg)                                          |
 
 You notice that A has 2 ways it can be written. This will be explained later,
 but the important thing to keep in mind now, and always, is that each way is

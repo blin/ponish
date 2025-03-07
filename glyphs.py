@@ -62,7 +62,7 @@ GlyphAction = PolarLine | RelCubicBezier | Circle | PenAction
 class Glyph:
     start_pos: RelPoint
     draw_actions: list[GlyphAction]
-    advance_pos: RelPoint = RelPoint(rel_y=0.0, rel_x=0.5)
+    advance_pos: RelPoint
 
 
 class VowelPosition(Enum):
@@ -419,7 +419,7 @@ chars_with_curves["TH"] = Glyph(
     start_pos=RelPoint(rel_y=0.4, rel_x=0.5),
     draw_actions=[
         Circle(
-            rel_radius=0.5,
+            rel_radius=0.3,
             extent_deg=360,
             rotation=Rotation.CW,
             heading_deg=Direction.S.value,
