@@ -62,7 +62,6 @@ GlyphAction = PolarLine | RelCubicBezier | Circle | PenAction
 class Glyph:
     start_pos: RelPoint
     draw_actions: list[GlyphAction]
-    advance_pos: RelPoint
 
 
 class VowelPosition(Enum):
@@ -107,7 +106,6 @@ chars_without_curves["A-two-legs"] = Glyph(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["A"] = chars_without_curves["A-two-legs"]
@@ -117,7 +115,6 @@ chars_without_curves["A-one-leg"] = Glyph(
     draw_actions=[
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["B"] = Glyph(
@@ -125,7 +122,6 @@ chars_without_curves["B"] = Glyph(
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["C"] = Glyph(
@@ -134,7 +130,6 @@ chars_without_curves["C"] = Glyph(
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.25),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["F"] = Glyph(
@@ -143,7 +138,6 @@ chars_without_curves["F"] = Glyph(
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.25),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["H"] = Glyph(
@@ -152,7 +146,6 @@ chars_without_curves["H"] = Glyph(
         PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=0.55),
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.55),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["I"] = Glyph(
@@ -161,7 +154,6 @@ chars_without_curves["I"] = Glyph(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["J"] = Glyph(
@@ -170,7 +162,6 @@ chars_without_curves["J"] = Glyph(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.5),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["M"] = Glyph(
@@ -178,7 +169,6 @@ chars_without_curves["M"] = Glyph(
     draw_actions=[
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["N"] = Glyph(
@@ -186,7 +176,6 @@ chars_without_curves["N"] = Glyph(
     draw_actions=[
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["T"] = Glyph(
@@ -194,7 +183,6 @@ chars_without_curves["T"] = Glyph(
     draw_actions=[
         PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["V"] = Glyph(
@@ -203,7 +191,6 @@ chars_without_curves["V"] = Glyph(
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.9),
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.9),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["W"] = Glyph(
@@ -212,7 +199,6 @@ chars_without_curves["W"] = Glyph(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.4),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["X"] = Glyph(
@@ -224,7 +210,6 @@ chars_without_curves["X"] = Glyph(
         PenAction.PLACE,
         PolarLine(angle_deg=Direction.SE.value, rel_magnitude=1.0),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["Y"] = Glyph(
@@ -237,7 +222,6 @@ chars_without_curves["Y"] = Glyph(
         PenAction.PLACE,
         PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.2),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_without_curves["Z"] = Glyph(
@@ -247,7 +231,6 @@ chars_without_curves["Z"] = Glyph(
         PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.1),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 
@@ -257,7 +240,6 @@ chars_without_curves["CH"] = Glyph(
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.55),
         PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=0.55),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_with_curves = dict()
@@ -272,7 +254,6 @@ chars_with_curves["D"] = Glyph(
             heading_deg=Direction.E.value,
         ),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 chars_with_curves["E"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
@@ -286,7 +267,6 @@ chars_with_curves["E"] = Glyph(
         ),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.6),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_with_curves["G"] = Glyph(
@@ -300,7 +280,6 @@ chars_with_curves["G"] = Glyph(
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_with_curves["K"] = Glyph(
@@ -313,7 +292,6 @@ chars_with_curves["K"] = Glyph(
             heading_deg=Direction.N.value,
         ),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_with_curves["L"] = Glyph(
@@ -326,7 +304,6 @@ chars_with_curves["L"] = Glyph(
             heading_deg=Direction.S.value,
         ),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_with_curves["O"] = Glyph(
@@ -339,7 +316,6 @@ chars_with_curves["O"] = Glyph(
             heading_deg=Direction.W.value,
         ),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_with_curves["P"] = Glyph(
@@ -353,7 +329,6 @@ chars_with_curves["P"] = Glyph(
         ),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.9),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_with_curves["Q"] = Glyph(
@@ -367,7 +342,6 @@ chars_with_curves["Q"] = Glyph(
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.5),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_with_curves["R"] = Glyph(
@@ -382,7 +356,6 @@ chars_with_curves["R"] = Glyph(
             heading_deg=Direction.N.value,
         ),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_with_curves["S"] = Glyph(
@@ -396,7 +369,6 @@ chars_with_curves["S"] = Glyph(
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.5),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 
@@ -411,7 +383,6 @@ chars_with_curves["U"] = Glyph(
         ),
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.5),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 
@@ -425,7 +396,6 @@ chars_with_curves["TH"] = Glyph(
             heading_deg=Direction.S.value,
         ),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 chars_with_curves["ð"] = chars_with_curves["TH"]
@@ -441,7 +411,6 @@ chars_with_curves["SH"] = Glyph(
             heading_deg=Direction.S.value,
         ),
     ],
-    advance_pos=RelPoint(rel_y=0.0, rel_x=0.5),
 )
 
 
