@@ -107,7 +107,9 @@ usable level of skill with the minimum of time, and effort expended.
 
 The quick cute unicorn jumped over the lazy gryphon.
 
-WARNING: image is missing
+![example-1](./lesson-1/example-1.svg)
+
+![example-2](./lesson-1/example-2.svg)
 
 The vexed pegasus flew high, and shat on the land-bound Hydra.
 

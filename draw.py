@@ -1,4 +1,5 @@
 import math
+import re
 from dataclasses import dataclass
 from typing import Protocol, runtime_checkable
 
@@ -212,3 +213,11 @@ def advance_after_glyph(t: Turtle, page: Page, g: Glyph) -> None:
     page.current_line_left_px = page.furthest_from_left_px + (page.unit_size_px / 3)
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()
+
+
+def get_svg(t: Turtle) -> str:
+    svg = t.get_SVG()
+    svg = svg.replace("<svg", '<svg xmlns="http://www.w3.org/2000/svg"')
+    svg = re.sub(r"'$", "", svg, flags=re.MULTILINE)
+    svg = re.sub(r"^$\n", "", svg, flags=re.MULTILINE)
+    return svg

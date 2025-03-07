@@ -6,20 +6,12 @@ from jupyturtle.jupyturtle import Drawing, Turtle
 from draw import (
     Page,
     draw_glyph,
+    get_svg,
 )
 from glyphs import (
     VowelPosition,
     characters,
 )
-
-
-def get_svg(t: Turtle) -> str:
-    svg = t.get_SVG()
-    svg = svg.replace("<svg", '<svg xmlns="http://www.w3.org/2000/svg"')
-    svg = re.sub(r"'$", "", svg, flags=re.MULTILINE)
-    svg = re.sub(r"^$\n", "", svg, flags=re.MULTILINE)
-    return svg
-
 
 for char_id, char in characters.items():
     drawing = Drawing(width=40, height=40)
