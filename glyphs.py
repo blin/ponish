@@ -240,6 +240,7 @@ chars_without_curves["CH"] = Glyph(
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.7),
     ],
 )
+chars_without_curves["ʧ"] = chars_without_curves["CH"]
 
 chars_with_curves = dict()
 
@@ -404,7 +405,6 @@ chars_with_curves["TH"] = Glyph(
         ),
     ],
 )
-
 chars_with_curves["ð"] = chars_with_curves["TH"]
 
 chars_with_curves["SH"] = Glyph(
@@ -419,7 +419,7 @@ chars_with_curves["SH"] = Glyph(
         ),
     ],
 )
-
+chars_with_curves["ʃ"] = chars_with_curves["SH"]
 
 # Combine both dictionaries to create the final characters dictionary
 characters: dict[str, Glyph] = {**chars_without_curves, **chars_with_curves}

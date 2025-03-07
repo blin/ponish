@@ -113,11 +113,15 @@ The quick cute unicorn jumped over the lazy gryphon.
 
 The vexed pegasus flew high, and shat on the land-bound Hydra.
 
-WARNING: image is missing
+![example-3](./lesson-1/example-3.svg)
+
+![example-4](./lesson-1/example-4.svg)
 
 The cheery and dutiful earth pony's pie won first place!
 
-WARNING: image is missing
+![example-5](./lesson-1/example-5.svg)
+
+![example-6](./lesson-1/example-6.svg)
 
 All 29 letters are demonstrated above. If you choose to stop your study here,
 you are missing out, but will still possess a writing method marginally faster

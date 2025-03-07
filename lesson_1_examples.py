@@ -13,10 +13,17 @@ from glyphs import (
     characters,
 )
 
-texts = ["ðe quick cute unicorn jumped ", "over ðe lazy gryphon"]
+texts = [
+    "ðe quick cute unicorn jumped",
+    "over ðe lazy gryphon",
+    "ðe vexed pegasus flew high",
+    "and ʃat on ðe land bound Hydra",
+    "ðe ʧeery and dutiful earth ponys",
+    "pie won first place",
+]
 for i, text in enumerate(texts):
-    drawing = Drawing(width=500, height=40)
-    p = Page(unit_size_px=20, current_line_bottom_px=30, current_line_left_px=20)
+    drawing = Drawing(width=600, height=40)
+    p = Page(unit_size_px=20, current_line_bottom_px=30, current_line_left_px=10)
     t = Turtle(delay=0.00, drawing=drawing)
     for c in text:
         if c == " ":
@@ -24,7 +31,7 @@ for i, text in enumerate(texts):
             continue
 
         g = characters.get(c, None) or characters.get(c.upper(), None)
-        assert g
+        assert g, f"Character {c} not found in character list"
         draw_glyph(t, p, g, pos=VowelPosition.OU)
         advance_after_glyph(t, p, g)
     t.hide()
