@@ -12,9 +12,9 @@ from glyphs import (
     characters,
 )
 
-texts = ["ðe quick cute unicorn ", "jumped over the lazy gryphon"]
+texts = ["ðe quick cute unicorn jumped ", "over ðe lazy gryphon"]
 for text in texts:
-    drawing = Drawing(width=600, height=50)
+    drawing = Drawing(width=500, height=50)
     p = Page(unit_size_px=20, current_line_bottom_px=30, current_line_left_px=20)
     t = Turtle(delay=0.00, drawing=drawing)
     for c in text:

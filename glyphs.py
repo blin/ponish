@@ -141,10 +141,10 @@ chars_without_curves["F"] = Glyph(
 )
 
 chars_without_curves["H"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
     draw_actions=[
-        PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=0.55),
-        PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.55),
+        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.7),
+        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.7),
     ],
 )
 
@@ -188,8 +188,8 @@ chars_without_curves["T"] = Glyph(
 chars_without_curves["V"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
-        PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.9),
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.9),
+        PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
     ],
 )
 
@@ -202,34 +202,33 @@ chars_without_curves["W"] = Glyph(
 )
 
 chars_without_curves["X"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
+    start_pos=RelPoint(rel_y=0.0, rel_x=1.0),
     draw_actions=[
-        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.4),
         PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.7),
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=1.0),
         PenAction.PLACE,
-        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=1.4),
     ],
 )
 
 chars_without_curves["Y"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.1),
     draw_actions=[
         PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.6),
         PenAction.LIFT,
-        PolarLine(angle_deg=Direction.NW.value, rel_magnitude=0.2),
-        PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.6),
         PenAction.PLACE,
-        PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.2),
+        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.4),
     ],
 )
 
 chars_without_curves["Z"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.1),
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.4),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
     ],
 )
 
@@ -237,8 +236,8 @@ chars_without_curves["Z"] = Glyph(
 chars_without_curves["CH"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
-        PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.55),
-        PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=0.55),
+        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.7),
+        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.7),
     ],
 )
 
@@ -256,28 +255,30 @@ chars_with_curves["D"] = Glyph(
     ],
 )
 chars_with_curves["E"] = Glyph(
-    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.1),
     draw_actions=[
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.6),
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.7),
         Circle(
             rel_radius=0.2,
-            extent_deg=270,
+            extent_deg=300,
             rotation=Rotation.CCW,
-            heading_deg=Direction.N.value,
+            heading_deg=Direction.NNE.value,
         ),
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.6),
+        PolarLine(angle_deg=Direction.ENE.value, rel_magnitude=0.7),
     ],
 )
 
 chars_with_curves["G"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.2),
         Circle(
             rel_radius=0.3,
             extent_deg=180,
             rotation=Rotation.CCW,
             heading_deg=Direction.S.value,
         ),
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.25),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
     ],
 )
@@ -285,24 +286,30 @@ chars_with_curves["G"] = Glyph(
 chars_with_curves["K"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=[
+        # NOTE: Doing this as two RelCubicBezier would
+        # match the original shape better, same for all half-circle shapes.
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.6),
         Circle(
             rel_radius=0.4,
             extent_deg=180,
             rotation=Rotation.CW,
             heading_deg=Direction.N.value,
         ),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.6),
     ],
 )
 
 chars_with_curves["L"] = Glyph(
-    start_pos=RelPoint(rel_y=0.5, rel_x=0.0),
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.6),
         Circle(
             rel_radius=0.4,
             extent_deg=180,
             rotation=Rotation.CCW,
             heading_deg=Direction.S.value,
         ),
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.6),
     ],
 )
 
@@ -319,10 +326,10 @@ chars_with_curves["O"] = Glyph(
 )
 
 chars_with_curves["P"] = Glyph(
-    start_pos=RelPoint(rel_y=0.5, rel_x=0.0),
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
     draw_actions=[
         Circle(
-            rel_radius=0.2,
+            rel_radius=0.5,
             extent_deg=360,
             rotation=Rotation.CW,
             heading_deg=Direction.E.value,
@@ -332,15 +339,15 @@ chars_with_curves["P"] = Glyph(
 )
 
 chars_with_curves["Q"] = Glyph(
-    start_pos=RelPoint(rel_y=0.3, rel_x=0.5),
+    start_pos=RelPoint(rel_y=0.25, rel_x=0.4),
     draw_actions=[
         Circle(
-            rel_radius=0.2,
+            rel_radius=0.25,
             extent_deg=360,
             rotation=Rotation.CW,
             heading_deg=Direction.S.value,
         ),
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
     ],
 )
 
@@ -359,15 +366,15 @@ chars_with_curves["R"] = Glyph(
 )
 
 chars_with_curves["S"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    start_pos=RelPoint(rel_y=0.25, rel_x=0.0),
     draw_actions=[
         Circle(
-            rel_radius=0.2,
+            rel_radius=0.25,
             extent_deg=360,
             rotation=Rotation.CCW,
             heading_deg=Direction.S.value,
         ),
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
     ],
 )
 
@@ -377,8 +384,8 @@ chars_with_curves["U"] = Glyph(
     draw_actions=[
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.5),
         RelCubicBezier(
-            p2=RelPoint(rel_y=0.5, rel_x=0.5),
-            p3=RelPoint(rel_y=0.5, rel_x=-0.5),
+            p2=RelPoint(rel_y=0.75, rel_x=0.75),
+            p3=RelPoint(rel_y=0.75, rel_x=-0.75),
             p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.5),
@@ -387,10 +394,10 @@ chars_with_curves["U"] = Glyph(
 
 
 chars_with_curves["TH"] = Glyph(
-    start_pos=RelPoint(rel_y=0.4, rel_x=0.5),
+    start_pos=RelPoint(rel_y=0.5, rel_x=1.0),
     draw_actions=[
         Circle(
-            rel_radius=0.3,
+            rel_radius=0.5,
             extent_deg=360,
             rotation=Rotation.CW,
             heading_deg=Direction.S.value,
@@ -401,11 +408,11 @@ chars_with_curves["TH"] = Glyph(
 chars_with_curves["ð"] = chars_with_curves["TH"]
 
 chars_with_curves["SH"] = Glyph(
-    start_pos=RelPoint(rel_y=0.3, rel_x=0.0),
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
     draw_actions=[
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
         Circle(
-            rel_radius=0.2,
+            rel_radius=0.25,
             extent_deg=360,
             rotation=Rotation.CW,
             heading_deg=Direction.S.value,
