@@ -74,6 +74,10 @@ Ponies, even those who have mastered the chirographic arts, will mix and match
 spellings according to their own tastes, and the speed, space, or formality
 restrictions under which they write.
 
+EDITOR NOTE: one leg A - ![A](./alphabet/A-one-leg.svg) - can be distinguished
+from T - ![T](./alphabet/T.svg) - by the direction of drawing,
+A is drawn from bottom to top, T is drawn from top to bottom.
+
 This may seem strange, but reflect on how, for example, headlines are written on
 Earth. Articles (a, an, the) can be dropped, capitalization, and punctuation
 butchered, and sentence fragments twisted to fit rhyme, space, or innuendo. 'Man

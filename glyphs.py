@@ -62,6 +62,7 @@ GlyphAction = PolarLine | RelCubicBezier | Circle | PenAction
 class Glyph:
     start_pos: RelPoint
     draw_actions: list[GlyphAction]
+    is_vowel: bool = False
 
 
 class VowelPosition(Enum):
@@ -106,6 +107,7 @@ chars_without_curves["A-two-legs"] = Glyph(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
     ],
+    is_vowel=True,
 )
 
 chars_without_curves["A"] = chars_without_curves["A-two-legs"]
@@ -115,6 +117,7 @@ chars_without_curves["A-one-leg"] = Glyph(
     draw_actions=[
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
     ],
+    is_vowel=True,
 )
 
 chars_without_curves["B"] = Glyph(
@@ -154,6 +157,7 @@ chars_without_curves["I"] = Glyph(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
     ],
+    is_vowel=True,
 )
 
 chars_without_curves["J"] = Glyph(
@@ -221,6 +225,7 @@ chars_without_curves["Y"] = Glyph(
         PenAction.PLACE,
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.4),
     ],
+    is_vowel=True,
 )
 
 chars_without_curves["Z"] = Glyph(
@@ -267,6 +272,7 @@ chars_with_curves["E"] = Glyph(
         ),
         PolarLine(angle_deg=Direction.ENE.value, rel_magnitude=0.7),
     ],
+    is_vowel=True,
 )
 
 chars_with_curves["G"] = Glyph(
@@ -324,6 +330,7 @@ chars_with_curves["O"] = Glyph(
             heading_deg=Direction.W.value,
         ),
     ],
+    is_vowel=True,
 )
 
 chars_with_curves["P"] = Glyph(
@@ -391,6 +398,7 @@ chars_with_curves["U"] = Glyph(
         ),
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.5),
     ],
+    is_vowel=True,
 )
 
 
