@@ -7,6 +7,7 @@ from glyphs import (
     Circle,
     Glyph,
     GlyphAction,
+    GlyphSize,
     PenAction,
     Point,
     PolarLine,
@@ -51,9 +52,10 @@ class Turtle(Protocol):
 
 @dataclass
 class Page:
-    unit_size_px: int
-    current_line_bottom_px: int
-    current_line_left_px: int
+    vowel_area_height_px: int
+    current_glyph_height_px: int = 0
+    current_line_bottom_px: int = 0
+    current_line_left_px: int = 0
     furthest_from_left_px: int = 0
     furthest_from_top_px: int = 0
 
@@ -101,9 +103,9 @@ def draw_cubic_bezier(turt: Turtle, page: Page, curve: RelCubicBezier) -> None:
     p1 = Point(y=turt.y, x=turt.x)
     for i in range(21):
         t = i / 20
-        p2 = find_rel_point(curve.p2, p1, page.unit_size_px)
-        p3 = find_rel_point(curve.p3, p1, page.unit_size_px)
-        p4 = find_rel_point(curve.p4, p1, page.unit_size_px)
+        p2 = find_rel_point(curve.p2, p1, page.current_glyph_height_px)
+        p3 = find_rel_point(curve.p3, p1, page.current_glyph_height_px)
+        p4 = find_rel_point(curve.p4, p1, page.current_glyph_height_px)
         x, y = calc_bezier(p1, p2, p3, p4, t)
         if i == 0:
             turt.jump_to(x, y)
@@ -134,7 +136,7 @@ def draw_circle(t: Turtle, circle: Circle, page: Page) -> None:
     # - The chord length (side_length) = 2 * radius * sin(angle/2)
     # This formula gives the exact length needed to draw each side of the polygon
     step_angle_rad = math.radians(angle_per_step)
-    radius_px = circle.rel_radius * page.unit_size_px
+    radius_px = circle.rel_radius * page.current_glyph_height_px
     side_length = 2 * radius_px * math.sin(step_angle_rad / 2)
 
     for _ in range(steps):
@@ -148,7 +150,7 @@ def draw_circle(t: Turtle, circle: Circle, page: Page) -> None:
 
 def draw_polar_line(t: Turtle, p: Page, line: PolarLine) -> None:
     t.heading = -line.angle_deg
-    draw_forward(t, p, p.unit_size_px * line.rel_magnitude)
+    draw_forward(t, p, p.current_glyph_height_px * line.rel_magnitude)
 
 
 def draw_action(t: Turtle, page: Page, action: GlyphAction) -> None:
@@ -168,7 +170,7 @@ def draw_action(t: Turtle, page: Page, action: GlyphAction) -> None:
 def find_box_corner(page: Page, vowel_pos: VowelPosition) -> Point:
     lb = page.current_line_bottom_px
     ll = page.current_line_left_px
-    us = page.unit_size_px
+    us = page.vowel_area_height_px
     box_top_px = 0
     match vowel_pos:
         case VowelPosition.AE:
@@ -180,14 +182,17 @@ def find_box_corner(page: Page, vowel_pos: VowelPosition) -> Point:
     return Point(y=box_top_px, x=ll)
 
 
-def draw_glyph(t: Turtle, page: Page, glyph: Glyph, pos: Position) -> None:
+def draw_glyph(
+    t: Turtle, page: Page, glyph: Glyph, pos: Position, gs: GlyphSize = GlyphSize.SINGLE
+) -> None:
+    page.current_glyph_height_px = page.vowel_area_height_px * gs.value
     match pos:
         case VowelPosition.AE | VowelPosition.IY | VowelPosition.OU as v:
             t.pen_up()
 
             box = find_box_corner(page, vowel_pos=v)
-            y = box.y + page.unit_size_px * glyph.start_pos.rel_y
-            x = box.x + page.unit_size_px * glyph.start_pos.rel_x
+            y = box.y + page.current_glyph_height_px * glyph.start_pos.rel_y
+            x = box.x + page.current_glyph_height_px * glyph.start_pos.rel_x
             t.jump_to(y=y, x=x)
 
             t.pen_down()
@@ -195,25 +200,28 @@ def draw_glyph(t: Turtle, page: Page, glyph: Glyph, pos: Position) -> None:
         draw_action(t, page, action)
 
 
-def establish_line(t: Turtle, page: Page) -> None:
+def outline_vowel_areas(t: Turtle, p: Page) -> None:
     c1 = t.pen_color
     t.pen_color = "#DDDDDD"
-    t.jump_to(y=page.current_line_bottom_px, x=0)
-    t.heading = 0
-    t.forward(1000)
+    for i in range(4):
+        y = p.current_line_bottom_px - (i * p.vowel_area_height_px)
+        print(f"{y=}")
+        t.jump_to(y=y, x=0)
+        t.heading = 0
+        t.forward(1000)
     t.pen_color = c1
 
 
 def advance_glyph(t: Turtle, page: Page) -> None:
     t.pen_up()
-    page.current_line_left_px = t.x + (page.unit_size_px / 2)
+    page.current_line_left_px = t.x + (page.vowel_area_height_px / 2)
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()
 
 
 def advance_after_glyph(t: Turtle, page: Page) -> None:
     t.pen_up()
-    page.current_line_left_px = page.furthest_from_left_px + (page.unit_size_px / 3)
+    page.current_line_left_px = page.furthest_from_left_px + (page.vowel_area_height_px / 3)
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()
 

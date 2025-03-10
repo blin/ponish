@@ -65,6 +65,11 @@ class Glyph:
     is_vowel: bool = False
 
 
+class GlyphSize(Enum):
+    SINGLE = 1
+    DOUBLE = 2
+
+
 class VowelPosition(Enum):
     AE = auto()
     IY = auto()

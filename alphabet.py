@@ -15,7 +15,7 @@ from glyphs import (
 
 for char_id, char in characters.items():
     drawing = Drawing(width=40, height=40)
-    p = Page(unit_size_px=20, current_line_bottom_px=30, current_line_left_px=10)
+    p = Page(vowel_area_height_px=20, current_line_bottom_px=30, current_line_left_px=10)
     t = Turtle(delay=0.00, drawing=drawing)
 
     draw_glyph(t, p, char, pos=VowelPosition.OU)

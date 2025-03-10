@@ -23,7 +23,7 @@ texts = [
 ]
 for i, text in enumerate(texts):
     drawing = Drawing(width=600, height=40)
-    p = Page(unit_size_px=20, current_line_bottom_px=30, current_line_left_px=10)
+    p = Page(vowel_area_height_px=20, current_line_bottom_px=30, current_line_left_px=10)
     t = Turtle(delay=0.00, drawing=drawing)
     for c in text:
         if c == " ":

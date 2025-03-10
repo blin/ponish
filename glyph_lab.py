@@ -26,7 +26,7 @@ g = Glyph(
 )
 
 drawing = Drawing(width=50, height=50)
-p = Page(unit_size_px=20, current_line_bottom_px=30, current_line_left_px=10)
+p = Page(vowel_area_height_px=20, current_line_bottom_px=30, current_line_left_px=10)
 t = Turtle(delay=0.00, drawing=drawing)
 
 draw_glyph(t, p, g, pos=VowelPosition.OU)

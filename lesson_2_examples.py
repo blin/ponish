@@ -32,7 +32,7 @@ for i, text in list(enumerate(texts)):
     next_pos = VowelPosition.OU
     drawing = Drawing(width=180, height=80)
     u = 20
-    p = Page(unit_size_px=u, current_line_bottom_px=u + (u // 2), current_line_left_px=u)
+    p = Page(vowel_area_height_px=u, current_line_bottom_px=u + (u // 2), current_line_left_px=u)
     t = Turtle(delay=0.00, drawing=drawing)
     for c in text:
         if c == " ":
@@ -45,8 +45,8 @@ for i, text in list(enumerate(texts)):
         draw_glyph(t, p, g, pos=next_pos)
         next_pos = "cont"
     t.hide()
-    drawing.width = p.furthest_from_left_px + p.unit_size_px
-    drawing.height = p.furthest_from_top_px + p.unit_size_px
+    drawing.width = p.furthest_from_left_px + p.vowel_area_height_px
+    drawing.height = p.furthest_from_top_px + p.vowel_area_height_px
     svg = get_svg(t)
     with open(f"manual/lesson-2/example-{i + 1}.svg", "w") as f:
         f.write(svg)
