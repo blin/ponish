@@ -8,42 +8,49 @@ Ponish letters don't change. Ponish cursive is simple, and follows one rule:
 DON'T LIFT THE PEN UNLESS THERE IS A VOWEL. See how simple that is? Merely begin
 one letter from the ending of its predecessor. Like so:
 
-B-L-U-E BL-U-E
+B-L-U-E
 
-WARNING: image is missing
+![example-1](./lesson-2/example-1.svg)
 
-WARNING: image is missing
+BL-U-E
+
+![example-2](./lesson-2/example-2.svg)
+
 
 Notice how the B and L have been combined into a single character? Because we
 didn't lift the pen until the vowel came. Here, again, this time B and R:
 
-WARNING: image is missing
+B-R-E-A-K
 
-WARNING: image is missing
+![example-3](./lesson-2/example-3.svg)
 
-WARNING: image is missing
+BR-E-A-K
+
+![example-4](./lesson-2/example-4.svg)
 
 S-T-A-N-D
 
-WARNING: image is missing
-
-S-T-R-I-K-E
+![example-5](./lesson-2/example-5.svg)
 
 ST-A-ND
 
-WARNING: image is missing
+![example-6](./lesson-2/example-6.svg)
 
-WARNING: image is missing
+S-T-R-I-K-E
 
-WARNING: image is missing
+![example-7](./lesson-2/example-7.svg)
+
+STR-I-K-E
+
+![example-8](./lesson-2/example-8.svg)
 
 E-N-V-I-S-I-O-N
 
+![example-9](./lesson-2/example-9.svg)
+
 E-NV-I-SION
 
-WARNING: image is missing
-
-WARNING: image is missing
+![example-10](./lesson-2/example-10.svg)
 
 Woah! What happened with this one? Well, this is an example of both the
 unfortunate disconnect between English spelling, and pronunciation (GHOTI,
@@ -58,15 +65,19 @@ Other similar examples:
 
 N-A-T-I-O-N
 
-WARNING: image is missing
+![example-11](./lesson-2/example-11.svg)
+
+N-A-TION
+
+![example-12](./lesson-2/example-12.svg)
 
 P-A-S-S-I-O-N
 
-WARNING: image is missing
+![example-13](./lesson-2/example-13.svg)
 
-WARNING: image is missing
+P-A-SSION
 
-WARNING: image is missing
+![example-14](./lesson-2/example-14.svg)
 
 Written by sound, not 'spelling.' Cool, hunh? And practical. I did include some
 silent letters, which I normally wouldn't have done, for the sake of clarity,

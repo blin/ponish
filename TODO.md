@@ -10,3 +10,5 @@
 - [ ] Phonetic writing
 - [ ] Prefixes
 - [ ] Phrasing?
+- [ ] Compute `start_pos` from shape
+- [ ] Figure out what to do with "R"

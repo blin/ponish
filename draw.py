@@ -55,6 +55,7 @@ class Page:
     current_line_bottom_px: int
     current_line_left_px: int
     furthest_from_left_px: int = 0
+    furthest_from_top_px: int = 0
 
 
 def calc_bezier(p1: Point, p2: Point, p3: Point, p4: Point, t: float) -> tuple[int, int]:
@@ -112,8 +113,10 @@ def draw_cubic_bezier(turt: Turtle, page: Page, curve: RelCubicBezier) -> None:
 
 def draw_forward(t: Turtle, p: Page, distance_px: int) -> None:
     p.furthest_from_left_px = max(p.furthest_from_left_px, t.x)
+    p.furthest_from_top_px = max(p.furthest_from_top_px, t.y)
     t.forward(distance_px)
     p.furthest_from_left_px = max(p.furthest_from_left_px, t.x)
+    p.furthest_from_top_px = max(p.furthest_from_top_px, t.y)
 
 
 def draw_circle(t: Turtle, circle: Circle, page: Page) -> None:
@@ -208,7 +211,7 @@ def advance_glyph(t: Turtle, page: Page) -> None:
     t.pen_down()
 
 
-def advance_after_glyph(t: Turtle, page: Page, g: Glyph) -> None:
+def advance_after_glyph(t: Turtle, page: Page) -> None:
     t.pen_up()
     page.current_line_left_px = page.furthest_from_left_px + (page.unit_size_px / 3)
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)

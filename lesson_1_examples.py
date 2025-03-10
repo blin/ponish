@@ -33,7 +33,7 @@ for i, text in enumerate(texts):
         g = characters.get(c, None) or characters.get(c.upper(), None)
         assert g, f"Character {c} not found in character list"
         draw_glyph(t, p, g, pos=VowelPosition.OU)
-        advance_after_glyph(t, p, g)
+        advance_after_glyph(t, p)
     t.hide()
     svg = get_svg(t)
     with open(f"manual/lesson-1/example-{i + 1}.svg", "w") as f:

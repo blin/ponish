@@ -295,28 +295,24 @@ chars_with_curves["K"] = Glyph(
     draw_actions=[
         # NOTE: Doing this as two RelCubicBezier would
         # match the original shape better, same for all half-circle shapes.
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.6),
         Circle(
             rel_radius=0.4,
             extent_deg=180,
             rotation=Rotation.CW,
             heading_deg=Direction.N.value,
         ),
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.6),
     ],
 )
 
 chars_with_curves["L"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.6),
         Circle(
             rel_radius=0.4,
             extent_deg=180,
             rotation=Rotation.CCW,
             heading_deg=Direction.S.value,
         ),
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.6),
     ],
 )
 
@@ -419,15 +415,13 @@ chars_with_curves["SH"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
-        Circle(
-            rel_radius=0.25,
-            extent_deg=360,
-            rotation=Rotation.CW,
-            heading_deg=Direction.S.value,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.75, rel_x=0.0),
+            p3=RelPoint(rel_y=0.0, rel_x=-0.75),
+            p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
     ],
 )
 chars_with_curves["ʃ"] = chars_with_curves["SH"]
 
-# Combine both dictionaries to create the final characters dictionary
 characters: dict[str, Glyph] = {**chars_without_curves, **chars_with_curves}
