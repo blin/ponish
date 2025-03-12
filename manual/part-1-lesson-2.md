@@ -28,6 +28,8 @@ BR-E-A-K
 
 ![example-4](./lesson-2/example-4.svg)
 
+EDITOR NOTE: BR is blended in the original, see TODO.md .
+
 S-T-A-N-D
 
 ![example-5](./lesson-2/example-5.svg)
@@ -41,6 +43,8 @@ S-T-R-I-K-E
 ![example-7](./lesson-2/example-7.svg)
 
 STR-I-K-E
+
+EDITOR NOTE: TR is blended in the original, see TODO.md .
 
 ![example-8](./lesson-2/example-8.svg)
 
@@ -89,6 +93,8 @@ like so:
 
 WARNING: image is missing
 
+TODO: line of writing
+
 The first letter of the word, in this example 'A' forms the 'base' of the word,
 its anchor. Anything in the space above it is in the A/E line, anything even
 with its top is in the I/Y line, and anything below the half-way mark is in O/U
@@ -101,16 +107,16 @@ So, how do we make use of these divisions? 2 ways. The first, being that when
 you write a word, for example 'bag,' you write the first letter, B as the
 anchor, then the next consonant, G with its top even with the A/E line:
 
-WARNING: image is missing
+![bag or beg](./lesson-2/example-bag.svg)
 
 This can also mean beg, of course, but context will tell you which you mean. If
 you write the G along the I/Y line, you instead write the word 'big:'
 
-WARNING: image is missing
+![big](./lesson-2/example-big.svg)
 
 And if you write the G with the O/U line, you produce both 'bog,' and 'bug:'
 
-WARNING: image is missing
+![bog](./lesson-2/example-bog.svg)
 
 As before, context will be your guide; 'there's a bug in my rice,' vs. 'there's
 a bog in my rice;' one makes sense, the other doesn't. For those instances where
