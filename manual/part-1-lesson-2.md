@@ -213,6 +213,31 @@ example sentences:
 | ---- | ----- | --- | --- |
 | ![](./lesson-2/example-my.svg) | ![](./lesson-2/example-sword.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-hatred.svg) |
 
+---
+
+| There | is | no | difference | between |
+| ---- | ----- | --- | --- | --- |
+| ![](./lesson-2/example-there.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-no.svg) | ![](./lesson-2/example-difference.svg) | ![](./lesson-2/example-between.svg) |
+
+
+| what | is | right | and |
+| ---- | ----- | --- | --- |
+| ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-right.svg) | ![](./lesson-2/example-and.svg) |
+
+| what | is | necessary |
+| ---- | ----- | --- |
+| ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-necessary.svg) |
+
+---
+
+| The rewards | of | tolerance | are |
+| ---- | ----- | --- | --- |
+| ![](./lesson-2/example-the-rewards.svg) | ![](./lesson-2/example-of.svg) | ![](./lesson-2/example-tolerance.svg) | ![](./lesson-2/example-are.svg) |
+
+| treachery | and | betrayal |
+| --- | --- | --- |
+| ![](./lesson-2/example-treachery.svg) | ![](./lesson-2/example-and.svg) | ![](./lesson-2/example-betrayal.svg) |
+
 You should also notice that the 'A' in 'Armor,' 'Are,' and 'And,' are written
 with a single stroke. This is done when the A leads into another letter so as to
 save time, and space. You may, of course use the 2-stroke A if you prefer.

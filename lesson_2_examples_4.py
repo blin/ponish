@@ -86,3 +86,118 @@ with DrawingContext(output_path=dir / f"example-hatred.svg") as (p, t):
     draw_glyph(t, p, characters["R"], pos="cont")
     advance_after_glyph(t, p)
     draw_glyph(t, p, characters["D"], pos=VP.AE)
+
+# %%
+with DrawingContext(output_path=dir / f"example-there.svg") as (p, t):
+    draw_glyph(t, p, characters["TH"], pos=VP.IY, gs=GS.DOUBLE)
+    draw_glyph(t, p, characters["R"], pos="cont")
+
+# %%
+with DrawingContext(output_path=dir / f"example-no.svg") as (p, t):
+    draw_glyph(t, p, characters["N"], pos=VP.IY, gs=GS.DOUBLE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["end-vowel-dot"], pos=VP.OU)
+
+# %%
+with DrawingContext(output_path=dir / f"example-difference.svg") as (p, t):
+    draw_glyph(t, p, characters["D"], pos=VP.IY, gs=GS.DOUBLE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["F"], pos=VP.IY)
+    draw_glyph(t, p, characters["R"], pos="cont")
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["N"], pos=VP.AE)
+    draw_glyph(t, p, characters["S"], pos="cont")
+
+# %%
+with DrawingContext(output_path=dir / f"example-between.svg") as (p, t):
+    draw_glyph(t, p, characters["B"], pos=VP.IY, gs=GS.DOUBLE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["T"], pos=VP.AE)
+    draw_glyph(t, p, characters["W"], pos="cont")
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["N"], pos=VP.AE)
+
+# %%
+with DrawingContext(output_path=dir / f"example-what.svg") as (p, t):
+    draw_glyph(t, p, characters["W"], pos=VP.IY, gs=GS.DOUBLE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["T"], pos=VP.AE)
+
+# %%
+with DrawingContext(output_path=dir / f"example-right.svg") as (p, t):
+    draw_glyph(t, p, characters["R"], pos=VP.IY, gs=GS.DOUBLE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["T"], pos=VP.IY, gs=GS.DOUBLE)
+
+# %%
+with DrawingContext(output_path=dir / f"example-and.svg") as (p, t):
+    draw_glyph(t, p, characters["A-one-leg"], pos=VP.IY, gs=GS.DOUBLE)
+    draw_glyph(t, p, characters["N"], pos="cont", gs=GS.DOUBLE)
+    draw_glyph(t, p, characters["D"], pos="cont", gs=GS.DOUBLE)
+
+# %%
+with DrawingContext(output_path=dir / f"example-necessary.svg") as (p, t):
+    draw_glyph(t, p, characters["N"], pos=VP.IY, gs=GS.DOUBLE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["S"], pos=VP.AE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["S"], pos=VP.AE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["R"], pos=VP.AE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["end-vowel-dot"], pos=VP.IY)
+
+# %%
+with DrawingContext(output_path=dir / f"example-the-rewards.svg") as (p, t):
+    draw_glyph(t, p, characters["article-dot"], pos=VP.OU)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["R"], pos=VP.IY, gs=GS.DOUBLE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["W"], pos=VP.AE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["R"], pos=VP.AE)
+    draw_glyph(t, p, characters["D"], pos="cont")
+    draw_glyph(t, p, characters["S"], pos="cont")
+
+# %%
+with DrawingContext(output_path=dir / f"example-of.svg") as (p, t):
+    draw_glyph(t, p, characters["O"], pos=VP.IY)
+    draw_glyph(t, p, characters["F"], pos="cont")
+
+# %%
+with DrawingContext(output_path=dir / f"example-tolerance.svg") as (p, t):
+    draw_glyph(t, p, characters["T"], pos=VP.IY, gs=GS.DOUBLE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["L"], pos=VP.OU)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["R"], pos=VP.AE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["N"], pos=VP.AE)
+    draw_glyph(t, p, characters["S"], pos="cont")
+
+# %%
+with DrawingContext(output_path=dir / f"example-are.svg") as (p, t):
+    draw_glyph(t, p, characters["A-one-leg"], pos=VP.IY, gs=GS.DOUBLE)
+    draw_glyph(t, p, characters["R"], pos="cont", gs=GS.DOUBLE)
+
+# %%
+with DrawingContext(output_path=dir / f"example-treachery.svg") as (p, t):
+    draw_glyph(t, p, characters["T"], pos=VP.IY, gs=GS.DOUBLE)
+    draw_glyph(t, p, characters["R"], pos="cont")
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["CH"], pos=VP.AE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["R"], pos=VP.AE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["end-vowel-dot"], pos=VP.IY)
+
+# %%
+with DrawingContext(output_path=dir / f"example-betrayal.svg") as (p, t):
+    draw_glyph(t, p, characters["B"], pos=VP.IY, gs=GS.DOUBLE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["T"], pos=VP.AE)
+    draw_glyph(t, p, characters["R"], pos="cont")
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["Y"], pos=VP.AE)
+    advance_after_glyph(t, p)
+    draw_glyph(t, p, characters["L"], pos=VP.AE)

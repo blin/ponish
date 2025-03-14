@@ -385,7 +385,7 @@ chars_with_curves["R"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.3),
         Circle(
             rel_radius=0.5,
             extent_deg=90,
@@ -395,6 +395,7 @@ chars_with_curves["R"] = Glyph(
     ],
 )
 
+# TODO: bezier
 chars_with_curves["S"] = Glyph(
     start_pos=RelPoint(rel_y=0.25, rel_x=0.0),
     draw_actions=[
@@ -402,7 +403,7 @@ chars_with_curves["S"] = Glyph(
             rel_radius=0.25,
             extent_deg=360,
             rotation=Rotation.CCW,
-            heading_deg=Direction.S.value,
+            heading_deg=Direction.SE.value,
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
     ],
@@ -430,8 +431,8 @@ chars_with_curves["TH"] = Glyph(
         Circle(
             rel_radius=0.5,
             extent_deg=360,
-            rotation=Rotation.CW,
-            heading_deg=Direction.S.value,
+            rotation=Rotation.CCW,
+            heading_deg=Direction.E.value,
         ),
     ],
 )
