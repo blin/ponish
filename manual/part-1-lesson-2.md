@@ -215,18 +215,18 @@ example sentences:
 
 ---
 
-| There | is | no | difference | between |
-| ---- | ----- | --- | --- | --- |
-| ![](./lesson-2/example-there.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-no.svg) | ![](./lesson-2/example-difference.svg) | ![](./lesson-2/example-between.svg) |
-
-
-| what | is | right | and |
+| There | is | no | difference |
 | ---- | ----- | --- | --- |
-| ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-right.svg) | ![](./lesson-2/example-and.svg) |
+| ![](./lesson-2/example-there.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-no.svg) | ![](./lesson-2/example-difference.svg) |
 
-| what | is | necessary |
-| ---- | ----- | --- |
-| ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-necessary.svg) |
+
+| between | what | is | right |
+| ---- | ----- | --- | --- |
+| ![](./lesson-2/example-between.svg) | ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-right.svg) |
+
+| and | what | is | necessary |
+| --- | ---- | ----- | --- |
+| ![](./lesson-2/example-and.svg) | ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-necessary.svg) |
 
 ---
 
