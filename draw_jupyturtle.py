@@ -1,7 +1,9 @@
 import re
-from jupyturtle.jupyturtle import Turtle, Drawing
+
+from jupyturtle.jupyturtle import Drawing, Turtle
 
 from draw import Page
+
 
 def get_svg(t: Turtle) -> str:
     svg = t.get_SVG()

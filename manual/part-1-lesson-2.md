@@ -10,11 +10,11 @@ one letter from the ending of its predecessor. Like so:
 
 B-L-U-E
 
-![example-1](./lesson-2/example-1.svg)
+![](./lesson-2/example-1.svg)
 
 BL-U-E
 
-![example-2](./lesson-2/example-2.svg)
+![](./lesson-2/example-2.svg)
 
 
 Notice how the B and L have been combined into a single character? Because we
@@ -22,39 +22,39 @@ didn't lift the pen until the vowel came. Here, again, this time B and R:
 
 B-R-E-A-K
 
-![example-3](./lesson-2/example-3.svg)
+![](./lesson-2/example-3.svg)
 
 BR-E-A-K
 
-![example-4](./lesson-2/example-4.svg)
+![](./lesson-2/example-4.svg)
 
 EDITOR NOTE: BR is blended in the original, see TODO.md .
 
 S-T-A-N-D
 
-![example-5](./lesson-2/example-5.svg)
+![](./lesson-2/example-5.svg)
 
 ST-A-ND
 
-![example-6](./lesson-2/example-6.svg)
+![](./lesson-2/example-6.svg)
 
 S-T-R-I-K-E
 
-![example-7](./lesson-2/example-7.svg)
+![](./lesson-2/example-7.svg)
 
 STR-I-K-E
 
 EDITOR NOTE: TR is blended in the original, see TODO.md .
 
-![example-8](./lesson-2/example-8.svg)
+![](./lesson-2/example-8.svg)
 
 E-N-V-I-S-I-O-N
 
-![example-9](./lesson-2/example-9.svg)
+![](./lesson-2/example-9.svg)
 
 E-NV-I-SION
 
-![example-10](./lesson-2/example-10.svg)
+![](./lesson-2/example-10.svg)
 
 Woah! What happened with this one? Well, this is an example of both the
 unfortunate disconnect between English spelling, and pronunciation (GHOTI,
@@ -69,19 +69,19 @@ Other similar examples:
 
 N-A-T-I-O-N
 
-![example-11](./lesson-2/example-11.svg)
+![](./lesson-2/example-11.svg)
 
 N-A-TION
 
-![example-12](./lesson-2/example-12.svg)
+![](./lesson-2/example-12.svg)
 
 P-A-S-S-I-O-N
 
-![example-13](./lesson-2/example-13.svg)
+![](./lesson-2/example-13.svg)
 
 P-A-SSION
 
-![example-14](./lesson-2/example-14.svg)
+![](./lesson-2/example-14.svg)
 
 Written by sound, not 'spelling.' Cool, hunh? And practical. I did include some
 silent letters, which I normally wouldn't have done, for the sake of clarity,
@@ -107,16 +107,16 @@ So, how do we make use of these divisions? 2 ways. The first, being that when
 you write a word, for example 'bag,' you write the first letter, B as the
 anchor, then the next consonant, G with its top even with the A/E line:
 
-![bag or beg](./lesson-2/example-bag.svg)
+![](./lesson-2/example-b-AE-g.svg)
 
 This can also mean beg, of course, but context will tell you which you mean. If
 you write the G along the I/Y line, you instead write the word 'big:'
 
-![big](./lesson-2/example-big.svg)
+![](./lesson-2/example-b-IY-g.svg)
 
 And if you write the G with the O/U line, you produce both 'bog,' and 'bug:'
 
-![bog](./lesson-2/example-bog.svg)
+![](./lesson-2/example-b-OU-g.svg)
 
 As before, context will be your guide; 'there's a bug in my rice,' vs. 'there's
 a bog in my rice;' one makes sense, the other doesn't. For those instances where
@@ -131,23 +131,100 @@ able to read the passages in which those examples are couched.
 
 Here are some more examples of line-position vowels in action:
 
-WARNING: image is missing
+TAME or TEAM
+
+![ or team](./lesson-2/example-t-AE-m.svg)
+
+TIME
+
+![](./lesson-2/example-t-IY-m.svg)
+
+TOME or TOMB
+
+![](./lesson-2/example-t-OU-m.svg)
+
+FAN
+
+![](./lesson-2/example-f-AE-n.svg)
+
+FINE
+
+![](./lesson-2/example-f-IY-n.svg)
+
+FUN
+
+![](./lesson-2/example-f-OU-n.svg)
+
+LAP
+
+![](./lesson-2/example-l-AE-p.svg)
+
+LIP
+
+![](./lesson-2/example-l-IY-p.svg)
+
+LOOP
+
+![](./lesson-2/example-l-OU-p.svg)
 
 But what if it's a dipthong, i.e. if the next discernible sound is also a vowel?
 No problem, just write the second vowel in the line-position of the first, like
 so:
 
-WARNING: image is missing
+
+POND
+
+![](./lesson-2/example-pond.svg)
+
+POUND
+
+![](./lesson-2/example-pound.svg)
+
+CRATE
+
+![](./lesson-2/example-crate.svg)
+
+CREATE
+
+![](./lesson-2/example-create.svg)
 
 And if the final sound in a word is a vowel? Indicate it with a dot, like this:
 
-WARNING: image is missing
+DAY
+
+![](./lesson-2/example-d-AE-end-vowel-dot.svg)
+
+DYE
+
+![](./lesson-2/example-d-IY-end-vowel-dot.svg)
+
+DOE
+
+![](./lesson-2/example-d-OU-end-vowel-dot.svg)
+
+SEE
+
+![](./lesson-2/example-s-AE-end-vowel-dot.svg)
+
+SIGH
+
+![](./lesson-2/example-s-IY-end-vowel-dot.svg)
+
+SEW
+
+![](./lesson-2/example-s-OU-end-vowel-dot.svg)
 
 What if it starts with a vowel? Write it, then proceed as normal:
 
-WARNING: image is missing
+EGG
 
-The third, and final refinement we're going to introduce in this lesson is also
+![](./lesson-2/example-egg.svg)
+
+OVEN
+
+![](./lesson-2/example-oven.svg)
+
+**The third, and final refinement** we're going to introduce in this lesson is also
 the simplest, thank Celestia. After all this, you're probably glad to hear it.
 This is a lot to take in in a single lesson, believe me, I know, but these 3
 techniques of Ponish work synergistically together, and so should be introduced

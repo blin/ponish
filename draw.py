@@ -2,7 +2,6 @@ import math
 from dataclasses import dataclass
 from typing import Protocol, runtime_checkable
 
-
 from glyphs import (
     Circle,
     Glyph,
@@ -224,4 +223,3 @@ def advance_after_glyph(t: Turtle, page: Page) -> None:
     page.current_line_left_px = page.furthest_from_left_px + (page.vowel_area_height_px / 3)
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()
-

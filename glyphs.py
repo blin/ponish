@@ -71,9 +71,9 @@ class GlyphSize(Enum):
 
 
 class VowelPosition(Enum):
-    AE = auto()
-    IY = auto()
-    OU = auto()
+    AE = "AE"
+    IY = "IY"
+    OU = "OU"
 
 
 Position = Union[Literal["cont"], VowelPosition]
@@ -251,6 +251,17 @@ chars_without_curves["CH"] = Glyph(
     ],
 )
 chars_without_curves["ʧ"] = chars_without_curves["CH"]
+
+chars_without_curves["end-vowel-dot"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.01),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.01),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.01),
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.01),
+    ],
+)
+
 
 chars_with_curves = dict()
 
