@@ -359,7 +359,7 @@ chars_with_curves["P"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
     draw_actions=[
         Circle(
-            rel_radius=0.5,
+            rel_radius=0.3,
             extent_deg=360,
             rotation=Rotation.CW,
             heading_deg=Direction.E.value,

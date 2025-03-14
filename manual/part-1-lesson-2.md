@@ -201,7 +201,17 @@ Cool, hunh? And so simple.
 We're only on the 2 nd lesson, and just look at how much space is saved in these
 example sentences:
 
-WARNING: image is missing
+| My | armor | is | contempt |
+| ---- | ----- | --- | --- |
+| ![](./lesson-2/example-my.svg) | ![](./lesson-2/example-armor.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-contempt.svg) |
+
+| My | shield | is | disgust |
+| ---- | ----- | --- | --- |
+| ![](./lesson-2/example-my.svg) | ![](./lesson-2/example-shield.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-disgust.svg) |
+
+| My | sword | is | hatred |
+| ---- | ----- | --- | --- |
+| ![](./lesson-2/example-my.svg) | ![](./lesson-2/example-sword.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-hatred.svg) |
 
 You should also notice that the 'A' in 'Armor,' 'Are,' and 'And,' are written
 with a single stroke. This is done when the A leads into another letter so as to
