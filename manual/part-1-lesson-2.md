@@ -163,7 +163,32 @@ you put it in the top left corner of the word you are writing, it stands in for
 the indefinite articles 'a,' and 'an,' but if you put it in the bottom left
 corner, it stands for 'the,' like so:
 
-WARNING: image is missing
+| a pony | the pony |
+| ---- | ----- |
+| ![](./lesson-2/example-a-pony.svg) | ![](./lesson-2/example-the-pony.svg) |
+
+| a bottle | the bottle |
+| ---- | ----- |
+| ![](./lesson-2/example-a-bottle.svg) | ![](./lesson-2/example-the-bottle.svg) |
+
+| a starship | the starship |
+| ---- | ----- |
+| ![](./lesson-2/example-a-starship.svg) | ![](./lesson-2/example-the-starship.svg) |
+
+
+| a orange | the orange |
+| ---- | ----- |
+| ![](./lesson-2/example-a-orange.svg) | ![](./lesson-2/example-the-orange.svg) |
+
+
+| a edge | the edge |
+| ---- | ----- |
+| ![](./lesson-2/example-a-edge.svg) | ![](./lesson-2/example-the-edge.svg) |
+
+
+| a buffalo | the buffalo |
+| ---- | ----- |
+| ![](./lesson-2/example-a-buffalo.svg) | ![](./lesson-2/example-the-buffalo.svg) |
 
 Did you know those are the most commonly written words? Well they are. Think of
 how many times you use them, and by reducing them to mere dots, think of all the

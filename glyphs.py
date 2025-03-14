@@ -262,6 +262,16 @@ chars_without_curves["end-vowel-dot"] = Glyph(
     ],
 )
 
+chars_without_curves["article-dot"] = Glyph(
+    start_pos=RelPoint(rel_y=1.0, rel_x=1.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.01),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.01),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.01),
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.01),
+    ],
+)
+
 
 chars_with_curves = dict()
 
