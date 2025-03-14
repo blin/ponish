@@ -5,8 +5,8 @@ from draw import (
     Page,
     advance_after_glyph,
     draw_glyph,
-    get_svg,
 )
+from draw_jupyturtle import get_svg
 from glyphs import (
     VowelPosition,
     characters,

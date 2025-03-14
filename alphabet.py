@@ -1,13 +1,11 @@
 # %%
-import re
-
 from jupyturtle.jupyturtle import Drawing, Turtle
 
 from draw import (
     Page,
     draw_glyph,
-    get_svg,
 )
+from draw_jupyturtle import get_svg
 from glyphs import (
     VowelPosition,
     characters,
