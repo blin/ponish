@@ -8,53 +8,33 @@ Ponish letters don't change. Ponish cursive is simple, and follows one rule:
 DON'T LIFT THE PEN UNLESS THERE IS A VOWEL. See how simple that is? Merely begin
 one letter from the ending of its predecessor. Like so:
 
-B-L-U-E
-
-![](./lesson-2/example-1.svg)
-
-BL-U-E
-
-![](./lesson-2/example-2.svg)
+| B-L-U-E | BL-U-E |
+| ------- | ------ |
+| ![](./lesson-2/example-1.svg) | ![](./lesson-2/example-2.svg) |
 
 
 Notice how the B and L have been combined into a single character? Because we
 didn't lift the pen until the vowel came. Here, again, this time B and R:
 
-B-R-E-A-K
-
-![](./lesson-2/example-3.svg)
-
-BR-E-A-K
-
-![](./lesson-2/example-4.svg)
+| B-R-E-A-K | BR-E-A-K |
+| --------- | -------- |
+| ![](./lesson-2/example-3.svg) | ![](./lesson-2/example-4.svg) |
 
 EDITOR NOTE: BR is blended in the original, see TODO.md .
 
-S-T-A-N-D
+| S-T-A-N-D | ST-A-ND |
+| --------- | ------- |
+| ![](./lesson-2/example-5.svg) | ![](./lesson-2/example-6.svg) |
 
-![](./lesson-2/example-5.svg)
-
-ST-A-ND
-
-![](./lesson-2/example-6.svg)
-
-S-T-R-I-K-E
-
-![](./lesson-2/example-7.svg)
-
-STR-I-K-E
+| S-T-R-I-K-E | STR-I-K-E |
+| ----------- | --------- |
+| ![](./lesson-2/example-7.svg) | ![](./lesson-2/example-8.svg) |
 
 EDITOR NOTE: TR is blended in the original, see TODO.md .
 
-![](./lesson-2/example-8.svg)
-
-E-N-V-I-S-I-O-N
-
-![](./lesson-2/example-9.svg)
-
-E-NV-I-SION
-
-![](./lesson-2/example-10.svg)
+| E-N-V-I-S-I-O-N | E-NV-I-SION |
+| --------------- | ----------- |
+| ![](./lesson-2/example-9.svg) | ![](./lesson-2/example-10.svg) |
 
 Woah! What happened with this one? Well, this is an example of both the
 unfortunate disconnect between English spelling, and pronunciation (GHOTI,
@@ -67,21 +47,13 @@ vowel, thus 'SION' becomes 'SHN,' in Ponish.
 
 Other similar examples:
 
-N-A-T-I-O-N
+| N-A-T-I-O-N | N-A-TION |
+| ----------- | -------- |
+| ![](./lesson-2/example-11.svg) | ![](./lesson-2/example-12.svg) |
 
-![](./lesson-2/example-11.svg)
-
-N-A-TION
-
-![](./lesson-2/example-12.svg)
-
-P-A-S-S-I-O-N
-
-![](./lesson-2/example-13.svg)
-
-P-A-SSION
-
-![](./lesson-2/example-14.svg)
+| P-A-S-S-I-O-N | P-A-SSION |
+| ------------- | --------- |
+| ![](./lesson-2/example-13.svg) | ![](./lesson-2/example-14.svg) |
 
 Written by sound, not 'spelling.' Cool, hunh? And practical. I did include some
 silent letters, which I normally wouldn't have done, for the sake of clarity,
@@ -131,98 +103,52 @@ able to read the passages in which those examples are couched.
 
 Here are some more examples of line-position vowels in action:
 
-TAME or TEAM
+| TAME or TEAM | TIME | TOME or TOMB |
+| ------------ | ---- | ------------ |
+| ![](./lesson-2/example-t-AE-m.svg) | ![](./lesson-2/example-t-IY-m.svg) | ![](./lesson-2/example-t-OU-m.svg) |
 
-![ or team](./lesson-2/example-t-AE-m.svg)
+| FAN | FINE | FUN |
+| --- | ---- | --- |
+| ![](./lesson-2/example-f-AE-n.svg) | ![](./lesson-2/example-f-IY-n.svg) | ![](./lesson-2/example-f-OU-n.svg) |
 
-TIME
-
-![](./lesson-2/example-t-IY-m.svg)
-
-TOME or TOMB
-
-![](./lesson-2/example-t-OU-m.svg)
-
-FAN
-
-![](./lesson-2/example-f-AE-n.svg)
-
-FINE
-
-![](./lesson-2/example-f-IY-n.svg)
-
-FUN
-
-![](./lesson-2/example-f-OU-n.svg)
-
-LAP
-
-![](./lesson-2/example-l-AE-p.svg)
-
-LIP
-
-![](./lesson-2/example-l-IY-p.svg)
-
-LOOP
-
-![](./lesson-2/example-l-OU-p.svg)
+| LAP | LIP | LOOP |
+| --- | --- | ---- |
+| ![](./lesson-2/example-l-AE-p.svg) | ![](./lesson-2/example-l-IY-p.svg) | ![](./lesson-2/example-l-OU-p.svg) |
 
 But what if it's a dipthong, i.e. if the next discernible sound is also a vowel?
 No problem, just write the second vowel in the line-position of the first, like
 so:
 
 
-POND
+| POND | POUND |
+| ---- | ----- |
+| ![](./lesson-2/example-pond.svg) | ![](./lesson-2/example-pound.svg) |
 
-![](./lesson-2/example-pond.svg)
+| CRATE | CREATE |
+| ----- | ------ |
+| ![](./lesson-2/example-crate.svg) | ![](./lesson-2/example-create.svg) |
 
-POUND
-
-![](./lesson-2/example-pound.svg)
-
-CRATE
-
-![](./lesson-2/example-crate.svg)
-
-CREATE
-
-![](./lesson-2/example-create.svg)
+EDITOR NOTE: CR is blended in the original, see TODO.md .
 
 And if the final sound in a word is a vowel? Indicate it with a dot, like this:
 
-DAY
+| DAY | DYE | DOE |
+| --- | --- | --- |
+| ![](./lesson-2/example-d-AE-end-vowel-dot.svg) | ![](./lesson-2/example-d-IY-end-vowel-dot.svg) | ![](./lesson-2/example-d-OU-end-vowel-dot.svg) |
 
-![](./lesson-2/example-d-AE-end-vowel-dot.svg)
-
-DYE
-
-![](./lesson-2/example-d-IY-end-vowel-dot.svg)
-
-DOE
-
-![](./lesson-2/example-d-OU-end-vowel-dot.svg)
-
-SEE
-
-![](./lesson-2/example-s-AE-end-vowel-dot.svg)
-
-SIGH
-
-![](./lesson-2/example-s-IY-end-vowel-dot.svg)
-
-SEW
-
-![](./lesson-2/example-s-OU-end-vowel-dot.svg)
+| SEE | SIGH | SEW |
+| --- | ---- | --- |
+| ![](./lesson-2/example-s-AE-end-vowel-dot.svg) | ![](./lesson-2/example-s-IY-end-vowel-dot.svg) | ![](./lesson-2/example-s-OU-end-vowel-dot.svg) |
 
 What if it starts with a vowel? Write it, then proceed as normal:
 
-EGG
+| EGG |
+| --- |
+| ![](./lesson-2/example-egg.svg) |
 
-![](./lesson-2/example-egg.svg)
-
-OVEN
-
-![](./lesson-2/example-oven.svg)
+| OVEN |
+| ---- |
+| ![](./lesson-2/example-oven.svg) |
 
 **The third, and final refinement** we're going to introduce in this lesson is also
 the simplest, thank Celestia. After all this, you're probably glad to hear it.
