@@ -1,11 +1,11 @@
 import re
 
-from jupyturtle.jupyturtle import Drawing, Turtle
+from jupyturtle import jupyturtle
 
-from draw import Page
+from draw import Page, Turtle
 
 
-def get_svg(t: Turtle) -> str:
+def get_svg(t: jupyturtle.Turtle) -> str:
     svg = t.get_SVG()
     svg = svg.replace("<svg", '<svg xmlns="http://www.w3.org/2000/svg"')
     svg = re.sub(r"'$", "", svg, flags=re.MULTILINE)
@@ -22,15 +22,15 @@ class DrawingContext:
         self.page = None
         self.turtle = None
 
-    def __enter__(self):
+    def __enter__(self) -> tuple[Page, Turtle]:
         u = self.unit_size
-        drawing = Drawing(width=180, height=u * 5)
+        drawing = jupyturtle.Drawing(width=180, height=u * 5)
         self.page = Page(
             vowel_area_height_px=u,
             current_line_bottom_px=(u * 3) + (u // 2),
             current_line_left_px=u,
         )
-        self.turtle = Turtle(delay=0.00, drawing=drawing)
+        self.turtle = jupyturtle.Turtle(delay=0.00, drawing=drawing)
         return self.page, self.turtle
 
     def __exit__(self, exc_type, exc_val, exc_tb):

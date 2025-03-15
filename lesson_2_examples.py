@@ -43,7 +43,7 @@ for i, text in list(enumerate(texts)):
         g = characters.get(c, None) or characters.get(c.upper(), None)
         assert g, f"Character {c} not found in character list"
         draw_glyph(t, p, g, pos=next_pos)
-        next_pos = "cont"
+        next_pos = VowelPosition.CONT
     t.hide()
     drawing.width = p.furthest_from_left_px + p.vowel_area_height_px
     drawing.height = p.furthest_from_top_px + p.vowel_area_height_px

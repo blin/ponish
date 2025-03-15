@@ -40,7 +40,7 @@ for article in ["a", "the"]:
         draw_glyph(t, p, characters["B"], pos=VP.IY, gs=GS.DOUBLE)
         advance_after_glyph(t, p)
         draw_glyph(t, p, characters["T"], pos=VP.OU)
-        draw_glyph(t, p, characters["L"], pos="cont")
+        draw_glyph(t, p, characters["L"], pos=VP.CONT)
 
 # %%
 for article in ["a", "the"]:
@@ -49,10 +49,10 @@ for article in ["a", "the"]:
         draw_glyph(t, p, characters["article-dot"], pos=article_pos)
         advance_after_glyph(t, p)
         draw_glyph(t, p, characters["S"], pos=VP.IY)
-        draw_glyph(t, p, characters["T"], pos="cont")
+        draw_glyph(t, p, characters["T"], pos=VP.CONT)
         advance_after_glyph(t, p)
         draw_glyph(t, p, characters["R"], pos=VP.AE)
-        draw_glyph(t, p, characters["SH"], pos="cont")
+        draw_glyph(t, p, characters["SH"], pos=VP.CONT)
         advance_after_glyph(t, p)
         draw_glyph(t, p, characters["P"], pos=VP.IY)
 
@@ -63,10 +63,10 @@ for article in ["a", "the"]:
         draw_glyph(t, p, characters["article-dot"], pos=article_pos)
         advance_after_glyph(t, p)
         draw_glyph(t, p, characters["O"], pos=VP.IY)
-        draw_glyph(t, p, characters["R"], pos="cont")
+        draw_glyph(t, p, characters["R"], pos=VP.CONT)
         advance_after_glyph(t, p)
         draw_glyph(t, p, characters["N"], pos=VP.AE)
-        draw_glyph(t, p, characters["J"], pos="cont")
+        draw_glyph(t, p, characters["J"], pos=VP.CONT)
 
 # %%
 for article in ["a", "the"]:
@@ -75,7 +75,7 @@ for article in ["a", "the"]:
         draw_glyph(t, p, characters["article-dot"], pos=article_pos)
         advance_after_glyph(t, p)
         draw_glyph(t, p, characters["E"], pos=VP.IY, gs=GS.DOUBLE)
-        draw_glyph(t, p, characters["J"], pos="cont", gs=GS.DOUBLE)
+        draw_glyph(t, p, characters["J"], pos=VP.CONT, gs=GS.DOUBLE)
 
 # %%
 for article in ["a", "the"]:

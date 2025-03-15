@@ -10,7 +10,6 @@ from glyphs import (
     PenAction,
     Point,
     PolarLine,
-    Position,
     RelCubicBezier,
     Rotation,
     VowelPosition,
@@ -40,9 +39,9 @@ class Turtle(Protocol):
 
     def forward(self, distance: float) -> None: ...
 
-    def jump_to(self, x: int, y: int) -> None: ...
+    def jump_to(self, x: float, y: float) -> None: ...
 
-    def move_to(self, x: int, y: int) -> None: ...
+    def move_to(self, x: float, y: float) -> None: ...
 
     def pen_up(self) -> None: ...
 
@@ -51,15 +50,15 @@ class Turtle(Protocol):
 
 @dataclass
 class Page:
-    vowel_area_height_px: int
-    current_glyph_height_px: int = 0
-    current_line_bottom_px: int = 0
-    current_line_left_px: int = 0
-    furthest_from_left_px: int = 0
-    furthest_from_top_px: int = 0
+    vowel_area_height_px: float
+    current_glyph_height_px: float = 0
+    current_line_bottom_px: float = 0
+    current_line_left_px: float = 0
+    furthest_from_left_px: float = 0
+    furthest_from_top_px: float = 0
 
 
-def calc_bezier(p1: Point, p2: Point, p3: Point, p4: Point, t: float) -> tuple[int, int]:
+def calc_bezier(p1: Point, p2: Point, p3: Point, p4: Point, t: float) -> tuple[float, float]:
     """
     Calculate a point on a cubic Bezier curve for a given parameter t.
 
@@ -112,7 +111,7 @@ def draw_cubic_bezier(turt: Turtle, page: Page, curve: RelCubicBezier) -> None:
         turt.move_to(x, y)
 
 
-def draw_forward(t: Turtle, p: Page, distance_px: int) -> None:
+def draw_forward(t: Turtle, p: Page, distance_px: float) -> None:
     p.furthest_from_left_px = max(p.furthest_from_left_px, t.x)
     p.furthest_from_top_px = max(p.furthest_from_top_px, t.y)
     t.forward(distance_px)
@@ -170,7 +169,7 @@ def find_box_corner(page: Page, vowel_pos: VowelPosition) -> Point:
     lb = page.current_line_bottom_px
     ll = page.current_line_left_px
     us = page.vowel_area_height_px
-    box_top_px = 0
+    box_top_px = 0.0
     match vowel_pos:
         case VowelPosition.AE:
             box_top_px = lb - us * 3
@@ -182,7 +181,7 @@ def find_box_corner(page: Page, vowel_pos: VowelPosition) -> Point:
 
 
 def draw_glyph(
-    t: Turtle, page: Page, glyph: Glyph, pos: Position, gs: GlyphSize = GlyphSize.SINGLE
+    t: Turtle, page: Page, glyph: Glyph, pos: VowelPosition, gs: GlyphSize = GlyphSize.SINGLE
 ) -> None:
     page.current_glyph_height_px = page.vowel_area_height_px * gs.value
     match pos:
@@ -213,13 +212,13 @@ def outline_vowel_areas(t: Turtle, p: Page) -> None:
 
 def advance_glyph(t: Turtle, page: Page) -> None:
     t.pen_up()
-    page.current_line_left_px = t.x + (page.vowel_area_height_px / 2)
+    page.current_line_left_px = t.x + page.vowel_area_height_px / 2
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()
 
 
 def advance_after_glyph(t: Turtle, page: Page) -> None:
     t.pen_up()
-    page.current_line_left_px = page.furthest_from_left_px + (page.vowel_area_height_px / 3)
+    page.current_line_left_px = page.furthest_from_left_px + page.vowel_area_height_px / 3
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()

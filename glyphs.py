@@ -1,12 +1,11 @@
 from dataclasses import dataclass
 from enum import Enum, auto
-from typing import Literal, Union
 
 
 @dataclass
 class Point:
-    y: int
-    x: int
+    y: float
+    x: float
 
 
 @dataclass
@@ -15,10 +14,10 @@ class RelPoint:
     rel_x: float  # positive is right, negative is left
 
 
-def find_rel_point(rel: RelPoint, ref_point: Point, unit_size_px: int) -> Point:
+def find_rel_point(rel: RelPoint, ref_point: Point, unit_size_px: float) -> Point:
     return Point(
-        y=ref_point.y + (unit_size_px * rel.rel_y),
-        x=ref_point.x + (unit_size_px * rel.rel_x),
+        y=ref_point.y + unit_size_px * rel.rel_y,
+        x=ref_point.x + unit_size_px * rel.rel_x,
     )
 
 
@@ -74,9 +73,7 @@ class VowelPosition(Enum):
     AE = "AE"
     IY = "IY"
     OU = "OU"
-
-
-Position = Union[Literal["cont"], VowelPosition]
+    CONT = "CONT"
 
 
 class Direction(Enum):
