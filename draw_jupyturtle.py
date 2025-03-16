@@ -16,15 +16,16 @@ def get_svg(t: jupyturtle.Turtle) -> str:
 class DrawingContext:
     """Context manager for creating and saving drawings."""
 
-    def __init__(self, output_path=None, unit_size=20):
+    def __init__(self, output_path=None, unit_size=20, drawing_width=180):
         self.output_path = output_path
         self.unit_size = unit_size
+        self.drawing_width = drawing_width
         self.page = None
         self.turtle = None
 
     def __enter__(self) -> tuple[Page, Turtle]:
         u = self.unit_size
-        drawing = jupyturtle.Drawing(width=180, height=u * 5)
+        drawing = jupyturtle.Drawing(width=self.drawing_width, height=u * 5)
         self.page = Page(
             vowel_area_height_px=u,
             current_line_bottom_px=(u * 3) + (u // 2),
@@ -34,8 +35,8 @@ class DrawingContext:
         return self.page, self.turtle
 
     def __exit__(self, exc_type, exc_val, exc_tb):
+        self.turtle.hide()
         if self.output_path:
-            self.turtle.hide()
             self.turtle.drawing.width = (
                 self.page.furthest_from_left_px + self.page.vowel_area_height_px
             )

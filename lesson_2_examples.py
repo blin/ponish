@@ -1,12 +1,9 @@
 # %%
-from jupyturtle.jupyturtle import Drawing, Turtle
-
 from draw import (
-    Page,
     advance_after_glyph,
     draw_glyph,
 )
-from draw_jupyturtle import get_svg
+from draw_jupyturtle import DrawingContext
 from glyphs import (
     VowelPosition,
     characters,
@@ -29,24 +26,17 @@ texts = [
     "P A ʃN",
 ]
 for i, text in list(enumerate(texts)):
-    next_pos = VowelPosition.OU
-    drawing = Drawing(width=180, height=80)
-    u = 20
-    p = Page(vowel_area_height_px=u, current_line_bottom_px=u + (u // 2), current_line_left_px=u)
-    t = Turtle(delay=0.00, drawing=drawing)
-    for c in text:
-        if c == " ":
-            advance_after_glyph(t, p)
-            next_pos = VowelPosition.OU
-            continue
+    next_pos = VowelPosition.AE
 
-        g = characters.get(c, None) or characters.get(c.upper(), None)
-        assert g, f"Character {c} not found in character list"
-        draw_glyph(t, p, g, pos=next_pos)
-        next_pos = VowelPosition.CONT
-    t.hide()
-    drawing.width = p.furthest_from_left_px + p.vowel_area_height_px
-    drawing.height = p.furthest_from_top_px + p.vowel_area_height_px
-    svg = get_svg(t)
-    with open(f"manual/lesson-2/example-{i + 1}.svg", "w") as f:
-        f.write(svg)
+    output_path = f"manual/lesson-2/example-{i + 1}.svg"
+    with DrawingContext(output_path=output_path) as (p, t):
+        for c in text:
+            if c == " ":
+                advance_after_glyph(t, p)
+                next_pos = VowelPosition.AE
+                continue
+
+            g = characters.get(c, None) or characters.get(c.upper(), None)
+            assert g, f"Character {c} not found in character list"
+            draw_glyph(t, p, g, pos=next_pos)
+            next_pos = VowelPosition.CONT

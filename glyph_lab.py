@@ -1,10 +1,8 @@
 # %%
-from jupyturtle.jupyturtle import Drawing, Turtle
-
 from draw import (
-    Page,
     draw_glyph,
 )
+from draw_jupyturtle import DrawingContext
 from glyphs import (
     Direction,
     Glyph,
@@ -25,9 +23,10 @@ g = Glyph(
     ],
 )
 
-drawing = Drawing(width=50, height=50)
-p = Page(vowel_area_height_px=20, current_line_bottom_px=30, current_line_left_px=10)
-t = Turtle(delay=0.00, drawing=drawing)
 
-draw_glyph(t, p, g, pos=VowelPosition.OU)
-t.hide()
+with DrawingContext() as (p, t):
+    p.vowel_area_height_px = 20
+    p.current_line_bottom_px = 30
+    p.current_line_left_px = 10
+
+    draw_glyph(t, p, g, pos=VowelPosition.OU)
