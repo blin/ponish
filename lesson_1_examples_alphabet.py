@@ -5,10 +5,10 @@ from draw import (
 from draw_jupyturtle import DrawingContext
 from glyphs import (
     VowelPosition,
-    characters,
+    glyphs,
 )
 
-for char_id, char in characters.items():
+for char_id, char in glyphs.items():
     output_path = f"manual/alphabet/{char_id}.svg"
     with DrawingContext(output_path=output_path, drawing_width=40) as (p, t):
         p.vowel_area_height_px = 20
