@@ -423,7 +423,7 @@ chars_with_curves["U"] = Glyph(
 
 
 chars_with_curves["TH"] = Glyph(
-    start_pos=RelPoint(rel_y=0.5, rel_x=1.0),
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.5),
     draw_actions=[
         Circle(
             rel_radius=0.5,
