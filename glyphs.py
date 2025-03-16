@@ -178,7 +178,7 @@ glyphs["M"] = Glyph(
 glyphs["N"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
     ],
 )
 

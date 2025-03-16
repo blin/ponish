@@ -1,7 +1,7 @@
 # %%
 from draw import (
     advance_after_glyph,
-    advance_glyph,
+    advance_after_word,
     draw_glyph,
 )
 from draw_jupyturtle import DrawingContext
@@ -23,7 +23,7 @@ for i, text in enumerate(texts):
     with DrawingContext(output_path=output_path, drawing_width=600) as (p, t):
         for c in text:
             if c == " ":
-                advance_glyph(t, p)
+                advance_after_word(t, p)
                 continue
 
             g = characters.get(c, None) or characters.get(c.upper(), None)

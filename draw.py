@@ -172,7 +172,7 @@ def find_box_corner(page: Page, vowel_pos: VowelPosition) -> Point:
     box_top_px = 0.0
     match vowel_pos:
         case VowelPosition.AE:
-            box_top_px = lb - us * 3
+            box_top_px = lb - (us * 2.5)
         case VowelPosition.IY:
             box_top_px = lb - us * 2
         case VowelPosition.OU:
@@ -210,15 +210,15 @@ def outline_vowel_areas(t: Turtle, p: Page) -> None:
     t.pen_color = c1
 
 
-def advance_glyph(t: Turtle, page: Page) -> None:
+def advance_after_glyph(t: Turtle, page: Page) -> None:
     t.pen_up()
-    page.current_line_left_px = t.x + page.vowel_area_height_px / 2
+    page.current_line_left_px = page.furthest_from_left_px + page.vowel_area_height_px / 3
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()
 
 
-def advance_after_glyph(t: Turtle, page: Page) -> None:
+def advance_after_word(t: Turtle, page: Page) -> None:
     t.pen_up()
-    page.current_line_left_px = page.furthest_from_left_px + page.vowel_area_height_px / 3
+    page.current_line_left_px = page.furthest_from_left_px + (page.vowel_area_height_px * 1.5)
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()
