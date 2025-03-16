@@ -3,7 +3,6 @@ import importlib
 
 import draw
 import glyphs
-from draw_jupyturtle import DrawingContext
 
 importlib.reload(glyphs)
 importlib.reload(draw)
@@ -16,6 +15,7 @@ from draw import (
     advance_after_glyph,
     draw_glyph,
 )
+from draw_jupyturtle import DrawingContext
 from glyphs import (
     GlyphSize,
     VowelPosition,

@@ -441,6 +441,62 @@ glyphs["SH"] = Glyph(
     ],
 )
 
+glyphs["B-R"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.2),
+        Circle(
+            rel_radius=0.5,
+            extent_deg=60,
+            rotation=Rotation.CW,
+            heading_deg=Direction.N.value,
+        ),
+    ],
+)
+
+glyphs["C-R"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.25),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.25),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+        Circle(
+            rel_radius=0.5,
+            extent_deg=75,
+            rotation=Rotation.CW,
+            heading_deg=Direction.N.value,
+        ),
+    ],
+)
+
+glyphs["F-R"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.25),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+        Circle(
+            rel_radius=0.5,
+            extent_deg=75,
+            rotation=Rotation.CW,
+            heading_deg=Direction.N.value,
+        ),
+    ],
+)
+
+glyphs["T-R"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.3),
+        Circle(
+            rel_radius=0.5,
+            extent_deg=60,
+            rotation=Rotation.CW,
+            heading_deg=Direction.NNE.value,
+        ),
+    ],
+)
+
 aliases: dict[str, Glyph] = dict()
 aliases["A"] = glyphs["A-two-legs"]
 aliases["ʧ"] = glyphs["CH"]

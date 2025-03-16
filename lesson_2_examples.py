@@ -1,4 +1,14 @@
 # %%
+import importlib
+
+import draw
+import glyphs
+
+importlib.reload(glyphs)
+importlib.reload(draw)
+# https://github.com/ipython/ipython/issues/12399
+# reloading draw first, then glyphs results in isinstance checks being broken
+
 from draw import (
     advance_after_glyph,
     draw_glyph,
@@ -10,21 +20,22 @@ from glyphs import (
 )
 
 texts = [
-    "B L U E",
-    "BL U E",
-    "B R E A K",
-    "BR E A K",
-    "S T A N D",
-    "ST A ND",
-    "S T R I K E",
-    "STR I K E",
-    "E N V I S I O N",
-    "E NV I ʃN",
-    "N A T I O N",
-    "N A ʃN",
-    "P A S S I O N",
-    "P A ʃN",
+    ["B", " ", "L", " ", "U", " ", "E"],
+    ["B", "L", " ", "U", " ", "E"],
+    ["B", " ", "R", " ", "E", " ", "A", " ", "K"],
+    ["B-R", " ", "E", " ", "A", " ", "K"],
+    ["S", " ", "T", " ", "A", " ", "N", " ", "D"],
+    ["S", "T", " ", "A", " ", "N", "D"],
+    ["S", " ", "T", " ", "R", " ", "I", " ", "K", " ", "E"],
+    ["S", "T-R", " ", "I", " ", "K", " ", "E"],
+    ["E", " ", "N", " ", "V", " ", "I", " ", "S", " ", "I", " ", "O", " ", "N"],
+    ["E", " ", "N", "V", " ", "I", " ", "ʃ", "N"],
+    ["N", " ", "A", " ", "T", " ", "I", " ", "O", " ", "N"],
+    ["N", " ", "A", " ", "ʃ", "N"],
+    ["P", " ", "A", " ", "S", " ", "S", " ", "I", " ", "O", " ", "N"],
+    ["P", " ", "A", " ", "ʃ", "N"],
 ]
+
 for i, text in list(enumerate(texts)):
     next_pos = VowelPosition.AE
 

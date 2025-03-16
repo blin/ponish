@@ -22,8 +22,6 @@ didn't lift the pen until the vowel came. Here, again, this time B and R:
 | ![](./lesson-2/example-3.svg)  | ![](./lesson-2/example-4.svg) |
 | ![](./original-images/009.png) | ![](./original-images/010.png) |
 
-EDITOR NOTE: BR is blended in the original, see TODO.md .
-
 | S-T-A-N-D | ST-A-ND |
 | --------- | ------- |
 | ![](./lesson-2/example-5.svg)  | ![](./lesson-2/example-6.svg) |
@@ -33,8 +31,6 @@ EDITOR NOTE: BR is blended in the original, see TODO.md .
 | ----------- | --------- |
 | ![](./lesson-2/example-7.svg)  | ![](./lesson-2/example-8.svg) |
 | ![](./original-images/013.png) | ![](./original-images/014.png) |
-
-EDITOR NOTE: TR is blended in the original, see TODO.md .
 
 | E-N-V-I-S-I-O-N | E-NV-I-SION |
 | --------------- | ----------- |
@@ -56,7 +52,6 @@ Other similar examples:
 | ----------- | -------- |
 | ![](./lesson-2/example-11.svg) | ![](./lesson-2/example-12.svg) |
 | ![](./original-images/017.png) | ![](./original-images/020.png) |
-
 
 | P-A-S-S-I-O-N | P-A-SSION |
 | ------------- | --------- |
@@ -149,8 +144,6 @@ so:
 ![](./original-images/026.png)
 
 TODO: cut original image into 2
-
-EDITOR NOTE: CR is blended in the original, see TODO.md .
 
 And if the final sound in a word is a vowel? Indicate it with a dot, like this:
 
