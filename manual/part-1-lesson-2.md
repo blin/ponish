@@ -10,7 +10,8 @@ one letter from the ending of its predecessor. Like so:
 
 | B-L-U-E | BL-U-E |
 | ------- | ------ |
-| ![](./lesson-2/example-1.svg) | ![](./lesson-2/example-2.svg) |
+| ![](./lesson-2/example-1.svg)  | ![](./lesson-2/example-2.svg) |
+| ![](./original-images/007.png) | ![](./original-images/008.png) |
 
 
 Notice how the B and L have been combined into a single character? Because we
@@ -18,23 +19,27 @@ didn't lift the pen until the vowel came. Here, again, this time B and R:
 
 | B-R-E-A-K | BR-E-A-K |
 | --------- | -------- |
-| ![](./lesson-2/example-3.svg) | ![](./lesson-2/example-4.svg) |
+| ![](./lesson-2/example-3.svg)  | ![](./lesson-2/example-4.svg) |
+| ![](./original-images/009.png) | ![](./original-images/010.png) |
 
 EDITOR NOTE: BR is blended in the original, see TODO.md .
 
 | S-T-A-N-D | ST-A-ND |
 | --------- | ------- |
-| ![](./lesson-2/example-5.svg) | ![](./lesson-2/example-6.svg) |
+| ![](./lesson-2/example-5.svg)  | ![](./lesson-2/example-6.svg) |
+| ![](./original-images/011.png) | ![](./original-images/012.png) |
 
 | S-T-R-I-K-E | STR-I-K-E |
 | ----------- | --------- |
-| ![](./lesson-2/example-7.svg) | ![](./lesson-2/example-8.svg) |
+| ![](./lesson-2/example-7.svg)  | ![](./lesson-2/example-8.svg) |
+| ![](./original-images/013.png) | ![](./original-images/014.png) |
 
 EDITOR NOTE: TR is blended in the original, see TODO.md .
 
 | E-N-V-I-S-I-O-N | E-NV-I-SION |
 | --------------- | ----------- |
 | ![](./lesson-2/example-9.svg) | ![](./lesson-2/example-10.svg) |
+| ![](./original-images/015.png) | ![](./original-images/016.png) |
 
 Woah! What happened with this one? Well, this is an example of both the
 unfortunate disconnect between English spelling, and pronunciation (GHOTI,
@@ -50,10 +55,13 @@ Other similar examples:
 | N-A-T-I-O-N | N-A-TION |
 | ----------- | -------- |
 | ![](./lesson-2/example-11.svg) | ![](./lesson-2/example-12.svg) |
+| ![](./original-images/017.png) | ![](./original-images/020.png) |
+
 
 | P-A-S-S-I-O-N | P-A-SSION |
 | ------------- | --------- |
 | ![](./lesson-2/example-13.svg) | ![](./lesson-2/example-14.svg) |
+| ![](./original-images/018.png) | ![](./original-images/019.png) |
 
 Written by sound, not 'spelling.' Cool, hunh? And practical. I did include some
 silent letters, which I normally wouldn't have done, for the sake of clarity,
@@ -63,7 +71,7 @@ Moving right along to the second part of the lesson : letter placement. It
 matters! You see, in Ponish, the line of writing can be divided up into 3 areas
 like so:
 
-WARNING: image is missing
+![](./original-images/021.png)
 
 TODO: line of writing
 
@@ -81,14 +89,20 @@ anchor, then the next consonant, G with its top even with the A/E line:
 
 ![](./lesson-2/example-b-AE-g.svg)
 
+![](./original-images/022.png)
+
 This can also mean beg, of course, but context will tell you which you mean. If
 you write the G along the I/Y line, you instead write the word 'big:'
 
 ![](./lesson-2/example-b-IY-g.svg)
 
+![](./original-images/023.png)
+
 And if you write the G with the O/U line, you produce both 'bog,' and 'bug:'
 
 ![](./lesson-2/example-b-OU-g.svg)
+
+![](./original-images/024.png)
 
 As before, context will be your guide; 'there's a bug in my rice,' vs. 'there's
 a bog in my rice;' one makes sense, the other doesn't. For those instances where
@@ -115,6 +129,10 @@ Here are some more examples of line-position vowels in action:
 | --- | --- | ---- |
 | ![](./lesson-2/example-l-AE-p.svg) | ![](./lesson-2/example-l-IY-p.svg) | ![](./lesson-2/example-l-OU-p.svg) |
 
+![](./original-images/025.png)
+
+TODO: cut original image into 3
+
 But what if it's a dipthong, i.e. if the next discernible sound is also a vowel?
 No problem, just write the second vowel in the line-position of the first, like
 so:
@@ -128,6 +146,10 @@ so:
 | ----- | ------ |
 | ![](./lesson-2/example-crate.svg) | ![](./lesson-2/example-create.svg) |
 
+![](./original-images/026.png)
+
+TODO: cut original image into 2
+
 EDITOR NOTE: CR is blended in the original, see TODO.md .
 
 And if the final sound in a word is a vowel? Indicate it with a dot, like this:
@@ -140,6 +162,10 @@ And if the final sound in a word is a vowel? Indicate it with a dot, like this:
 | --- | ---- | --- |
 | ![](./lesson-2/example-s-AE-end-vowel-dot.svg) | ![](./lesson-2/example-s-IY-end-vowel-dot.svg) | ![](./lesson-2/example-s-OU-end-vowel-dot.svg) |
 
+![](./original-images/027.png)
+
+TODO: cut original image into 2
+
 What if it starts with a vowel? Write it, then proceed as normal:
 
 | EGG |
@@ -149,6 +175,10 @@ What if it starts with a vowel? Write it, then proceed as normal:
 | OVEN |
 | ---- |
 | ![](./lesson-2/example-oven.svg) |
+
+![](./original-images/028.png)
+
+TODO: cut original image into 2
 
 **The third, and final refinement** we're going to introduce in this lesson is also
 the simplest, thank Celestia. After all this, you're probably glad to hear it.
@@ -190,6 +220,10 @@ corner, it stands for 'the,' like so:
 | ---- | ----- |
 | ![](./lesson-2/example-a-buffalo.svg) | ![](./lesson-2/example-the-buffalo.svg) |
 
+![](./original-images/029.png)
+
+TODO: cut original image into 6
+
 Did you know those are the most commonly written words? Well they are. Think of
 how many times you use them, and by reducing them to mere dots, think of all the
 writing we are saving: 6 strokes for 'the,' 4 strokes for 'an,' and 2 strokes
@@ -228,6 +262,10 @@ example sentences:
 | --- | ---- | ----- | --- |
 | ![](./lesson-2/example-and.svg) | ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-necessary.svg) |
 
+![](./original-images/030.png)
+
+TODO: cut original image into 2
+
 ---
 
 | The rewards | of | tolerance | are |
@@ -237,6 +275,8 @@ example sentences:
 | treachery | and | betrayal |
 | --- | --- | --- |
 | ![](./lesson-2/example-treachery.svg) | ![](./lesson-2/example-and.svg) | ![](./lesson-2/example-betrayal.svg) |
+
+![](./original-images/031.png)
 
 You should also notice that the 'A' in 'Armor,' 'Are,' and 'And,' are written
 with a single stroke. This is done when the A leads into another letter so as to
@@ -264,7 +304,7 @@ aren't even through with the lessons yet!
 While you're reading, keep in mind: no wrong spelling , and sound, not spelling
 .
 
-WARNING: image is missing
+![](./original-images/032.png)
 
 Ready for the answer? Here you go:
 

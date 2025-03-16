@@ -6,25 +6,16 @@ we here on Earth would write with digraphs, namely 'TH,' 'SH,' and 'CH.' Please
 note that the letters themselves are more streamlined than their Latin
 counterparts; A, for example has 3 strokes, like so, on the far left:
 
-WARNING: image is missing. The image depcits a classic block way of writing "A"
-and two Ponish ways of writing "A".
+![](./original-images/001.png)
 
-1. two strokes forming a "hat" `^` with the third stroke joining the "legs" of
-   the hat.
-2. two strokes forming just a "hat" `^`
-3. one stroke forming left "leg" of a "hat" `^`
+TODO: Alphabet drawing with stroke direction arrows
 
 But in Ponish, the 2 figures to its right, it is written with only 2 strokes, or
 even 1.
 
 B, as well requires 3, but in Ponish, only 1. Observe:
 
-WARNING: image is missing. The image depcits a classic block way of writing "B"
-and the Ponish ways of writing "B".
-
-1. downward stroke forming the `|` "back" of "B" with two arcs forming the
-   "bowls"
-2. downward stroke forming the `|` "back" of "B"
+![](./original-images/002.png)
 
 And those aren't the only ones which are different. In fact, the entire alphabet
 is designed with efficiency in mind. Why? Because fewer strokes means less
@@ -65,6 +56,10 @@ how much writing is being saved with just a new alphabet.
 | SH        | ![SH](./alphabet/SH.svg)                                          |
 | TH        | ![TH](./alphabet/TH.svg)                                          |
 | CH        | ![CH](./alphabet/CH.svg)                                          |
+
+TODO: transpose the table to match the original format
+
+![](./original-images/003.png)
 
 You notice that A has 2 ways it can be written. This will be explained later,
 but the important thing to keep in mind now, and always, is that each way is
@@ -115,17 +110,23 @@ The quick cute unicorn jumped over the lazy gryphon.
 
 ![example-2](./lesson-1/example-2.svg)
 
+![](./original-images/004.png)
+
 The vexed pegasus flew high, and shat on the land-bound Hydra.
 
 ![example-3](./lesson-1/example-3.svg)
 
 ![example-4](./lesson-1/example-4.svg)
 
+![](./original-images/005.png)
+
 The cheery and dutiful earth pony's pie won first place!
 
 ![example-5](./lesson-1/example-5.svg)
 
 ![example-6](./lesson-1/example-6.svg)
+
+![](./original-images/006.png)
 
 All 29 letters are demonstrated above. If you choose to stop your study here,
 you are missing out, but will still possess a writing method marginally faster
