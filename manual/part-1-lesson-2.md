@@ -297,11 +297,17 @@ aren't even through with the lessons yet!
 While you're reading, keep in mind: no wrong spelling , and sound, not spelling .
 
 ![](./lesson-2/passage-1-line-1.svg)
+![](./original-images/conan-line-1.png)
 ![](./lesson-2/passage-1-line-2.svg)
+![](./original-images/conan-line-2.png)
 ![](./lesson-2/passage-1-line-3.svg)
+![](./original-images/conan-line-3.png)
 ![](./lesson-2/passage-1-line-4.svg)
+![](./original-images/conan-line-4.png)
 ![](./lesson-2/passage-1-line-5.svg)
+![](./original-images/conan-line-5.png)
 ![](./lesson-2/passage-1-line-6.svg)
+![](./original-images/conan-line-6.png)
 
 TODO: the/a
 
@@ -312,8 +318,6 @@ TODO: AN in "and" and "an" is a "blend"
 TODO: AJ in "age" is a "blend"
 
 TODO: DR in "undreamed" is a blend
-
-![](./original-images/032.png)
 
 Ready for the answer? Here you go:
 

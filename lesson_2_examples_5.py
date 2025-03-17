@@ -37,9 +37,9 @@ text = [
     "Betwen tims wen oʃns drank Atlantis and riz of",
     "sons of Aryas ðr was an aj undremd of And",
     "unto ðis Conan Destind to ber juld crown of",
-    "Aquilonia upon troubled brow It is I his",
-    "chronicler wo alone can tel ðe of his saga",
-    "Let me tell you of days of high adventure",
+    "Aquilonia upon trobld brow It is I his",
+    "cronicler wo alone kan tel ðe of his saga",
+    "Let me tel y of dys of hi adventure",
 ]
 
 
@@ -55,6 +55,7 @@ text = [
 vowels = ["A", "E", "I", "O", "U", "Y"]
 # "N" is tricky, the length varies depending on vowel area positioning
 # and surrounding characters
+
 
 def draw_word(
     t: Turtle,
