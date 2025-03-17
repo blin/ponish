@@ -294,8 +294,24 @@ the Earthographic, and Ponish passages; the difference is significant, isn't it?
 Imagine how much time, and space you'll be saving writing this way, and we
 aren't even through with the lessons yet!
 
-While you're reading, keep in mind: no wrong spelling , and sound, not spelling
-.
+While you're reading, keep in mind: no wrong spelling , and sound, not spelling .
+
+![](./lesson-2/passage-1-line-1.svg)
+![](./lesson-2/passage-1-line-2.svg)
+![](./lesson-2/passage-1-line-3.svg)
+![](./lesson-2/passage-1-line-4.svg)
+![](./lesson-2/passage-1-line-5.svg)
+![](./lesson-2/passage-1-line-6.svg)
+
+TODO: the/a
+
+TODO: AR and AS in "aryas" are "blends"
+
+TODO: AN in "and" and "an" is a "blend"
+
+TODO: AJ in "age" is a "blend"
+
+TODO: DR in "undreamed" is a blend
 
 ![](./original-images/032.png)
 
