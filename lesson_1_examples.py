@@ -15,7 +15,7 @@ texts = [
     "over ðe lazy gryphon",
     "ðe vexed pegasus flew high",
     "and ʃat on ðe land bound Hydra",
-    "ðe ʧeery and dutiful earth ponys",
+    "ðe ʧeery and dutiful earð ponys",
     "pie won first place",
 ]
 for i, text in enumerate(texts):

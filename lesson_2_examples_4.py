@@ -82,7 +82,7 @@ with DrawingContext(output_path=dir / f"example-sword.svg") as (p, t):
 with DrawingContext(output_path=dir / f"example-hatred.svg") as (p, t):
     draw_glyph(t, p, characters["H"], pos=VP.IY, gs=GS.DOUBLE)
     advance_after_glyph(t, p)
-    draw_glyph(t, p, characters["T-R"], pos=VP.AE)
+    draw_glyph(t, p, characters["TR"], pos=VP.AE)
     advance_after_glyph(t, p)
     draw_glyph(t, p, characters["D"], pos=VP.AE)
 
@@ -101,7 +101,7 @@ with DrawingContext(output_path=dir / f"example-no.svg") as (p, t):
 with DrawingContext(output_path=dir / f"example-difference.svg") as (p, t):
     draw_glyph(t, p, characters["D"], pos=VP.IY, gs=GS.DOUBLE)
     advance_after_glyph(t, p)
-    draw_glyph(t, p, characters["F-R"], pos=VP.IY, gs=GS.DOUBLE)
+    draw_glyph(t, p, characters["FR"], pos=VP.IY, gs=GS.DOUBLE)
     advance_after_glyph(t, p)
     draw_glyph(t, p, characters["N"], pos=VP.AE)
     draw_glyph(t, p, characters["S"], pos=VP.CONT)
@@ -180,7 +180,7 @@ with DrawingContext(output_path=dir / f"example-are.svg") as (p, t):
 
 # %%
 with DrawingContext(output_path=dir / f"example-treachery.svg") as (p, t):
-    draw_glyph(t, p, characters["T-R"], pos=VP.IY, gs=GS.DOUBLE)
+    draw_glyph(t, p, characters["TR"], pos=VP.IY, gs=GS.DOUBLE)
     advance_after_glyph(t, p)
     draw_glyph(t, p, characters["CH"], pos=VP.AE)
     advance_after_glyph(t, p)
@@ -192,7 +192,7 @@ with DrawingContext(output_path=dir / f"example-treachery.svg") as (p, t):
 with DrawingContext(output_path=dir / f"example-betrayal.svg") as (p, t):
     draw_glyph(t, p, characters["B"], pos=VP.IY, gs=GS.DOUBLE)
     advance_after_glyph(t, p)
-    draw_glyph(t, p, characters["T-R"], pos=VP.AE)
+    draw_glyph(t, p, characters["TR"], pos=VP.AE)
     advance_after_glyph(t, p)
     draw_glyph(t, p, characters["Y"], pos=VP.AE)
     advance_after_glyph(t, p)

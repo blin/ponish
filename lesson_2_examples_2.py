@@ -52,12 +52,12 @@ with DrawingContext(output_path=dir / f"example-pound.svg") as (p, t):
 
 # %%
 with DrawingContext(output_path=dir / f"example-crate.svg") as (p, t):
-    draw_glyph(t, p, characters["C-R"], pos=VP.IY, gs=GS.DOUBLE)
+    draw_glyph(t, p, characters["CR"], pos=VP.IY, gs=GS.DOUBLE)
     advance_after_glyph(t, p)
     draw_glyph(t, p, characters["T"], pos=VP.AE)
 
 with DrawingContext(output_path=dir / f"example-create.svg") as (p, t):
-    draw_glyph(t, p, characters["C-R"], pos=VP.IY, gs=GS.DOUBLE)
+    draw_glyph(t, p, characters["CR"], pos=VP.IY, gs=GS.DOUBLE)
     advance_after_glyph(t, p)
     draw_glyph(t, p, characters["A"], pos=VP.AE)
     draw_glyph(t, p, characters["T"], pos=VP.CONT)

@@ -238,7 +238,8 @@ glyphs["Z"] = Glyph(
 )
 
 
-glyphs["CH"] = Glyph(
+# CH - https://en.wikipedia.org/wiki/Voiceless_postalveolar_affricate
+glyphs["ʧ"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.7),
@@ -417,7 +418,8 @@ glyphs["U"] = Glyph(
 )
 
 
-glyphs["TH"] = Glyph(
+# TH - https://en.wikipedia.org/wiki/Voiced_dental_fricative
+glyphs["ð"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.5),
     draw_actions=[
         Circle(
@@ -429,7 +431,8 @@ glyphs["TH"] = Glyph(
     ],
 )
 
-glyphs["SH"] = Glyph(
+# SH - https://en.wikipedia.org/wiki/Voiceless_postalveolar_fricative
+glyphs["ʃ"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
@@ -441,7 +444,15 @@ glyphs["SH"] = Glyph(
     ],
 )
 
-glyphs["B-R"] = Glyph(
+aliases: dict[str, Glyph] = dict()
+aliases["A"] = glyphs["A-two-legs"]
+aliases["CH"] = glyphs["ʧ"]
+aliases["TH"] = glyphs["ð"]
+aliases["SH"] = glyphs["ʃ"]
+
+blends: dict[str, Glyph] = dict()
+
+blends["BR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
@@ -455,7 +466,7 @@ glyphs["B-R"] = Glyph(
     ],
 )
 
-glyphs["C-R"] = Glyph(
+blends["CR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.25),
     draw_actions=[
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.25),
@@ -469,7 +480,25 @@ glyphs["C-R"] = Glyph(
     ],
 )
 
-glyphs["F-R"] = Glyph(
+blends["DR"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    draw_actions=[
+        Circle(
+            rel_radius=0.5,
+            extent_deg=180,
+            rotation=Rotation.CW,
+            heading_deg=Direction.E.value,
+        ),
+        Circle(
+            rel_radius=0.5,
+            extent_deg=75,
+            rotation=Rotation.CW,
+            heading_deg=Direction.NE.value,
+        ),
+    ],
+)
+
+blends["FR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.25),
@@ -483,7 +512,7 @@ glyphs["F-R"] = Glyph(
     ],
 )
 
-glyphs["T-R"] = Glyph(
+blends["TR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
     draw_actions=[
         PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),
@@ -497,10 +526,5 @@ glyphs["T-R"] = Glyph(
     ],
 )
 
-aliases: dict[str, Glyph] = dict()
-aliases["A"] = glyphs["A-two-legs"]
-aliases["ʧ"] = glyphs["CH"]
-aliases["ð"] = glyphs["TH"]
-aliases["ʃ"] = glyphs["SH"]
 
-characters: dict[str, Glyph] = {**glyphs, **aliases}
+characters: dict[str, Glyph] = {**glyphs, **aliases, **blends}
