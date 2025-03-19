@@ -34,7 +34,7 @@ dir = Path("manual/lesson-2")
 dir.mkdir(parents=True, exist_ok=True)
 
 text = [
-    "Betwen tims wen oʃns drank Atlantis and riz of",
+    "Betwen tims wen oʃns $(DR)ank Atlantis and riz of",
     "sons of Aryas ðr was an aj undremd of And",
     "unto ðis Conan Destind to ber juld crown of",
     "Aquilonia upon trobld brow It is I his",
@@ -57,35 +57,50 @@ vowels = ["A", "E", "I", "O", "U", "Y"]
 # and surrounding characters
 
 
+def gid_at(word: str, idx: int) -> str:
+    subword = word[idx:]
+    assert len(subword) > 0, f"id_at({word=}, {idx=}), empty subword"
+    if len(subword) > 3 and subword[0] == "$" and subword[1] == "(":
+        rb = subword.find(")")
+        if rb == -1:
+            raise ValueError(f"unterminated $() sequence in {word=}")
+        gid = subword[2:rb]
+        return gid, len(gid) + 3
+    return subword[0], 1
+
+
 def draw_word(
     t: Turtle,
     p: Page,
     word: str,
 ):
-    gq = list(word)
+    word_pos = 0
 
     gpos = VP.IY
     gs = GS.DOUBLE
     first_g = True
     consecutive_vowels = 0
 
-    while len(gq) > 0:
-        gid = gq.pop(0)
+    while word_pos < len(word):
+        gid, advance = gid_at(word, word_pos)
+        word_pos += advance
+
         gid_up = gid.upper()
         g = characters.get(gid, None) or characters.get(gid.upper(), None)
         assert g, f"Character {gid} not found in character list"
 
         g_is_vowel = gid_up in vowels
-        g_is_last = len(gq) == 0  # TODO: use for vowel-end-dot
+        g_is_last = word_pos >= len(word)  # TODO: use for vowel-end-dot
         consecutive_vowels = consecutive_vowels + 1 if g_is_vowel else 0
 
         next_gid_is_vowel = False
-        if len(gq) > 0:
-            next_gid = gq[0]
+        next_gid_advance = 0
+        if word_pos < len(word):
+            next_gid, next_gid_advance = gid_at(word, word_pos)
             if next_gid.upper() in vowels:
                 next_gid_is_vowel = True
         next_gid_is_last = False
-        if len(gq) == 1:
+        if word_pos + next_gid_advance >= len(word):
             next_gid_is_last = True
 
         if first_g:
