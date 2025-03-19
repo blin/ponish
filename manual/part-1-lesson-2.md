@@ -298,6 +298,10 @@ While you're reading, keep in mind: no wrong spelling , and sound, not spelling 
 
 ![](./lesson-2/passage-1-line-1.svg)
 ![](./original-images/conan-line-1.png)
+
+EDITOR NOTE: "AT" in "Atlantis" is single-size since the last stroke is downward
+and next character is a consonant.
+
 ![](./lesson-2/passage-1-line-2.svg)
 ![](./original-images/conan-line-2.png)
 ![](./lesson-2/passage-1-line-3.svg)
@@ -335,3 +339,8 @@ clumsy. The 2 skills will not grow up together unless you practice them
 together. You need to both read, and write, so practice both reading, and
 writing. I would not have taken the time to write this paragraph if I did not
 think it important, so please, take it to heart, and practice both skills.
+
+
+### Editor notes on lesson 2 passage
+
+TODO: move EDITOR NOTES here to avoid spoilers

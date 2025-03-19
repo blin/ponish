@@ -32,13 +32,16 @@ class DrawingContext:
 
     def __enter__(self) -> tuple[Page, Turtle]:
         u = self.unit_size
-        drawing = jupyturtle.Drawing(width=self.drawing_width, height=self.drawing_height)
+        drawing = jupyturtle.Drawing(
+            width=self.drawing_width, height=self.drawing_height, bgcolor="#FFFFFF"
+        )
         self.page = Page(
             vowel_area_height_px=u,
             current_line_bottom_px=(u * 3) + (u // 2),
             current_line_left_px=u,
         )
         self.turtle = jupyturtle.Turtle(delay=0.00, drawing=drawing)
+        self.turtle.pen_color = "#000000"
         return self.page, self.turtle
 
     def __exit__(self, exc_type, exc_val, exc_tb):
