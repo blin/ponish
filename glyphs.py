@@ -452,6 +452,88 @@ aliases["SH"] = glyphs["ʃ"]
 
 blends: dict[str, Glyph] = dict()
 
+
+blends["AD"] = Glyph(
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
+        Circle(
+            rel_radius=0.5,
+            extent_deg=180,
+            rotation=Rotation.CW,
+            heading_deg=Direction.E.value,
+        ),
+    ],
+)
+
+blends["AJ"] = Glyph(
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+    ],
+)
+
+blends["AN"] = Glyph(
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
+    ],
+)
+
+blends["AR"] = Glyph(
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.3),
+        Circle(
+            rel_radius=0.5,
+            extent_deg=75,
+            rotation=Rotation.CW,
+            heading_deg=Direction.N.value,
+        ),
+    ],
+)
+
+blends["AS"] = Glyph(
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.75),
+        Circle(
+            rel_radius=0.1,
+            extent_deg=360,
+            rotation=Rotation.CCW,
+            heading_deg=Direction.SE.value,
+        ),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
+    ],
+)
+
+blends["AT"] = Glyph(
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.NE.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),
+    ],
+)
+
+blends["AQ"] = Glyph(
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.75),
+        Circle(
+            rel_radius=0.1,
+            extent_deg=360,
+            rotation=Rotation.CW,
+            heading_deg=Direction.S.value,
+        ),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
+    ],
+)
+
 blends["BR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
@@ -522,6 +604,20 @@ blends["TR"] = Glyph(
             extent_deg=60,
             rotation=Rotation.CW,
             heading_deg=Direction.NNE.value,
+        ),
+    ],
+)
+
+blends["ʧR"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.7),
+        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.7),
+        Circle(
+            rel_radius=0.5,
+            extent_deg=75,
+            rotation=Rotation.CW,
+            heading_deg=Direction.NE.value,
         ),
     ],
 )

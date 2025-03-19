@@ -34,12 +34,12 @@ dir = Path("manual/lesson-2")
 dir.mkdir(parents=True, exist_ok=True)
 
 text = [
-    "Betwen tims wen oʃns $(DR)ank Atlantis and riz of",
-    "sons of Aryas ðr was an aj undremd of And",
+    "Betwen tims wen oʃns $(DR)ank $(AT)lantis $(AN)d riz of",
+    "sons of $(AR)y$(AS) ðr was $(AN) $(AJ) un$(DR)emd of $(AN)d",
     "unto ðis Conan Destind to ber juld crown of",
-    "Aquilonia upon trobld brow It is I his",
+    "$(AQ)ilonia upon $(TR)obld brow It is I his",
     "cronicler wo alone kan tel ðe of his saga",
-    "Let me tel y of dys of hi adventure",
+    "Let me tel y of des of hi $(AD)ven$(ʧR)e",
 ]
 
 

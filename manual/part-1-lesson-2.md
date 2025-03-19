@@ -299,29 +299,35 @@ While you're reading, keep in mind: no wrong spelling , and sound, not spelling 
 ![](./lesson-2/passage-1-line-1.svg)
 ![](./original-images/conan-line-1.png)
 
-EDITOR NOTE: "AT" in "Atlantis" is single-size since the last stroke is downward
-and next character is a consonant.
+EDITOR NOTE [single-size-downward]: "AT" in "Atlantis" is single-size
+since the last stroke is downward and next character is a consonant.
 
-![](./lesson-2/passage-1-line-2.svg)
-![](./original-images/conan-line-2.png)
-![](./lesson-2/passage-1-line-3.svg)
-![](./original-images/conan-line-3.png)
-![](./lesson-2/passage-1-line-4.svg)
-![](./original-images/conan-line-4.png)
-![](./lesson-2/passage-1-line-5.svg)
-![](./original-images/conan-line-5.png)
-![](./lesson-2/passage-1-line-6.svg)
-![](./original-images/conan-line-6.png)
+TODO [double-size-upward]: AN blend ends in top-right corner, so the overall glyph can be double-sized
 
 TODO: the/a
 
-TODO: AR and AS in "aryas" are "blends"
+![](./lesson-2/passage-1-line-2.svg)
+![](./original-images/conan-line-2.png)
 
-TODO: AN in "and" and "an" is a "blend"
+EDITOR NOTE [single-size-downward]: "AJ" in "age"
 
-TODO: AJ in "age" is a "blend"
+TODO [double-size-upward]: U into N
 
-TODO: DR in "undreamed" is a blend
+![](./lesson-2/passage-1-line-3.svg)
+![](./original-images/conan-line-3.png)
+
+TODO: punctuation
+
+![](./lesson-2/passage-1-line-4.svg)
+![](./original-images/conan-line-4.png)
+
+TODO: single vowel should be double-size
+
+![](./lesson-2/passage-1-line-5.svg)
+![](./original-images/conan-line-5.png)
+
+![](./lesson-2/passage-1-line-6.svg)
+![](./original-images/conan-line-6.png)
 
 Ready for the answer? Here you go:
 
