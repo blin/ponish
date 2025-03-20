@@ -248,6 +248,14 @@ def gid_at(word: str, idx: int) -> tuple[str, int]:
 vowels = ["A", "E", "I", "O", "U", "Y"]
 
 
+# TODO: introduce a concept of syllables,
+# groups of glyphs drawn without "lifting the pen".
+# Note that this concept will be different from
+# the linguistic concept of a syllable.
+# Example: ignite -> ign-t
+# Example: dog -> d-g
+
+
 def draw_word(
     t: Turtle,
     p: Page,
@@ -313,3 +321,35 @@ def draw_word(
         draw_glyph(t, p, g, pos=gpos, gs=gs)
         gpos = VowelPosition.CONT
         gs = GlyphSize.SINGLE
+
+
+def draw_article(
+    t: Turtle,
+    p: Page,
+    # TODO: figure out literal
+    article: str,
+):
+    pass
+    article_pos = VowelPosition.OU if article == "the" else VowelPosition.AE
+    draw_glyph(t, p, all_glyphs["article-dot"], pos=article_pos)
+    advance_after_glyph(t, p)
+
+
+def draw_sentence(
+    t: Turtle,
+    p: Page,
+    sentence: str,
+):
+    # NOTE: sentence is a single drawing line, rather than an actual sentence
+    words = sentence.split(" ")
+    sentence_pos = 0
+    while sentence_pos < len(words):
+        word = words[sentence_pos]
+        sentence_pos += 1
+        word_is_last = sentence_pos >= len(words)
+        if word in ["a", "an", "the"] and not word_is_last:
+            draw_article(t, p, word)
+            continue
+
+        draw_word(t, p, word)
+        advance_after_word(t, p)

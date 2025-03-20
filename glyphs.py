@@ -251,7 +251,7 @@ letters["end-vowel-dot"] = Glyph(
 )
 
 letters["article-dot"] = Glyph(
-    start_pos=RelPoint(rel_y=1.0, rel_x=1.0),
+    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.01),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.01),

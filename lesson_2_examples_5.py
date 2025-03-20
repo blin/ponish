@@ -11,19 +11,19 @@ importlib.reload(draw)
 
 from pathlib import Path
 
-from draw import advance_after_word, draw_word
+from draw import draw_sentence
 from draw_jupyturtle import DrawingContext
 
 dir = Path("manual/lesson-2")
 dir.mkdir(parents=True, exist_ok=True)
 
 text = [
-    "Betwen tims wen oʃns $(DR)ank $(AT)lantis $(AN)d riz of",
-    "sons of $(AR)y$(AS) ðr was $(AN) $(AJ) un$(DR)emd of $(AN)d",
-    "unto ðis Conan Destind to ber juld crown of",
-    "$(AQ)ilonia upon $(TR)obld brow It is I his",
+    "Betwen the tims wen the oʃns $(DR)ank $(AT)lantis $(AN)d the riz of",
+    "the sons of $(AR)y$(AS) ðr was $(AN) $(AJ) un$(DR)emd of $(AN)d",
+    "unto ðis Conan Destind to ber the juld crown of",
+    "$(AQ)ilonia upon a $(TR)obld brow It is I his",
     "cronicler wo alone kan tel ðe of his saga",
-    "Let me tel y of des of hi $(AD)ven$(ʧR)e",
+    "Let me tel y of the des of hi $(AD)ven$(ʧR)e",
 ]
 for i, line in list(enumerate(text)):
     dc = DrawingContext(
@@ -32,7 +32,4 @@ for i, line in list(enumerate(text)):
         drawing_height=150,
     )
     with dc as (p, t):
-        wq = line.split(" ")
-        for word in line.split():
-            draw_word(t, p, word)
-            advance_after_word(t, p)
+        draw_sentence(t, p, line)

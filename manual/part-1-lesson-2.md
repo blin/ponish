@@ -199,7 +199,7 @@ corner, it stands for 'the,' like so:
 | ![](./lesson-2/example-a-starship.svg) | ![](./lesson-2/example-the-starship.svg) |
 
 
-| a orange | the orange |
+| an orange | the orange |
 | ---- | ----- |
 | ![](./lesson-2/example-a-orange.svg) | ![](./lesson-2/example-the-orange.svg) |
 
@@ -304,8 +304,6 @@ since the last stroke is downward and next character is a consonant.
 
 TODO [double-size-upward]: AN blend ends in top-right corner, so the overall glyph can be double-sized
 
-TODO: the/a
-
 ![](./lesson-2/passage-1-line-2.svg)
 ![](./original-images/conan-line-2.png)
 
@@ -317,6 +315,8 @@ TODO [double-size-upward]: U into N
 ![](./original-images/conan-line-3.png)
 
 TODO: punctuation
+
+TODO: end vowel
 
 ![](./lesson-2/passage-1-line-4.svg)
 ![](./original-images/conan-line-4.png)
