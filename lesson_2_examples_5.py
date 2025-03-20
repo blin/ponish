@@ -11,24 +11,12 @@ importlib.reload(draw)
 
 from pathlib import Path
 
-from draw import (
-    Page,
-    Turtle,
-    advance_after_glyph,
-    advance_after_word,
-    draw_glyph,
-)
+from draw import Page, Turtle, advance_after_glyph, advance_after_word, draw_glyph
 from draw_jupyturtle import DrawingContext
-from glyphs import (
-    Glyph,
-    characters,
-)
-from glyphs import (
-    GlyphSize as GS,
-)
-from glyphs import (
-    VowelPosition as VP,
-)
+from glyphs import Glyph
+from glyphs import GlyphSize as GS
+from glyphs import VowelPosition as VP
+from glyphs import all as all_glyphs
 
 dir = Path("manual/lesson-2")
 dir.mkdir(parents=True, exist_ok=True)
@@ -54,7 +42,7 @@ text = [
 # But A is a raising character, so there is space to continue downward.
 vowels = ["A", "E", "I", "O", "U", "Y"]
 # "N" is tricky, the length varies depending on vowel area positioning
-# and surrounding characters
+# and surrounding all_glyphs
 
 
 def gid_at(word: str, idx: int) -> tuple[str, int]:
@@ -86,7 +74,7 @@ def draw_word(
         word_pos += advance
 
         gid_up = gid.upper()
-        g = characters.get(gid, None) or characters.get(gid.upper(), None)
+        g = all_glyphs.get(gid, None) or all_glyphs.get(gid.upper(), None)
         assert g, f"Character {gid} not found in character list"
 
         g_is_vowel = gid_up in vowels

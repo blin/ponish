@@ -9,15 +9,10 @@ importlib.reload(draw)
 # https://github.com/ipython/ipython/issues/12399
 # reloading draw first, then glyphs results in isinstance checks being broken
 
-from draw import (
-    advance_after_glyph,
-    draw_glyph,
-)
+from draw import advance_after_glyph, draw_glyph
 from draw_jupyturtle import DrawingContext
-from glyphs import (
-    VowelPosition,
-    characters,
-)
+from glyphs import VowelPosition
+from glyphs import all as all_glyphs
 
 texts = [
     ["B", " ", "L", " ", "U", " ", "E"],
@@ -47,7 +42,7 @@ for i, text in list(enumerate(texts)):
                 next_pos = VowelPosition.AE
                 continue
 
-            g = characters.get(c, None) or characters.get(c.upper(), None)
+            g = all_glyphs.get(c, None) or all_glyphs.get(c.upper(), None)
             assert g, f"Character {c} not found in character list"
             draw_glyph(t, p, g, pos=next_pos)
             next_pos = VowelPosition.CONT

@@ -9,18 +9,10 @@ importlib.reload(draw)
 # https://github.com/ipython/ipython/issues/12399
 # reloading draw first, then glyphs results in isinstance checks being broken
 
-from draw import (
-    Page,
-    Turtle,
-    advance_after_glyph,
-    draw_glyph,
-)
+from draw import Page, Turtle, advance_after_glyph, draw_glyph
 from draw_jupyturtle import DrawingContext
-from glyphs import (
-    GlyphSize,
-    VowelPosition,
-    characters,
-)
+from glyphs import GlyphSize, VowelPosition
+from glyphs import all as all_glyphs
 
 
 def show_lines(t: Turtle, p: Page) -> None:
@@ -34,14 +26,14 @@ def show_lines(t: Turtle, p: Page) -> None:
     t.pen_color = c1
 
 
-for g in characters.values():
+for g in all_glyphs.values():
     with DrawingContext(drawing_width=140) as (p, t):
         p.vowel_area_height_px = 20
         p.current_line_bottom_px = 70
         p.current_line_left_px = 10
         show_lines(t, p)
-        draw_glyph(t, p, characters["J"], pos=VowelPosition.IY, gs=GlyphSize.DOUBLE)
+        draw_glyph(t, p, all_glyphs["J"], pos=VowelPosition.IY, gs=GlyphSize.DOUBLE)
         advance_after_glyph(t, p)
         draw_glyph(t, p, g, pos=VowelPosition.IY, gs=GlyphSize.DOUBLE)
         advance_after_glyph(t, p)
-        draw_glyph(t, p, characters["I"], pos=VowelPosition.IY, gs=GlyphSize.DOUBLE)
+        draw_glyph(t, p, all_glyphs["I"], pos=VowelPosition.IY, gs=GlyphSize.DOUBLE)

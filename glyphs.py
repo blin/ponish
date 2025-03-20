@@ -100,9 +100,9 @@ class Direction(Enum):
     NNW = 112.5
 
 
-glyphs = dict()
+letters = dict()
 
-glyphs["A-two-legs"] = Glyph(
+letters["A-two-legs"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
@@ -112,7 +112,7 @@ glyphs["A-two-legs"] = Glyph(
 )
 
 
-glyphs["A-one-leg"] = Glyph(
+letters["A-one-leg"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
@@ -120,14 +120,14 @@ glyphs["A-one-leg"] = Glyph(
     is_vowel=True,
 )
 
-glyphs["B"] = Glyph(
+letters["B"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
     ],
 )
 
-glyphs["C"] = Glyph(
+letters["C"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.25),
     draw_actions=[
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.25),
@@ -135,7 +135,7 @@ glyphs["C"] = Glyph(
     ],
 )
 
-glyphs["F"] = Glyph(
+letters["F"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.25),
@@ -143,7 +143,7 @@ glyphs["F"] = Glyph(
     ],
 )
 
-glyphs["H"] = Glyph(
+letters["H"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
     draw_actions=[
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.7),
@@ -151,7 +151,7 @@ glyphs["H"] = Glyph(
     ],
 )
 
-glyphs["I"] = Glyph(
+letters["I"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
@@ -160,7 +160,7 @@ glyphs["I"] = Glyph(
     is_vowel=True,
 )
 
-glyphs["J"] = Glyph(
+letters["J"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
@@ -168,28 +168,28 @@ glyphs["J"] = Glyph(
     ],
 )
 
-glyphs["M"] = Glyph(
+letters["M"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
     ],
 )
 
-glyphs["N"] = Glyph(
+letters["N"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
     ],
 )
 
-glyphs["T"] = Glyph(
+letters["T"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
     draw_actions=[
         PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),
     ],
 )
 
-glyphs["V"] = Glyph(
+letters["V"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
@@ -197,7 +197,7 @@ glyphs["V"] = Glyph(
     ],
 )
 
-glyphs["W"] = Glyph(
+letters["W"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
@@ -205,7 +205,7 @@ glyphs["W"] = Glyph(
     ],
 )
 
-glyphs["X"] = Glyph(
+letters["X"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=1.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.4),
@@ -216,7 +216,7 @@ glyphs["X"] = Glyph(
     ],
 )
 
-glyphs["Y"] = Glyph(
+letters["Y"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.1),
     draw_actions=[
         PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.6),
@@ -228,7 +228,7 @@ glyphs["Y"] = Glyph(
     is_vowel=True,
 )
 
-glyphs["Z"] = Glyph(
+letters["Z"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
@@ -239,7 +239,7 @@ glyphs["Z"] = Glyph(
 
 
 # CH - https://en.wikipedia.org/wiki/Voiceless_postalveolar_affricate
-glyphs["ʧ"] = Glyph(
+letters["ʧ"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.7),
@@ -247,7 +247,7 @@ glyphs["ʧ"] = Glyph(
     ],
 )
 
-glyphs["end-vowel-dot"] = Glyph(
+letters["end-vowel-dot"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.01),
@@ -257,7 +257,7 @@ glyphs["end-vowel-dot"] = Glyph(
     ],
 )
 
-glyphs["article-dot"] = Glyph(
+letters["article-dot"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=1.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.01),
@@ -268,7 +268,7 @@ glyphs["article-dot"] = Glyph(
 )
 
 
-glyphs["D"] = Glyph(
+letters["D"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         Circle(
@@ -279,7 +279,7 @@ glyphs["D"] = Glyph(
         ),
     ],
 )
-glyphs["E"] = Glyph(
+letters["E"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.1),
     draw_actions=[
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.7),
@@ -294,7 +294,7 @@ glyphs["E"] = Glyph(
     is_vowel=True,
 )
 
-glyphs["G"] = Glyph(
+letters["G"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.2),
@@ -309,7 +309,7 @@ glyphs["G"] = Glyph(
     ],
 )
 
-glyphs["K"] = Glyph(
+letters["K"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=[
         # NOTE: Doing this as two RelCubicBezier would
@@ -323,7 +323,7 @@ glyphs["K"] = Glyph(
     ],
 )
 
-glyphs["L"] = Glyph(
+letters["L"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         Circle(
@@ -335,7 +335,7 @@ glyphs["L"] = Glyph(
     ],
 )
 
-glyphs["O"] = Glyph(
+letters["O"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
     draw_actions=[
         Circle(
@@ -348,7 +348,7 @@ glyphs["O"] = Glyph(
     is_vowel=True,
 )
 
-glyphs["P"] = Glyph(
+letters["P"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
     draw_actions=[
         Circle(
@@ -361,7 +361,7 @@ glyphs["P"] = Glyph(
     ],
 )
 
-glyphs["Q"] = Glyph(
+letters["Q"] = Glyph(
     start_pos=RelPoint(rel_y=0.25, rel_x=0.4),
     draw_actions=[
         Circle(
@@ -374,7 +374,7 @@ glyphs["Q"] = Glyph(
     ],
 )
 
-glyphs["R"] = Glyph(
+letters["R"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
@@ -389,7 +389,7 @@ glyphs["R"] = Glyph(
 )
 
 # TODO: bezier
-glyphs["S"] = Glyph(
+letters["S"] = Glyph(
     start_pos=RelPoint(rel_y=0.25, rel_x=0.0),
     draw_actions=[
         Circle(
@@ -403,7 +403,7 @@ glyphs["S"] = Glyph(
 )
 
 
-glyphs["U"] = Glyph(
+letters["U"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=[
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.5),
@@ -419,7 +419,7 @@ glyphs["U"] = Glyph(
 
 
 # TH - https://en.wikipedia.org/wiki/Voiced_dental_fricative
-glyphs["ð"] = Glyph(
+letters["ð"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.5),
     draw_actions=[
         Circle(
@@ -432,7 +432,7 @@ glyphs["ð"] = Glyph(
 )
 
 # SH - https://en.wikipedia.org/wiki/Voiceless_postalveolar_fricative
-glyphs["ʃ"] = Glyph(
+letters["ʃ"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
     draw_actions=[
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
@@ -445,10 +445,10 @@ glyphs["ʃ"] = Glyph(
 )
 
 aliases: dict[str, Glyph] = dict()
-aliases["A"] = glyphs["A-two-legs"]
-aliases["CH"] = glyphs["ʧ"]
-aliases["TH"] = glyphs["ð"]
-aliases["SH"] = glyphs["ʃ"]
+aliases["A"] = letters["A-two-legs"]
+aliases["CH"] = letters["ʧ"]
+aliases["TH"] = letters["ð"]
+aliases["SH"] = letters["ʃ"]
 
 blends: dict[str, Glyph] = dict()
 
@@ -623,4 +623,4 @@ blends["ʧR"] = Glyph(
 )
 
 
-characters: dict[str, Glyph] = {**glyphs, **aliases, **blends}
+all: dict[str, Glyph] = {**letters, **aliases, **blends}

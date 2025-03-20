@@ -1,14 +1,8 @@
 # %%
-from draw import (
-    advance_after_glyph,
-    advance_after_word,
-    draw_glyph,
-)
+from draw import advance_after_glyph, advance_after_word, draw_glyph
 from draw_jupyturtle import DrawingContext
-from glyphs import (
-    VowelPosition,
-    characters,
-)
+from glyphs import VowelPosition
+from glyphs import all as all_glyphs
 
 texts = [
     "ðe quick cute unicorn jumped",
@@ -26,7 +20,7 @@ for i, text in enumerate(texts):
                 advance_after_word(t, p)
                 continue
 
-            g = characters.get(c, None) or characters.get(c.upper(), None)
+            g = all_glyphs.get(c, None) or all_glyphs.get(c.upper(), None)
             assert g, f"Character {c} not found in character list"
             draw_glyph(t, p, g, pos=VowelPosition.AE)
             advance_after_glyph(t, p)

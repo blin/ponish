@@ -1,7 +1,5 @@
 # %%
-from draw import (
-    draw_glyph,
-)
+from draw import draw_glyph
 from draw_jupyturtle import DrawingContext
 from glyphs import (
     Circle,
