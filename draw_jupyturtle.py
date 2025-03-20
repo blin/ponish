@@ -1,6 +1,7 @@
 import re
+from pathlib import Path
 
-from jupyturtle import jupyturtle
+from jupyturtle import jupyturtle  # type: ignore[import-untyped]
 
 from draw import Page, Turtle
 
@@ -18,7 +19,7 @@ class DrawingContext:
 
     def __init__(
         self,
-        output_path: str | None = None,
+        output_path: Path | str | None = None,
         unit_size: float = 20,
         drawing_width: int = 180,
         drawing_height: int | None = None,
@@ -27,10 +28,6 @@ class DrawingContext:
         self.unit_size = unit_size
         self.drawing_width = drawing_width
         self.drawing_height = drawing_height if drawing_height else unit_size * 5
-        self.page = None
-        self.turtle = None
-
-    def __enter__(self) -> tuple[Page, Turtle]:
         u = self.unit_size
         drawing = jupyturtle.Drawing(
             width=self.drawing_width, height=self.drawing_height, bgcolor="#FFFFFF"
@@ -42,6 +39,8 @@ class DrawingContext:
         )
         self.turtle = jupyturtle.Turtle(delay=0.00, drawing=drawing)
         self.turtle.pen_color = "#000000"
+
+    def __enter__(self) -> tuple[Page, Turtle]:
         return self.page, self.turtle
 
     def __exit__(self, exc_type, exc_val, exc_tb):

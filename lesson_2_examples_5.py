@@ -57,7 +57,7 @@ vowels = ["A", "E", "I", "O", "U", "Y"]
 # and surrounding characters
 
 
-def gid_at(word: str, idx: int) -> str:
+def gid_at(word: str, idx: int) -> tuple[str, int]:
     subword = word[idx:]
     assert len(subword) > 0, f"id_at({word=}, {idx=}), empty subword"
     if len(subword) > 3 and subword[0] == "$" and subword[1] == "(":
