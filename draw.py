@@ -11,10 +11,11 @@ from glyphs import (
     Point,
     PolarLine,
     RelCubicBezier,
+    RelPoint,
     Rotation,
     VowelPosition,
-    find_rel_point,
 )
+from glyphs import all as all_glyphs
 
 
 @runtime_checkable
@@ -93,6 +94,13 @@ def calc_bezier(p1: Point, p2: Point, p3: Point, p4: Point, t: float) -> tuple[f
     y = u * y_p1p2_p2p3 + t * y_p2p3_p3p4
 
     return (x, y)
+
+
+def find_rel_point(rel: RelPoint, ref_point: Point, unit_size_px: float) -> Point:
+    return Point(
+        y=ref_point.y + unit_size_px * rel.rel_y,
+        x=ref_point.x + unit_size_px * rel.rel_x,
+    )
 
 
 # NOTE: have to use `turt` instead of `t` because of the name conflict
@@ -222,3 +230,86 @@ def advance_after_word(t: Turtle, page: Page) -> None:
     page.current_line_left_px = page.furthest_from_left_px + (page.vowel_area_height_px * 1.5)
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()
+
+
+def gid_at(word: str, idx: int) -> tuple[str, int]:
+    subword = word[idx:]
+    assert len(subword) > 0, f"id_at({word=}, {idx=}), empty subword"
+    if len(subword) > 3 and subword[0] == "$" and subword[1] == "(":
+        rb = subword.find(")")
+        if rb == -1:
+            raise ValueError(f"unterminated $() sequence in {word=}")
+        gid = subword[2:rb]
+        return gid, len(gid) + 3
+    return subword[0], 1
+
+
+# TODO: use is_vowel attribute of Glyph or remove the is_vowel attribute
+vowels = ["A", "E", "I", "O", "U", "Y"]
+
+
+def draw_word(
+    t: Turtle,
+    p: Page,
+    word: str,
+):
+    word_pos = 0
+
+    gpos = VowelPosition.IY
+    gs = GlyphSize.DOUBLE
+    first_g = True
+    consecutive_vowels = 0
+
+    while word_pos < len(word):
+        gid, advance = gid_at(word, word_pos)
+        word_pos += advance
+
+        gid_up = gid.upper()
+        g = all_glyphs.get(gid, None) or all_glyphs.get(gid.upper(), None)
+        assert g, f"Character {gid} not found in character list"
+
+        g_is_vowel = gid_up in vowels
+        g_is_last = word_pos >= len(word)  # TODO: use for vowel-end-dot
+        consecutive_vowels = consecutive_vowels + 1 if g_is_vowel else 0
+
+        next_gid_is_vowel = False
+        next_gid_advance = 0
+        if word_pos < len(word):
+            next_gid, next_gid_advance = gid_at(word, word_pos)
+            if next_gid.upper() in vowels:
+                next_gid_is_vowel = True
+        next_gid_is_last = False
+        if word_pos + next_gid_advance >= len(word):
+            next_gid_is_last = True
+
+        if first_g:
+            first_g = False
+            gs = GlyphSize.SINGLE
+            if next_gid_is_vowel:
+                gs = GlyphSize.DOUBLE
+            draw_glyph(t, p, g, pos=VowelPosition.IY, gs=gs)
+            gpos = VowelPosition.CONT
+            gs = GlyphSize.SINGLE
+            continue
+
+        if g_is_vowel and consecutive_vowels == 2:
+            consecutive_vowels = 0
+        elif g_is_vowel:
+            match gid_up:
+                case "A" | "E":
+                    gpos = VowelPosition.AE
+                    gs = GlyphSize.SINGLE
+                case "I" | "Y":
+                    gpos = VowelPosition.IY
+                    if next_gid_is_vowel or next_gid_is_last:
+                        gs = GlyphSize.DOUBLE
+                    else:
+                        gs = GlyphSize.SINGLE
+                case "O" | "U":
+                    gpos = VowelPosition.OU
+                    gs = GlyphSize.SINGLE
+            advance_after_glyph(t, p)
+            continue
+        draw_glyph(t, p, g, pos=gpos, gs=gs)
+        gpos = VowelPosition.CONT
+        gs = GlyphSize.SINGLE

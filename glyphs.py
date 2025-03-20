@@ -14,13 +14,6 @@ class RelPoint:
     rel_x: float  # positive is right, negative is left
 
 
-def find_rel_point(rel: RelPoint, ref_point: Point, unit_size_px: float) -> Point:
-    return Point(
-        y=ref_point.y + unit_size_px * rel.rel_y,
-        x=ref_point.x + unit_size_px * rel.rel_x,
-    )
-
-
 class Rotation(Enum):
     CW = auto()
     CCW = auto()
