@@ -21,10 +21,10 @@ from glyphs import all as all_glyphs
 @runtime_checkable
 class Turtle(Protocol):
     @property
-    def x(self) -> int: ...
+    def x(self) -> float: ...
 
     @property
-    def y(self) -> int: ...
+    def y(self) -> float: ...
 
     @property
     def heading(self) -> float: ...
@@ -107,16 +107,32 @@ def find_rel_point(rel: RelPoint, ref_point: Point, unit_size_px: float) -> Poin
 # with Bezier "t-parameter"
 def draw_cubic_bezier(turt: Turtle, page: Page, curve: RelCubicBezier) -> None:
     p1 = Point(y=turt.y, x=turt.x)
+    prev_x, prev_y = turt.x, turt.y
+
     for i in range(21):
         t = i / 20
         p2 = find_rel_point(curve.p2, p1, page.current_glyph_height_px)
         p3 = find_rel_point(curve.p3, p1, page.current_glyph_height_px)
         p4 = find_rel_point(curve.p4, p1, page.current_glyph_height_px)
         x, y = calc_bezier(p1, p2, p3, p4, t)
+
         if i == 0:
             turt.jump_to(x, y)
+            prev_x, prev_y = x, y
             continue
-        turt.move_to(x, y)
+
+        dx = x - prev_x
+        dy = y - prev_y
+        distance = math.sqrt(dx**2 + dy**2)
+
+        angle = math.degrees(math.atan2(dy, dx))
+        turt.heading = angle
+
+        # Using draw_forward instead of t.move_to
+        # to update furthest_from_left_px and furthest_from_top_px
+        draw_forward(turt, page, distance)
+
+        prev_x, prev_y = x, y
 
 
 def draw_forward(t: Turtle, p: Page, distance_px: float) -> None:
