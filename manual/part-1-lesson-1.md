@@ -25,37 +25,37 @@ the normal Roman letters, and compare them to the number required for their
 Ponish counterparts via the complete chart below, and see for yourselves just
 how much writing is being saved with just a new alphabet.
 
-| Character | Image                                                             |
-| --------- | ----------------------------------------------------------------- |
-| A         | ![A](./alphabet/A-two-legs.svg) or ![A](./alphabet/A-one-leg.svg) |
-| B         | ![B](./alphabet/B.svg)                                            |
-| C         | ![C](./alphabet/C.svg)                                            |
-| D         | ![D](./alphabet/D.svg)                                            |
-| E         | ![E](./alphabet/E.svg)                                            |
-| F         | ![F](./alphabet/F.svg)                                            |
-| G         | ![G](./alphabet/G.svg)                                            |
-| H         | ![H](./alphabet/H.svg)                                            |
-| I         | ![I](./alphabet/I.svg)                                            |
-| J         | ![J](./alphabet/J.svg)                                            |
-| K         | ![K](./alphabet/K.svg)                                            |
-| L         | ![L](./alphabet/L.svg)                                            |
-| M         | ![M](./alphabet/M.svg)                                            |
-| N         | ![N](./alphabet/N.svg)                                            |
-| O         | ![O](./alphabet/O.svg)                                            |
-| P         | ![P](./alphabet/P.svg)                                            |
-| Q         | ![Q](./alphabet/Q.svg)                                            |
-| R         | ![R](./alphabet/R.svg)                                            |
-| S         | ![S](./alphabet/S.svg)                                            |
-| T         | ![T](./alphabet/T.svg)                                            |
-| U         | ![U](./alphabet/U.svg)                                            |
-| V         | ![V](./alphabet/V.svg)                                            |
-| W         | ![W](./alphabet/W.svg)                                            |
-| X         | ![X](./alphabet/X.svg)                                            |
-| Y         | ![Y](./alphabet/Y.svg)                                            |
-| Z         | ![Z](./alphabet/Z.svg)                                            |
-| SH        | ![SH](./alphabet/SH.svg)                                          |
-| TH        | ![TH](./alphabet/TH.svg)                                          |
-| CH        | ![CH](./alphabet/CH.svg)                                          |
+| Letter | Image                                                           |
+| ------ | --------------------------------------------------------------- |
+| A      | ![](./alphabet/A-two-legs.svg) or ![](./alphabet/A-one-leg.svg) |
+| B      | ![](./alphabet/B.svg)                                           |
+| C      | ![](./alphabet/C.svg)                                           |
+| D      | ![](./alphabet/D.svg)                                           |
+| E      | ![](./alphabet/E.svg)                                           |
+| F      | ![](./alphabet/F.svg)                                           |
+| G      | ![](./alphabet/G.svg)                                           |
+| H      | ![](./alphabet/H.svg)                                           |
+| I      | ![](./alphabet/I.svg)                                           |
+| J      | ![](./alphabet/J.svg)                                           |
+| K      | ![](./alphabet/K.svg)                                           |
+| L      | ![](./alphabet/L.svg)                                           |
+| M      | ![](./alphabet/M.svg)                                           |
+| N      | ![](./alphabet/N.svg)                                           |
+| O      | ![](./alphabet/O.svg)                                           |
+| P      | ![](./alphabet/P.svg)                                           |
+| Q      | ![](./alphabet/Q.svg)                                           |
+| R      | ![](./alphabet/R.svg)                                           |
+| S      | ![](./alphabet/S.svg)                                           |
+| T      | ![](./alphabet/T.svg)                                           |
+| U      | ![](./alphabet/U.svg)                                           |
+| V      | ![](./alphabet/V.svg)                                           |
+| W      | ![](./alphabet/W.svg)                                           |
+| X      | ![](./alphabet/X.svg)                                           |
+| Y      | ![](./alphabet/Y.svg)                                           |
+| Z      | ![](./alphabet/Z.svg)                                           |
+| TH     | ![](./alphabet/ð.svg)                                           |
+| SH     | ![](./alphabet/ʃ.svg)                                           |
+| CH     | ![](./alphabet/ʧ.svg)                                           |
 
 TODO: transpose the table to match the original format
 
