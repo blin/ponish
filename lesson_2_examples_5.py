@@ -21,9 +21,9 @@ text = [
     "Betwen the tims wen the oʃns $(DR)ank $(AT)lantis $(AN)d the riz of",
     "the sons of $(AR)y$(AS) ðr was $(AN) $(AJ) un$(DR)emd of $(AN)d",
     "unto ðis Conan Destind to ber the juld crown of",
-    "$(AQ)ilonia upon a $(TR)obld brow It is I his",
-    "cronicler wo alone kan tel ðe of his saga",
-    "Let me tel y of the des of hi $(AD)ven$(ʧR)e",
+    "$(AQ)ilonia upon a $(TR)obld $(BR)ow It is I his",
+    "cronicler wo alon kan tel ðe of his saga",
+    "Let me tel yu of the des of hi $(AD)ven$(ʧR)",
 ]
 for i, line in list(enumerate(text)):
     dc = DrawingContext(

@@ -256,6 +256,30 @@ vowels = ["A", "E", "I", "O", "U", "Y"]
 # Example: dog -> d-g
 
 
+def extract_vowel_params(
+    gid: str, next_gid_is_vowel: bool, next_gid_is_last: bool
+) -> tuple[VowelPosition, GlyphSize]:
+    gid_up = gid.upper()
+    match gid_up:
+        case "A" | "E":
+            vpos = VowelPosition.AE
+            vs = GlyphSize.SINGLE
+            return vpos, vs
+        case "I" | "Y":
+            vpos = VowelPosition.IY
+            if next_gid_is_vowel or next_gid_is_last:
+                vs = GlyphSize.DOUBLE
+            else:
+                vs = GlyphSize.SINGLE
+            return vpos, vs
+        case "O" | "U":
+            vpos = VowelPosition.OU
+            vs = GlyphSize.SINGLE
+            return vpos, vs
+        case _:
+            raise ValueError(f"Got {gid=}, expected vowel")
+
+
 def draw_word(
     t: Turtle,
     p: Page,
@@ -277,7 +301,7 @@ def draw_word(
         assert g, f"Character {gid} not found in character list"
 
         g_is_vowel = gid_up in vowels
-        g_is_last = word_pos >= len(word)  # TODO: use for vowel-end-dot
+        g_is_last = word_pos >= len(word)
         consecutive_vowels = consecutive_vowels + 1 if g_is_vowel else 0
 
         next_gid_is_vowel = False
@@ -300,24 +324,19 @@ def draw_word(
             gs = GlyphSize.SINGLE
             continue
 
-        if g_is_vowel and consecutive_vowels == 2:
-            consecutive_vowels = 0
-        elif g_is_vowel:
-            match gid_up:
-                case "A" | "E":
-                    gpos = VowelPosition.AE
-                    gs = GlyphSize.SINGLE
-                case "I" | "Y":
-                    gpos = VowelPosition.IY
-                    if next_gid_is_vowel or next_gid_is_last:
-                        gs = GlyphSize.DOUBLE
-                    else:
-                        gs = GlyphSize.SINGLE
-                case "O" | "U":
-                    gpos = VowelPosition.OU
-                    gs = GlyphSize.SINGLE
-            advance_after_glyph(t, p)
-            continue
+        if g_is_vowel:
+            vpos, vs = extract_vowel_params(gid_up, next_gid_is_vowel, next_gid_is_last)
+            if g_is_last and gpos == VowelPosition.CONT:
+                advance_after_glyph(t, p)
+                draw_glyph(t, p, all_glyphs["end-vowel-dot"], pos=vpos, gs=vs)
+                continue
+            elif consecutive_vowels == 2:
+                consecutive_vowels = 0
+            else:
+                gpos = vpos
+                gs = vs
+                advance_after_glyph(t, p)
+                continue
         draw_glyph(t, p, g, pos=gpos, gs=gs)
         gpos = VowelPosition.CONT
         gs = GlyphSize.SINGLE

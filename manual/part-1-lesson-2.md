@@ -316,8 +316,6 @@ TODO [double-size-upward]: U into N
 
 TODO: punctuation
 
-TODO: end vowel
-
 ![](./lesson-2/passage-1-line-4.svg)
 ![](./original-images/conan-line-4.png)
 
