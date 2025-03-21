@@ -328,7 +328,7 @@ def draw_word(
             vpos, vs = extract_vowel_params(gid_up, next_gid_is_vowel, next_gid_is_last)
             if g_is_last and gpos == VowelPosition.CONT:
                 advance_after_glyph(t, p)
-                draw_glyph(t, p, all_glyphs["end-vowel-dot"], pos=vpos, gs=vs)
+                draw_glyph(t, p, all_glyphs["high-dot"], pos=vpos, gs=vs)
                 continue
             elif consecutive_vowels == 2:
                 consecutive_vowels = 0
@@ -350,7 +350,7 @@ def draw_article(
 ):
     pass
     article_pos = VowelPosition.OU if article == "the" else VowelPosition.AE
-    draw_glyph(t, p, all_glyphs["article-dot"], pos=article_pos)
+    draw_glyph(t, p, all_glyphs["low-dot"], pos=article_pos)
     advance_after_glyph(t, p)
 
 

@@ -149,11 +149,11 @@ And if the final sound in a word is a vowel? Indicate it with a dot, like this:
 
 | DAY | DYE | DOE |
 | --- | --- | --- |
-| ![](./lesson-2/example-d-AE-end-vowel-dot.svg) | ![](./lesson-2/example-d-IY-end-vowel-dot.svg) | ![](./lesson-2/example-d-OU-end-vowel-dot.svg) |
+| ![](./lesson-2/example-d-AE-high-dot.svg) | ![](./lesson-2/example-d-IY-high-dot.svg) | ![](./lesson-2/example-d-OU-high-dot.svg) |
 
 | SEE | SIGH | SEW |
 | --- | ---- | --- |
-| ![](./lesson-2/example-s-AE-end-vowel-dot.svg) | ![](./lesson-2/example-s-IY-end-vowel-dot.svg) | ![](./lesson-2/example-s-OU-end-vowel-dot.svg) |
+| ![](./lesson-2/example-s-AE-high-dot.svg) | ![](./lesson-2/example-s-IY-high-dot.svg) | ![](./lesson-2/example-s-OU-high-dot.svg) |
 
 ![](./original-images/027.png)
 

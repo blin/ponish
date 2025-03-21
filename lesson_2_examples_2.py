@@ -15,8 +15,8 @@ for c1, c2 in [
     ("T", "M"),
     ("F", "N"),
     ("L", "P"),
-    ("D", "end-vowel-dot"),
-    ("S", "end-vowel-dot"),
+    ("D", "high-dot"),
+    ("S", "high-dot"),
 ]:
     for pos in [VP.AE, VP.IY, VP.OU]:
         with DrawingContext(

@@ -13,7 +13,7 @@ dir.mkdir(parents=True, exist_ok=True)
 with DrawingContext(output_path=dir / f"example-my.svg") as (p, t):
     draw_glyph(t, p, all_glyphs["M"], pos=VP.IY, gs=GS.DOUBLE)
     advance_after_glyph(t, p)
-    draw_glyph(t, p, all_glyphs["end-vowel-dot"], pos=VP.IY)
+    draw_glyph(t, p, all_glyphs["high-dot"], pos=VP.IY)
 
 # %%
 with DrawingContext(output_path=dir / f"example-armor.svg") as (p, t):
@@ -80,7 +80,7 @@ with DrawingContext(output_path=dir / f"example-there.svg") as (p, t):
 with DrawingContext(output_path=dir / f"example-no.svg") as (p, t):
     draw_glyph(t, p, all_glyphs["N"], pos=VP.IY, gs=GS.DOUBLE)
     advance_after_glyph(t, p)
-    draw_glyph(t, p, all_glyphs["end-vowel-dot"], pos=VP.OU)
+    draw_glyph(t, p, all_glyphs["high-dot"], pos=VP.OU)
 
 # %%
 with DrawingContext(output_path=dir / f"example-difference.svg") as (p, t):
@@ -128,11 +128,11 @@ with DrawingContext(output_path=dir / f"example-necessary.svg") as (p, t):
     advance_after_glyph(t, p)
     draw_glyph(t, p, all_glyphs["R"], pos=VP.AE)
     advance_after_glyph(t, p)
-    draw_glyph(t, p, all_glyphs["end-vowel-dot"], pos=VP.IY)
+    draw_glyph(t, p, all_glyphs["high-dot"], pos=VP.IY)
 
 # %%
 with DrawingContext(output_path=dir / f"example-the-rewards.svg") as (p, t):
-    draw_glyph(t, p, all_glyphs["article-dot"], pos=VP.OU)
+    draw_glyph(t, p, all_glyphs["low-dot"], pos=VP.OU)
     advance_after_glyph(t, p)
     draw_glyph(t, p, all_glyphs["R"], pos=VP.IY, gs=GS.DOUBLE)
     advance_after_glyph(t, p)
@@ -171,7 +171,7 @@ with DrawingContext(output_path=dir / f"example-treachery.svg") as (p, t):
     advance_after_glyph(t, p)
     draw_glyph(t, p, all_glyphs["R"], pos=VP.AE)
     advance_after_glyph(t, p)
-    draw_glyph(t, p, all_glyphs["end-vowel-dot"], pos=VP.IY)
+    draw_glyph(t, p, all_glyphs["high-dot"], pos=VP.IY)
 
 # %%
 with DrawingContext(output_path=dir / f"example-betrayal.svg") as (p, t):
