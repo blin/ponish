@@ -296,28 +296,19 @@ aren't even through with the lessons yet!
 
 While you're reading, keep in mind: no wrong spelling , and sound, not spelling .
 
+## Lesson 2 Passage (Ponish)
+
 ![](./lesson-2/passage-1-line-1.svg)
 ![](./original-images/conan-line-1.png)
 
-EDITOR NOTE [single-size-downward]: "AT" in "Atlantis" is single-size
-since the last stroke is downward and next character is a consonant.
-
-TODO [double-size-upward]: AN blend ends in top-right corner, so the overall glyph can be double-sized
-
 ![](./lesson-2/passage-1-line-2.svg)
 ![](./original-images/conan-line-2.png)
-
-EDITOR NOTE [single-size-downward]: "AJ" in "age"
-
-TODO [double-size-upward]: U into N
 
 ![](./lesson-2/passage-1-line-3.svg)
 ![](./original-images/conan-line-3.png)
 
 ![](./lesson-2/passage-1-line-4.svg)
 ![](./original-images/conan-line-4.png)
-
-TODO: single vowel should be double-size
 
 ![](./lesson-2/passage-1-line-5.svg)
 ![](./original-images/conan-line-5.png)
@@ -327,12 +318,14 @@ TODO: single vowel should be double-size
 
 Ready for the answer? Here you go:
 
-## Lesson 2 Passage:
+## Lesson 2 Passage (Earthographic)
 
-Between the times when the oceans drank Atlantis, and the rise of the sons of
+*Between the times when the oceans drank Atlantis, and the rise of the sons of
 Aryas, there was an age undreamed of. And unto this: Conan. Destined to bear the
 jeweled crown of Aquilonia upon a troubled brow. It is I, his chronicler who
-alone can tell thee of his saga. Let me tell you of the days of high adventure!
+alone can tell thee of his saga. Let me tell you of the days of high adventure!*
+
+---
 
 One more thing. I really must emphasize the importance of practicing both
 reading, and writing. If you only write Ponish, then when you try to read back
@@ -345,4 +338,13 @@ think it important, so please, take it to heart, and practice both skills.
 
 ### Editor notes on lesson 2 passage
 
-TODO: move EDITOR NOTES here to avoid spoilers
+EDITOR NOTE [single-size-downward]: "AT" in "Atlantis" is single-size
+since the last stroke is downward and next character is a consonant.
+
+EDITOR NOTE [single-size-downward]: "AJ" in "age"
+
+TODO [double-size-upward]: AN blend ends in top-right corner, so the overall glyph can be double-sized
+
+TODO [double-size-upward]: U into N
+
+TODO: single vowel should be double-size
