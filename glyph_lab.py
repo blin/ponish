@@ -8,32 +8,26 @@ from glyphs import (
     GlyphSize,
     PenAction,
     PolarLine,
+    RelCubicBezier,
     RelPoint,
     Rotation,
     VowelPosition,
 )
 
 g = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=1.0),
+    start_pos=RelPoint(rel_y=0.4, rel_x=1.0),
     draw_actions=[
-        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.0),
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.7),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=1.0),
-    ],
-)
-
-g = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
-    draw_actions=[
-        PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.3),
         Circle(
-            rel_radius=0.5,
-            extent_deg=90,
+            rel_radius=0.2,
+            extent_deg=360,
             rotation=Rotation.CW,
-            heading_deg=Direction.NNE.value,
+            heading_deg=Direction.S.value,
+        ),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.2),
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.2, rel_x=0.0),
+            p3=RelPoint(rel_y=0.2, rel_x=-0.1),
+            p4=RelPoint(rel_y=0.2, rel_x=-0.3),
         ),
     ],
 )

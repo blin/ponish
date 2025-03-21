@@ -14,6 +14,13 @@ See that little round 'TH' symbol? Draw a little curved line off of it, and you
 have a symbol which on it's own means 'thing,' but when combined with other
 letters can mean that, or stand for the very common NG sound combination:
 
+| Earthographic  | Ponish                        |
+| -------------- | ----------------------------- |
+| ing, ng, thing | ![](./lesson-3/thing.svg)     |
+| something      | ![](./lesson-3/something.svg) |
+| going          | ![](./lesson-3/going.svg)     |
+| twang          | ![](./lesson-3/twang.svg)     |
+
 ![](./original-images/033.png)
 
 ## 2. (th(vowel)NK)
@@ -21,6 +28,13 @@ letters can mean that, or stand for the very common NG sound combination:
 It's the same little symbol as above, but with the tail on the other side, and
 this time it means 'think,' or when written into another word, it means 'NK/NC,'
 hard C-sound only.
+
+| Earthographic        | Ponish                        |
+| -------------------- | ----------------------------- |
+| nk, nc, think, thank | ![](./lesson-3/think.svg)     |
+| bank                 | ![](./lesson-3/bank.svg)      |
+| flunk                | ![](./lesson-3/flunk.svg)     |
+| thank you            | ![](./lesson-3/thank-you.svg) |
 
 ![](./original-images/034.png)
 
@@ -30,12 +44,26 @@ Same symbol (noticing a pattern here? Keeps it simple, and easy to remember) but
 this time with the tail on top. Notice how it resembles a normal P and R joined
 the usual way.
 
+| Earthographic        | Ponish                        |
+| -------------------- | ----------------------------- |
+| pr                   | ![](./lesson-3/pr.svg)        |
+| private              | ![](./lesson-3/private.svg)   |
+| project              | ![](./lesson-3/project.svg)   |
+| preview              | ![](./lesson-3/preview.svg)   |
+
 ![](./original-images/035.png)
 
 ## 4. (pl(vowel))
 
 Once more, the same symbol, but with the tail on the bottom, closely resembling
 an L. Isn't that convenient?
+
+| Earthographic        | Ponish                        |
+| -------------------- | ----------------------------- |
+| pl                   | ![](./lesson-3/pl.svg)    |
+| pleasure             | ![](./lesson-3/pleasure.svg)  |
+| plastic              | ![](./lesson-3/plastic.svg)   |
+| plebian              | ![](./lesson-3/plebian.svg)   |
 
 ![](./original-images/036.png)
 
@@ -44,7 +72,16 @@ an L. Isn't that convenient?
 Finally, something new! But still very similar to the base of the sound
 combination it represents, in this case 'S.'
 
+| Earthographic        | Ponish                        |
+| -------------------- | ----------------------------- |
+| s(vowel)s            | ![](./lesson-3/ss.svg)        |
+| princess             | ![](./lesson-3/princess.svg)  |
+| success              | ![](./lesson-3/success.svg)   |
+| misses               | ![](./lesson-3/misses.svg)    |
+
 ![](./original-images/037.png)
+
+## Prefixes and suffixes
 
 And here is the next part of lesson 3: Pre, and suffixes. Nothing much to
 explain here, just a chart for you to memorize. Note that some of these are
