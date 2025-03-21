@@ -14,8 +14,9 @@ from glyphs import (
     RelPoint,
     Rotation,
     VowelPosition,
+    all as all_glyphs,
+    punctuation,
 )
-from glyphs import all as all_glyphs
 
 
 @runtime_checkable
@@ -370,6 +371,22 @@ def draw_article(
     advance_after_glyph(t, p)
 
 
+def draw_punctuation(
+    t: Turtle,
+    p: Page,
+    punct: str,
+):
+    gpos = VowelPosition.OU
+    gs = GlyphSize.DOUBLE
+    match punct:
+        case "," | ".":
+            gs = GlyphSize.SINGLE
+        case ":" | "!":
+            gpos = VowelPosition.IY
+    draw_glyph(t, p, punctuation[punct], pos=gpos, gs=gs)
+    advance_after_word(t, p)
+
+
 def draw_sentence(
     t: Turtle,
     p: Page,
@@ -382,6 +399,11 @@ def draw_sentence(
         word = words[sentence_pos]
         sentence_pos += 1
         word_is_last = sentence_pos >= len(words)
+
+        if word in punctuation:
+            draw_punctuation(t, p, word)
+            continue
+
         if word in ["a", "an", "the"] and not word_is_last:
             draw_article(t, p, word)
             continue

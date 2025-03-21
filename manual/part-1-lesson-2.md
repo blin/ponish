@@ -314,8 +314,6 @@ TODO [double-size-upward]: U into N
 ![](./lesson-2/passage-1-line-3.svg)
 ![](./original-images/conan-line-3.png)
 
-TODO: punctuation
-
 ![](./lesson-2/passage-1-line-4.svg)
 ![](./original-images/conan-line-4.png)
 

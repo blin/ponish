@@ -11,8 +11,7 @@ importlib.reload(draw)
 
 from draw import Page, Turtle, advance_after_glyph, draw_glyph
 from draw_jupyturtle import DrawingContext
-from glyphs import GlyphSize, VowelPosition
-from glyphs import all as all_glyphs
+from glyphs import GlyphSize, VowelPosition, all as all_glyphs
 
 
 def show_lines(t: Turtle, p: Page) -> None:

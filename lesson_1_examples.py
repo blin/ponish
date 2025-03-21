@@ -1,8 +1,7 @@
 # %%
 from draw import advance_after_glyph, advance_after_word, draw_glyph
 from draw_jupyturtle import DrawingContext
-from glyphs import VowelPosition
-from glyphs import all as all_glyphs
+from glyphs import VowelPosition, all as all_glyphs
 
 texts = [
     "ðe quick cute unicorn jumped",

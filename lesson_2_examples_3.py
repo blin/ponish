@@ -3,9 +3,7 @@ from pathlib import Path
 
 from draw import advance_after_glyph, draw_glyph
 from draw_jupyturtle import DrawingContext
-from glyphs import GlyphSize as GS
-from glyphs import VowelPosition as VP
-from glyphs import all as all_glyphs
+from glyphs import GlyphSize as GS, VowelPosition as VP, all as all_glyphs
 
 dir = Path("manual/lesson-2")
 dir.mkdir(parents=True, exist_ok=True)

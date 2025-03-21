@@ -16,8 +16,9 @@ dependencies = [
 line-length = 100
 
 [tool.ruff.lint]
-select = ["I"]
+ignore = ["E402"]
 
 [tool.isort]
 profile = "black"
 line_length = 100
+combine_as_imports = true
