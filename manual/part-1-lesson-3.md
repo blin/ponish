@@ -94,37 +94,35 @@ explain here, just a chart for you to memorize. Note that some of these are
 entire words in their own right. Don't hesitate to use them as such. Enough
 talk! Have at thee!
 
-| Earthographic     | Ponish                                |
-| ----------------- | ------------------------------------- |
-| above, about      | ![](./lesson-3/affixes/above.svg)     |
-| anti, auto        | ![](./lesson-3/affixes/anti.svg)      |
-| awa(y)            | ![](./lesson-3/affixes/away.svg)      |
-| circ(u)(um)       | ![](./lesson-3/affixes/circ.svg)      |
-| com, con, contr   | ![](./lesson-3/affixes/com.svg)       |
-| dis, des          | ![](./lesson-3/affixes/dis.svg)       |
-| each              | ![](./lesson-3/affixes/each.svg)      |
-| fect              | ![](./lesson-3/affixes/fect.svg)      |
-| full              | ![](./lesson-3/affixes/full.svg)      |
-| graph, gram       | ![](./lesson-3/affixes/graph.svg)     |
-| hood              | ![](./lesson-3/affixes/hood.svg)      |
-| ify               | ![](./lesson-3/affixes/ify.svg)       |
-| ifycation         | ![](./lesson-3/affixes/ifycation.svg) |
-| less              | ![](./lesson-3/affixes/less.svg)      |
-| logy, logic       | ![](./lesson-3/affixes/logy.svg)      |
-| mis, ment         | ![](./lesson-3/affixes/mis.svg)       |
-| ness              | ![](./lesson-3/affixes/ness.svg)      |
-| over, other, out  | ![](./lesson-3/affixes/over.svg)      |
-| self              | ![](./lesson-3/affixes/self.svg)      |
-| semi              | ![](./lesson-3/affixes/semi.svg)      |
-| ship              | ![](./lesson-3/affixes/ship.svg)      |
-| sub               | ![](./lesson-3/affixes/sub.svg)       |
-| super             | ![](./lesson-3/affixes/super.svg)     |
-| trans             | ![](./lesson-3/affixes/trans.svg)     |
-| under             | ![](./lesson-3/affixes/under.svg)     |
-| ever, every, very | ![](./lesson-3/affixes/ever.svg)      |
-| ward              | ![](./lesson-3/affixes/ward.svg)      |
-
-![](./original-images/038.png)
+| Earthographic     | Ponish                                | Original image                               |
+| ----------------- | ------------------------------------- | -------------------------------------------- |
+| above, about      | ![](./lesson-3/affixes/above.svg)     | ![](./original-images/affixes/above.png)     |
+| anti, auto        | ![](./lesson-3/affixes/anti.svg)      | ![](./original-images/affixes/anti.png)      |
+| awa(y)            | ![](./lesson-3/affixes/away.svg)      | ![](./original-images/affixes/away.png)      |
+| circ(u)(um)       | ![](./lesson-3/affixes/circ.svg)      | ![](./original-images/affixes/circ.png)      |
+| com, con, contr   | ![](./lesson-3/affixes/com.svg)       | ![](./original-images/affixes/com.png)       |
+| dis, des          | ![](./lesson-3/affixes/dis.svg)       | ![](./original-images/affixes/dis.png)       |
+| each              | ![](./lesson-3/affixes/each.svg)      | ![](./original-images/affixes/each.png)      |
+| fect              | ![](./lesson-3/affixes/fect.svg)      | ![](./original-images/affixes/fect.png)      |
+| full              | ![](./lesson-3/affixes/full.svg)      | ![](./original-images/affixes/full.png)      |
+| graph, gram       | ![](./lesson-3/affixes/graph.svg)     | ![](./original-images/affixes/graph.png)     |
+| hood              | ![](./lesson-3/affixes/hood.svg)      | ![](./original-images/affixes/hood.png)      |
+| ify               | ![](./lesson-3/affixes/ify.svg)       | ![](./original-images/affixes/ify.png)       |
+| ifycation         | ![](./lesson-3/affixes/ifycation.svg) | ![](./original-images/affixes/ifycation.png) |
+| less              | ![](./lesson-3/affixes/less.svg)      | ![](./original-images/affixes/less.png)      |
+| logy, logic       | ![](./lesson-3/affixes/logy.svg)      | ![](./original-images/affixes/logy.png)      |
+| mis, ment         | ![](./lesson-3/affixes/mis.svg)       | ![](./original-images/affixes/mis.png)       |
+| ness              | ![](./lesson-3/affixes/ness.svg)      | ![](./original-images/affixes/ness.png)      |
+| over, other, out  | ![](./lesson-3/affixes/over.svg)      | ![](./original-images/affixes/over.png)      |
+| self              | ![](./lesson-3/affixes/self.svg)      | ![](./original-images/affixes/self.png)      |
+| semi              | ![](./lesson-3/affixes/semi.svg)      | ![](./original-images/affixes/semi.png)      |
+| ship              | ![](./lesson-3/affixes/ship.svg)      | ![](./original-images/affixes/ship.png)      |
+| sub               | ![](./lesson-3/affixes/sub.svg)       | ![](./original-images/affixes/sub.png)       |
+| super             | ![](./lesson-3/affixes/super.svg)     | ![](./original-images/affixes/super.png)     |
+| trans             | ![](./lesson-3/affixes/trans.svg)     | ![](./original-images/affixes/trans.png)     |
+| under             | ![](./lesson-3/affixes/under.svg)     | ![](./original-images/affixes/under.png)     |
+| ever, every, very | ![](./lesson-3/affixes/ever.svg)      | ![](./original-images/affixes/ever.png)      |
+| ward              | ![](./lesson-3/affixes/ward.svg)      | ![](./original-images/affixes/ward.png)      |
 
 This may seem like a lot, but keep in mind that you don't have to use them, they
 will simply make you better than you might have otherwise been, which is still
