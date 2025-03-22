@@ -18,7 +18,7 @@ dir = Path("manual/lesson-3/affixes")
 dir.mkdir(parents=True, exist_ok=True)
 
 seen: set[glyphs.Glyph] = set()
-for name, g in list(glyphs.affixes.items())[37:]:
+for name, g in list(glyphs.affixes.items()):
     if g in seen:
         continue
     seen.add(g)

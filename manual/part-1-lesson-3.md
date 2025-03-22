@@ -94,6 +94,36 @@ explain here, just a chart for you to memorize. Note that some of these are
 entire words in their own right. Don't hesitate to use them as such. Enough
 talk! Have at thee!
 
+| Earthographic     | Ponish                                |
+| ----------------- | ------------------------------------- |
+| above, about      | ![](./lesson-3/affixes/above.svg)     |
+| anti, auto        | ![](./lesson-3/affixes/anti.svg)      |
+| awa(y)            | ![](./lesson-3/affixes/away.svg)      |
+| circ(u)(um)       | ![](./lesson-3/affixes/circ.svg)      |
+| com, con, contr   | ![](./lesson-3/affixes/com.svg)       |
+| dis, des          | ![](./lesson-3/affixes/dis.svg)       |
+| each              | ![](./lesson-3/affixes/each.svg)      |
+| fect              | ![](./lesson-3/affixes/fect.svg)      |
+| full              | ![](./lesson-3/affixes/full.svg)      |
+| graph, gram       | ![](./lesson-3/affixes/graph.svg)     |
+| hood              | ![](./lesson-3/affixes/hood.svg)      |
+| ify               | ![](./lesson-3/affixes/ify.svg)       |
+| ifycation         | ![](./lesson-3/affixes/ifycation.svg) |
+| less              | ![](./lesson-3/affixes/less.svg)      |
+| logy, logic       | ![](./lesson-3/affixes/logy.svg)      |
+| mis, ment         | ![](./lesson-3/affixes/mis.svg)       |
+| ness              | ![](./lesson-3/affixes/ness.svg)      |
+| over, other, out  | ![](./lesson-3/affixes/over.svg)      |
+| self              | ![](./lesson-3/affixes/self.svg)      |
+| semi              | ![](./lesson-3/affixes/semi.svg)      |
+| ship              | ![](./lesson-3/affixes/ship.svg)      |
+| sub               | ![](./lesson-3/affixes/sub.svg)       |
+| super             | ![](./lesson-3/affixes/super.svg)     |
+| trans             | ![](./lesson-3/affixes/trans.svg)     |
+| under             | ![](./lesson-3/affixes/under.svg)     |
+| ever, every, very | ![](./lesson-3/affixes/ever.svg)      |
+| ward              | ![](./lesson-3/affixes/ward.svg)      |
+
 ![](./original-images/038.png)
 
 This may seem like a lot, but keep in mind that you don't have to use them, they
