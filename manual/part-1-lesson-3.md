@@ -81,6 +81,12 @@ combination it represents, in this case 'S.'
 
 ![](./original-images/037.png)
 
+EDITOR NOTE: the "success" example in the original implies that the starting point of the
+S-S symbol is at the bottom of the circle, drawing S-S from the bottom requires
+one and a half circle-strokes and one line-stroke or
+one circle-stroke and two line-strokes (one up and one down).
+"No wrong spelling", so I consider S-S starting point to be at the top of the circle.
+
 ## Prefixes and suffixes
 
 And here is the next part of lesson 3: Pre, and suffixes. Nothing much to
