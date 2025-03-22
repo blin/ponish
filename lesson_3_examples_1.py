@@ -11,7 +11,7 @@ importlib.reload(draw)
 
 from pathlib import Path
 
-from draw import draw_sentence, draw_word
+from draw import draw_word
 from draw_jupyturtle import DrawingContext
 
 dir = Path("manual/lesson-3")

@@ -6,7 +6,6 @@ from glyphs import (
     Direction,
     Glyph,
     GlyphSize,
-    PenAction,
     PolarLine,
     RelCubicBezier,
     RelPoint,
