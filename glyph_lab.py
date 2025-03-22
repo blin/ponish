@@ -15,7 +15,7 @@ from glyphs import (
 
 g = Glyph(
     start_pos=RelPoint(rel_y=0.4, rel_x=1.0),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.2,
             extent_deg=360,
@@ -28,7 +28,7 @@ g = Glyph(
             p3=RelPoint(rel_y=0.2, rel_x=-0.1),
             p4=RelPoint(rel_y=0.2, rel_x=-0.3),
         ),
-    ],
+    ),
 )
 
 with DrawingContext() as (p, t):

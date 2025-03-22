@@ -17,12 +17,11 @@ from draw_jupyturtle import DrawingContext
 dir = Path("manual/lesson-3/affixes")
 dir.mkdir(parents=True, exist_ok=True)
 
-seen: set[glyphs.HashableGlyph] = set()
+seen: set[glyphs.Glyph] = set()
 for name, g in list(glyphs.affixes.items())[0:]:
-    hg = glyphs.to_hashable_glyph(g)
-    if hg in seen:
+    if g in seen:
         continue
-    seen.add(hg)
+    seen.add(g)
     dc = DrawingContext(
         output_path=dir / f"{name}.svg",
         drawing_width=150,

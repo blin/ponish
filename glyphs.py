@@ -50,28 +50,11 @@ class Circle:
 GlyphAction = PolarLine | RelCubicBezier | Circle | PenAction
 
 
-@dataclass
-class Glyph:
-    start_pos: RelPoint
-    draw_actions: list[GlyphAction]
-    is_vowel: bool = False
-
-
-# TODO: make normal Glyph hashable.
-# Avoided for now because of the number of changes needed.
 @dataclass(frozen=True)
-class HashableGlyph:
+class Glyph:
     start_pos: RelPoint
     draw_actions: tuple[GlyphAction, ...]
     is_vowel: bool = False
-
-
-def to_hashable_glyph(g: Glyph) -> HashableGlyph:
-    return HashableGlyph(
-        start_pos=g.start_pos,
-        draw_actions=tuple(g.draw_actions),
-        is_vowel=g.is_vowel,
-    )
 
 
 class GlyphSize(Enum):
@@ -114,164 +97,154 @@ letters: dict[str, Glyph] = dict()
 
 letters["A-two-legs"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
-    ],
+    ),
     is_vowel=True,
 )
 
 
 letters["A-one-leg"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
-    ],
+    draw_actions=(PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),),
     is_vowel=True,
 )
 
 letters["B"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
-    ],
+    draw_actions=(PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),),
 )
 
 letters["C"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.25),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.25),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
-    ],
+    ),
 )
 
 letters["F"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.25),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
-    ],
+    ),
 )
 
 letters["H"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.7),
         PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.7),
-    ],
+    ),
 )
 
 letters["I"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
-    ],
+    ),
     is_vowel=True,
 )
 
 letters["J"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.5),
-    ],
+    ),
 )
 
 letters["M"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
-        PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
-    ],
+    draw_actions=(PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),),
 )
 
 letters["N"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
-    ],
+    draw_actions=(PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),),
 )
 
 letters["T"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
-    draw_actions=[
-        PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),
-    ],
+    draw_actions=(PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),),
 )
 
 letters["V"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
-    ],
+    ),
 )
 
 letters["W"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.4),
-    ],
+    ),
 )
 
 letters["X"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=1.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.4),
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=1.0),
         PenAction.PLACE,
         PolarLine(angle_deg=Direction.SE.value, rel_magnitude=1.4),
-    ],
+    ),
 )
 
 letters["Y"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.1),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.6),
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.6),
         PenAction.PLACE,
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.4),
-    ],
+    ),
     is_vowel=True,
 )
 
 letters["Z"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.4),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
-    ],
+    ),
 )
 
 
 # CH - https://en.wikipedia.org/wiki/Voiceless_postalveolar_affricate
 letters["ʧ"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.7),
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.7),
-    ],
+    ),
 )
 
 
 letters["D"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.5,
             extent_deg=180,
             rotation=Rotation.CW,
             heading_deg=Direction.E.value,
         ),
-    ],
+    ),
 )
 letters["E"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.1),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.7),
         Circle(
             rel_radius=0.2,
@@ -280,13 +253,13 @@ letters["E"] = Glyph(
             heading_deg=Direction.NNE.value,
         ),
         PolarLine(angle_deg=Direction.ENE.value, rel_magnitude=0.7),
-    ],
+    ),
     is_vowel=True,
 )
 
 letters["G"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.2),
         Circle(
             rel_radius=0.3,
@@ -296,12 +269,12 @@ letters["G"] = Glyph(
         ),
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.25),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
-    ],
+    ),
 )
 
 letters["K"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         # NOTE: Doing this as two RelCubicBezier would
         # match the original shape better, same for all half-circle shapes.
         Circle(
@@ -310,37 +283,37 @@ letters["K"] = Glyph(
             rotation=Rotation.CW,
             heading_deg=Direction.N.value,
         ),
-    ],
+    ),
 )
 
 letters["L"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.4,
             extent_deg=180,
             rotation=Rotation.CCW,
             heading_deg=Direction.S.value,
         ),
-    ],
+    ),
 )
 
 letters["O"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.5,
             extent_deg=180,
             rotation=Rotation.CCW,
             heading_deg=Direction.W.value,
         ),
-    ],
+    ),
     is_vowel=True,
 )
 
 letters["P"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.3,
             extent_deg=360,
@@ -348,12 +321,12 @@ letters["P"] = Glyph(
             heading_deg=Direction.E.value,
         ),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.9),
-    ],
+    ),
 )
 
 letters["Q"] = Glyph(
     start_pos=RelPoint(rel_y=0.25, rel_x=0.4),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.25,
             extent_deg=360,
@@ -361,12 +334,12 @@ letters["Q"] = Glyph(
             heading_deg=Direction.S.value,
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
-    ],
+    ),
 )
 
 letters["R"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.3),
         Circle(
@@ -375,13 +348,13 @@ letters["R"] = Glyph(
             rotation=Rotation.CW,
             heading_deg=Direction.N.value,
         ),
-    ],
+    ),
 )
 
 # TODO: bezier
 letters["S"] = Glyph(
     start_pos=RelPoint(rel_y=0.25, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.25,
             extent_deg=360,
@@ -389,13 +362,13 @@ letters["S"] = Glyph(
             heading_deg=Direction.SE.value,
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
-    ],
+    ),
 )
 
 
 letters["U"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.5),
         RelCubicBezier(
             p2=RelPoint(rel_y=0.75, rel_x=0.75),
@@ -403,7 +376,7 @@ letters["U"] = Glyph(
             p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.5),
-    ],
+    ),
     is_vowel=True,
 )
 
@@ -411,27 +384,27 @@ letters["U"] = Glyph(
 # TH - https://en.wikipedia.org/wiki/Voiced_dental_fricative
 letters["ð"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.5),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.5,
             extent_deg=360,
             rotation=Rotation.CCW,
             heading_deg=Direction.E.value,
         ),
-    ],
+    ),
 )
 
 # SH - https://en.wikipedia.org/wiki/Voiceless_postalveolar_fricative
 letters["ʃ"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
         RelCubicBezier(
             p2=RelPoint(rel_y=0.75, rel_x=0.0),
             p3=RelPoint(rel_y=0.0, rel_x=-0.75),
             p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
-    ],
+    ),
 )
 
 aliases: dict[str, Glyph] = dict()
@@ -446,7 +419,7 @@ blends: dict[str, Glyph] = dict()
 
 blends["AD"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
         Circle(
             rel_radius=0.5,
@@ -454,29 +427,29 @@ blends["AD"] = Glyph(
             rotation=Rotation.CW,
             heading_deg=Direction.E.value,
         ),
-    ],
+    ),
 )
 
 blends["AJ"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
-    ],
+    ),
 )
 
 blends["AN"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
-    ],
+    ),
 )
 
 blends["AR"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.3),
@@ -486,12 +459,12 @@ blends["AR"] = Glyph(
             rotation=Rotation.CW,
             heading_deg=Direction.N.value,
         ),
-    ],
+    ),
 )
 
 blends["AS"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.75),
         Circle(
             rel_radius=0.1,
@@ -500,20 +473,20 @@ blends["AS"] = Glyph(
             heading_deg=Direction.SE.value,
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
-    ],
+    ),
 )
 
 blends["AT"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NE.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),
-    ],
+    ),
 )
 
 blends["AQ"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.75),
         Circle(
             rel_radius=0.1,
@@ -522,12 +495,12 @@ blends["AQ"] = Glyph(
             heading_deg=Direction.S.value,
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
-    ],
+    ),
 )
 
 blends["BR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.2),
         Circle(
@@ -536,12 +509,12 @@ blends["BR"] = Glyph(
             rotation=Rotation.CW,
             heading_deg=Direction.N.value,
         ),
-    ],
+    ),
 )
 
 blends["CR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.25),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.25),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         Circle(
@@ -550,12 +523,12 @@ blends["CR"] = Glyph(
             rotation=Rotation.CW,
             heading_deg=Direction.N.value,
         ),
-    ],
+    ),
 )
 
 blends["DR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.5,
             extent_deg=180,
@@ -568,12 +541,12 @@ blends["DR"] = Glyph(
             rotation=Rotation.CW,
             heading_deg=Direction.NE.value,
         ),
-    ],
+    ),
 )
 
 blends["FR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.25),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         Circle(
@@ -582,12 +555,12 @@ blends["FR"] = Glyph(
             rotation=Rotation.CW,
             heading_deg=Direction.N.value,
         ),
-    ],
+    ),
 )
 
 blends["TR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.3),
         Circle(
@@ -596,12 +569,12 @@ blends["TR"] = Glyph(
             rotation=Rotation.CW,
             heading_deg=Direction.NNE.value,
         ),
-    ],
+    ),
 )
 
 blends["ʧR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.7),
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.7),
         Circle(
@@ -610,12 +583,12 @@ blends["ʧR"] = Glyph(
             rotation=Rotation.CW,
             heading_deg=Direction.NE.value,
         ),
-    ],
+    ),
 )
 
 blends["NG"] = Glyph(
     start_pos=RelPoint(rel_y=0.3, rel_x=1.0),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.3,
             extent_deg=360,
@@ -628,7 +601,7 @@ blends["NG"] = Glyph(
             p3=RelPoint(rel_y=0.4, rel_x=-0.3),
             p4=RelPoint(rel_y=0.4, rel_x=-0.5),
         ),
-    ],
+    ),
 )
 
 blends["ING"] = blends["NG"]
@@ -636,7 +609,7 @@ blends["THING"] = blends["NG"]
 
 blends["NK"] = Glyph(
     start_pos=RelPoint(rel_y=0.3, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.3,
             extent_deg=360,
@@ -649,7 +622,7 @@ blends["NK"] = Glyph(
             p3=RelPoint(rel_y=0.4, rel_x=0.3),
             p4=RelPoint(rel_y=0.4, rel_x=0.5),
         ),
-    ],
+    ),
 )
 
 blends["NC"] = blends["NK"]
@@ -658,7 +631,7 @@ blends["THANK"] = blends["NK"]
 
 blends["PR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.3),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.3,
             extent_deg=360,
@@ -671,12 +644,12 @@ blends["PR"] = Glyph(
             p3=RelPoint(rel_y=0.3, rel_x=0.4),
             p4=RelPoint(rel_y=0.5, rel_x=0.4),
         ),
-    ],
+    ),
 )
 
 blends["PL"] = Glyph(
     start_pos=RelPoint(rel_y=0.6, rel_x=0.3),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.3,
             extent_deg=360,
@@ -689,12 +662,12 @@ blends["PL"] = Glyph(
             p3=RelPoint(rel_y=-0.3, rel_x=0.4),
             p4=RelPoint(rel_y=-0.5, rel_x=0.4),
         ),
-    ],
+    ),
 )
 
 blends["SS"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
-    draw_actions=[
+    draw_actions=(
         Circle(
             rel_radius=0.3,
             extent_deg=360,
@@ -702,47 +675,47 @@ blends["SS"] = Glyph(
             heading_deg=Direction.E.value,
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
-    ],
+    ),
 )
 
 punctuation: dict[str, Glyph] = dict()
 
 punctuation["high-dot"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.01),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.01),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.01),
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.01),
-    ],
+    ),
 )
 
 punctuation["low-dot"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.01),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.01),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.01),
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.01),
-    ],
+    ),
 )
 
 punctuation["."] = punctuation["low-dot"]
 
 punctuation[","] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         RelCubicBezier(
             p2=RelPoint(rel_y=0.0, rel_x=0.4),
             p3=RelPoint(rel_y=0.3, rel_x=0.3),
             p4=RelPoint(rel_y=0.6, rel_x=0.0),
         ),
-    ],
+    ),
 )
 
 punctuation[":"] = Glyph(
     start_pos=RelPoint(rel_y=0.3, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.02),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.02),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.02),
@@ -754,12 +727,12 @@ punctuation[":"] = Glyph(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.02),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.02),
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.02),
-    ],
+    ),
 )
 
 punctuation["!"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.8),
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.2),
@@ -768,11 +741,11 @@ punctuation["!"] = Glyph(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.02),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.02),
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.02),
-    ],
+    ),
 )
 
 
-def affix_from_letter(letter: str, more_actions: list[GlyphAction]) -> Glyph:
+def affix_from_letter(letter: str, more_actions: tuple[GlyphAction, ...]) -> Glyph:
     g = letters[letter]
     return Glyph(
         start_pos=g.start_pos,
@@ -784,7 +757,7 @@ affixes: dict[str, Glyph] = dict()
 
 affixes["above"] = Glyph(
     start_pos=RelPoint(rel_y=0.4, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.4),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PenAction.LIFT,
@@ -792,42 +765,42 @@ affixes["above"] = Glyph(
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
         PenAction.PLACE,
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
-    ],
+    ),
 )
 affixes["about"] = affixes["above"]
 
 affixes["anti"] = affix_from_letter(
     "A-two-legs",
-    more_actions=[
+    more_actions=(
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.NNW.value, rel_magnitude=0.5),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.6),
         PenAction.PLACE,
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.9),
-    ],
+    ),
 )
 affixes["auto"] = affixes["anti"]
 
 affixes["away"] = Glyph(
     start_pos=RelPoint(rel_y=0.4, rel_x=0.0),
-    draw_actions=[
+    draw_actions=(
         PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.4),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.4),
-    ],
+    ),
 )
 affixes["awa"] = affixes["away"]
 
 
 affixes["circ"] = affix_from_letter(
     "C",
-    more_actions=[
+    more_actions=(
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
         PenAction.PLACE,
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
-    ],
+    ),
 )
 affixes["circu"] = affixes["circ"]
 affixes["circum"] = affixes["circ"]
@@ -835,13 +808,13 @@ affixes["circum"] = affixes["circ"]
 ## The base is K not C, because of pronounciation.
 affixes["com"] = affix_from_letter(
     "K",
-    more_actions=[
+    more_actions=(
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.2),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.3),
         PenAction.PLACE,
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
-    ],
+    ),
 )
 affixes["con"] = affixes["com"]
 affixes["contr"] = affixes["com"]
