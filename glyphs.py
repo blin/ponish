@@ -8,7 +8,7 @@ class Point:
     x: float
 
 
-@dataclass
+@dataclass(frozen=True)
 class RelPoint:
     rel_y: float  # positive is down, negative is up
     rel_x: float  # positive is right, negative is left
@@ -24,13 +24,13 @@ class PenAction(Enum):
     PLACE = auto()
 
 
-@dataclass
+@dataclass(frozen=True)
 class PolarLine:
     angle_deg: float
     rel_magnitude: float
 
 
-@dataclass
+@dataclass(frozen=True)
 class RelCubicBezier:
     # All control points are specified relative to first control point,
     # which is context dependent.
@@ -39,7 +39,7 @@ class RelCubicBezier:
     p4: RelPoint
 
 
-@dataclass
+@dataclass(frozen=True)
 class Circle:
     rel_radius: float
     extent_deg: int
@@ -55,6 +55,23 @@ class Glyph:
     start_pos: RelPoint
     draw_actions: list[GlyphAction]
     is_vowel: bool = False
+
+
+# TODO: make normal Glyph hashable.
+# Avoided for now because of the number of changes needed.
+@dataclass(frozen=True)
+class HashableGlyph:
+    start_pos: RelPoint
+    draw_actions: tuple[GlyphAction, ...]
+    is_vowel: bool = False
+
+
+def to_hashable_glyph(g: Glyph) -> HashableGlyph:
+    return HashableGlyph(
+        start_pos=g.start_pos,
+        draw_actions=tuple(g.draw_actions),
+        is_vowel=g.is_vowel,
+    )
 
 
 class GlyphSize(Enum):
@@ -93,7 +110,7 @@ class Direction(Enum):
     NNW = 112.5
 
 
-letters = dict()
+letters: dict[str, Glyph] = dict()
 
 letters["A-two-legs"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
@@ -755,4 +772,84 @@ punctuation["!"] = Glyph(
 )
 
 
-all: dict[str, Glyph] = {**letters, **aliases, **blends, **punctuation}
+def affix_from_letter(letter: str, more_actions: list[GlyphAction]) -> Glyph:
+    g = letters[letter]
+    return Glyph(
+        start_pos=g.start_pos,
+        draw_actions=g.draw_actions + more_actions,
+    )
+
+
+affixes: dict[str, Glyph] = dict()
+
+affixes["above"] = Glyph(
+    start_pos=RelPoint(rel_y=0.4, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.4),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ],
+)
+affixes["about"] = affixes["above"]
+
+affixes["anti"] = affix_from_letter(
+    "A-two-legs",
+    more_actions=[
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.NNW.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.6),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.9),
+    ],
+)
+affixes["auto"] = affixes["anti"]
+
+affixes["away"] = Glyph(
+    start_pos=RelPoint(rel_y=0.4, rel_x=0.0),
+    draw_actions=[
+        PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.4),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.4),
+    ],
+)
+affixes["awa"] = affixes["away"]
+
+
+affixes["circ"] = affix_from_letter(
+    "C",
+    more_actions=[
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ],
+)
+affixes["circu"] = affixes["circ"]
+affixes["circum"] = affixes["circ"]
+
+## The base is K not C, because of pronounciation.
+affixes["com"] = affix_from_letter(
+    "K",
+    more_actions=[
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.2),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.3),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+    ],
+)
+affixes["con"] = affixes["com"]
+affixes["contr"] = affixes["com"]
+
+all: dict[str, Glyph] = {
+    **letters,
+    **aliases,
+    **blends,
+    **punctuation,
+    **affixes,
+}
