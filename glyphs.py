@@ -149,6 +149,7 @@ letters["I"] = Glyph(
     is_vowel=True,
 )
 
+# TODO: make bottom line shorter to match "C" and "F"
 letters["J"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
     draw_actions=(
@@ -162,6 +163,7 @@ letters["M"] = Glyph(
     draw_actions=(PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),),
 )
 
+# TODO: consider having a short "N" and long "N"
 letters["N"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=(PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),),
@@ -818,6 +820,149 @@ affixes["com"] = affix_from_letter(
 )
 affixes["con"] = affixes["com"]
 affixes["contr"] = affixes["com"]
+
+affixes["dis"] = affix_from_letter(
+    "D",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+    ),
+)
+affixes["des"] = affixes["dis"]
+
+affixes["each"] = affix_from_letter(
+    "ʧ",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+    ),
+)
+
+# There is a second form of "fect" that has an L-line instead of K-line,
+# but I do not yet understand why it is needed.
+affixes["fect"] = affix_from_letter(
+    "F",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.7),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        Circle(
+            rel_radius=0.2,
+            extent_deg=180,
+            rotation=Rotation.CCW,
+            heading_deg=Direction.S.value,
+        ),
+    ),
+)
+
+affixes["full"] = affix_from_letter(
+    "F",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ),
+)
+
+affixes["graph"] = affix_from_letter(
+    "G",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.3),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ),
+)
+affixes["gram"] = affixes["graph"]
+
+# TODO: adjust start_pos
+affixes["hood"] = affix_from_letter(
+    "H",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.7),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+    ),
+)
+
+# That's basically inversed "above"
+affixes["ify"] = Glyph(
+    start_pos=RelPoint(rel_y=0.4, rel_x=0.4),
+    draw_actions=(
+        PolarLine(angle_deg=Direction.NW.value, rel_magnitude=0.4),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ),
+)
+
+affixes["ifycation"] = Glyph(
+    start_pos=RelPoint(rel_y=0.4, rel_x=0.4),
+    # Not using "N" because it is too long
+    draw_actions=(
+        affixes["ify"].draw_actions
+        + letters["ʃ"].draw_actions
+        + (PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),)
+    ),
+)
+
+affixes["less"] = affix_from_letter(
+    "L",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.2),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.3),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+    ),
+)
+
+# There is a second form of "logy" that has an K-line instead of L-line,
+# but I do not yet understand why it is needed.
+# The base is J not G, because of pronounciation.
+affixes["logy"] = affix_from_letter(
+    "J",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.7),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.3),
+        PenAction.PLACE,
+        Circle(
+            rel_radius=0.2,
+            extent_deg=180,
+            rotation=Rotation.CCW,
+            heading_deg=Direction.S.value,
+        ),
+    ),
+)
+affixes["logic"] = affixes["logy"]
+
+affixes["mis"] = affix_from_letter(
+    "M",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.45),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+    ),
+)
+affixes["ment"] = affixes["mis"]
 
 all: dict[str, Glyph] = {
     **letters,
