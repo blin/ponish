@@ -932,7 +932,7 @@ affixes["less"] = affix_from_letter(
     ),
 )
 
-# There is a second form of "logy" that has an K-line instead of L-line,
+# There is a second form of "logy" that has a K-line instead of L-line,
 # but I do not yet understand why it is needed.
 # The base is J not G, because of pronounciation.
 affixes["logy"] = affix_from_letter(
@@ -963,6 +963,143 @@ affixes["mis"] = affix_from_letter(
     ),
 )
 affixes["ment"] = affixes["mis"]
+
+affixes["ness"] = affix_from_letter(
+    "N",
+    more_actions=(
+        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.4),
+        Circle(
+            rel_radius=0.3,
+            extent_deg=180,
+            rotation=Rotation.CW,
+            heading_deg=Direction.E.value,
+        ),
+    ),
+)
+
+# TODO: adjust start_pos
+affixes["over"] = affix_from_letter(
+    "O",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.7),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+    ),
+)
+affixes["other"] = affixes["over"]
+affixes["out"] = affixes["over"]
+
+affixes["self"] = affix_from_letter(
+    "S",
+    more_actions=letters["L"].draw_actions
+    + (
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.4),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=1.0),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ),
+)
+
+affixes["semi"] = affix_from_letter(
+    "S",
+    more_actions=letters["M"].draw_actions
+    + (
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.6),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ),
+)
+
+affixes["ship"] = affix_from_letter(
+    "ʃ",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.4),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ),
+)
+
+affixes["sub"] = affix_from_letter(
+    "S",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.4),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ),
+)
+
+# There is a second form of "upper" that has a K-line instead of L-line,
+# but I do not yet understand why it is needed.
+affixes["super"] = affix_from_letter(
+    "S",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PenAction.PLACE,
+        Circle(
+            rel_radius=0.2,
+            extent_deg=180,
+            rotation=Rotation.CCW,
+            heading_deg=Direction.S.value,
+        ),
+    ),
+)
+
+affixes["trans"] = affix_from_letter(
+    "T",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ),
+)
+
+affixes["under"] = affix_from_letter(
+    "U",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.4),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.5),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.7),
+    ),
+)
+
+affixes["ever"] = affix_from_letter(
+    "V",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.8),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.85),
+    ),
+)
+affixes["every"] = affixes["ever"]
+affixes["very"] = affixes["ever"]
+
+affixes["ward"] = affix_from_letter(
+    "W",
+    more_actions=(
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.2),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.5),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+    ),
+)
+
 
 all: dict[str, Glyph] = {
     **letters,
