@@ -316,24 +316,22 @@ letters["O"] = Glyph(
 letters["P"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
     draw_actions=(
-        Circle(
-            rel_radius=0.3,
-            extent_deg=360,
-            rotation=Rotation.CW,
-            heading_deg=Direction.E.value,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.75, rel_x=0.0),
+            p3=RelPoint(rel_y=0.0, rel_x=-0.75),
+            p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.9),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
     ),
 )
 
 letters["Q"] = Glyph(
     start_pos=RelPoint(rel_y=0.25, rel_x=0.4),
     draw_actions=(
-        Circle(
-            rel_radius=0.25,
-            extent_deg=360,
-            rotation=Rotation.CW,
-            heading_deg=Direction.S.value,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.0, rel_x=-0.75),
+            p3=RelPoint(rel_y=-0.75, rel_x=0.0),
+            p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
     ),
@@ -353,21 +351,20 @@ letters["R"] = Glyph(
     ),
 )
 
-# TODO: bezier
 letters["S"] = Glyph(
     start_pos=RelPoint(rel_y=0.25, rel_x=0.0),
     draw_actions=(
-        Circle(
-            rel_radius=0.25,
-            extent_deg=360,
-            rotation=Rotation.CCW,
-            heading_deg=Direction.SE.value,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.0, rel_x=0.75),
+            p3=RelPoint(rel_y=-0.75, rel_x=0.0),
+            p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
     ),
 )
 
 
+# TODO: make "up" combination look okay
 letters["U"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=(
@@ -427,7 +424,7 @@ def derive_from_letter(letter: str, more_actions: tuple[GlyphAction, ...]) -> Gl
 
 blends: dict[str, Glyph] = dict()
 
-
+# TODO: use derive_from_letter where possible
 blends["AD"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=(
@@ -475,16 +472,8 @@ blends["AR"] = Glyph(
 
 blends["AS"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.75),
-        Circle(
-            rel_radius=0.1,
-            extent_deg=360,
-            rotation=Rotation.CCW,
-            heading_deg=Direction.SE.value,
-        ),
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
-    ),
+    draw_actions=(PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.75),)
+    + letters["S"].draw_actions,
 )
 
 blends["AT"] = Glyph(
@@ -497,16 +486,8 @@ blends["AT"] = Glyph(
 
 blends["AQ"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.75),
-        Circle(
-            rel_radius=0.1,
-            extent_deg=360,
-            rotation=Rotation.CW,
-            heading_deg=Direction.S.value,
-        ),
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.75),
-    ),
+    draw_actions=(PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.75),)
+    + letters["Q"].draw_actions,
 )
 
 blends["BR"] = Glyph(
