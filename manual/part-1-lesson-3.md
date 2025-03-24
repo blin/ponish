@@ -146,12 +146,12 @@ TODO [automobile]: prefix ending in a vowel has vowel effect on the next glyph?
 
 | Earthographic | Ponish                                          | Original image                                         |
 | ------------- | ----------------------------------------------- | ------------------------------------------------------ |
-| aboveground   | ![](./lesson-3/affix-phrases/aboveground.svg)   | ![](./original-images/affix-phrases/aboveground.png)   |
-| layabout      | ![](./lesson-3/affix-phrases/layabout.svg)      | ![](./original-images/affix-phrases/layabout.png)      |
+| above ground  | ![](./lesson-3/affix-phrases/aboveground.svg)   | ![](./original-images/affix-phrases/aboveground.png)   |
+| lay about     | ![](./lesson-3/affix-phrases/layabout.svg)      | ![](./original-images/affix-phrases/layabout.png)      |
 | antidote      | ![](./lesson-3/affix-phrases/antidote.svg)      | ![](./original-images/affix-phrases/antidote.png)      |
 | automobile    | ![](./lesson-3/affix-phrases/automobile.svg)    | ![](./original-images/affix-phrases/automobile.png)    |
 | await         | ![](./lesson-3/affix-phrases/await.svg)         | ![](./original-images/affix-phrases/await.png)         |
-| goaway        | ![](./lesson-3/affix-phrases/goaway.svg)        | ![](./original-images/affix-phrases/goaway.png)        |
+| go away       | ![](./lesson-3/affix-phrases/goaway.svg)        | ![](./original-images/affix-phrases/goaway.png)        |
 | circulate     | ![](./lesson-3/affix-phrases/circulate.svg)     | ![](./original-images/affix-phrases/circulate.png)     |
 | circumscribe  | ![](./lesson-3/affix-phrases/circumscribe.svg)  | ![](./original-images/affix-phrases/circumscribe.png)  |
 
@@ -202,8 +202,8 @@ Otherwise, Outspoken
 
 | Earthographic | Ponish                                          | Original image                                         |
 | ------------- | ----------------------------------------------- | ------------------------------------------------------ |
-| selfpublish   | ![](./lesson-3/affix-phrases/selfpublish.svg)   | ![](./original-images/affix-phrases/selfpublish.png)   |
-| semitruck     | ![](./lesson-3/affix-phrases/semitruck.svg)     | ![](./original-images/affix-phrases/semitruck.png)     |
+| self publish  | ![](./lesson-3/affix-phrases/selfpublish.svg)   | ![](./original-images/affix-phrases/selfpublish.png)   |
+| semi truck    | ![](./lesson-3/affix-phrases/semitruck.svg)     | ![](./original-images/affix-phrases/semitruck.png)     |
 | battleship    | ![](./lesson-3/affix-phrases/battleship.svg)    | ![](./original-images/affix-phrases/battleship.png)    |
 | shipment      | ![](./lesson-3/affix-phrases/shipment.svg)      | ![](./original-images/affix-phrases/shipment.png)      |
 | subway        | ![](./lesson-3/affix-phrases/subway.svg)        | ![](./original-images/affix-phrases/subway.png)        |
@@ -231,7 +231,7 @@ Otherwise, Outspoken
 | toward        | ![](./lesson-3/affix-phrases/toward.svg)        | ![](./original-images/affix-phrases/toward.png)        |
 | downwards     | ![](./lesson-3/affix-phrases/downwards.svg)     | ![](./original-images/affix-phrases/downwards.png)     |
 | warden        | ![](./lesson-3/affix-phrases/warden.svg)        | ![](./original-images/affix-phrases/warden.png)        |
-| wardaway      | ![](./lesson-3/affix-phrases/wardaway.svg)      | ![](./original-images/affix-phrases/wardaway.png)      |
+| ward away     | ![](./lesson-3/affix-phrases/wardaway.svg)      | ![](./original-images/affix-phrases/wardaway.png)      |
 
 And to close up the lesson, here is some more reading practice:
 

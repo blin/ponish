@@ -21,7 +21,7 @@ words = [
     ("aboveground", "$(above)$(GR)ound"),
     ("layabout", "la$(about)"),
     ("antidote", "$(anti)dot"),
-    ("automobile", "$(auto)mobil"),
+    ("automobile", "$(auto)omobil"),
     ("await", "$(awa)at"),
     ("goaway", "go$(away)"),
     ("circulate", "$(circu)lat"),
