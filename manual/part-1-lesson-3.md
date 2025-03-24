@@ -140,6 +140,10 @@ may be raised or lowered to better accommodate the following symbols.
 The picture below contains only the Ponish writings, but the Earthographics are
 included directly below, if you need a translation.
 
+### Examples, Row 1: Above ground, Lay about, Antidote, Automobile, Await, Go away, Circulate, Circumscribe
+
+TODO [automobile]: prefix ending in a vowel has vowel effect on the next glyph?
+
 | Earthographic | Ponish                                          | Original image                                         |
 | ------------- | ----------------------------------------------- | ------------------------------------------------------ |
 | aboveground   | ![](./lesson-3/affix-phrases/aboveground.svg)   | ![](./original-images/affix-phrases/aboveground.png)   |
@@ -150,6 +154,13 @@ included directly below, if you need a translation.
 | goaway        | ![](./lesson-3/affix-phrases/goaway.svg)        | ![](./original-images/affix-phrases/goaway.png)        |
 | circulate     | ![](./lesson-3/affix-phrases/circulate.svg)     | ![](./original-images/affix-phrases/circulate.png)     |
 | circumscribe  | ![](./lesson-3/affix-phrases/circumscribe.svg)  | ![](./original-images/affix-phrases/circumscribe.png)  |
+
+### Examples, Row 2: Compose, Construct, Contradiction, Disparage, Destitute, Peach, Infect, Infection
+
+TODO [peach]: suffix starting with a vowel acts like a vowel?
+
+| Earthographic | Ponish                                          | Original image                                         |
+| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
 | compose       | ![](./lesson-3/affix-phrases/compose.svg)       | ![](./original-images/affix-phrases/compose.png)       |
 | construct     | ![](./lesson-3/affix-phrases/construct.svg)     | ![](./original-images/affix-phrases/construct.png)     |
 | contradiction | ![](./lesson-3/affix-phrases/contradiction.svg) | ![](./original-images/affix-phrases/contradiction.png) |
@@ -158,6 +169,11 @@ included directly below, if you need a translation.
 | peach         | ![](./lesson-3/affix-phrases/peach.svg)         | ![](./original-images/affix-phrases/peach.png)         |
 | infect        | ![](./lesson-3/affix-phrases/infect.svg)        | ![](./original-images/affix-phrases/infect.png)        |
 | infection     | ![](./lesson-3/affix-phrases/infection.svg)     | ![](./original-images/affix-phrases/infection.png)     |
+
+### Examples, Row 3: Spiteful, Spitefulness, Graphic, Grammar, Sluthood, Pacify, Pacification, Guileless, Guilelessness
+
+| Earthographic | Ponish                                          | Original image                                         |
+| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
 | spiteful      | ![](./lesson-3/affix-phrases/spiteful.svg)      | ![](./original-images/affix-phrases/spiteful.png)      |
 | spitefulness  | ![](./lesson-3/affix-phrases/spitefulness.svg)  | ![](./original-images/affix-phrases/spitefulness.png)  |
 | graphic       | ![](./lesson-3/affix-phrases/graphic.svg)       | ![](./original-images/affix-phrases/graphic.png)       |
@@ -167,6 +183,12 @@ included directly below, if you need a translation.
 | pacification  | ![](./lesson-3/affix-phrases/pacification.svg)  | ![](./original-images/affix-phrases/pacification.png)  |
 | guileless     | ![](./lesson-3/affix-phrases/guileless.svg)     | ![](./original-images/affix-phrases/guileless.png)     |
 | guilelessness | ![](./lesson-3/affix-phrases/guilelessness.svg) | ![](./original-images/affix-phrases/guilelessness.png) |
+
+### Examples, Row 4: Biology, Illogical, Misrepresent, Mismanagement, Cleanliness, Overdone,
+Otherwise, Outspoken
+
+| Earthographic | Ponish                                          | Original image                                         |
+| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
 | biology       | ![](./lesson-3/affix-phrases/biology.svg)       | ![](./original-images/affix-phrases/biology.png)       |
 | illogical     | ![](./lesson-3/affix-phrases/illogical.svg)     | ![](./original-images/affix-phrases/illogical.png)     |
 | misrepresent  | ![](./lesson-3/affix-phrases/misrepresent.svg)  | ![](./original-images/affix-phrases/misrepresent.png)  |
@@ -175,6 +197,11 @@ included directly below, if you need a translation.
 | overdone      | ![](./lesson-3/affix-phrases/overdone.svg)      | ![](./original-images/affix-phrases/overdone.png)      |
 | otherwise     | ![](./lesson-3/affix-phrases/otherwise.svg)     | ![](./original-images/affix-phrases/otherwise.png)     |
 | outspoken     | ![](./lesson-3/affix-phrases/outspoken.svg)     | ![](./original-images/affix-phrases/outspoken.png)     |
+
+### Examples, Row 5: Self publish, Semi truck, Battleship, Shipment, Subway, Subject, Supersonic, Superluminal
+
+| Earthographic | Ponish                                          | Original image                                         |
+| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
 | selfpublish   | ![](./lesson-3/affix-phrases/selfpublish.svg)   | ![](./original-images/affix-phrases/selfpublish.png)   |
 | semitruck     | ![](./lesson-3/affix-phrases/semitruck.svg)     | ![](./original-images/affix-phrases/semitruck.png)     |
 | battleship    | ![](./lesson-3/affix-phrases/battleship.svg)    | ![](./original-images/affix-phrases/battleship.png)    |
@@ -183,6 +210,11 @@ included directly below, if you need a translation.
 | subject       | ![](./lesson-3/affix-phrases/subject.svg)       | ![](./original-images/affix-phrases/subject.png)       |
 | supersonic    | ![](./lesson-3/affix-phrases/supersonic.svg)    | ![](./original-images/affix-phrases/supersonic.png)    |
 | superluminal  | ![](./lesson-3/affix-phrases/superluminal.svg)  | ![](./original-images/affix-phrases/superluminal.png)  |
+
+### Examples, Row 5: Transit, Transfer, Undergo, Blunder, Forever, Everybody, Variable, Very good
+
+| Earthographic | Ponish                                          | Original image                                         |
+| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
 | transit       | ![](./lesson-3/affix-phrases/transit.svg)       | ![](./original-images/affix-phrases/transit.png)       |
 | transfer      | ![](./lesson-3/affix-phrases/transfer.svg)      | ![](./original-images/affix-phrases/transfer.png)      |
 | undergo       | ![](./lesson-3/affix-phrases/undergo.svg)       | ![](./original-images/affix-phrases/undergo.png)       |
@@ -190,30 +222,16 @@ included directly below, if you need a translation.
 | forever       | ![](./lesson-3/affix-phrases/forever.svg)       | ![](./original-images/affix-phrases/forever.png)       |
 | everybody     | ![](./lesson-3/affix-phrases/everybody.svg)     | ![](./original-images/affix-phrases/everybody.png)     |
 | variable      | ![](./lesson-3/affix-phrases/variable.svg)      | ![](./original-images/affix-phrases/variable.png)      |
-| verygood      | ![](./lesson-3/affix-phrases/verygood.svg)      | ![](./original-images/affix-phrases/verygood.png)      |
+| very good     | ![](./lesson-3/affix-phrases/verygood.svg)      | ![](./original-images/affix-phrases/verygood.png)      |
+
+### Examples, Row 5: Toward, Downwards, Warden, Ward away.
+ 
+| Earthographic | Ponish                                          | Original image                                         |
+| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
 | toward        | ![](./lesson-3/affix-phrases/toward.svg)        | ![](./original-images/affix-phrases/toward.png)        |
 | downwards     | ![](./lesson-3/affix-phrases/downwards.svg)     | ![](./original-images/affix-phrases/downwards.png)     |
 | warden        | ![](./lesson-3/affix-phrases/warden.svg)        | ![](./original-images/affix-phrases/warden.png)        |
 | wardaway      | ![](./lesson-3/affix-phrases/wardaway.svg)      | ![](./original-images/affix-phrases/wardaway.png)      |
-
-
-![](./original-images/039.png)
-
-
-Row 1: Above ground, Lay about, Antidote, Automobile, Await, Go away, Circulate, Circumscribe
-
-Row 2: Compose, Construct, Contradiction, Disparage, Destitute, Peach, Infect, Infection
-
-Row 3: Spiteful, Spitefulness, Graphic, Grammar, Sluthood, Pacify, Pacification, Guileless, Guilelessness
-
-Row 4: Biology, Illogical, Misrepresent, Mismanagement, Cleanliness, Overdone,
-Otherwise, Outspoken
-
-Row 5: Self publish, Semi truck, Battleship, Shipment, Subway, Subject, Supersonic, Superluminal
-
-Row 6: Transit, Transfer, Undergo, Blunder, Forever, Everybody, Variable, Very good
-
-Row 7: Toward, Downwards, Warden, Ward away.
 
 And to close up the lesson, here is some more reading practice:
 

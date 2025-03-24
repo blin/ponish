@@ -40,7 +40,7 @@ words = [
     ("success", "suk$(SS)"),
     ("misses", "mi$(SS)"),
 ]
-for name, spelling in words[8:]:
+for name, spelling in words:
     dc = DrawingContext(
         output_path=dir / f"{name}.svg",
         drawing_width=350,

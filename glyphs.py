@@ -970,9 +970,9 @@ affixes["mis"] = derive_from_letter(
     more_actions=(
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.45),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.55),
         PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.7),
     ),
 )
 affixes["ment"] = affixes["mis"]
@@ -996,9 +996,9 @@ affixes["over"] = derive_from_letter(
     more_actions=(
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.7),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.8),
         PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
     ),
 )
 affixes["other"] = affixes["over"]
@@ -1022,9 +1022,9 @@ affixes["semi"] = derive_from_letter(
     + (
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=1.0),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.6),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.8),
         PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.3),
     ),
 )
 
@@ -1033,9 +1033,9 @@ affixes["ship"] = derive_from_letter(
     more_actions=(
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.4),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.4),
         PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
     ),
 )
 
@@ -1107,9 +1107,9 @@ affixes["ward"] = derive_from_letter(
     more_actions=(
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.2),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.5),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.8),
         PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.1),
     ),
 )
 
