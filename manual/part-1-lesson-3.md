@@ -140,6 +140,63 @@ may be raised or lowered to better accommodate the following symbols.
 The picture below contains only the Ponish writings, but the Earthographics are
 included directly below, if you need a translation.
 
+| Earthographic | Ponish                                          | Original image                                         |
+| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
+| aboveground   | ![](./lesson-3/affix-phrases/aboveground.svg)   | ![](./original-images/affix-phrases/aboveground.png)   |
+| layabout      | ![](./lesson-3/affix-phrases/layabout.svg)      | ![](./original-images/affix-phrases/layabout.png)      |
+| antidote      | ![](./lesson-3/affix-phrases/antidote.svg)      | ![](./original-images/affix-phrases/antidote.png)      |
+| automobile    | ![](./lesson-3/affix-phrases/automobile.svg)    | ![](./original-images/affix-phrases/automobile.png)    |
+| await         | ![](./lesson-3/affix-phrases/await.svg)         | ![](./original-images/affix-phrases/await.png)         |
+| goaway        | ![](./lesson-3/affix-phrases/goaway.svg)        | ![](./original-images/affix-phrases/goaway.png)        |
+| circulate     | ![](./lesson-3/affix-phrases/circulate.svg)     | ![](./original-images/affix-phrases/circulate.png)     |
+| circumscribe  | ![](./lesson-3/affix-phrases/circumscribe.svg)  | ![](./original-images/affix-phrases/circumscribe.png)  |
+| compose       | ![](./lesson-3/affix-phrases/compose.svg)       | ![](./original-images/affix-phrases/compose.png)       |
+| construct     | ![](./lesson-3/affix-phrases/construct.svg)     | ![](./original-images/affix-phrases/construct.png)     |
+| contradiction | ![](./lesson-3/affix-phrases/contradiction.svg) | ![](./original-images/affix-phrases/contradiction.png) |
+| disparage     | ![](./lesson-3/affix-phrases/disparage.svg)     | ![](./original-images/affix-phrases/disparage.png)     |
+| destitute     | ![](./lesson-3/affix-phrases/destitute.svg)     | ![](./original-images/affix-phrases/destitute.png)     |
+| peach         | ![](./lesson-3/affix-phrases/peach.svg)         | ![](./original-images/affix-phrases/peach.png)         |
+| infect        | ![](./lesson-3/affix-phrases/infect.svg)        | ![](./original-images/affix-phrases/infect.png)        |
+| infection     | ![](./lesson-3/affix-phrases/infection.svg)     | ![](./original-images/affix-phrases/infection.png)     |
+| spiteful      | ![](./lesson-3/affix-phrases/spiteful.svg)      | ![](./original-images/affix-phrases/spiteful.png)      |
+| spitefulness  | ![](./lesson-3/affix-phrases/spitefulness.svg)  | ![](./original-images/affix-phrases/spitefulness.png)  |
+| graphic       | ![](./lesson-3/affix-phrases/graphic.svg)       | ![](./original-images/affix-phrases/graphic.png)       |
+| grammar       | ![](./lesson-3/affix-phrases/grammar.svg)       | ![](./original-images/affix-phrases/grammar.png)       |
+| sluthood      | ![](./lesson-3/affix-phrases/sluthood.svg)      | ![](./original-images/affix-phrases/sluthood.png)      |
+| pacify        | ![](./lesson-3/affix-phrases/pacify.svg)        | ![](./original-images/affix-phrases/pacify.png)        |
+| pacification  | ![](./lesson-3/affix-phrases/pacification.svg)  | ![](./original-images/affix-phrases/pacification.png)  |
+| guileless     | ![](./lesson-3/affix-phrases/guileless.svg)     | ![](./original-images/affix-phrases/guileless.png)     |
+| guilelessness | ![](./lesson-3/affix-phrases/guilelessness.svg) | ![](./original-images/affix-phrases/guilelessness.png) |
+| biology       | ![](./lesson-3/affix-phrases/biology.svg)       | ![](./original-images/affix-phrases/biology.png)       |
+| illogical     | ![](./lesson-3/affix-phrases/illogical.svg)     | ![](./original-images/affix-phrases/illogical.png)     |
+| misrepresent  | ![](./lesson-3/affix-phrases/misrepresent.svg)  | ![](./original-images/affix-phrases/misrepresent.png)  |
+| mismanagement | ![](./lesson-3/affix-phrases/mismanagement.svg) | ![](./original-images/affix-phrases/mismanagement.png) |
+| cleanliness   | ![](./lesson-3/affix-phrases/cleanliness.svg)   | ![](./original-images/affix-phrases/cleanliness.png)   |
+| overdone      | ![](./lesson-3/affix-phrases/overdone.svg)      | ![](./original-images/affix-phrases/overdone.png)      |
+| otherwise     | ![](./lesson-3/affix-phrases/otherwise.svg)     | ![](./original-images/affix-phrases/otherwise.png)     |
+| outspoken     | ![](./lesson-3/affix-phrases/outspoken.svg)     | ![](./original-images/affix-phrases/outspoken.png)     |
+| selfpublish   | ![](./lesson-3/affix-phrases/selfpublish.svg)   | ![](./original-images/affix-phrases/selfpublish.png)   |
+| semitruck     | ![](./lesson-3/affix-phrases/semitruck.svg)     | ![](./original-images/affix-phrases/semitruck.png)     |
+| battleship    | ![](./lesson-3/affix-phrases/battleship.svg)    | ![](./original-images/affix-phrases/battleship.png)    |
+| shipment      | ![](./lesson-3/affix-phrases/shipment.svg)      | ![](./original-images/affix-phrases/shipment.png)      |
+| subway        | ![](./lesson-3/affix-phrases/subway.svg)        | ![](./original-images/affix-phrases/subway.png)        |
+| subject       | ![](./lesson-3/affix-phrases/subject.svg)       | ![](./original-images/affix-phrases/subject.png)       |
+| supersonic    | ![](./lesson-3/affix-phrases/supersonic.svg)    | ![](./original-images/affix-phrases/supersonic.png)    |
+| superluminal  | ![](./lesson-3/affix-phrases/superluminal.svg)  | ![](./original-images/affix-phrases/superluminal.png)  |
+| transit       | ![](./lesson-3/affix-phrases/transit.svg)       | ![](./original-images/affix-phrases/transit.png)       |
+| transfer      | ![](./lesson-3/affix-phrases/transfer.svg)      | ![](./original-images/affix-phrases/transfer.png)      |
+| undergo       | ![](./lesson-3/affix-phrases/undergo.svg)       | ![](./original-images/affix-phrases/undergo.png)       |
+| blunder       | ![](./lesson-3/affix-phrases/blunder.svg)       | ![](./original-images/affix-phrases/blunder.png)       |
+| forever       | ![](./lesson-3/affix-phrases/forever.svg)       | ![](./original-images/affix-phrases/forever.png)       |
+| everybody     | ![](./lesson-3/affix-phrases/everybody.svg)     | ![](./original-images/affix-phrases/everybody.png)     |
+| variable      | ![](./lesson-3/affix-phrases/variable.svg)      | ![](./original-images/affix-phrases/variable.png)      |
+| verygood      | ![](./lesson-3/affix-phrases/verygood.svg)      | ![](./original-images/affix-phrases/verygood.png)      |
+| toward        | ![](./lesson-3/affix-phrases/toward.svg)        | ![](./original-images/affix-phrases/toward.png)        |
+| downwards     | ![](./lesson-3/affix-phrases/downwards.svg)     | ![](./original-images/affix-phrases/downwards.png)     |
+| warden        | ![](./lesson-3/affix-phrases/warden.svg)        | ![](./original-images/affix-phrases/warden.png)        |
+| wardaway      | ![](./lesson-3/affix-phrases/wardaway.svg)      | ![](./original-images/affix-phrases/wardaway.png)      |
+
+
 ![](./original-images/039.png)
 
 
