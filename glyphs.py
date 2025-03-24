@@ -416,6 +416,15 @@ aliases["TH"] = letters["ð"]
 aliases["SH"] = letters["ʃ"]
 aliases["ZH"] = letters["ʃ"]
 
+
+def derive_from_letter(letter: str, more_actions: tuple[GlyphAction, ...]) -> Glyph:
+    g = letters[letter]
+    return Glyph(
+        start_pos=g.start_pos,
+        draw_actions=g.draw_actions + more_actions,
+    )
+
+
 blends: dict[str, Glyph] = dict()
 
 
@@ -542,6 +551,18 @@ blends["DR"] = Glyph(
             extent_deg=75,
             rotation=Rotation.CW,
             heading_deg=Direction.NE.value,
+        ),
+    ),
+)
+
+blends["GR"] = derive_from_letter(
+    "G",
+    more_actions=(
+        Circle(
+            rel_radius=0.5,
+            extent_deg=75,
+            rotation=Rotation.CW,
+            heading_deg=Direction.N.value,
         ),
     ),
 )
@@ -747,14 +768,6 @@ punctuation["!"] = Glyph(
 )
 
 
-def affix_from_letter(letter: str, more_actions: tuple[GlyphAction, ...]) -> Glyph:
-    g = letters[letter]
-    return Glyph(
-        start_pos=g.start_pos,
-        draw_actions=g.draw_actions + more_actions,
-    )
-
-
 affixes: dict[str, Glyph] = dict()
 
 affixes["above"] = Glyph(
@@ -771,7 +784,7 @@ affixes["above"] = Glyph(
 )
 affixes["about"] = affixes["above"]
 
-affixes["anti"] = affix_from_letter(
+affixes["anti"] = derive_from_letter(
     "A-two-legs",
     more_actions=(
         PenAction.LIFT,
@@ -794,7 +807,7 @@ affixes["away"] = Glyph(
 affixes["awa"] = affixes["away"]
 
 
-affixes["circ"] = affix_from_letter(
+affixes["circ"] = derive_from_letter(
     "C",
     more_actions=(
         PenAction.LIFT,
@@ -808,7 +821,7 @@ affixes["circu"] = affixes["circ"]
 affixes["circum"] = affixes["circ"]
 
 ## The base is K not C, because of pronounciation.
-affixes["com"] = affix_from_letter(
+affixes["com"] = derive_from_letter(
     "K",
     more_actions=(
         PenAction.LIFT,
@@ -821,7 +834,7 @@ affixes["com"] = affix_from_letter(
 affixes["con"] = affixes["com"]
 affixes["contr"] = affixes["com"]
 
-affixes["dis"] = affix_from_letter(
+affixes["dis"] = derive_from_letter(
     "D",
     more_actions=(
         PenAction.LIFT,
@@ -833,7 +846,7 @@ affixes["dis"] = affix_from_letter(
 )
 affixes["des"] = affixes["dis"]
 
-affixes["each"] = affix_from_letter(
+affixes["each"] = derive_from_letter(
     "ʧ",
     more_actions=(
         PenAction.LIFT,
@@ -846,7 +859,7 @@ affixes["each"] = affix_from_letter(
 
 # There is a second form of "fect" that has an L-line instead of K-line,
 # but I do not yet understand why it is needed.
-affixes["fect"] = affix_from_letter(
+affixes["fect"] = derive_from_letter(
     "F",
     more_actions=(
         PenAction.LIFT,
@@ -862,7 +875,7 @@ affixes["fect"] = affix_from_letter(
     ),
 )
 
-affixes["full"] = affix_from_letter(
+affixes["full"] = derive_from_letter(
     "F",
     more_actions=(
         PenAction.LIFT,
@@ -873,7 +886,7 @@ affixes["full"] = affix_from_letter(
     ),
 )
 
-affixes["graph"] = affix_from_letter(
+affixes["graph"] = derive_from_letter(
     "G",
     more_actions=(
         PenAction.LIFT,
@@ -886,7 +899,7 @@ affixes["graph"] = affix_from_letter(
 affixes["gram"] = affixes["graph"]
 
 # TODO: adjust start_pos
-affixes["hood"] = affix_from_letter(
+affixes["hood"] = derive_from_letter(
     "H",
     more_actions=(
         PenAction.LIFT,
@@ -921,7 +934,7 @@ affixes["ifycation"] = Glyph(
     ),
 )
 
-affixes["less"] = affix_from_letter(
+affixes["less"] = derive_from_letter(
     "L",
     more_actions=(
         PenAction.LIFT,
@@ -935,7 +948,7 @@ affixes["less"] = affix_from_letter(
 # There is a second form of "logy" that has a K-line instead of L-line,
 # but I do not yet understand why it is needed.
 # The base is J not G, because of pronounciation.
-affixes["logy"] = affix_from_letter(
+affixes["logy"] = derive_from_letter(
     "J",
     more_actions=(
         PenAction.LIFT,
@@ -952,7 +965,7 @@ affixes["logy"] = affix_from_letter(
 )
 affixes["logic"] = affixes["logy"]
 
-affixes["mis"] = affix_from_letter(
+affixes["mis"] = derive_from_letter(
     "M",
     more_actions=(
         PenAction.LIFT,
@@ -964,7 +977,7 @@ affixes["mis"] = affix_from_letter(
 )
 affixes["ment"] = affixes["mis"]
 
-affixes["ness"] = affix_from_letter(
+affixes["ness"] = derive_from_letter(
     "N",
     more_actions=(
         PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.4),
@@ -978,7 +991,7 @@ affixes["ness"] = affix_from_letter(
 )
 
 # TODO: adjust start_pos
-affixes["over"] = affix_from_letter(
+affixes["over"] = derive_from_letter(
     "O",
     more_actions=(
         PenAction.LIFT,
@@ -991,7 +1004,7 @@ affixes["over"] = affix_from_letter(
 affixes["other"] = affixes["over"]
 affixes["out"] = affixes["over"]
 
-affixes["self"] = affix_from_letter(
+affixes["self"] = derive_from_letter(
     "S",
     more_actions=letters["L"].draw_actions
     + (
@@ -1003,7 +1016,7 @@ affixes["self"] = affix_from_letter(
     ),
 )
 
-affixes["semi"] = affix_from_letter(
+affixes["semi"] = derive_from_letter(
     "S",
     more_actions=letters["M"].draw_actions
     + (
@@ -1015,7 +1028,7 @@ affixes["semi"] = affix_from_letter(
     ),
 )
 
-affixes["ship"] = affix_from_letter(
+affixes["ship"] = derive_from_letter(
     "ʃ",
     more_actions=(
         PenAction.LIFT,
@@ -1026,7 +1039,7 @@ affixes["ship"] = affix_from_letter(
     ),
 )
 
-affixes["sub"] = affix_from_letter(
+affixes["sub"] = derive_from_letter(
     "S",
     more_actions=(
         PenAction.LIFT,
@@ -1039,7 +1052,7 @@ affixes["sub"] = affix_from_letter(
 
 # There is a second form of "upper" that has a K-line instead of L-line,
 # but I do not yet understand why it is needed.
-affixes["super"] = affix_from_letter(
+affixes["super"] = derive_from_letter(
     "S",
     more_actions=(
         PenAction.LIFT,
@@ -1055,7 +1068,7 @@ affixes["super"] = affix_from_letter(
     ),
 )
 
-affixes["trans"] = affix_from_letter(
+affixes["trans"] = derive_from_letter(
     "T",
     more_actions=(
         PenAction.LIFT,
@@ -1065,7 +1078,7 @@ affixes["trans"] = affix_from_letter(
     ),
 )
 
-affixes["under"] = affix_from_letter(
+affixes["under"] = derive_from_letter(
     "U",
     more_actions=(
         PenAction.LIFT,
@@ -1076,7 +1089,7 @@ affixes["under"] = affix_from_letter(
     ),
 )
 
-affixes["ever"] = affix_from_letter(
+affixes["ever"] = derive_from_letter(
     "V",
     more_actions=(
         PenAction.LIFT,
@@ -1089,7 +1102,7 @@ affixes["ever"] = affix_from_letter(
 affixes["every"] = affixes["ever"]
 affixes["very"] = affixes["ever"]
 
-affixes["ward"] = affix_from_letter(
+affixes["ward"] = derive_from_letter(
     "W",
     more_actions=(
         PenAction.LIFT,

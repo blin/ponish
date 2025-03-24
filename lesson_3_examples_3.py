@@ -18,7 +18,7 @@ dir = Path("manual/lesson-3/affix-phrases")
 dir.mkdir(parents=True, exist_ok=True)
 
 words = [
-    ("aboveground", "$(above)ground"),
+    ("aboveground", "$(above)$(GR)ound"),
     ("layabout", "la$(about)"),
     ("antidote", "$(anti)dot"),
     ("automobile", "$(auto)mobile"),
@@ -74,9 +74,9 @@ words = [
 ]
 for name, spelling in words:
     dc = DrawingContext(
-       output_path=dir / f"{name}.svg",
-       drawing_width=150,
-       drawing_height=150,
+        output_path=dir / f"{name}.svg",
+        drawing_width=150,
+        drawing_height=150,
     )
     with dc as (p, t):
-       draw_word(t, p, spelling)
+        draw_word(t, p, spelling)
