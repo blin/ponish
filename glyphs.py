@@ -857,8 +857,8 @@ affixes["each"] = derive_from_letter(
     ),
 )
 
-# There is a second form of "fect" that has an L-line instead of K-line,
-# but I do not yet understand why it is needed.
+# TODO [k-l-second-form]: K-line/L-line second forms are used when affix
+# precedes K or L, so that the combination forms a sine wave.
 affixes["fect"] = derive_from_letter(
     "F",
     more_actions=(
@@ -945,8 +945,7 @@ affixes["less"] = derive_from_letter(
     ),
 )
 
-# There is a second form of "logy" that has a K-line instead of L-line,
-# but I do not yet understand why it is needed.
+# TODO [k-l-second-form]
 # The base is J not G, because of pronounciation.
 affixes["logy"] = derive_from_letter(
     "J",
@@ -1050,8 +1049,7 @@ affixes["sub"] = derive_from_letter(
     ),
 )
 
-# There is a second form of "upper" that has a K-line instead of L-line,
-# but I do not yet understand why it is needed.
+# TODO [k-l-second-form]
 affixes["super"] = derive_from_letter(
     "S",
     more_actions=(
