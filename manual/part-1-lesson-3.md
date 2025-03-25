@@ -44,12 +44,12 @@ Same symbol (noticing a pattern here? Keeps it simple, and easy to remember) but
 this time with the tail on top. Notice how it resembles a normal P and R joined
 the usual way.
 
-| Earthographic        | Ponish                        |
-| -------------------- | ----------------------------- |
-| pr                   | ![](./lesson-3/pr.svg)        |
-| private              | ![](./lesson-3/private.svg)   |
-| project              | ![](./lesson-3/project.svg)   |
-| preview              | ![](./lesson-3/preview.svg)   |
+| Earthographic | Ponish                      |
+| ------------- | --------------------------- |
+| pr            | ![](./lesson-3/pr.svg)      |
+| private       | ![](./lesson-3/private.svg) |
+| project       | ![](./lesson-3/project.svg) |
+| preview       | ![](./lesson-3/preview.svg) |
 
 ![](./original-images/035.png)
 
@@ -58,12 +58,12 @@ the usual way.
 Once more, the same symbol, but with the tail on the bottom, closely resembling
 an L. Isn't that convenient?
 
-| Earthographic        | Ponish                        |
-| -------------------- | ----------------------------- |
-| pl                   | ![](./lesson-3/pl.svg)    |
-| pleasure             | ![](./lesson-3/pleasure.svg)  |
-| plastic              | ![](./lesson-3/plastic.svg)   |
-| plebian              | ![](./lesson-3/plebian.svg)   |
+| Earthographic | Ponish                       |
+| ------------- | ---------------------------- |
+| pl            | ![](./lesson-3/pl.svg)       |
+| pleasure      | ![](./lesson-3/pleasure.svg) |
+| plastic       | ![](./lesson-3/plastic.svg)  |
+| plebian       | ![](./lesson-3/plebian.svg)  |
 
 ![](./original-images/036.png)
 
@@ -72,20 +72,20 @@ an L. Isn't that convenient?
 Finally, something new! But still very similar to the base of the sound
 combination it represents, in this case 'S.'
 
-| Earthographic        | Ponish                        |
-| -------------------- | ----------------------------- |
-| s(vowel)s            | ![](./lesson-3/ss.svg)        |
-| princess             | ![](./lesson-3/princess.svg)  |
-| success              | ![](./lesson-3/success.svg)   |
-| misses               | ![](./lesson-3/misses.svg)    |
+| Earthographic | Ponish                       |
+| ------------- | ---------------------------- |
+| s(vowel)s     | ![](./lesson-3/ss.svg)       |
+| princess      | ![](./lesson-3/princess.svg) |
+| success       | ![](./lesson-3/success.svg)  |
+| misses        | ![](./lesson-3/misses.svg)   |
 
 ![](./original-images/037.png)
 
-EDITOR NOTE: the "success" example in the original implies that the starting point of the
-S-S symbol is at the bottom of the circle, drawing S-S from the bottom requires
-one and a half circle-strokes and one line-stroke or
-one circle-stroke and two line-strokes (one up and one down).
-"No wrong spelling", so I consider S-S starting point to be at the top of the circle.
+EDITOR NOTE: the "success" example in the original implies that the starting
+point of the S-S symbol is at the bottom of the circle, drawing S-S from the
+bottom requires one and a half circle-strokes and one line-stroke or one
+circle-stroke and two line-strokes (one up and one down). "No wrong spelling",
+so I consider S-S starting point to be at the top of the circle.
 
 ## Prefixes and suffixes
 
@@ -144,16 +144,16 @@ included directly below, if you need a translation.
 
 TODO [automobile]: prefix ending in a vowel has vowel effect on the next glyph?
 
-| Earthographic | Ponish                                          | Original image                                         |
-| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
-| above ground  | ![](./lesson-3/affix-phrases/aboveground.svg)   | ![](./original-images/affix-phrases/aboveground.png)   |
-| lay about     | ![](./lesson-3/affix-phrases/layabout.svg)      | ![](./original-images/affix-phrases/layabout.png)      |
-| antidote      | ![](./lesson-3/affix-phrases/antidote.svg)      | ![](./original-images/affix-phrases/antidote.png)      |
-| automobile    | ![](./lesson-3/affix-phrases/automobile.svg)    | ![](./original-images/affix-phrases/automobile.png)    |
-| await         | ![](./lesson-3/affix-phrases/await.svg)         | ![](./original-images/affix-phrases/await.png)         |
-| go away       | ![](./lesson-3/affix-phrases/goaway.svg)        | ![](./original-images/affix-phrases/goaway.png)        |
-| circulate     | ![](./lesson-3/affix-phrases/circulate.svg)     | ![](./original-images/affix-phrases/circulate.png)     |
-| circumscribe  | ![](./lesson-3/affix-phrases/circumscribe.svg)  | ![](./original-images/affix-phrases/circumscribe.png)  |
+| Earthographic | Ponish                                         | Original image                                        |
+| ------------- | ---------------------------------------------- | ----------------------------------------------------- |
+| above ground  | ![](./lesson-3/affix-phrases/aboveground.svg)  | ![](./original-images/affix-phrases/aboveground.png)  |
+| lay about     | ![](./lesson-3/affix-phrases/layabout.svg)     | ![](./original-images/affix-phrases/layabout.png)     |
+| antidote      | ![](./lesson-3/affix-phrases/antidote.svg)     | ![](./original-images/affix-phrases/antidote.png)     |
+| automobile    | ![](./lesson-3/affix-phrases/automobile.svg)   | ![](./original-images/affix-phrases/automobile.png)   |
+| await         | ![](./lesson-3/affix-phrases/await.svg)        | ![](./original-images/affix-phrases/await.png)        |
+| go away       | ![](./lesson-3/affix-phrases/goaway.svg)       | ![](./original-images/affix-phrases/goaway.png)       |
+| circulate     | ![](./lesson-3/affix-phrases/circulate.svg)    | ![](./original-images/affix-phrases/circulate.png)    |
+| circumscribe  | ![](./lesson-3/affix-phrases/circumscribe.svg) | ![](./original-images/affix-phrases/circumscribe.png) |
 
 ### Examples, Row 2: Compose, Construct, Contradiction, Disparage, Destitute, Peach, Infect, Infection
 
@@ -185,6 +185,7 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 | guilelessness | ![](./lesson-3/affix-phrases/guilelessness.svg) | ![](./original-images/affix-phrases/guilelessness.png) |
 
 ### Examples, Row 4: Biology, Illogical, Misrepresent, Mismanagement, Cleanliness, Overdone,
+
 Otherwise, Outspoken
 
 | Earthographic | Ponish                                          | Original image                                         |
@@ -200,62 +201,100 @@ Otherwise, Outspoken
 
 ### Examples, Row 5: Self publish, Semi truck, Battleship, Shipment, Subway, Subject, Supersonic, Superluminal
 
-| Earthographic | Ponish                                          | Original image                                         |
-| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
-| self publish  | ![](./lesson-3/affix-phrases/selfpublish.svg)   | ![](./original-images/affix-phrases/selfpublish.png)   |
-| semi truck    | ![](./lesson-3/affix-phrases/semitruck.svg)     | ![](./original-images/affix-phrases/semitruck.png)     |
-| battleship    | ![](./lesson-3/affix-phrases/battleship.svg)    | ![](./original-images/affix-phrases/battleship.png)    |
-| shipment      | ![](./lesson-3/affix-phrases/shipment.svg)      | ![](./original-images/affix-phrases/shipment.png)      |
-| subway        | ![](./lesson-3/affix-phrases/subway.svg)        | ![](./original-images/affix-phrases/subway.png)        |
-| subject       | ![](./lesson-3/affix-phrases/subject.svg)       | ![](./original-images/affix-phrases/subject.png)       |
-| supersonic    | ![](./lesson-3/affix-phrases/supersonic.svg)    | ![](./original-images/affix-phrases/supersonic.png)    |
-| superluminal  | ![](./lesson-3/affix-phrases/superluminal.svg)  | ![](./original-images/affix-phrases/superluminal.png)  |
+| Earthographic | Ponish                                         | Original image                                        |
+| ------------- | ---------------------------------------------- | ----------------------------------------------------- |
+| self publish  | ![](./lesson-3/affix-phrases/selfpublish.svg)  | ![](./original-images/affix-phrases/selfpublish.png)  |
+| semi truck    | ![](./lesson-3/affix-phrases/semitruck.svg)    | ![](./original-images/affix-phrases/semitruck.png)    |
+| battleship    | ![](./lesson-3/affix-phrases/battleship.svg)   | ![](./original-images/affix-phrases/battleship.png)   |
+| shipment      | ![](./lesson-3/affix-phrases/shipment.svg)     | ![](./original-images/affix-phrases/shipment.png)     |
+| subway        | ![](./lesson-3/affix-phrases/subway.svg)       | ![](./original-images/affix-phrases/subway.png)       |
+| subject       | ![](./lesson-3/affix-phrases/subject.svg)      | ![](./original-images/affix-phrases/subject.png)      |
+| supersonic    | ![](./lesson-3/affix-phrases/supersonic.svg)   | ![](./original-images/affix-phrases/supersonic.png)   |
+| superluminal  | ![](./lesson-3/affix-phrases/superluminal.svg) | ![](./original-images/affix-phrases/superluminal.png) |
 
 ### Examples, Row 5: Transit, Transfer, Undergo, Blunder, Forever, Everybody, Variable, Very good
 
-| Earthographic | Ponish                                          | Original image                                         |
-| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
-| transit       | ![](./lesson-3/affix-phrases/transit.svg)       | ![](./original-images/affix-phrases/transit.png)       |
-| transfer      | ![](./lesson-3/affix-phrases/transfer.svg)      | ![](./original-images/affix-phrases/transfer.png)      |
-| undergo       | ![](./lesson-3/affix-phrases/undergo.svg)       | ![](./original-images/affix-phrases/undergo.png)       |
-| blunder       | ![](./lesson-3/affix-phrases/blunder.svg)       | ![](./original-images/affix-phrases/blunder.png)       |
-| forever       | ![](./lesson-3/affix-phrases/forever.svg)       | ![](./original-images/affix-phrases/forever.png)       |
-| everybody     | ![](./lesson-3/affix-phrases/everybody.svg)     | ![](./original-images/affix-phrases/everybody.png)     |
-| variable      | ![](./lesson-3/affix-phrases/variable.svg)      | ![](./original-images/affix-phrases/variable.png)      |
-| very good     | ![](./lesson-3/affix-phrases/verygood.svg)      | ![](./original-images/affix-phrases/verygood.png)      |
+| Earthographic | Ponish                                      | Original image                                     |
+| ------------- | ------------------------------------------- | -------------------------------------------------- |
+| transit       | ![](./lesson-3/affix-phrases/transit.svg)   | ![](./original-images/affix-phrases/transit.png)   |
+| transfer      | ![](./lesson-3/affix-phrases/transfer.svg)  | ![](./original-images/affix-phrases/transfer.png)  |
+| undergo       | ![](./lesson-3/affix-phrases/undergo.svg)   | ![](./original-images/affix-phrases/undergo.png)   |
+| blunder       | ![](./lesson-3/affix-phrases/blunder.svg)   | ![](./original-images/affix-phrases/blunder.png)   |
+| forever       | ![](./lesson-3/affix-phrases/forever.svg)   | ![](./original-images/affix-phrases/forever.png)   |
+| everybody     | ![](./lesson-3/affix-phrases/everybody.svg) | ![](./original-images/affix-phrases/everybody.png) |
+| variable      | ![](./lesson-3/affix-phrases/variable.svg)  | ![](./original-images/affix-phrases/variable.png)  |
+| very good     | ![](./lesson-3/affix-phrases/verygood.svg)  | ![](./original-images/affix-phrases/verygood.png)  |
 
 ### Examples, Row 5: Toward, Downwards, Warden, Ward away.
- 
-| Earthographic | Ponish                                          | Original image                                         |
-| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
-| toward        | ![](./lesson-3/affix-phrases/toward.svg)        | ![](./original-images/affix-phrases/toward.png)        |
-| downwards     | ![](./lesson-3/affix-phrases/downwards.svg)     | ![](./original-images/affix-phrases/downwards.png)     |
-| warden        | ![](./lesson-3/affix-phrases/warden.svg)        | ![](./original-images/affix-phrases/warden.png)        |
-| ward away     | ![](./lesson-3/affix-phrases/wardaway.svg)      | ![](./original-images/affix-phrases/wardaway.png)      |
+
+| Earthographic | Ponish                                      | Original image                                     |
+| ------------- | ------------------------------------------- | -------------------------------------------------- |
+| toward        | ![](./lesson-3/affix-phrases/toward.svg)    | ![](./original-images/affix-phrases/toward.png)    |
+| downwards     | ![](./lesson-3/affix-phrases/downwards.svg) | ![](./original-images/affix-phrases/downwards.png) |
+| warden        | ![](./lesson-3/affix-phrases/warden.svg)    | ![](./original-images/affix-phrases/warden.png)    |
+| ward away     | ![](./lesson-3/affix-phrases/wardaway.svg)  | ![](./original-images/affix-phrases/wardaway.png)  |
 
 And to close up the lesson, here is some more reading practice:
 
-![](./original-images/040.png)
+## Practice
 
-![](./original-images/041.png)
+EDITOR NOTE: original images have earthographic and ponish side-by-side, which
+makes it hard not to read earthographic. I've split the images to remove the
+earthographic, but some overhang from earthographic is left, please ignore.
+
+### Practice 1
+
+![](./original-images/lesson-3/every-corpse-1.png)
+![](./original-images/lesson-3/every-corpse-2.png)
+
+<details>
+<summary>Earthographic</summary>
+Every corpse on mount everest was once an extremly motivated person
+</details>
+
+### Practice 2
+
+![](./original-images/lesson-3/bonfire-1.png)
+![](./original-images/lesson-3/bonfire-2.png)
+
+<details>
+<summary>Earthographic</summary>
+The bigger you build the bonfire, the more darkness is revealed
+</details>
+
+### Practice 3
 
 Some longer things, perhaps? As before, the Earthographic can be found beneath
 the images, but you'll get the most out of it if you read, and copy it on your
 own.
 
-![](./original-images/042.png)
+![](./original-images/lesson-3/homo-intended-1.png)
+![](./original-images/lesson-3/homo-intended-2.png)
+![](./original-images/lesson-3/homo-intended-3.png)
+![](./original-images/lesson-3/homo-intended-4.png)
+![](./original-images/lesson-3/homo-intended-5.png)
+![](./original-images/lesson-3/homo-intended-6.png)
 
+<details>
+<summary>Earthographic</summary>
+It's so frustrating being a girl and trying to flirt with other girls.
+Like you tell them they're cute and they go "aww thank you!"
+No. No I'm being gay with you. Homo intended. Damnit.
+</details>
 
-## Lesson 3 Passage (Ponish)
+### Lesson 3 Passage (Ponish)
 
-![](./original-images/043.png)
+![](./original-images/lesson-3/subway-1.png)
+![](./original-images/lesson-3/subway-2.png)
+![](./original-images/lesson-3/subway-3.png)
+![](./original-images/lesson-3/subway-4.png)
+![](./original-images/lesson-3/subway-5.png)
 
-And the answer to the above example:
-
-## Lesson 3 Passage (Earthographic)
-
-*On the subway, today a man came up to me to start a conversation. He made small
+<details>
+<summary>And the answer to the above example:</summary>
+On the subway, today a man came up to me to start a conversation. He made small
 talk. He was a lonely man, talking about the weather, and other things. I tried
 to be pleasant, and accommodate him, but my head began to hurt from his
 banality. I almost didn't notice it had happened, but I threw up all over him.
-He was not pleased. I couldn't stop laughing.*
+He was not pleased. I couldn't stop laughing.
+</details>
