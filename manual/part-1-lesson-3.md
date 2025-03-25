@@ -282,12 +282,21 @@ Like you tell them they're cute and they go "aww thank you!"
 No. No I'm being gay with you. Homo intended. Damnit.
 </details>
 
-### Lesson 3 Passage (Ponish)
+### Lesson 3 Passage
 
+![](./lesson-3/subway-1.svg)
 ![](./original-images/lesson-3/subway-1.png)
+
+![](./lesson-3/subway-2.svg)
 ![](./original-images/lesson-3/subway-2.png)
+
+![](./lesson-3/subway-3.svg)
 ![](./original-images/lesson-3/subway-3.png)
+
+![](./lesson-3/subway-4.svg)
 ![](./original-images/lesson-3/subway-4.png)
+
+![](./lesson-3/subway-5.svg)
 ![](./original-images/lesson-3/subway-5.png)
 
 <details>
