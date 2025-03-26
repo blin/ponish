@@ -424,6 +424,17 @@ def derive_from_letter(letter: str, more_actions: tuple[GlyphAction, ...]) -> Gl
     )
 
 
+def n_strike(move_n_rel: float, move_w_rel: float, draw_e_rel: float) -> tuple[GlyphAction, ...]:
+    """Create a common pattern of lifting the pen, moving north and west, then placing and drawing east."""
+    return (
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=move_n_rel),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=move_w_rel),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=draw_e_rel),
+    )
+
+
 blends: dict[str, Glyph] = dict()
 
 # TODO: use derive_from_letter where possible
@@ -704,24 +715,13 @@ affixes["above"] = Glyph(
     draw_actions=(
         PolarLine(angle_deg=Direction.NE.value, rel_magnitude=0.4),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
-    ),
+    ) + n_strike(0.5, 0.2, 0.4),
 )
 affixes["about"] = affixes["above"]
 
 affixes["anti"] = derive_from_letter(
     "A-two-legs",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.NNW.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.6),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.9),
-    ),
+    more_actions=n_strike(0.5, 0.8, 0.9),
 )
 affixes["auto"] = affixes["anti"]
 
@@ -738,13 +738,7 @@ affixes["awa"] = affixes["away"]
 
 affixes["circ"] = derive_from_letter(
     "C",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
-    ),
+    more_actions=n_strike(0.5, 0.2, 0.4),
 )
 affixes["circu"] = affixes["circ"]
 affixes["circum"] = affixes["circ"]
@@ -752,38 +746,20 @@ affixes["circum"] = affixes["circ"]
 ## The base is K not C, because of pronounciation.
 affixes["com"] = derive_from_letter(
     "K",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.2),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.3),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
-    ),
+    more_actions=n_strike(0.2, 0.3, 0.5),
 )
 affixes["con"] = affixes["com"]
 affixes["contr"] = affixes["com"]
 
 affixes["dis"] = derive_from_letter(
     "D",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.2),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
-    ),
+    more_actions=n_strike(0.5, -0.2, 0.5),  # Negative W value means east
 )
 affixes["des"] = affixes["dis"]
 
 affixes["each"] = derive_from_letter(
     "ʧ",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.2),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
-    ),
+    more_actions=n_strike(0.5, -0.2, 0.5),  # Negative W value means east
 )
 
 # TODO [k-l-second-form]: K-line/L-line second forms are used when affix
@@ -806,37 +782,19 @@ affixes["fect"] = derive_from_letter(
 
 affixes["full"] = derive_from_letter(
     "F",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
-    ),
+    more_actions=n_strike(0.5, 0.2, 0.4),
 )
 
 affixes["graph"] = derive_from_letter(
     "G",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.3),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
-    ),
+    more_actions=n_strike(0.3, 0.2, 0.4),
 )
 affixes["gram"] = affixes["graph"]
 
 # TODO: adjust start_pos
 affixes["hood"] = derive_from_letter(
     "H",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.7),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.5),
-    ),
+    more_actions=n_strike(0.5, 0.7, 0.5),
 )
 
 # That's basically inversed "above"
@@ -863,6 +821,7 @@ affixes["ifycation"] = Glyph(
     ),
 )
 
+# Using S instead of N for the first movement
 affixes["less"] = derive_from_letter(
     "L",
     more_actions=(
@@ -895,13 +854,7 @@ affixes["logic"] = affixes["logy"]
 
 affixes["mis"] = derive_from_letter(
     "M",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.55),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.7),
-    ),
+    more_actions=n_strike(0.5, 0.55, 0.7),
 )
 affixes["ment"] = affixes["mis"]
 
@@ -921,61 +874,29 @@ affixes["ness"] = derive_from_letter(
 # TODO: adjust start_pos
 affixes["over"] = derive_from_letter(
     "O",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.8),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
-    ),
+    more_actions=n_strike(0.5, 0.8, 1.0),
 )
 affixes["other"] = affixes["over"]
 affixes["out"] = affixes["over"]
 
 affixes["self"] = derive_from_letter(
     "S",
-    more_actions=letters["L"].draw_actions
-    + (
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.4),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=1.0),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
-    ),
+    more_actions=letters["L"].draw_actions + n_strike(0.4, 1.0, 0.4),
 )
 
 affixes["semi"] = derive_from_letter(
     "S",
-    more_actions=letters["M"].draw_actions
-    + (
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=1.0),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.8),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.3),
-    ),
+    more_actions=letters["M"].draw_actions + n_strike(1.0, 0.8, 1.3),
 )
 
 affixes["ship"] = derive_from_letter(
     "ʃ",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.4),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.4),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
-    ),
+    more_actions=n_strike(0.4, 0.4, 1.0),
 )
 
 affixes["sub"] = derive_from_letter(
     "S",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.4),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
-    ),
+    more_actions=n_strike(0.4, 0.2, 0.4),
 )
 
 # TODO [k-l-second-form]
@@ -997,12 +918,7 @@ affixes["super"] = derive_from_letter(
 
 affixes["trans"] = derive_from_letter(
     "T",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
-    ),
+    more_actions=n_strike(0.5, 0.0, 0.4),  # No westward movement
 )
 
 affixes["under"] = derive_from_letter(
@@ -1031,13 +947,7 @@ affixes["very"] = affixes["ever"]
 
 affixes["ward"] = derive_from_letter(
     "W",
-    more_actions=(
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.2),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.8),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.1),
-    ),
+    more_actions=n_strike(0.2, 0.8, 1.1),
 )
 
 
