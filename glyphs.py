@@ -425,10 +425,9 @@ def derive_from_letter(letter: str, more_actions: tuple[GlyphAction, ...]) -> Gl
 blends: dict[str, Glyph] = dict()
 
 # TODO: use derive_from_letter where possible
-blends["AD"] = Glyph(
-    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
+blends["AD"] = derive_from_letter(
+    "A-one-leg",
+    more_actions=(
         Circle(
             rel_radius=0.5,
             extent_deg=180,
@@ -438,27 +437,22 @@ blends["AD"] = Glyph(
     ),
 )
 
-blends["AJ"] = Glyph(
-    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
+blends["AJ"] = derive_from_letter(
+    "A-one-leg",
+    more_actions=(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
     ),
 )
 
-blends["AN"] = Glyph(
-    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),
-    ),
+blends["AN"] = derive_from_letter(
+    "A-one-leg",
+    more_actions=(PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),),
 )
 
-blends["AR"] = Glyph(
-    start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=1.0),
+blends["AR"] = derive_from_letter(
+    "A-one-leg",
+    more_actions=(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.3),
         Circle(
@@ -490,10 +484,9 @@ blends["AQ"] = Glyph(
     + letters["Q"].draw_actions,
 )
 
-blends["BR"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+blends["BR"] = derive_from_letter(
+    "B",
+    more_actions=(
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.2),
         Circle(
             rel_radius=0.5,
@@ -504,11 +497,9 @@ blends["BR"] = Glyph(
     ),
 )
 
-blends["CR"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.25),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.25),
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+blends["CR"] = derive_from_letter(
+    "C",
+    more_actions=(
         Circle(
             rel_radius=0.5,
             extent_deg=75,
@@ -518,15 +509,9 @@ blends["CR"] = Glyph(
     ),
 )
 
-blends["DR"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=(
-        Circle(
-            rel_radius=0.5,
-            extent_deg=180,
-            rotation=Rotation.CW,
-            heading_deg=Direction.E.value,
-        ),
+blends["DR"] = derive_from_letter(
+    "D",
+    more_actions=(
         Circle(
             rel_radius=0.5,
             extent_deg=75,
@@ -548,11 +533,9 @@ blends["GR"] = derive_from_letter(
     ),
 )
 
-blends["FR"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.25),
-        PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
+blends["FR"] = derive_from_letter(
+    "F",
+    more_actions=(
         Circle(
             rel_radius=0.5,
             extent_deg=75,
@@ -562,10 +545,9 @@ blends["FR"] = Glyph(
     ),
 )
 
-blends["TR"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.SSW.value, rel_magnitude=1.0),
+blends["TR"] = derive_from_letter(
+    "T",
+    more_actions=(
         PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.3),
         Circle(
             rel_radius=0.5,
@@ -576,11 +558,9 @@ blends["TR"] = Glyph(
     ),
 )
 
-blends["ʧR"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
-    draw_actions=(
-        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=0.7),
-        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=0.7),
+blends["ʧR"] = derive_from_letter(
+    "ʧ",
+    more_actions=(
         Circle(
             rel_radius=0.5,
             extent_deg=75,
