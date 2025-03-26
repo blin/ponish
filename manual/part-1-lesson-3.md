@@ -244,7 +244,10 @@ earthographic, but some overhang from earthographic is left, please ignore.
 
 ### Practice 1
 
+![](./lesson-3/every-corpse-1.svg)
 ![](./original-images/lesson-3/every-corpse-1.png)
+
+![](./lesson-3/every-corpse-2.svg)
 ![](./original-images/lesson-3/every-corpse-2.png)
 
 <details>
@@ -254,8 +257,9 @@ Every corpse on mount everest was once an extremly motivated person
 
 ### Practice 2
 
-![](./original-images/lesson-3/bonfire-1.png)
-![](./original-images/lesson-3/bonfire-2.png)
+![](./lesson-3/bonfire-1.svg) ![](./original-images/lesson-3/bonfire-1.png)
+
+![](./lesson-3/bonfire-2.svg) ![](./original-images/lesson-3/bonfire-2.png)
 
 <details>
 <summary>Earthographic</summary>
@@ -268,11 +272,25 @@ Some longer things, perhaps? As before, the Earthographic can be found beneath
 the images, but you'll get the most out of it if you read, and copy it on your
 own.
 
+![](./lesson-3/homo-intended-1.svg)
 ![](./original-images/lesson-3/homo-intended-1.png)
+
+EDITOR NOTE: In the original image two spellings of "other" are used, separated
+by "/"
+
+![](./lesson-3/homo-intended-2.svg)
 ![](./original-images/lesson-3/homo-intended-2.png)
+
+![](./lesson-3/homo-intended-3.svg)
 ![](./original-images/lesson-3/homo-intended-3.png)
+
+![](./lesson-3/homo-intended-4.svg)
 ![](./original-images/lesson-3/homo-intended-4.png)
+
+![](./lesson-3/homo-intended-5.svg)
 ![](./original-images/lesson-3/homo-intended-5.png)
+
+![](./lesson-3/homo-intended-6.svg)
 ![](./original-images/lesson-3/homo-intended-6.png)
 
 <details>
@@ -284,20 +302,15 @@ No. No I'm being gay with you. Homo intended. Damnit.
 
 ### Lesson 3 Passage
 
-![](./lesson-3/subway-1.svg)
-![](./original-images/lesson-3/subway-1.png)
+![](./lesson-3/subway-1.svg) ![](./original-images/lesson-3/subway-1.png)
 
-![](./lesson-3/subway-2.svg)
-![](./original-images/lesson-3/subway-2.png)
+![](./lesson-3/subway-2.svg) ![](./original-images/lesson-3/subway-2.png)
 
-![](./lesson-3/subway-3.svg)
-![](./original-images/lesson-3/subway-3.png)
+![](./lesson-3/subway-3.svg) ![](./original-images/lesson-3/subway-3.png)
 
-![](./lesson-3/subway-4.svg)
-![](./original-images/lesson-3/subway-4.png)
+![](./lesson-3/subway-4.svg) ![](./original-images/lesson-3/subway-4.png)
 
-![](./lesson-3/subway-5.svg)
-![](./original-images/lesson-3/subway-5.png)
+![](./lesson-3/subway-5.svg) ![](./original-images/lesson-3/subway-5.png)
 
 <details>
 <summary>And the answer to the above example:</summary>

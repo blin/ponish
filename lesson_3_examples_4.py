@@ -17,11 +17,59 @@ from draw_jupyturtle import DrawingContext
 dir = Path("manual/lesson-3")
 dir.mkdir(parents=True, exist_ok=True)
 
+text: list[str] = []
+
+# TODO: why is V in motivated single sized?
+text = [
+    "$(every)korps on mount $(ever)est was",
+    "ons an x$(tr)emly motivated person",
+]
+for i, line in list(enumerate(text)):
+    dc = DrawingContext(
+        output_path=dir / f"every-corpse-{i + 1}.svg",
+        drawing_width=1100,
+        drawing_height=150,
+    )
+    with dc as (p, t):
+        draw_sentence(t, p, line)
+
+text = [
+    "The bi$(GR) yu bild the bonfir",
+    "the mor dark$(ness) is reveld",
+]
+for i, line in list(enumerate(text)):
+    dc = DrawingContext(
+        output_path=dir / f"bonfire-{i + 1}.svg",
+        drawing_width=1100,
+        drawing_height=150,
+    )
+    with dc as (p, t):
+        draw_sentence(t, p, line)
+
+# TODO: quotes in "aww thank you"
+# TODO: "AW" blend
+text = [
+    "Its so $(FR)us$(TR)at$(ing) bi$(ing) a girl",
+    "nd $(TR)y$(ing) to flirt wi$(TH) $(other)girls",
+    "Lik yu tel $(TH)em $(TH)er",
+    "cut nd $(TH)y go , aw $(thank) yu ! ,",
+    "No No Im bi$(ing) ge wi$(TH) yu",
+    "Homo ntendd . Damit .",
+]
+for i, line in list(enumerate(text)):
+    dc = DrawingContext(
+        output_path=dir / f"homo-intended-{i + 1}.svg",
+        drawing_width=1100,
+        drawing_height=150,
+    )
+    with dc as (p, t):
+        draw_sentence(t, p, line)
+
 # TODO: single affix glyph should be double-sized.
 # There is already a todo somewhere for single vowel glyphs to be double-sized.
 # TODO: make otherthings look good.
 # TODO: blend AK, AL
-text: list[str] = [
+text = [
     "On the $(sub)way today a man kam up to me to start a $(con)versa$(SH)n . He mad",
     "smal talk , He was a lonly man talk$(ing) $(about) the we$(TH)r nd $(other)$(thing)s . I",
     "$(TR)id to be $(pl)esant nd akomodat him but my hed began to hurt",

@@ -404,7 +404,7 @@ def draw_sentence(
             draw_punctuation(t, p, word)
             continue
 
-        if word in ["a", "an", "the"] and not word_is_last:
+        if word.lower() in ["a", "an", "the"] and not word_is_last:
             draw_article(t, p, word)
             continue
 
