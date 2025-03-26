@@ -806,12 +806,8 @@ affixes["ify"] = Glyph(
     draw_actions=(
         PolarLine(angle_deg=Direction.NW.value, rel_magnitude=0.4),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
-        PenAction.LIFT,
-        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.5),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
-        PenAction.PLACE,
-        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.4),
-    ),
+    )
+    + n_strike(RelPoint(rel_y=-0.5, rel_x=-0.2), 0.4),
 )
 
 affixes["ifycation"] = Glyph(
