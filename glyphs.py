@@ -337,6 +337,8 @@ letters["Q"] = Glyph(
     ),
 )
 
+# Extent needs to be > 75 degree for R to look sensibly
+# when followed by a consonant. Use "RT" as an example when changing.
 letters["R"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=(
@@ -499,54 +501,16 @@ blends["BR"] = derive_from_letter(
     ),
 )
 
-blends["CR"] = derive_from_letter(
-    "C",
-    more_actions=(
-        Circle(
-            rel_radius=0.5,
-            extent_deg=75,
-            rotation=Rotation.CW,
-            heading_deg=Direction.N.value,
-        ),
-    ),
-)
+blends["CR"] = derive_from_letter("C", more_actions=letters["R"].draw_actions[-1:])
 
-blends["DR"] = derive_from_letter(
-    "D",
-    more_actions=(
-        Circle(
-            rel_radius=0.5,
-            extent_deg=75,
-            rotation=Rotation.CW,
-            heading_deg=Direction.NE.value,
-        ),
-    ),
-)
+blends["DR"] = derive_from_letter("D", more_actions=letters["R"].draw_actions[-1:])
 
-blends["GR"] = derive_from_letter(
-    "G",
-    more_actions=(
-        Circle(
-            rel_radius=0.5,
-            extent_deg=75,
-            rotation=Rotation.CW,
-            heading_deg=Direction.N.value,
-        ),
-    ),
-)
+blends["GR"] = derive_from_letter("G", more_actions=letters["R"].draw_actions[-1:])
 
-blends["FR"] = derive_from_letter(
-    "F",
-    more_actions=(
-        Circle(
-            rel_radius=0.5,
-            extent_deg=75,
-            rotation=Rotation.CW,
-            heading_deg=Direction.N.value,
-        ),
-    ),
-)
+blends["FR"] = derive_from_letter("F", more_actions=letters["R"].draw_actions[-1:])
 
+# Can not use "R" directly because
+# the heading is different
 blends["TR"] = derive_from_letter(
     "T",
     more_actions=(
@@ -560,6 +524,8 @@ blends["TR"] = derive_from_letter(
     ),
 )
 
+# Can not use "R" directly because
+# the heading is different
 blends["ʧR"] = derive_from_letter(
     "ʧ",
     more_actions=(
