@@ -65,8 +65,6 @@ for i, line in list(enumerate(text)):
     with dc as (p, t):
         draw_sentence(t, p, line)
 
-# TODO: single affix glyph should be double-sized.
-# There is already a todo somewhere for single vowel glyphs to be double-sized.
 # TODO: make otherthings look good.
 # TODO: blend AK, AL
 text = [

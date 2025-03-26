@@ -322,20 +322,23 @@ def draw_word(
         consecutive_vowels = consecutive_vowels + 1 if g_is_vowel else 0
 
         next_gid_is_vowel = False
+        next_gid_is_consonant = False
         next_gid_advance = 0
         if word_pos < len(word):
             next_gid, next_gid_advance = gid_at(word, word_pos)
             if next_gid.upper() in vowels:
                 next_gid_is_vowel = True
+            else:
+                next_gid_is_consonant = True
         next_gid_is_last = False
         if word_pos + next_gid_advance >= len(word):
             next_gid_is_last = True
 
         if first_g:
             first_g = False
-            gs = GlyphSize.SINGLE
-            if next_gid_is_vowel:
-                gs = GlyphSize.DOUBLE
+            gs = GlyphSize.DOUBLE
+            if next_gid_is_consonant:
+                gs = GlyphSize.SINGLE
             draw_glyph(t, p, g, pos=VowelPosition.IY, gs=gs)
             gpos = VowelPosition.CONT
             gs = GlyphSize.SINGLE

@@ -346,5 +346,3 @@ EDITOR NOTE [single-size-downward]: "AJ" in "age"
 TODO [double-size-upward]: AN blend ends in top-right corner, so the overall glyph can be double-sized
 
 TODO [double-size-upward]: U into N
-
-TODO: single vowel should be double-size
