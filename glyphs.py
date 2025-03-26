@@ -591,7 +591,7 @@ blends["ʧR"] = Glyph(
 )
 
 blends["NG"] = Glyph(
-    start_pos=RelPoint(rel_y=0.3, rel_x=1.0),
+    start_pos=RelPoint(rel_y=0.3, rel_x=0.6),
     draw_actions=(
         Circle(
             rel_radius=0.3,
