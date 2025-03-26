@@ -427,14 +427,7 @@ blends: dict[str, Glyph] = dict()
 # TODO: use derive_from_letter where possible
 blends["AD"] = derive_from_letter(
     "A-one-leg",
-    more_actions=(
-        Circle(
-            rel_radius=0.5,
-            extent_deg=180,
-            rotation=Rotation.CW,
-            heading_deg=Direction.E.value,
-        ),
-    ),
+    more_actions=letters["D"].draw_actions,
 )
 
 blends["AJ"] = derive_from_letter(
@@ -447,7 +440,7 @@ blends["AJ"] = derive_from_letter(
 
 blends["AN"] = derive_from_letter(
     "A-one-leg",
-    more_actions=(PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),),
+    more_actions=letters["N"].draw_actions,
 )
 
 blends["AR"] = derive_from_letter(
