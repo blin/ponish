@@ -457,12 +457,16 @@ blends["AR"] = derive_from_letter(
     ),
 )
 
+# Can not derive from "A" because
+# the left leg needs to be shorter
 blends["AS"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=(PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.75),)
     + letters["S"].draw_actions,
 )
 
+# Can not derive from "A" because
+# the angles between "A" and "T" must not match
 blends["AT"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=(
@@ -471,12 +475,17 @@ blends["AT"] = Glyph(
     ),
 )
 
+# Can not derive from "A" because
+# the left leg needs to be shorter
 blends["AQ"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=(PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.75),)
     + letters["Q"].draw_actions,
 )
 
+# Can not use "R" directly because
+# the first stroke is not needed and the angle is different.
+# Angle needs to be different to distinguish "BR" from just "R"
 blends["BR"] = derive_from_letter(
     "B",
     more_actions=(
