@@ -265,6 +265,45 @@ def gid_at(word: str, idx: int) -> tuple[str, int]:
 vowels = ["A", "E", "I", "O", "U", "Y"]
 
 
+def split_into_chunks(word: str) -> list[str]:
+    """Split a word into chunks, breaking at non-consecutive vowels.
+    
+    Examples:
+        split_into_chunks("fire") -> ["f", "ir", "e"]
+        split_into_chunks("mount") -> ["m", "ount"]
+        split_into_chunks("s$(TR)ength") -> ["s$(TR)", "ength"]
+    
+    Returns:
+        A list of word chunks
+    """
+    if not word:
+        return []
+    
+    chunks = []
+    current_chunk = ""
+    word_pos = 0
+    last_was_vowel = False
+    
+    while word_pos < len(word):
+        gid, advance = gid_at(word, word_pos)
+        gid_up = gid.upper()
+        g_is_vowel = gid_up in vowels
+        
+        # Start a new chunk when we hit a vowel after a non-vowel
+        if g_is_vowel and not last_was_vowel and current_chunk:
+            chunks.append(current_chunk)
+            current_chunk = ""
+        
+        current_chunk += word[word_pos:word_pos+advance]
+        word_pos += advance
+        last_was_vowel = g_is_vowel
+    
+    if current_chunk:
+        chunks.append(current_chunk)
+        
+    return chunks
+
+
 # TODO: introduce a concept of syllables,
 # groups of glyphs drawn without "lifting the pen".
 # Note that this concept will be different from
