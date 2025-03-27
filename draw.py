@@ -267,40 +267,40 @@ vowels = ["A", "E", "I", "O", "U", "Y"]
 
 def split_into_chunks(word: str) -> list[str]:
     """Split a word into chunks, breaking at non-consecutive vowels.
-    
+
     Examples:
         split_into_chunks("fire") -> ["f", "ir", "e"]
         split_into_chunks("mount") -> ["m", "ount"]
         split_into_chunks("s$(TR)ength") -> ["s$(TR)", "ength"]
-    
+
     Returns:
         A list of word chunks
     """
     if not word:
         return []
-    
+
     chunks = []
     current_chunk = ""
     word_pos = 0
     last_was_vowel = False
-    
+
     while word_pos < len(word):
         gid, advance = gid_at(word, word_pos)
         gid_up = gid.upper()
         g_is_vowel = gid_up in vowels
-        
+
         # Start a new chunk when we hit a vowel after a non-vowel
         if g_is_vowel and not last_was_vowel and current_chunk:
             chunks.append(current_chunk)
             current_chunk = ""
-        
-        current_chunk += word[word_pos:word_pos+advance]
+
+        current_chunk += word[word_pos : word_pos + advance]
         word_pos += advance
         last_was_vowel = g_is_vowel
-    
+
     if current_chunk:
         chunks.append(current_chunk)
-        
+
     return chunks
 
 
@@ -336,45 +336,53 @@ def extract_vowel_params(
             raise ValueError(f"Got {gid=}, expected vowel")
 
 
-def draw_word(
+def draw_chunk(
     t: Turtle,
     p: Page,
-    word: str,
+    chunk: str,
+    is_first_chunk: bool,
+    is_last_chunk: bool,
 ):
-    word_pos = 0
-
+    """Draws the glyphs in a word chunk, updating and returning the drawing state."""
+    chunk_pos = 0
+    # The first chunk starts with a vowel or a consonant
+    # The middle and last chunks start with a vowel
     gpos = VowelPosition.IY
     gs = GlyphSize.DOUBLE
-    first_g = True
     consecutive_vowels = 0
+    first_g_in_chunk = True  # Tracks the first glyph within this specific chunk
 
-    while word_pos < len(word):
-        gid, advance = gid_at(word, word_pos)
-        word_pos += advance
+    while chunk_pos < len(chunk):
+        g_is_first = chunk_pos == 0
+        gid, advance = gid_at(chunk, chunk_pos)
+        chunk_pos += advance
 
         gid_up = gid.upper()
         g = all_glyphs.get(gid, None) or all_glyphs.get(gid.upper(), None)
         assert g, f"Character {gid} not found in character list"
 
         g_is_vowel = gid_up in vowels
-        g_is_last = word_pos >= len(word)
+        # A glyph is the last in the word if it's the last in this chunk AND this chunk is the last one.
+        g_is_last = (chunk_pos >= len(chunk)) and is_last_chunk
         consecutive_vowels = consecutive_vowels + 1 if g_is_vowel else 0
 
         next_gid_is_vowel = False
         next_gid_is_consonant = False
         next_gid_advance = 0
-        if word_pos < len(word):
-            next_gid, next_gid_advance = gid_at(word, word_pos)
+        if chunk_pos < len(chunk):
+            next_gid, next_gid_advance = gid_at(chunk, chunk_pos)
             if next_gid.upper() in vowels:
                 next_gid_is_vowel = True
             else:
                 next_gid_is_consonant = True
+        # The next glyph is the last in the word if it's the last in this chunk AND this chunk is the last one.
         next_gid_is_last = False
-        if word_pos + next_gid_advance >= len(word):
+        if chunk_pos + next_gid_advance >= len(chunk) and is_last_chunk:
             next_gid_is_last = True
 
-        if first_g:
-            first_g = False
+        # Special handling for the very first glyph of the entire word (first glyph of the first chunk)
+        if is_first_chunk and first_g_in_chunk:
+            first_g_in_chunk = False  # Only do this once per word
             gs = GlyphSize.DOUBLE
             if next_gid_is_consonant:
                 gs = GlyphSize.SINGLE
@@ -385,20 +393,51 @@ def draw_word(
 
         if g_is_vowel:
             vpos, vs = extract_vowel_params(gid_up, next_gid_is_vowel, next_gid_is_last)
-            if g_is_last and gpos == VowelPosition.CONT:
+            if g_is_last and (gpos == VowelPosition.CONT or g_is_first):
                 advance_after_glyph(t, p)
+                # Draw high-dot instead of the vowel if it's the last glyph and follows a consonant
                 draw_glyph(t, p, all_glyphs["high-dot"], pos=vpos, gs=vs)
+                # State update for gpos/gs doesn't matter as it's the last glyph
                 continue
             elif consecutive_vowels == 2:
-                consecutive_vowels = 0
+                # If it's the second consecutive vowel, draw it normally
+                # (The state gpos/gs should already be set correctly from the previous vowel)
+                # Reset consecutive vowel count after drawing the second one
+                draw_glyph(t, p, g, pos=gpos, gs=gs)
+                gpos = VowelPosition.CONT  # Assume next is consonant unless updated by next vowel
+                gs = GlyphSize.SINGLE
+                consecutive_vowels = 0  # Reset after handling the pair
+                continue  # Advance glyph without advancing position
             else:
+                # First vowel encountered (or first after a consonant)
+                # Update state for the *next* glyph and advance position
                 gpos = vpos
                 gs = vs
                 advance_after_glyph(t, p)
-                continue
+                continue  # Skip drawing this vowel directly, its position determines the next consonant/vowel
+
+        # If not a vowel or special case, draw the consonant/glyph
         draw_glyph(t, p, g, pos=gpos, gs=gs)
-        gpos = VowelPosition.CONT
-        gs = GlyphSize.SINGLE
+        gpos = VowelPosition.CONT  # Reset position to CONT after drawing a consonant/non-vowel
+        gs = GlyphSize.SINGLE  # Reset size to SINGLE
+
+    return gpos, gs, consecutive_vowels
+
+
+def draw_word(
+    t: Turtle,
+    p: Page,
+    word: str,
+):
+    chunks = split_into_chunks(word)
+
+    for i, chunk in enumerate(chunks):
+        is_first_chunk = i == 0
+        is_last_chunk = i == len(chunks) - 1
+
+        draw_chunk(t, p, chunk, is_first_chunk, is_last_chunk)
+
+    # Advance after the entire word is drawn
 
 
 def draw_article(
