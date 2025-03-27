@@ -387,39 +387,39 @@ def draw_chunk(
             if next_gid_is_consonant:
                 gs = GlyphSize.SINGLE
             draw_glyph(t, p, g, pos=VowelPosition.IY, gs=gs)
+            # Update state for the next glyph
             gpos = VowelPosition.CONT
             gs = GlyphSize.SINGLE
-            continue
-
-        if g_is_vowel:
-            vpos, vs = extract_vowel_params(gid_up, next_gid_is_vowel, next_gid_is_last)
-            if g_is_last and (gpos == VowelPosition.CONT or g_is_first):
-                advance_after_glyph(t, p)
-                # Draw high-dot instead of the vowel if it's the last glyph and follows a consonant
-                draw_glyph(t, p, all_glyphs["high-dot"], pos=vpos, gs=vs)
-                # State update for gpos/gs doesn't matter as it's the last glyph
-                continue
-            elif consecutive_vowels == 2:
-                # If it's the second consecutive vowel, draw it normally
-                # (The state gpos/gs should already be set correctly from the previous vowel)
-                # Reset consecutive vowel count after drawing the second one
-                draw_glyph(t, p, g, pos=gpos, gs=gs)
-                gpos = VowelPosition.CONT  # Assume next is consonant unless updated by next vowel
-                gs = GlyphSize.SINGLE
-                consecutive_vowels = 0  # Reset after handling the pair
-                continue  # Advance glyph without advancing position
+        # Handle subsequent glyphs in the chunk
+        else:
+            if g_is_vowel:
+                vpos, vs = extract_vowel_params(gid_up, next_gid_is_vowel, next_gid_is_last)
+                if g_is_last and (gpos == VowelPosition.CONT or g_is_first):
+                    advance_after_glyph(t, p)
+                    # Draw high-dot instead of the vowel if it's the last glyph and follows a consonant
+                    draw_glyph(t, p, all_glyphs["high-dot"], pos=vpos, gs=vs)
+                    # State update for gpos/gs doesn't matter as it's the last glyph
+                elif consecutive_vowels == 2:
+                    # If it's the second consecutive vowel, draw it normally
+                    # (The state gpos/gs should already be set correctly from the previous vowel)
+                    draw_glyph(t, p, g, pos=gpos, gs=gs)
+                    # Reset state after drawing the second vowel
+                    gpos = VowelPosition.CONT  # Assume next is consonant unless updated by next vowel
+                    gs = GlyphSize.SINGLE
+                    consecutive_vowels = 0  # Reset after handling the pair
+                else:
+                    # First vowel encountered (or first after a consonant)
+                    # Update state for the *next* glyph and advance position
+                    gpos = vpos
+                    gs = vs
+                    advance_after_glyph(t, p)
+                    # Skip drawing this vowel directly, its position determines the next consonant/vowel
             else:
-                # First vowel encountered (or first after a consonant)
-                # Update state for the *next* glyph and advance position
-                gpos = vpos
-                gs = vs
-                advance_after_glyph(t, p)
-                continue  # Skip drawing this vowel directly, its position determines the next consonant/vowel
-
-        # If not a vowel or special case, draw the consonant/glyph
-        draw_glyph(t, p, g, pos=gpos, gs=gs)
-        gpos = VowelPosition.CONT  # Reset position to CONT after drawing a consonant/non-vowel
-        gs = GlyphSize.SINGLE  # Reset size to SINGLE
+                # If not a vowel or special case, draw the consonant/glyph
+                draw_glyph(t, p, g, pos=gpos, gs=gs)
+                # Reset state after drawing a consonant/non-vowel
+                gpos = VowelPosition.CONT
+                gs = GlyphSize.SINGLE
 
     return gpos, gs, consecutive_vowels
 
