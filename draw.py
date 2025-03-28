@@ -223,6 +223,35 @@ def draw_glyph(
         draw_action(t, page, action)
 
 
+class EventRecorder:
+    def __init__(self) -> None:
+        self.events: list[dict[str, str]] = []
+
+    def record_event(self, event: dict[str, str]) -> None:
+        self.events.append(event)
+
+
+def _draw_glyph(
+    t: Turtle,
+    page: Page,
+    glyph: Glyph,
+    pos: VowelPosition,
+    gs: GlyphSize = GlyphSize.SINGLE,
+    gid: str = "",
+    event_recorder: EventRecorder | None = None,
+) -> None:
+    if event_recorder:
+        event_recorder.record_event(
+            {
+                "name": "draw_glyph",
+                "gid": gid,
+                "vowel_pos": pos.name,
+                "glyph_size": gs.name,
+            }
+        )
+    draw_glyph(t, page, glyph, pos=pos, gs=gs)
+
+
 def outline_vowel_areas(t: Turtle, p: Page) -> None:
     c1 = t.pen_color
     t.pen_color = "#DDDDDD"
@@ -240,6 +269,16 @@ def advance_after_glyph(t: Turtle, page: Page) -> None:
     page.current_line_left_px = page.furthest_from_left_px + page.vowel_area_height_px / 3
     t.jump_to(y=page.current_line_bottom_px, x=page.current_line_left_px)
     t.pen_down()
+
+
+def _advance_after_glyph(
+    t: Turtle,
+    page: Page,
+    event_recorder: EventRecorder | None = None,
+) -> None:
+    if event_recorder:
+        event_recorder.record_event({"name": "advance_after_glyph"})
+    advance_after_glyph(t, page)
 
 
 def advance_after_word(t: Turtle, page: Page) -> None:
@@ -335,6 +374,7 @@ def draw_chunk(
     chunk: str,
     is_first_chunk: bool,
     is_last_chunk: bool,
+    event_recorder: EventRecorder | None = None,
 ):
     """Draws the glyphs in a word chunk, updating and returning the drawing state."""
     chunk_pos = 0
@@ -379,19 +419,29 @@ def draw_chunk(
                 gs = GlyphSize.DOUBLE
                 if next_gid_is_consonant:
                     gs = GlyphSize.SINGLE
-                draw_glyph(t, p, g, pos=VowelPosition.IY, gs=gs)
+                _draw_glyph(
+                    t, p, g, pos=VowelPosition.IY, gs=gs, gid=gid, event_recorder=event_recorder
+                )
                 # Update state for the next glyph
                 gpos = VowelPosition.CONT
                 gs = GlyphSize.SINGLE
             elif g_is_last and (gpos == VowelPosition.CONT or g_is_first):
-                advance_after_glyph(t, p)
+                _advance_after_glyph(t, p, event_recorder=event_recorder)
                 # Draw high-dot instead of the vowel if it's the last glyph and follows a consonant
-                draw_glyph(t, p, all_glyphs["high-dot"], pos=vpos, gs=vs)
+                _draw_glyph(
+                    t,
+                    p,
+                    all_glyphs["high-dot"],
+                    pos=vpos,
+                    gs=vs,
+                    gid="high-dot",
+                    event_recorder=event_recorder,
+                )
                 # State update for gpos/gs doesn't matter as it's the last glyph
             elif consecutive_vowels == 2:
                 # If it's the second consecutive vowel, draw it normally
                 # (The state gpos/gs should already be set correctly from the previous vowel)
-                draw_glyph(t, p, g, pos=gpos, gs=gs)
+                _draw_glyph(t, p, g, pos=gpos, gs=gs, gid=gid, event_recorder=event_recorder)
                 # Reset state after drawing the second vowel
                 gpos = VowelPosition.CONT  # Assume next is consonant unless updated by next vowel
                 gs = GlyphSize.SINGLE
@@ -401,13 +451,13 @@ def draw_chunk(
                 # Update state for the *next* glyph and advance position
                 gpos = vpos
                 gs = vs
-                advance_after_glyph(t, p)
+                _advance_after_glyph(t, p, event_recorder=event_recorder)
                 # Skip drawing this vowel directly, its position determines the next consonant/vowel
         else:
             if gpos == VowelPosition.IY:
                 gs = GlyphSize.SINGLE if next_gid_is_consonant else GlyphSize.DOUBLE
             # If not a vowel or special case, draw the consonant/glyph
-            draw_glyph(t, p, g, pos=gpos, gs=gs)
+            _draw_glyph(t, p, g, pos=gpos, gs=gs, gid=gid, event_recorder=event_recorder)
             # Reset state after drawing a consonant/non-vowel
             gpos = VowelPosition.CONT
             gs = GlyphSize.SINGLE
@@ -416,18 +466,14 @@ def draw_chunk(
     return gpos, gs, consecutive_vowels
 
 
-def draw_word(
-    t: Turtle,
-    p: Page,
-    word: str,
-):
+def draw_word(t: Turtle, p: Page, word: str, event_recorder: EventRecorder | None = None):
     chunks = split_into_chunks(word)
 
     for i, chunk in enumerate(chunks):
         is_first_chunk = i == 0
         is_last_chunk = i == len(chunks) - 1
 
-        draw_chunk(t, p, chunk, is_first_chunk, is_last_chunk)
+        draw_chunk(t, p, chunk, is_first_chunk, is_last_chunk, event_recorder)
 
     # Advance after the entire word is drawn
 
