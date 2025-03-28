@@ -19,7 +19,6 @@ dir.mkdir(parents=True, exist_ok=True)
 
 text: list[str] = []
 
-# TODO: why is V in motivated single sized?
 text = [
     "$(every)korps on mount $(ever)est was",
     "ons an x$(tr)emly motivated person",
@@ -65,7 +64,7 @@ for i, line in list(enumerate(text)):
     with dc as (p, t):
         draw_sentence(t, p, line)
 
-# TODO: make otherthings look good.
+# TODO: make "otherthings" look good.
 # TODO: blend AK, AL
 text = [
     "On the $(sub)way today a man kam up to me to start a $(con)versa$(SH)n . He mad",

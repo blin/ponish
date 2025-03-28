@@ -31,7 +31,6 @@ words = [
     ("project", "$(PR)ojekt"),
     ("preview", "$(PR)evu"),
     ("pl", "$(PL)"),
-    ("biplib", "bi$(PL)ib"),
     ("pleasure", "$(PL)e$(ZH)r"),
     ("plastic", "$(PL)astik"),
     ("plebian", "$(PL)ebe$(AN)"),
