@@ -1,8 +1,11 @@
 import math
+from pathlib import Path
 
+import cairosvg
 import pytest
 from syrupy.assertion import SnapshotAssertion
 
+import braile_art
 import lesson_2_passage_conan
 import lesson_3_examples_1
 import lesson_3_examples_3
@@ -129,7 +132,7 @@ def test_draw_word_events(snapshot: SnapshotAssertion, word: str):
 
 @pytest.mark.parametrize(
     "line_index, line_text",
-    enumerate(lesson_2_passage_conan.text),
+    enumerate(lesson_2_passage_conan.text + lesson_3_examples_4.text_combined),
 )
 def test_draw_sentence_braille_snapshot(
     snapshot: SnapshotAssertion, tmp_path: Path, line_index: int, line_text: str
@@ -155,7 +158,7 @@ def test_draw_sentence_braille_snapshot(
     cairosvg.svg2png(url=str(svg_path), write_to=str(png_path))
 
     # 3. Convert PNG to Braille
-    braille_lines = braile_art.image_to_braille(png_path)
+    braille_lines = braile_art.chunk_braile(braile_art.image_to_braille(png_path), 120)[0]
     braille_output = "\n".join(braille_lines)
 
     # 4. Compare Braille output against snapshot

@@ -27,8 +27,12 @@ def image_to_braille(image_path: str | Path) -> list[str]:
     img = Image.open(image_path).convert("RGB")
 
     width, height = img.size
-    target_width = width + (width % 2)
-    target_height = height + (height % 4)
+
+    def align(n: int, k: int):
+        return ((n + k - 1) // k) * k
+
+    target_width = align((width // 1), 2)
+    target_height = align((height // 1), 4)
 
     if (target_width, target_height) != (width, height):
         img = img.resize((target_width, target_height))
@@ -52,13 +56,25 @@ def image_to_braille(image_path: str | Path) -> list[str]:
     return lines
 
 
+def chunk_braile(lines: list[str], max_line_width: int) -> list[list[str]]:
+    line_length = len(lines[0])
+    chunks: list[list[str]] = [list() for _ in range(line_length // max_line_width)]
+    for i, chunk in enumerate(chunks):
+        for line in lines:
+            line_adj = line[i * max_line_width : (i + 1) * max_line_width]
+            chunk.append(line_adj)
+    return chunks
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Convert image to Braille art.")
     parser.add_argument("input_path", type=Path, help="Path to the input image file.")
     args = parser.parse_args()
     lines = image_to_braille(args.input_path)
-    for line in lines:
-        print(line)
+    for chunk in chunk_braile(lines, 140):
+        for line in chunk:
+            print(line)
+        print()
 
 
 if __name__ == "__main__":
