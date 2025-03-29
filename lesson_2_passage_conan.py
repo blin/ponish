@@ -25,11 +25,12 @@ text = [
     "cronicler wo alon kan tel ðe of his saga .",
     "Let me tel yu of the des of hi $(AD)ven$(ʧR) !",
 ]
-for i, line in list(enumerate(text)):
-    dc = DrawingContext(
-        output_path=dir / f"passage-1-line-{i + 1}.svg",
-        drawing_width=750,
-        drawing_height=150,
-    )
-    with dc as (p, t):
-        draw_sentence(t, p, line)
+if __name__ == "__main__":
+    for i, line in list(enumerate(text)):
+        dc = DrawingContext(
+            output_path=dir / f"passage-1-line-{i + 1}.svg",
+            drawing_width=750,
+            drawing_height=150,
+        )
+        with dc as (p, t):
+            draw_sentence(t, p, line)

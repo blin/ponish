@@ -39,11 +39,12 @@ words = [
     ("success", "suk$(SS)"),
     ("misses", "mi$(SS)"),
 ]
-for name, spelling in words:
-    dc = DrawingContext(
-        output_path=dir / f"{name}.svg",
-        drawing_width=350,
-        drawing_height=150,
-    )
-    with dc as (p, t):
-        draw_word(t, p, spelling)
+if __name__ == "__main__":
+    for name, spelling in words:
+        dc = DrawingContext(
+            output_path=dir / f"{name}.svg",
+            drawing_width=350,
+            drawing_height=150,
+        )
+        with dc as (p, t):
+            draw_word(t, p, spelling)

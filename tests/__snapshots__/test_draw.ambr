@@ -1,4 +1,718 @@
 # serializer version: 1
+# name: test_draw_word_events[!]
+  list([
+    dict({
+      'gid': '!',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(AD)ven$(\u02a7R)]
+  list([
+    dict({
+      'gid': 'AD',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'v',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'ʧR',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(AJ)]
+  list([
+    dict({
+      'gid': 'AJ',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(AN)]
+  list([
+    dict({
+      'gid': 'AN',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(AN)d]
+  list([
+    dict({
+      'gid': 'AN',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(AQ)ilonia]
+  list([
+    dict({
+      'gid': 'AQ',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'a',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(AR)y$(AS)]
+  list([
+    dict({
+      'gid': 'AR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'AS',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(AT)lantis]
+  list([
+    dict({
+      'gid': 'AT',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(BR)ow]
+  list([
+    dict({
+      'gid': 'BR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'w',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(DR)ank]
+  list([
+    dict({
+      'gid': 'DR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(FR)us$(TR)at$(ing)]
+  list([
+    dict({
+      'gid': 'FR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'TR',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'ing',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(PL)]
+  list([
+    dict({
+      'gid': 'PL',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(PL)astik]
+  list([
+    dict({
+      'gid': 'PL',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(PL)e$(ZH)r]
+  list([
+    dict({
+      'gid': 'PL',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'ZH',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(PL)ebe$(AN)]
+  list([
+    dict({
+      'gid': 'PL',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'b',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'AN',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(PL)ezd]
+  list([
+    dict({
+      'gid': 'PL',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'z',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(PR)]
+  list([
+    dict({
+      'gid': 'PR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(PR)evu]
+  list([
+    dict({
+      'gid': 'PR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'v',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(PR)in$(SS)]
+  list([
+    dict({
+      'gid': 'PR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'SS',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(PR)ivat]
+  list([
+    dict({
+      'gid': 'PR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'v',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(PR)ojekt]
+  list([
+    dict({
+      'gid': 'PR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'j',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(SS)]
+  list([
+    dict({
+      'gid': 'SS',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(TH)em]
+  list([
+    dict({
+      'gid': 'TH',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(TH)er]
+  list([
+    dict({
+      'gid': 'TH',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(TH)ru]
+  list([
+    dict({
+      'gid': 'TH',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(TH)y]
+  list([
+    dict({
+      'gid': 'TH',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(THANK)iu]
+  list([
+    dict({
+      'gid': 'THANK',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'u',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(THING)]
+  list([
+    dict({
+      'gid': 'THING',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(THINK)]
+  list([
+    dict({
+      'gid': 'THINK',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(TR)id]
+  list([
+    dict({
+      'gid': 'TR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(TR)obld]
+  list([
+    dict({
+      'gid': 'TR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'b',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(TR)y$(ing)]
+  list([
+    dict({
+      'gid': 'TR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'ing',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(about)]
+  list([
+    dict({
+      'gid': 'about',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
 # name: test_draw_word_events[$(above)$(GR)ound]
   list([
     dict({
@@ -36,7 +750,2446 @@
     }),
   ])
 # ---
-# name: test_draw_word_events[fire]
+# name: test_draw_word_events[$(anti)dot]
+  list([
+    dict({
+      'gid': 'anti',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(auto)omobil]
+  list([
+    dict({
+      'gid': 'auto',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'b',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(awa)at]
+  list([
+    dict({
+      'gid': 'awa',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(circu)lat]
+  list([
+    dict({
+      'gid': 'circu',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(circum)skrib]
+  list([
+    dict({
+      'gid': 'circum',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(com)poz]
+  list([
+    dict({
+      'gid': 'com',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'z',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(con)s$(TR)ukt]
+  list([
+    dict({
+      'gid': 'con',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'TR',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(con)versa$(SH)n]
+  list([
+    dict({
+      'gid': 'con',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'v',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'SH',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(contr)adik$(SH)n]
+  list([
+    dict({
+      'gid': 'contr',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'SH',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(des)titut]
+  list([
+    dict({
+      'gid': 'des',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(dis)paraj]
+  list([
+    dict({
+      'gid': 'dis',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'j',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(ever)est]
+  list([
+    dict({
+      'gid': 'ever',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(every)body]
+  list([
+    dict({
+      'gid': 'every',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'b',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(every)korps]
+  list([
+    dict({
+      'gid': 'every',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(gram)ar]
+  list([
+    dict({
+      'gid': 'gram',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(graph)ic]
+  list([
+    dict({
+      'gid': 'graph',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'c',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(mis)manaj$(ment)]
+  list([
+    dict({
+      'gid': 'mis',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'j',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'ment',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(mis)re$(PR)esent]
+  list([
+    dict({
+      'gid': 'mis',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'PR',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(other)$(thing)s]
+  list([
+    dict({
+      'gid': 'other',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'thing',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(other)girls]
+  list([
+    dict({
+      'gid': 'other',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'g',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(other)wiz]
+  list([
+    dict({
+      'gid': 'other',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'w',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'z',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(out)spoken]
+  list([
+    dict({
+      'gid': 'out',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(over)]
+  list([
+    dict({
+      'gid': 'over',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(over)don]
+  list([
+    dict({
+      'gid': 'over',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(pl)esant]
+  list([
+    dict({
+      'gid': 'pl',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(self)publi$(SH)]
+  list([
+    dict({
+      'gid': 'self',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'b',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'SH',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(semi)$(TR)uk]
+  list([
+    dict({
+      'gid': 'semi',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'TR',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(ship)$(ment)]
+  list([
+    dict({
+      'gid': 'ship',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'ment',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(sub)jekt]
+  list([
+    dict({
+      'gid': 'sub',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'j',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(sub)wa]
+  list([
+    dict({
+      'gid': 'sub',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'w',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(sub)way]
+  list([
+    dict({
+      'gid': 'sub',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'w',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'y',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(super)luminal]
+  list([
+    dict({
+      'gid': 'super',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(super)sonik]
+  list([
+    dict({
+      'gid': 'super',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(thank)]
+  list([
+    dict({
+      'gid': 'thank',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(trans)fer]
+  list([
+    dict({
+      'gid': 'trans',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'f',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(trans)it]
+  list([
+    dict({
+      'gid': 'trans',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(under)go]
+  list([
+    dict({
+      'gid': 'under',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'g',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(very)abl]
+  list([
+    dict({
+      'gid': 'very',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'b',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(very)gud]
+  list([
+    dict({
+      'gid': 'very',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'g',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(ward)$(away)]
+  list([
+    dict({
+      'gid': 'ward',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'away',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[$(ward)en]
+  list([
+    dict({
+      'gid': 'ward',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[,]
+  list([
+    dict({
+      'gid': ',',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[.]
+  list([
+    dict({
+      'gid': '.',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[:]
+  list([
+    dict({
+      'gid': ':',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[Betwen]
+  list([
+    dict({
+      'gid': 'B',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'w',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[Conan]
+  list([
+    dict({
+      'gid': 'C',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[Damit]
+  list([
+    dict({
+      'gid': 'D',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[Destind]
+  list([
+    dict({
+      'gid': 'D',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[He]
+  list([
+    dict({
+      'gid': 'H',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[Homo]
+  list([
+    dict({
+      'gid': 'H',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[I]
+  list([
+    dict({
+      'gid': 'I',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[Im]
+  list([
+    dict({
+      'gid': 'I',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[It]
+  list([
+    dict({
+      'gid': 'I',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[Its]
+  list([
+    dict({
+      'gid': 'I',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[Let]
+  list([
+    dict({
+      'gid': 'L',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[Lik]
+  list([
+    dict({
+      'gid': 'L',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[No]
+  list([
+    dict({
+      'gid': 'N',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[On]
+  list([
+    dict({
+      'gid': 'O',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[The]
+  list([
+    dict({
+      'gid': 'T',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'h',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[\xf0e]
+  list([
+    dict({
+      'gid': 'ð',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[\xf0is]
+  list([
+    dict({
+      'gid': 'ð',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[\xf0r]
+  list([
+    dict({
+      'gid': 'ð',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[a]
+  list([
+    dict({
+      'gid': 'a',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[akomodat]
+  list([
+    dict({
+      'gid': 'a',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[al]
+  list([
+    dict({
+      'gid': 'a',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[almost]
+  list([
+    dict({
+      'gid': 'a',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[alon]
+  list([
+    dict({
+      'gid': 'a',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[an]
+  list([
+    dict({
+      'gid': 'a',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[aw]
+  list([
+    dict({
+      'gid': 'a',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'w',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[ba$(NK)]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'NK',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[banality]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[batl$(ship)]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'ship',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[be]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[began]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'g',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[ber]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[bi$(GR)]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'GR',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[bi$(ing)]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'ing',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[bild]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[bio$(logy)]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'o',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'logy',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[bl$(under)]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'under',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[bonfir]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'f',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[but]
+  list([
+    dict({
+      'gid': 'b',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[clenle$(ness)]
+  list([
+    dict({
+      'gid': 'c',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'ness',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[cronicler]
+  list([
+    dict({
+      'gid': 'c',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'c',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[crown]
+  list([
+    dict({
+      'gid': 'c',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'w',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[culdnt]
+  list([
+    dict({
+      'gid': 'c',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[cut]
+  list([
+    dict({
+      'gid': 'c',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[dark$(ness)]
+  list([
+    dict({
+      'gid': 'd',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'ness',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[des]
+  list([
+    dict({
+      'gid': 'd',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[didnt]
+  list([
+    dict({
+      'gid': 'd',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[down$(ward)s]
+  list([
+    dict({
+      'gid': 'd',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'w',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'ward',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[flirt]
+  list([
+    dict({
+      'gid': 'f',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[flu$(NK)]
+  list([
+    dict({
+      'gid': 'f',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'NK',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[for$(ever)]
   list([
     dict({
       'gid': 'f',
@@ -49,6 +3202,47 @@
     }),
     dict({
       'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'ever',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[from]
+  list([
+    dict({
+      'gid': 'f',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[ge]
+  list([
+    dict({
+      'gid': 'g',
       'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'IY',
@@ -58,6 +3252,640 @@
     }),
     dict({
       'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[gil$(less)$(ness)]
+  list([
+    dict({
+      'gid': 'g',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'less',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'ness',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[gil$(less)]
+  list([
+    dict({
+      'gid': 'g',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'less',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[girl]
+  list([
+    dict({
+      'gid': 'g',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[go$(ING)]
+  list([
+    dict({
+      'gid': 'g',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'ING',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[go$(away)]
+  list([
+    dict({
+      'gid': 'g',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'away',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[go]
+  list([
+    dict({
+      'gid': 'g',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[had]
+  list([
+    dict({
+      'gid': 'h',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[hapened]
+  list([
+    dict({
+      'gid': 'h',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[hed]
+  list([
+    dict({
+      'gid': 'h',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[hi]
+  list([
+    dict({
+      'gid': 'h',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[him]
+  list([
+    dict({
+      'gid': 'h',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[his]
+  list([
+    dict({
+      'gid': 'h',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[hurt]
+  list([
+    dict({
+      'gid': 'h',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[i$(logic)al]
+  list([
+    dict({
+      'gid': 'i',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'logic',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[is]
+  list([
+    dict({
+      'gid': 'i',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[it]
+  list([
+    dict({
+      'gid': 'i',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[juld]
+  list([
+    dict({
+      'gid': 'j',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[kam]
+  list([
+    dict({
+      'gid': 'k',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[kan]
+  list([
+    dict({
+      'gid': 'k',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[la$(about)]
+  list([
+    dict({
+      'gid': 'l',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'about',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[laf$(ing)]
+  list([
+    dict({
+      'gid': 'l',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'f',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'ing',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[lonly]
+  list([
+    dict({
+      'gid': 'l',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[mad]
+  list([
+    dict({
+      'gid': 'm',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[man]
+  list([
+    dict({
+      'gid': 'm',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[me]
+  list([
+    dict({
+      'gid': 'm',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[mi$(SS)]
+  list([
+    dict({
+      'gid': 'm',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'SS',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[mor]
+  list([
+    dict({
+      'gid': 'm',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[motivated]
+  list([
+    dict({
+      'gid': 'm',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'v',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
       'glyph_size': 'SINGLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
@@ -95,16 +3923,151 @@
     }),
   ])
 # ---
-# name: test_draw_word_events[s$(TR)ength]
+# name: test_draw_word_events[my]
   list([
     dict({
-      'gid': 's',
+      'gid': 'm',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[n$(fect)$(SH)n]
+  list([
+    dict({
+      'gid': 'n',
       'glyph_size': 'SINGLE',
       'name': 'draw_glyph',
       'vowel_pos': 'IY',
     }),
     dict({
-      'gid': 'TR',
+      'gid': 'fect',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'SH',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[n$(fect)]
+  list([
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'fect',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[nd]
+  list([
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[not]
+  list([
+    dict({
+      'gid': 'n',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[notice]
+  list([
+    dict({
+      'gid': 'n',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'c',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[ntendd]
+  list([
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 't',
       'glyph_size': 'SINGLE',
       'name': 'draw_glyph',
       'vowel_pos': 'CONT',
@@ -119,29 +4082,105 @@
       'vowel_pos': 'AE',
     }),
     dict({
-      'gid': 'g',
+      'gid': 'd',
       'glyph_size': 'SINGLE',
       'name': 'draw_glyph',
       'vowel_pos': 'CONT',
     }),
     dict({
-      'gid': 't',
-      'glyph_size': 'SINGLE',
-      'name': 'draw_glyph',
-      'vowel_pos': 'CONT',
-    }),
-    dict({
-      'gid': 'h',
+      'gid': 'd',
       'glyph_size': 'SINGLE',
       'name': 'draw_glyph',
       'vowel_pos': 'CONT',
     }),
   ])
 # ---
-# name: test_draw_word_events[test]
+# name: test_draw_word_events[o\u0283ns]
   list([
     dict({
-      'gid': 't',
+      'gid': 'o',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'ʃ',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[of]
+  list([
+    dict({
+      'gid': 'o',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'f',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[on]
+  list([
+    dict({
+      'gid': 'o',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[ons]
+  list([
+    dict({
+      'gid': 'o',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[pas$(ify)]
+  list([
+    dict({
+      'gid': 'p',
       'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'IY',
@@ -156,10 +4195,947 @@
       'vowel_pos': 'AE',
     }),
     dict({
+      'gid': 'ify',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[pas$(ifycation)]
+  list([
+    dict({
+      'gid': 'p',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'ifycation',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[pe$(each)]
+  list([
+    dict({
+      'gid': 'p',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'each',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[person]
+  list([
+    dict({
+      'gid': 'p',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[reveld]
+  list([
+    dict({
+      'gid': 'r',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'v',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[riz]
+  list([
+    dict({
+      'gid': 'r',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'z',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[saga]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'g',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[slut$(hood)]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'hood',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[smal]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[so]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[som$(THING)]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'THING',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[sons]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[spit$(full)$(ness)]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'full',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'ness',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[spit$(full)]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'full',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[start]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
       'gid': 't',
       'glyph_size': 'SINGLE',
       'name': 'draw_glyph',
       'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[stop]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[suk$(SS)]
+  list([
+    dict({
+      'gid': 's',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'gid': 'SS',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[talk$(ing)]
+  list([
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'ing',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[talk]
+  list([
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'k',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[tel]
+  list([
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[the]
+  list([
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'h',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[tims]
+  list([
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[to$(ward)]
+  list([
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'ward',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[to]
+  list([
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[today]
+  list([
+    dict({
+      'gid': 't',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'y',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[twa$(NG)]
+  list([
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'w',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'NG',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[un$(DR)emd]
+  list([
+    dict({
+      'gid': 'u',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 'DR',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'd',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[unto]
+  list([
+    dict({
+      'gid': 'u',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'gid': 't',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[up]
+  list([
+    dict({
+      'gid': 'u',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[upon]
+  list([
+    dict({
+      'gid': 'u',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'p',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[was]
+  list([
+    dict({
+      'gid': 'w',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 's',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[waz]
+  list([
+    dict({
+      'gid': 'w',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'z',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[we$(TH)r]
+  list([
+    dict({
+      'gid': 'w',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'TH',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'r',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[wen]
+  list([
+    dict({
+      'gid': 'w',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'n',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[wi$(TH)]
+  list([
+    dict({
+      'gid': 'w',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'TH',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[wo]
+  list([
+    dict({
+      'gid': 'w',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[x$(tr)emly]
+  list([
+    dict({
+      'gid': 'x',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'gid': 'tr',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'm',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'AE',
+    }),
+    dict({
+      'gid': 'l',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'CONT',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+  ])
+# ---
+# name: test_draw_word_events[yu]
+  list([
+    dict({
+      'gid': 'y',
+      'glyph_size': 'DOUBLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'IY',
+    }),
+    dict({
+      'name': 'advance_after_glyph',
+    }),
+    dict({
+      'gid': 'high-dot',
+      'glyph_size': 'SINGLE',
+      'name': 'draw_glyph',
+      'vowel_pos': 'OU',
     }),
   ])
 # ---
