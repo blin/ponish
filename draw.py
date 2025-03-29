@@ -402,6 +402,19 @@ def draw_chunk(
         if chunk_pos + next_gid_advance >= len(chunk) and is_last_chunk:
             next_gid_is_last = True
 
+        g_to_draw = g
+        gid_to_draw = gid
+        if (
+            not (is_first_chunk and first_g_in_chunk)
+            and g_is_vowel
+            and g_is_last
+            and (gpos == VowelPosition.CONT or g_is_first)
+        ):
+            g_to_draw = all_glyphs["high-dot"]
+            gid_to_draw = "high-dot"
+
+        should_draw = False
+
         if g_is_vowel:
             vpos = extract_vowel_params(gid_up)
             # Determine GlyphSize based on vowel and context
@@ -412,36 +425,18 @@ def draw_chunk(
                     vs = GlyphSize.DOUBLE
 
             if is_first_chunk and first_g_in_chunk:
+                gpos = VowelPosition.IY
                 gs = GlyphSize.DOUBLE
                 if next_gid_is_consonant:
                     gs = GlyphSize.SINGLE
-                _draw_glyph(
-                    t, p, g, pos=VowelPosition.IY, gs=gs, gid=gid, event_recorder=event_recorder
-                )
-                # Update state for the next glyph
-                gpos = VowelPosition.CONT
-                gs = GlyphSize.SINGLE
+                should_draw = True
             elif g_is_last and (gpos == VowelPosition.CONT or g_is_first):
                 _advance_after_glyph(t, p, event_recorder=event_recorder)
-                # Draw high-dot instead of the vowel if it's the last glyph and follows a consonant
-                _draw_glyph(
-                    t,
-                    p,
-                    all_glyphs["high-dot"],
-                    pos=vpos,
-                    gs=vs,
-                    gid="high-dot",
-                    event_recorder=event_recorder,
-                )
-                # State update for gpos/gs doesn't matter as it's the last glyph
+                gpos = vpos
+                should_draw = True
             elif consecutive_vowels == 2:
-                # If it's the second consecutive vowel, draw it normally
-                # (The state gpos/gs should already be set correctly from the previous vowel)
-                _draw_glyph(t, p, g, pos=gpos, gs=gs, gid=gid, event_recorder=event_recorder)
-                # Reset state after drawing the second vowel
-                gpos = VowelPosition.CONT  # Assume next is consonant unless updated by next vowel
-                gs = GlyphSize.SINGLE
-                consecutive_vowels = 0  # Reset after handling the pair
+                should_draw = True
+                consecutive_vowels = 0
             else:
                 # First vowel encountered (or first after a consonant)
                 # Update state for the *next* glyph and advance position
@@ -453,7 +448,12 @@ def draw_chunk(
             if gpos == VowelPosition.IY:
                 gs = GlyphSize.SINGLE if next_gid_is_consonant else GlyphSize.DOUBLE
             # If not a vowel or special case, draw the consonant/glyph
-            _draw_glyph(t, p, g, pos=gpos, gs=gs, gid=gid, event_recorder=event_recorder)
+            should_draw = True
+
+        if should_draw:
+            _draw_glyph(
+                t, p, g_to_draw, pos=gpos, gs=gs, gid=gid_to_draw, event_recorder=event_recorder
+            )
             # Reset state after drawing a consonant/non-vowel
             gpos = VowelPosition.CONT
             gs = GlyphSize.SINGLE

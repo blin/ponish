@@ -3,6 +3,10 @@ import math
 import pytest
 from syrupy.assertion import SnapshotAssertion
 
+import lesson_2_passage_conan
+import lesson_3_examples_1
+import lesson_3_examples_3
+import lesson_3_examples_4
 from draw import (
     EventRecorder,
     Page,
@@ -10,16 +14,14 @@ from draw import (
     draw_word,
 )
 
-import lesson_2_passage_conan
-import lesson_3_examples_1
-import lesson_3_examples_3
-import lesson_3_examples_4
 
 def words_from_text(text: list[str]) -> set[str]:
     return {word for line in text for word in line.split()}
 
+
 def words_from_words(words: list[tuple[str, str]]) -> set[str]:
     return {spelling for _, spelling in words}
+
 
 WORDBANK: set[str] = set()
 WORDBANK.update(words_from_text(lesson_2_passage_conan.text))

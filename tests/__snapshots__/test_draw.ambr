@@ -410,7 +410,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'OU',
     }),
@@ -570,7 +570,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'OU',
     }),
@@ -1656,7 +1656,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
     }),
@@ -1837,7 +1837,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'OU',
     }),
@@ -2101,7 +2101,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
     }),
@@ -2129,7 +2129,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'OU',
     }),
@@ -2250,7 +2250,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'OU',
     }),
@@ -2291,7 +2291,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
     }),
@@ -2310,7 +2310,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
     }),
@@ -2623,7 +2623,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
     }),
@@ -3252,7 +3252,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
     }),
@@ -3390,7 +3390,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'OU',
     }),
@@ -3802,7 +3802,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
     }),
@@ -4052,7 +4052,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
     }),
@@ -4355,7 +4355,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
     }),
@@ -4430,7 +4430,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'OU',
     }),
@@ -4729,7 +4729,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'AE',
     }),
@@ -4792,7 +4792,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'OU',
     }),
@@ -4913,7 +4913,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'OU',
     }),
@@ -5074,7 +5074,7 @@
     }),
     dict({
       'gid': 'high-dot',
-      'glyph_size': 'SINGLE',
+      'glyph_size': 'DOUBLE',
       'name': 'draw_glyph',
       'vowel_pos': 'OU',
     }),
