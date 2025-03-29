@@ -343,27 +343,16 @@ def split_into_chunks(word: str) -> list[str]:
     return chunks
 
 
-def extract_vowel_params(
-    gid: str, next_gid_is_vowel: bool, next_gid_is_last: bool
-) -> tuple[VowelPosition, GlyphSize]:
+def extract_vowel_params(gid: str) -> VowelPosition:
+    """Determine the VowelPosition based on the vowel glyph ID."""
     gid_up = gid.upper()
     match gid_up:
         case "A" | "E":
-            vpos = VowelPosition.AE
-            vs = GlyphSize.SINGLE
-            return vpos, vs
+            return VowelPosition.AE
         case "I" | "Y":
-            vpos = VowelPosition.IY
-            # TODO: handle glyph size independently of vowel position
-            if next_gid_is_vowel or next_gid_is_last:
-                vs = GlyphSize.DOUBLE
-            else:
-                vs = GlyphSize.SINGLE
-            return vpos, vs
+            return VowelPosition.IY
         case "O" | "U":
-            vpos = VowelPosition.OU
-            vs = GlyphSize.SINGLE
-            return vpos, vs
+            return VowelPosition.OU
         case _:
             raise ValueError(f"Got {gid=}, expected vowel")
 
@@ -414,7 +403,14 @@ def draw_chunk(
             next_gid_is_last = True
 
         if g_is_vowel:
-            vpos, vs = extract_vowel_params(gid_up, next_gid_is_vowel, next_gid_is_last)
+            vpos = extract_vowel_params(gid_up)
+            # Determine GlyphSize based on vowel and context
+            vs = GlyphSize.SINGLE  # Default size
+            if vpos == VowelPosition.IY:
+                # Double size for I/Y if followed by another vowel or if it's the last glyph
+                if next_gid_is_vowel or next_gid_is_last:
+                    vs = GlyphSize.DOUBLE
+
             if is_first_chunk and first_g_in_chunk:
                 gs = GlyphSize.DOUBLE
                 if next_gid_is_consonant:
