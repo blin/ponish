@@ -301,7 +301,9 @@ def gid_at(word: str, idx: int) -> tuple[str, int]:
 
 
 # TODO: use is_vowel attribute of Glyph or remove the is_vowel attribute
-vowels = ["A", "E", "I", "O", "U", "Y"]
+def is_gid_vowel(gid: str) -> bool:
+    gid_up = gid.upper()
+    return gid_up in ["A", "E", "I", "O", "U", "Y"]
 
 
 def split_into_chunks(word: str) -> list[str]:
@@ -325,8 +327,7 @@ def split_into_chunks(word: str) -> list[str]:
 
     while word_pos < len(word):
         gid, advance = gid_at(word, word_pos)
-        gid_up = gid.upper()
-        g_is_vowel = gid_up in vowels
+        g_is_vowel = is_gid_vowel(gid)
 
         # Start a new chunk when we hit a vowel after a non-vowel
         if g_is_vowel and not last_was_vowel and current_chunk:
@@ -366,41 +367,35 @@ def draw_chunk(
     event_recorder: EventRecorder | None = None,
 ):
     """Draws the glyphs in a word chunk, updating and returning the drawing state."""
-    chunk_pos = 0
+    # Pre-calculate glyphs for the chunk
+    chunk_gs: list[tuple[str, Glyph]] = []
+    parse_pos = 0
+    while parse_pos < len(chunk):
+        gid, advance = gid_at(chunk, parse_pos)
+        g = all_glyphs.get(gid, None) or all_glyphs.get(gid.upper(), None)
+        assert g, f"Glyph {gid} not found in glyph list for chunk '{chunk}'"
+        chunk_gs.append((gid, g))
+        parse_pos += advance
+
     # The first chunk starts with a vowel or a consonant
     # The middle and last chunks start with a vowel
     gpos = VowelPosition.IY
-    gs = GlyphSize.DOUBLE
     consecutive_vowels = 0
     first_g_in_chunk = True  # Tracks the first glyph within this specific chunk
 
-    while chunk_pos < len(chunk):
-        g_is_first = chunk_pos == 0
-        gid, advance = gid_at(chunk, chunk_pos)
-        chunk_pos += advance
+    for i, (gid, g) in enumerate(chunk_gs):
+        g_is_first = i == 0
+        g_is_vowel = is_gid_vowel(gid)
 
-        gid_up = gid.upper()
-        g = all_glyphs.get(gid, None) or all_glyphs.get(gid.upper(), None)
-        assert g, f"Character {gid} not found in character list"
-
-        g_is_vowel = gid_up in vowels
         # A glyph is the last in the word if it's the last in this chunk AND this chunk is the last one.
-        g_is_last = (chunk_pos >= len(chunk)) and is_last_chunk
+        g_is_last = (i == len(chunk_gs) - 1) and is_last_chunk
         consecutive_vowels = consecutive_vowels + 1 if g_is_vowel else 0
 
-        next_gid_is_vowel = False
         next_gid_is_consonant = False
-        next_gid_advance = 0
-        if chunk_pos < len(chunk):
-            next_gid, next_gid_advance = gid_at(chunk, chunk_pos)
-            if next_gid.upper() in vowels:
-                next_gid_is_vowel = True
-            else:
+        if i + 1 < len(chunk_gs):
+            next_gid, _ = chunk_gs[i + 1]
+            if not is_gid_vowel(next_gid):
                 next_gid_is_consonant = True
-        # The next glyph is the last in the word if it's the last in this chunk AND this chunk is the last one.
-        next_gid_is_last = False
-        if chunk_pos + next_gid_advance >= len(chunk) and is_last_chunk:
-            next_gid_is_last = True
 
         g_to_draw = g
         gid_to_draw = gid
@@ -414,24 +409,15 @@ def draw_chunk(
             gid_to_draw = "high-dot"
 
         should_draw = False
+        should_advance = False
 
         if g_is_vowel:
-            vpos = extract_vowel_params(gid_up)
-            # Determine GlyphSize based on vowel and context
-            vs = GlyphSize.SINGLE  # Default size
-            if vpos == VowelPosition.IY:
-                # Double size for I/Y if followed by another vowel or if it's the last glyph
-                if next_gid_is_vowel or next_gid_is_last:
-                    vs = GlyphSize.DOUBLE
+            vpos = extract_vowel_params(gid)
 
             if is_first_chunk and first_g_in_chunk:
-                gpos = VowelPosition.IY
-                gs = GlyphSize.DOUBLE
-                if next_gid_is_consonant:
-                    gs = GlyphSize.SINGLE
                 should_draw = True
             elif g_is_last and (gpos == VowelPosition.CONT or g_is_first):
-                _advance_after_glyph(t, p, event_recorder=event_recorder)
+                should_advance = True
                 gpos = vpos
                 should_draw = True
             elif consecutive_vowels == 2:
@@ -441,14 +427,19 @@ def draw_chunk(
                 # First vowel encountered (or first after a consonant)
                 # Update state for the *next* glyph and advance position
                 gpos = vpos
-                gs = vs
-                _advance_after_glyph(t, p, event_recorder=event_recorder)
+                should_advance = True
                 # Skip drawing this vowel directly, its position determines the next consonant/vowel
         else:
-            if gpos == VowelPosition.IY:
-                gs = GlyphSize.SINGLE if next_gid_is_consonant else GlyphSize.DOUBLE
             # If not a vowel or special case, draw the consonant/glyph
             should_draw = True
+
+        if gpos == VowelPosition.IY and not next_gid_is_consonant:
+            gs = GlyphSize.DOUBLE
+        else:
+            gs = GlyphSize.SINGLE
+
+        if should_advance:
+            _advance_after_glyph(t, p, event_recorder=event_recorder)
 
         if should_draw:
             _draw_glyph(
