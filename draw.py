@@ -459,8 +459,6 @@ def draw_chunk(
             gs = GlyphSize.SINGLE
         first_g_in_chunk = False  # Only do this once per word
 
-    return gpos, gs, consecutive_vowels
-
 
 def draw_word(t: Turtle, p: Page, word: str, event_recorder: EventRecorder | None = None):
     chunks = split_into_chunks(word)
