@@ -11,8 +11,10 @@ from draw import (
     EventRecorder,
     Page,
     Turtle,
+    draw_sentence,
     draw_word,
 )
+from draw_jupyturtle import DrawingContext
 
 
 def words_from_text(text: list[str]) -> set[str]:
@@ -123,3 +125,38 @@ def test_draw_word_events(snapshot: SnapshotAssertion, word: str):
 
     # Snapshot the recorded high-level events (draw_glyph, advance_after_glyph)
     assert event_recorder.events == snapshot
+
+
+@pytest.mark.parametrize(
+    "line_index, line_text",
+    enumerate(lesson_2_passage_conan.text),
+)
+def test_draw_sentence_braille_snapshot(
+    snapshot: SnapshotAssertion, tmp_path: Path, line_index: int, line_text: str
+):
+    """
+    Test drawing a sentence, converting to SVG -> PNG -> Braille,
+    and comparing against snapshot.
+    """
+    svg_path = tmp_path / f"line_{line_index}.svg"
+    png_path = tmp_path / f"line_{line_index}.png"
+
+    # 1. Draw sentence and generate SVG
+    # Use DrawingContext similar to lesson_2_passage_conan.py
+    dc = DrawingContext(
+        output_path=svg_path,
+        drawing_width=750,  # Match the original script
+        drawing_height=150,  # Match the original script
+    )
+    with dc as (p, t):
+        draw_sentence(t, p, line_text)
+
+    # 2. Convert SVG to PNG
+    cairosvg.svg2png(url=str(svg_path), write_to=str(png_path))
+
+    # 3. Convert PNG to Braille
+    braille_lines = braile_art.image_to_braille(png_path)
+    braille_output = "\n".join(braille_lines)
+
+    # 4. Compare Braille output against snapshot
+    assert braille_output == snapshot
