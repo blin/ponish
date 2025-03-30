@@ -423,15 +423,10 @@ def draw_chunk(
             g_to_draw = all_glyphs["high-dot"]
             gid_to_draw = "high-dot"
 
-        should_draw = False
-        if not g_is_vowel:
-            should_draw = True
-        if g_is_first_in_chunk and is_first_chunk:
-            should_draw = True
-        if g_is_first_in_chunk and g_is_last_in_word:
-            should_draw = True
-        if not g_is_first_in_chunk:
-            should_draw = True
+        should_draw = True
+        # Only set should_draw to False in specific cases
+        if g_is_vowel and g_is_first_in_chunk and not is_first_chunk and not g_is_last_in_word:
+            should_draw = False
 
         should_advance = False
 
