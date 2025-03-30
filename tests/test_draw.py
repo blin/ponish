@@ -18,6 +18,7 @@ from draw import (
     Turtle,
     draw_sentence,
     draw_word,
+    split_into_chunks,
 )
 from draw_jupyturtle import DrawingContext
 
@@ -164,6 +165,28 @@ class FullTextDiff(SingleFileAmberSnapshotExtension):
 @pytest.fixture
 def snapshot_fulltext(snapshot: SnapshotAssertion):
     return snapshot.use_extension(FullTextDiff)
+
+
+@pytest.mark.parametrize(
+    "word, expected_chunks",
+    [
+        ("fire", ["f", "ir", "e"]),
+        ("mount", ["m", "ount"]),
+        ("s$(TR)ength", ["s$(TR)", "ength"]),
+        # Add more test cases
+        ("", []),  # Empty string edge case
+        ("a", ["a"]),  # Single vowel
+        ("b", ["b"]),  # Single consonant
+        ("aeiou", ["a", "e", "i", "o", "u"]),  # All vowels
+        ("bcdfg", ["bcdfg"]),  # All consonants
+        ("$(TR)eat", ["$(TR)", "eat"]),  # Glyph at start
+        ("h$(ING)", ["h$(ING)"]),  # Glyph at end
+        ("yu", ["y", "u"]),  # Two consecutive vowels
+    ],
+)
+def test_split_into_chunks(word: str, expected_chunks: list[str]):
+    """Test the split_into_chunks function with various inputs."""
+    assert split_into_chunks(word) == expected_chunks
 
 
 @pytest.mark.parametrize(

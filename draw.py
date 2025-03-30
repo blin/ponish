@@ -324,7 +324,27 @@ def split_into_chunks(word: str) -> list[str]:
     current_chunk = ""
     word_pos = 0
     last_was_vowel = False
+    all_vowels = True  # Track if the word consists of only vowels
 
+    # First pass to check if it's all vowels
+    check_pos = 0
+    while check_pos < len(word):
+        gid, advance = gid_at(word, check_pos)
+        if not is_gid_vowel(gid):
+            all_vowels = False
+            break
+        check_pos += advance
+
+    # If it's all vowels, split each vowel into its own chunk
+    if all_vowels and word:
+        check_pos = 0
+        while check_pos < len(word):
+            gid, advance = gid_at(word, check_pos)
+            chunks.append(word[check_pos : check_pos + advance])
+            check_pos += advance
+        return chunks
+
+    # Normal processing for mixed vowels and consonants
     while word_pos < len(word):
         gid, advance = gid_at(word, word_pos)
         g_is_vowel = is_gid_vowel(gid)
@@ -381,14 +401,15 @@ def draw_chunk(
     # The middle and last chunks start with a vowel
     gpos = VowelPosition.IY
     consecutive_vowels = 0
-    first_g_in_chunk = True  # Tracks the first glyph within this specific chunk
 
     for i, (gid, g) in enumerate(chunk_gs):
-        g_is_first = i == 0
-        g_is_vowel = is_gid_vowel(gid)
+        g_is_first_in_chunk = i == 0
+        g_is_first_in_word = g_is_first_in_chunk and is_first_chunk
 
-        # A glyph is the last in the word if it's the last in this chunk AND this chunk is the last one.
-        g_is_last = (i == len(chunk_gs) - 1) and is_last_chunk
+        g_is_last_in_chunk = i == len(chunk_gs) - 1
+        g_is_last_in_word = g_is_last_in_chunk and is_last_chunk
+
+        g_is_vowel = is_gid_vowel(gid)
         consecutive_vowels = consecutive_vowels + 1 if g_is_vowel else 0
 
         next_gid_is_consonant = False
@@ -399,12 +420,8 @@ def draw_chunk(
 
         g_to_draw = g
         gid_to_draw = gid
-        if (
-            not (is_first_chunk and first_g_in_chunk)
-            and g_is_vowel
-            and g_is_last
-            and (gpos == VowelPosition.CONT or g_is_first)
-        ):
+        # Cases to consider "I", "brow", "hi", "today", "yu"
+        if g_is_vowel and not g_is_first_in_word and g_is_last_in_word and g_is_first_in_chunk:
             g_to_draw = all_glyphs["high-dot"]
             gid_to_draw = "high-dot"
 
@@ -414,9 +431,9 @@ def draw_chunk(
         if g_is_vowel:
             vpos = extract_vowel_params(gid)
 
-            if is_first_chunk and first_g_in_chunk:
+            if is_first_chunk and g_is_first_in_chunk:
                 should_draw = True
-            elif g_is_last and (gpos == VowelPosition.CONT or g_is_first):
+            elif g_is_last_in_word and g_is_first_in_chunk:
                 should_advance = True
                 gpos = vpos
                 should_draw = True
@@ -448,7 +465,6 @@ def draw_chunk(
             # Reset state after drawing a consonant/non-vowel
             gpos = VowelPosition.CONT
             gs = GlyphSize.SINGLE
-        first_g_in_chunk = False  # Only do this once per word
 
 
 def draw_word(t: Turtle, p: Page, word: str, event_recorder: EventRecorder | None = None):
