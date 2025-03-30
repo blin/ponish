@@ -2,7 +2,7 @@
 
 Passage 1:
 
-WARNING: image is missing
+![](./original-images/048.png)
 
 ## Passage 1:
 
@@ -28,9 +28,11 @@ Equestria for generations since.
 
 ## Passage 2:
 
-WARNING: image is missing
+![](./original-images/049.png)
 
 ## Passage 3:
+
+![](./original-images/050.png)
 
 Two figures lay sprawled on the Equestrian grass, talking and laughing merrily.
 One was human; a relatively young man with the unlikely name of Lero, (short for
@@ -50,11 +52,11 @@ village green.
 
 ## Passage 4:
 
-WARNING: image is missing
+![](./original-images/051.png)
 
 ## Passage 5:
 
-WARNING: image is missing
+![](./original-images/052.png)
 
 ## Passage 5:
 
@@ -78,11 +80,15 @@ values through
 
 ## Passage 6:
 
-WARNING: image is missing
+![](./original-images/053.png)
+
+## Passage 7:
+
+![](./original-images/054.png)
 
 ## Passage 8, part 1:
 
-WARNING: image is missing
+![](./original-images/055.png)
 
 I'd like to preface this by saying I deeply apologize for the drop in writing
 quality towards the end. I have to leave in a few hours and will not be here for
@@ -134,6 +140,8 @@ I've never been a religious or spiritual person. As such, I chalked the whole
 thing up to every explanation to NDEs I'd ever heard of.
 
 ## Passage 8, part 2:
+
+![](./original-images/056.png)
 
 An almost hurt expression grew on her as the thoughts were running through my
 head. She seemingly saw my distress and pulled me into a hug.

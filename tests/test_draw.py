@@ -12,6 +12,7 @@ import lesson_2_passage_conan
 import lesson_3_examples_1
 import lesson_3_examples_3
 import lesson_3_examples_4
+import lesson_4_examples_1
 from draw import (
     EventRecorder,
     Page,
@@ -36,6 +37,7 @@ WORDBANK.update(words_from_text(lesson_2_passage_conan.text))
 WORDBANK.update(words_from_words(lesson_3_examples_1.words))
 WORDBANK.update(words_from_words(lesson_3_examples_3.words))
 WORDBANK.update(words_from_text(lesson_3_examples_4.text_combined))
+WORDBANK.update(words_from_text(lesson_4_examples_1.text))
 
 
 # Mock Turtle implementation adhering to the Turtle Protocol
@@ -191,7 +193,9 @@ def test_split_into_chunks(word: str, expected_chunks: list[str]):
 
 @pytest.mark.parametrize(
     "line_index, line_text",
-    enumerate(lesson_2_passage_conan.text + lesson_3_examples_4.text_combined),
+    enumerate(
+        lesson_2_passage_conan.text + lesson_3_examples_4.text_combined + lesson_4_examples_1.text
+    ),
 )
 def test_draw_sentence_braille_snapshot(
     snapshot_fulltext: SnapshotAssertion, tmp_path: Path, line_index: int, line_text: str

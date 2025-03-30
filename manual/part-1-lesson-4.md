@@ -24,22 +24,80 @@ only a little.
 The words this is most commonly done with are prepositions, and possessive
 pronouns. 'To go to' becomes:
 
-WARNING: image is missing
+![](./lesson-4/phrase-01.svg)
+
+![](./lesson-4/phrase-02.svg)
+
+![](./original-images/044.png)
 
 While 'I have to' yields:
 
-WARNING: image is missing
+![](./lesson-4/phrase-03.svg)
+
+![](./lesson-4/phrase-04.svg)
+
+![](./original-images/045.png)
 
 And so on. Just look at all that saved space! Here are some more examples:
 
-WARNING: image is missing
+![](./lesson-4/phrase-05.svg)
+
+![](./lesson-4/phrase-06.svg)
+
+![](./lesson-4/phrase-07.svg)
+
+![](./lesson-4/phrase-08.svg)
+
+![](./lesson-4/phrase-09.svg)
+
+![](./lesson-4/phrase-10.svg)
+
+![](./lesson-4/phrase-11.svg)
+
+![](./lesson-4/phrase-12.svg)
+
+![](./lesson-4/phrase-13.svg)
+
+![](./lesson-4/phrase-14.svg)
+
+![](./lesson-4/phrase-15.svg)
+
+![](./lesson-4/phrase-16.svg)
+
+![](./lesson-4/phrase-17.svg)
+
+
+![](./original-images/046.png)
 
 Other times, words which are written separately Earthographicaly, like street
 light, or clothes horse, would be joined together as one, like so:
 
-WARNING: image is missing
+![](./lesson-4/phrase-18.svg)
 
-WARNING: image is missing
+![](./lesson-4/phrase-19.svg)
+
+![](./lesson-4/phrase-20.svg)
+
+![](./lesson-4/phrase-21.svg)
+
+![](./lesson-4/phrase-22.svg)
+
+![](./lesson-4/phrase-23.svg)
+
+![](./lesson-4/phrase-24.svg)
+
+![](./lesson-4/phrase-25.svg)
+
+![](./lesson-4/phrase-26.svg)
+
+![](./lesson-4/phrase-27.svg)
+
+![](./lesson-4/phrase-28.svg)
+
+![](./lesson-4/phrase-29.svg)
+
+
+![](./original-images/047.png)
 
 The last technique is the utilization of short forms. These are not
 standardized, and are not often used for communication wherein some outside

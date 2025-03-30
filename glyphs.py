@@ -201,6 +201,18 @@ letters["X"] = Glyph(
     ),
 )
 
+# TODO: ugh...
+letters["X-from-left"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    draw_actions=(
+        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=1.4),
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=1.0),
+        PenAction.PLACE,
+        PolarLine(angle_deg=Direction.SW.value, rel_magnitude=1.4),
+    ),
+)
+
 letters["Y"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.1),
     draw_actions=(
@@ -395,6 +407,20 @@ letters["ð"] = Glyph(
     ),
 )
 
+# TODO: figure out what to do with this...
+# I guess at the beginning of the chunk it should start at bottom?
+letters["TH-top-start"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
+    draw_actions=(
+        Circle(
+            rel_radius=0.5,
+            extent_deg=360,
+            rotation=Rotation.CW,
+            heading_deg=Direction.E.value,
+        ),
+    ),
+)
+
 # SH - https://en.wikipedia.org/wiki/Voiceless_postalveolar_fricative
 letters["ʃ"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),
@@ -410,6 +436,7 @@ letters["ʃ"] = Glyph(
 
 aliases: dict[str, Glyph] = dict()
 aliases["A"] = letters["A-two-legs"]
+aliases["Y-consonant"] = letters["Y"]  # TODO: do something...
 aliases["CH"] = letters["ʧ"]
 aliases["TH"] = letters["ð"]
 aliases["SH"] = letters["ʃ"]
@@ -439,7 +466,11 @@ def n_strike(move: RelPoint, draw_e_rel: float) -> tuple[GlyphAction, ...]:
 
 blends: dict[str, Glyph] = dict()
 
-# TODO: use derive_from_letter where possible
+blends["AB"] = derive_from_letter(
+    "A-one-leg",
+    more_actions=letters["B"].draw_actions,
+)
+
 blends["AD"] = derive_from_letter(
     "A-one-leg",
     more_actions=letters["D"].draw_actions,
@@ -451,6 +482,16 @@ blends["AJ"] = derive_from_letter(
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=1.0),
         PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
     ),
+)
+
+blends["AK"] = derive_from_letter(
+    "A-one-leg",
+    more_actions=letters["K"].draw_actions,
+)
+
+blends["AL"] = derive_from_letter(
+    "A-one-leg",
+    more_actions=letters["L"].draw_actions,
 )
 
 blends["AN"] = derive_from_letter(
@@ -536,6 +577,18 @@ blends["TR"] = derive_from_letter(
         ),
     ),
 )
+
+# Can not derive from "V" because
+# the angles between "V" and "T" must not match
+blends["VT"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    draw_actions=(
+        PolarLine(angle_deg=Direction.SE.value, rel_magnitude=1.0),
+        PolarLine(angle_deg=Direction.NE.value, rel_magnitude=1.0),
+    )
+    + letters["T"].draw_actions,
+)
+
 
 # Can not use "R" directly because
 # the heading is different
