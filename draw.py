@@ -400,7 +400,6 @@ def draw_chunk(
     # The first chunk starts with a vowel or a consonant
     # The middle and last chunks start with a vowel
     gpos = VowelPosition.IY
-    consecutive_vowels = 0
 
     for i, (gid, g) in enumerate(chunk_gs):
         g_is_first_in_chunk = i == 0
@@ -410,7 +409,6 @@ def draw_chunk(
         g_is_last_in_word = g_is_last_in_chunk and is_last_chunk
 
         g_is_vowel = is_gid_vowel(gid)
-        consecutive_vowels = consecutive_vowels + 1 if g_is_vowel else 0
 
         next_gid_is_consonant = False
         if i + 1 < len(chunk_gs):
@@ -426,29 +424,30 @@ def draw_chunk(
             gid_to_draw = "high-dot"
 
         should_draw = False
+        if not g_is_vowel:
+            should_draw = True
+        if g_is_first_in_chunk and is_first_chunk:
+            should_draw = True
+        if g_is_first_in_chunk and g_is_last_in_word:
+            should_draw = True
+        if not g_is_first_in_chunk:
+            should_draw = True
+
         should_advance = False
 
         if g_is_vowel:
             vpos = extract_vowel_params(gid)
 
-            if is_first_chunk and g_is_first_in_chunk:
-                should_draw = True
-            elif g_is_last_in_word and g_is_first_in_chunk:
-                should_advance = True
-                gpos = vpos
-                should_draw = True
-            elif consecutive_vowels == 2:
-                should_draw = True
-                consecutive_vowels = 0
-            else:
-                # First vowel encountered (or first after a consonant)
-                # Update state for the *next* glyph and advance position
-                gpos = vpos
-                should_advance = True
-                # Skip drawing this vowel directly, its position determines the next consonant/vowel
-        else:
-            # If not a vowel or special case, draw the consonant/glyph
-            should_draw = True
+            if g_is_first_in_chunk:
+                if is_first_chunk:
+                    pass
+                elif g_is_last_in_word:
+                    should_advance = True
+                    gpos = vpos
+                    pass
+                else:
+                    gpos = vpos
+                    should_advance = True
 
         if gpos == VowelPosition.IY and not next_gid_is_consonant:
             gs = GlyphSize.DOUBLE
