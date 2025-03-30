@@ -157,9 +157,13 @@ def test_draw_sentence_braille_snapshot(
     # 2. Convert SVG to PNG
     cairosvg.svg2png(url=str(svg_path), write_to=str(png_path))
 
-    # 3. Convert PNG to Braille
-    braille_lines = braile_art.chunk_braile(braile_art.image_to_braille(png_path), 120)[0]
-    braille_output = "\n".join(braille_lines)
+    # 3. Convert PNG to Braille and chunk
+    braille_chunks = braile_art.chunk_braile(
+        braile_art.image_to_braille(png_path), 120
+    )
 
-    # 4. Compare Braille output against snapshot
-    assert braille_output == snapshot
+    # 4. Compare each Braille chunk against snapshot
+    for i, chunk_lines in enumerate(braille_chunks):
+        braille_output = "\n".join(chunk_lines)
+        # Syrupy automatically indexes snapshots for multiple asserts in one test
+        assert braille_output == snapshot(name=f"chunk_{i}")
