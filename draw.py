@@ -397,8 +397,6 @@ def draw_chunk(
         chunk_gs.append((gid, g))
         parse_pos += advance
 
-    # The first chunk starts with a vowel or a consonant
-    # The middle and last chunks start with a vowel
     gpos = VowelPosition.IY
 
     for i, (gid, g) in enumerate(chunk_gs):
@@ -416,38 +414,34 @@ def draw_chunk(
             if not is_gid_vowel(next_gid):
                 next_gid_is_consonant = True
 
-        g_to_draw = g
-        gid_to_draw = gid
         # Cases to consider "I", "brow", "hi", "today", "yu"
-        if g_is_vowel and not g_is_first_in_word and g_is_last_in_word and g_is_first_in_chunk:
-            g_to_draw = all_glyphs["high-dot"]
-            gid_to_draw = "high-dot"
+        if g_is_vowel and g_is_first_in_chunk and not g_is_first_in_word and g_is_last_in_word:
+            gpos = extract_vowel_params(gid)
+            _advance_after_glyph(t, p, event_recorder=event_recorder)
+            _draw_glyph(
+                t,
+                p,
+                all_glyphs["high-dot"],
+                pos=gpos,
+                gs=GlyphSize.SINGLE,
+                gid="high-dot",
+                event_recorder=event_recorder,
+            )
+            # either break or continue would work, g_is_last_in_word
+            break
 
-        should_draw = True
-        if g_is_vowel and g_is_first_in_chunk and not is_first_chunk and not g_is_last_in_word:
-            should_draw = False
-
-        should_advance = False
         if g_is_vowel and g_is_first_in_chunk and not is_first_chunk:
-            should_advance = True
-            
-        if g_is_vowel and g_is_first_in_chunk and not is_first_chunk:
-                gpos = extract_vowel_params(gid)
+            gpos = extract_vowel_params(gid)
+            _advance_after_glyph(t, p, event_recorder=event_recorder)
+            continue
 
+        gs = GlyphSize.SINGLE
         if gpos == VowelPosition.IY and not next_gid_is_consonant:
             gs = GlyphSize.DOUBLE
-        else:
-            gs = GlyphSize.SINGLE
 
-        if should_advance:
-            _advance_after_glyph(t, p, event_recorder=event_recorder)
-
-        if should_draw:
-            _draw_glyph(
-                t, p, g_to_draw, pos=gpos, gs=gs, gid=gid_to_draw, event_recorder=event_recorder
-            )
-            gpos = VowelPosition.CONT
-            gs = GlyphSize.SINGLE
+        _draw_glyph(t, p, g, pos=gpos, gs=gs, gid=gid, event_recorder=event_recorder)
+        gpos = VowelPosition.CONT
+        gs = GlyphSize.SINGLE
 
 
 def draw_word(t: Turtle, p: Page, word: str, event_recorder: EventRecorder | None = None):
