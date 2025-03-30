@@ -5428,7 +5428,7 @@
     }),
   ])
 # ---
-# name: test_draw_word_events[s$(TR)itlit]
+# name: test_draw_word_events[s$(TR)etlit]
   list([
     dict({
       'gid': 's',
@@ -5449,7 +5449,7 @@
       'gid': 't',
       'glyph_size': 'SINGLE',
       'name': 'draw_glyph',
-      'vowel_pos': 'IY',
+      'vowel_pos': 'AE',
     }),
     dict({
       'gid': 'l',

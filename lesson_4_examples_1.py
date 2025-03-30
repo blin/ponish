@@ -42,14 +42,14 @@ text = [
     "mouspad",  # TODO: make "usp" look better
     "poisonjok",
     "rok$(ING)$(CH)er",
-    "s$(TR)itlit",
+    "s$(TR)etlit",
     "$(SH)ugarkubkornr",
     "swim$(ING)pul",  # TODO: make "swim$(ING)p" look better
     "swi$(ING)set",  # TODO: make "swi$(ING)s" look better
     "wa$(TR)botl",
 ]
 if __name__ == "__main__":
-    for i, line in list(enumerate(text))[17:]:
+    for i, line in list(enumerate(text)):
         dc = DrawingContext(
             output_path=dir / f"phrase-{i + 1:02}.svg",
             drawing_width=1100,

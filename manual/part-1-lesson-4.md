@@ -38,43 +38,39 @@ While 'I have to' yields:
 
 And so on. Just look at all that saved space! Here are some more examples:
 
-| Earthographic | Ponish                        | Original image                                |
-| ------------- | ----------------------------- | --------------------------------------------- |
-| N/A           | ![](./lesson-4/phrase-05.svg) | ![](./original-images/lesson-4/phrase-05.png) |
-| N/A           | ![](./lesson-4/phrase-06.svg) | ![](./original-images/lesson-4/phrase-06.png) |
-| N/A           | ![](./lesson-4/phrase-07.svg) | ![](./original-images/lesson-4/phrase-07.png) |
-| N/A           | ![](./lesson-4/phrase-08.svg) | ![](./original-images/lesson-4/phrase-08.png) |
-| N/A           | ![](./lesson-4/phrase-09.svg) | ![](./original-images/lesson-4/phrase-09.png) |
-| N/A           | ![](./lesson-4/phrase-10.svg) | ![](./original-images/lesson-4/phrase-10.png) |
-| N/A           | ![](./lesson-4/phrase-11.svg) | ![](./original-images/lesson-4/phrase-11.png) |
-| N/A           | ![](./lesson-4/phrase-12.svg) | ![](./original-images/lesson-4/phrase-12.png) |
-| N/A           | ![](./lesson-4/phrase-13.svg) | ![](./original-images/lesson-4/phrase-13.png) |
-| N/A           | ![](./lesson-4/phrase-14.svg) | ![](./original-images/lesson-4/phrase-14.png) |
-| N/A           | ![](./lesson-4/phrase-15.svg) | ![](./original-images/lesson-4/phrase-15.png) |
-| N/A           | ![](./lesson-4/phrase-16.svg) | ![](./original-images/lesson-4/phrase-16.png) |
-| N/A           | ![](./lesson-4/phrase-17.svg) | ![](./original-images/lesson-4/phrase-17.png) |
-
-![](./original-images/046.png)
+| Earthographic                               | Ponish                        | Original image                                |
+| ------------------------------------------- | ----------------------------- | --------------------------------------------- |
+| As fast as possible                         | ![](./lesson-4/phrase-05.svg) | ![](./original-images/lesson-4/phrase-05.png) |
+| Be right back                               | ![](./lesson-4/phrase-06.svg) | ![](./original-images/lesson-4/phrase-06.png) |
+| Before you know it                          | ![](./lesson-4/phrase-07.svg) | ![](./original-images/lesson-4/phrase-07.png) |
+| By all means                                | ![](./lesson-4/phrase-08.svg) | ![](./original-images/lesson-4/phrase-08.png) |
+| By the way                                  | ![](./lesson-4/phrase-09.svg) | ![](./original-images/lesson-4/phrase-09.png) |
+| Here and there                              | ![](./lesson-4/phrase-10.svg) | ![](./original-images/lesson-4/phrase-10.png) |
+| In fact                                     | ![](./lesson-4/phrase-11.svg) | ![](./original-images/lesson-4/phrase-11.png) |
+| In my defense                               | ![](./lesson-4/phrase-12.svg) | ![](./original-images/lesson-4/phrase-12.png) |
+| A lot of                                    | ![](./lesson-4/phrase-13.svg) | ![](./original-images/lesson-4/phrase-13.png) |
+| Now and then                                | ![](./lesson-4/phrase-14.svg) | ![](./original-images/lesson-4/phrase-14.png) |
+| They can not                                | ![](./lesson-4/phrase-15.svg) | ![](./original-images/lesson-4/phrase-15.png) |
+| You will not be able to                     | ![](./lesson-4/phrase-16.svg) | ![](./original-images/lesson-4/phrase-16.png) |
+| We are the priests of the temples of syrinx | ![](./lesson-4/phrase-17.svg) | ![](./original-images/lesson-4/phrase-17.png) |
 
 Other times, words which are written separately Earthographicaly, like street
 light, or clothes horse, would be joined together as one, like so:
 
-| Earthographic | Ponish                        | Original image                                |
-| ------------- | ----------------------------- | --------------------------------------------- |
-| N/A           | ![](./lesson-4/phrase-18.svg) | ![](./original-images/lesson-4/phrase-18.png) |
-| N/A           | ![](./lesson-4/phrase-19.svg) | ![](./original-images/lesson-4/phrase-19.png) |
-| N/A           | ![](./lesson-4/phrase-20.svg) | ![](./original-images/lesson-4/phrase-20.png) |
-| N/A           | ![](./lesson-4/phrase-21.svg) | ![](./original-images/lesson-4/phrase-21.png) |
-| N/A           | ![](./lesson-4/phrase-22.svg) | ![](./original-images/lesson-4/phrase-22.png) |
-| N/A           | ![](./lesson-4/phrase-23.svg) | ![](./original-images/lesson-4/phrase-23.png) |
-| N/A           | ![](./lesson-4/phrase-24.svg) | ![](./original-images/lesson-4/phrase-24.png) |
-| N/A           | ![](./lesson-4/phrase-25.svg) | ![](./original-images/lesson-4/phrase-25.png) |
-| N/A           | ![](./lesson-4/phrase-26.svg) | ![](./original-images/lesson-4/phrase-26.png) |
-| N/A           | ![](./lesson-4/phrase-27.svg) | ![](./original-images/lesson-4/phrase-27.png) |
-| N/A           | ![](./lesson-4/phrase-28.svg) | ![](./original-images/lesson-4/phrase-28.png) |
-| N/A           | ![](./lesson-4/phrase-29.svg) | ![](./original-images/lesson-4/phrase-29.png) |
-
-![](./original-images/047.png)
+| Earthographic     | Ponish                        | Original image                                |
+| ----------------- | ----------------------------- | --------------------------------------------- |
+| clothes horse     | ![](./lesson-4/phrase-18.svg) | ![](./original-images/lesson-4/phrase-18.png) |
+| crotch tits       | ![](./lesson-4/phrase-19.svg) | ![](./original-images/lesson-4/phrase-19.png) |
+| flood insurance   | ![](./lesson-4/phrase-20.svg) | ![](./original-images/lesson-4/phrase-20.png) |
+| horse pussy       | ![](./lesson-4/phrase-21.svg) | ![](./original-images/lesson-4/phrase-21.png) |
+| mouse pad         | ![](./lesson-4/phrase-22.svg) | ![](./original-images/lesson-4/phrase-22.png) |
+| poison joke       | ![](./lesson-4/phrase-23.svg) | ![](./original-images/lesson-4/phrase-23.png) |
+| rocking chair     | ![](./lesson-4/phrase-24.svg) | ![](./original-images/lesson-4/phrase-24.png) |
+| street light      | ![](./lesson-4/phrase-25.svg) | ![](./original-images/lesson-4/phrase-25.png) |
+| sugar cube corner | ![](./lesson-4/phrase-26.svg) | ![](./original-images/lesson-4/phrase-26.png) |
+| swimming pool     | ![](./lesson-4/phrase-27.svg) | ![](./original-images/lesson-4/phrase-27.png) |
+| swing set         | ![](./lesson-4/phrase-28.svg) | ![](./original-images/lesson-4/phrase-28.png) |
+| water bottle      | ![](./lesson-4/phrase-29.svg) | ![](./original-images/lesson-4/phrase-29.png) |
 
 The last technique is the utilization of short forms. These are not
 standardized, and are not often used for communication wherein some outside
