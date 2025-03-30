@@ -1,9 +1,11 @@
 import math
 from pathlib import Path
+from typing import TYPE_CHECKING, Callable, Iterator
 
 import cairosvg
 import pytest
 from syrupy.assertion import SnapshotAssertion
+from syrupy.extensions.single_file import SingleFileAmberSnapshotExtension
 
 import braile_art
 import lesson_2_passage_conan
@@ -130,12 +132,46 @@ def test_draw_word_events(snapshot: SnapshotAssertion, word: str):
     assert event_recorder.events == snapshot
 
 
+from syrupy.terminal import (
+    received_style,
+    snapshot_style,
+)
+
+if TYPE_CHECKING:
+    from syrupy.types import (
+        SerializedData,
+    )
+
+
+class FullTextDiff(SingleFileAmberSnapshotExtension):
+    def __format_line(
+        self,
+        line: str,
+        line_style: Callable[[str], str],
+    ) -> str:
+        line = line.rstrip("".join(self._ends.keys()))
+        return "".join(line_style(char) for char in line)
+
+    def diff_lines(
+        self, serialized_data: "SerializedData", snapshot_data: "SerializedData"
+    ) -> Iterator[str]:
+        for line in str(snapshot_data).splitlines():
+            yield self.__format_line(line, snapshot_style)
+        for line in str(serialized_data).splitlines():
+            yield self.__format_line(line, received_style)
+
+
+@pytest.fixture
+def snapshot_fulltext(snapshot: SnapshotAssertion):
+    return snapshot.use_extension(FullTextDiff)
+
+
 @pytest.mark.parametrize(
     "line_index, line_text",
     enumerate(lesson_2_passage_conan.text + lesson_3_examples_4.text_combined),
 )
 def test_draw_sentence_braille_snapshot(
-    snapshot: SnapshotAssertion, tmp_path: Path, line_index: int, line_text: str
+    snapshot_fulltext: SnapshotAssertion, tmp_path: Path, line_index: int, line_text: str
 ):
     """
     Test drawing a sentence, converting to SVG -> PNG -> Braille,
@@ -158,12 +194,10 @@ def test_draw_sentence_braille_snapshot(
     cairosvg.svg2png(url=str(svg_path), write_to=str(png_path))
 
     # 3. Convert PNG to Braille and chunk
-    braille_chunks = braile_art.chunk_braile(
-        braile_art.image_to_braille(png_path), 120
-    )
+    braille_chunks = braile_art.chunk_braile(braile_art.image_to_braille(png_path), 120)
 
     # 4. Compare each Braille chunk against snapshot
     for i, chunk_lines in enumerate(braille_chunks):
         braille_output = "\n".join(chunk_lines)
         # Syrupy automatically indexes snapshots for multiple asserts in one test
-        assert braille_output == snapshot(name=f"chunk_{i}")
+        assert braille_output == snapshot_fulltext(name=f"chunk_{i}")
