@@ -424,25 +424,15 @@ def draw_chunk(
             gid_to_draw = "high-dot"
 
         should_draw = True
-        # Only set should_draw to False in specific cases
         if g_is_vowel and g_is_first_in_chunk and not is_first_chunk and not g_is_last_in_word:
             should_draw = False
 
         should_advance = False
-
-        if g_is_vowel:
-            vpos = extract_vowel_params(gid)
-
-            if g_is_first_in_chunk:
-                if is_first_chunk:
-                    pass
-                elif g_is_last_in_word:
-                    should_advance = True
-                    gpos = vpos
-                    pass
-                else:
-                    gpos = vpos
-                    should_advance = True
+        if g_is_vowel and g_is_first_in_chunk and not is_first_chunk:
+            should_advance = True
+            
+        if g_is_vowel and g_is_first_in_chunk and not is_first_chunk:
+                gpos = extract_vowel_params(gid)
 
         if gpos == VowelPosition.IY and not next_gid_is_consonant:
             gs = GlyphSize.DOUBLE
@@ -456,7 +446,6 @@ def draw_chunk(
             _draw_glyph(
                 t, p, g_to_draw, pos=gpos, gs=gs, gid=gid_to_draw, event_recorder=event_recorder
             )
-            # Reset state after drawing a consonant/non-vowel
             gpos = VowelPosition.CONT
             gs = GlyphSize.SINGLE
 
