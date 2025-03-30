@@ -24,78 +24,55 @@ only a little.
 The words this is most commonly done with are prepositions, and possessive
 pronouns. 'To go to' becomes:
 
-![](./lesson-4/phrase-01.svg)
-
-![](./lesson-4/phrase-02.svg)
-
-![](./original-images/044.png)
+| Earthographic | Ponish                        | Original image                                |
+| ------------- | ----------------------------- | --------------------------------------------- |
+| to go to      | ![](./lesson-4/phrase-01.svg) | ![](./original-images/lesson-4/phrase-01.png) |
+| to go to      | ![](./lesson-4/phrase-02.svg) | ![](./original-images/lesson-4/phrase-02.png) |
 
 While 'I have to' yields:
 
-![](./lesson-4/phrase-03.svg)
-
-![](./lesson-4/phrase-04.svg)
-
-![](./original-images/045.png)
+| Earthographic            | Ponish                        | Original image                                |
+| ------------------------ | ----------------------------- | --------------------------------------------- |
+| I have to                | ![](./lesson-4/phrase-03.svg) | ![](./original-images/lesson-4/phrase-03.png) |
+| I have to go to the mall | ![](./lesson-4/phrase-04.svg) | ![](./original-images/lesson-4/phrase-04.png) |
 
 And so on. Just look at all that saved space! Here are some more examples:
 
-![](./lesson-4/phrase-05.svg)
-
-![](./lesson-4/phrase-06.svg)
-
-![](./lesson-4/phrase-07.svg)
-
-![](./lesson-4/phrase-08.svg)
-
-![](./lesson-4/phrase-09.svg)
-
-![](./lesson-4/phrase-10.svg)
-
-![](./lesson-4/phrase-11.svg)
-
-![](./lesson-4/phrase-12.svg)
-
-![](./lesson-4/phrase-13.svg)
-
-![](./lesson-4/phrase-14.svg)
-
-![](./lesson-4/phrase-15.svg)
-
-![](./lesson-4/phrase-16.svg)
-
-![](./lesson-4/phrase-17.svg)
-
+| Earthographic | Ponish                        | Original image                                |
+| ------------- | ----------------------------- | --------------------------------------------- |
+| N/A           | ![](./lesson-4/phrase-05.svg) | ![](./original-images/lesson-4/phrase-05.png) |
+| N/A           | ![](./lesson-4/phrase-06.svg) | ![](./original-images/lesson-4/phrase-06.png) |
+| N/A           | ![](./lesson-4/phrase-07.svg) | ![](./original-images/lesson-4/phrase-07.png) |
+| N/A           | ![](./lesson-4/phrase-08.svg) | ![](./original-images/lesson-4/phrase-08.png) |
+| N/A           | ![](./lesson-4/phrase-09.svg) | ![](./original-images/lesson-4/phrase-09.png) |
+| N/A           | ![](./lesson-4/phrase-10.svg) | ![](./original-images/lesson-4/phrase-10.png) |
+| N/A           | ![](./lesson-4/phrase-11.svg) | ![](./original-images/lesson-4/phrase-11.png) |
+| N/A           | ![](./lesson-4/phrase-12.svg) | ![](./original-images/lesson-4/phrase-12.png) |
+| N/A           | ![](./lesson-4/phrase-13.svg) | ![](./original-images/lesson-4/phrase-13.png) |
+| N/A           | ![](./lesson-4/phrase-14.svg) | ![](./original-images/lesson-4/phrase-14.png) |
+| N/A           | ![](./lesson-4/phrase-15.svg) | ![](./original-images/lesson-4/phrase-15.png) |
+| N/A           | ![](./lesson-4/phrase-16.svg) | ![](./original-images/lesson-4/phrase-16.png) |
+| N/A           | ![](./lesson-4/phrase-17.svg) | ![](./original-images/lesson-4/phrase-17.png) |
 
 ![](./original-images/046.png)
 
 Other times, words which are written separately Earthographicaly, like street
 light, or clothes horse, would be joined together as one, like so:
 
-![](./lesson-4/phrase-18.svg)
-
-![](./lesson-4/phrase-19.svg)
-
-![](./lesson-4/phrase-20.svg)
-
-![](./lesson-4/phrase-21.svg)
-
-![](./lesson-4/phrase-22.svg)
-
-![](./lesson-4/phrase-23.svg)
-
-![](./lesson-4/phrase-24.svg)
-
-![](./lesson-4/phrase-25.svg)
-
-![](./lesson-4/phrase-26.svg)
-
-![](./lesson-4/phrase-27.svg)
-
-![](./lesson-4/phrase-28.svg)
-
-![](./lesson-4/phrase-29.svg)
-
+| Earthographic | Ponish                        | Original image                                |
+| ------------- | ----------------------------- | --------------------------------------------- |
+| N/A           | ![](./lesson-4/phrase-18.svg) | ![](./original-images/lesson-4/phrase-18.png) |
+| N/A           | ![](./lesson-4/phrase-19.svg) | ![](./original-images/lesson-4/phrase-19.png) |
+| N/A           | ![](./lesson-4/phrase-20.svg) | ![](./original-images/lesson-4/phrase-20.png) |
+| N/A           | ![](./lesson-4/phrase-21.svg) | ![](./original-images/lesson-4/phrase-21.png) |
+| N/A           | ![](./lesson-4/phrase-22.svg) | ![](./original-images/lesson-4/phrase-22.png) |
+| N/A           | ![](./lesson-4/phrase-23.svg) | ![](./original-images/lesson-4/phrase-23.png) |
+| N/A           | ![](./lesson-4/phrase-24.svg) | ![](./original-images/lesson-4/phrase-24.png) |
+| N/A           | ![](./lesson-4/phrase-25.svg) | ![](./original-images/lesson-4/phrase-25.png) |
+| N/A           | ![](./lesson-4/phrase-26.svg) | ![](./original-images/lesson-4/phrase-26.png) |
+| N/A           | ![](./lesson-4/phrase-27.svg) | ![](./original-images/lesson-4/phrase-27.png) |
+| N/A           | ![](./lesson-4/phrase-28.svg) | ![](./original-images/lesson-4/phrase-28.png) |
+| N/A           | ![](./lesson-4/phrase-29.svg) | ![](./original-images/lesson-4/phrase-29.png) |
 
 ![](./original-images/047.png)
 

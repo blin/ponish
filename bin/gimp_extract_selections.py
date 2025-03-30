@@ -4,7 +4,8 @@
 # list suitable for use with imagemagick.
 # Note that GIMP 2.10 python is Python 2.7
 
-names = []
+infile = "047.png"
+names = ["lesson-4/phrase-{:02}.png".format(i) for i in range(18,30)]
 
 
 def print_selection_channels(image):
@@ -13,7 +14,7 @@ def print_selection_channels(image):
         _, x1, y1, x2, y2 = pdb.gimp_selection_bounds(image)
         width = x2 - x1
         height = y2 - y1
-        print("{},{},{},{},{}".format(names[i], x1, y1, width, height))
+        print("{},{},{},{},{},{}".format(infile, names[i], x1, y1, width, height))
 
 
 print_selection_channels(gimp.image_list()[0])
