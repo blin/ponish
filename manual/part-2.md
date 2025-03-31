@@ -1,10 +1,36 @@
 # Part 2: Further Readings, and Their Earthographic Transcriptions
 
-Passage 1:
+## Passage 1 (Ponish)
+
+![](./part-2/passage-1-line-01.svg)
+
+![](./part-2/passage-1-line-02.svg)
+
+![](./part-2/passage-1-line-03.svg)
+
+![](./part-2/passage-1-line-04.svg)
+
+![](./part-2/passage-1-line-05.svg)
+
+![](./part-2/passage-1-line-06.svg)
+
+![](./part-2/passage-1-line-07.svg)
+
+![](./part-2/passage-1-line-08.svg)
+
+![](./part-2/passage-1-line-09.svg)
+
+![](./part-2/passage-1-line-10.svg)
+
+![](./part-2/passage-1-line-11.svg)
+
+![](./part-2/passage-1-line-12.svg)
+
+![](./part-2/passage-1-line-13.svg)
+
+![](./part-2/passage-1-line-14.svg)
 
 ![](./original-images/048.png)
-
-## Passage 1:
 
 Once upon a time, in the magical land of Equestria, there were two regal sisters
 who ruled together and created harmony for all the land. To do this, the eldest
@@ -30,9 +56,12 @@ Equestria for generations since.
 
 ![](./original-images/049.png)
 
-## Passage 3:
+## Passage 3 (Ponish)
 
 ![](./original-images/050.png)
+
+## Passage 3 (Earthographic)
+
 
 Two figures lay sprawled on the Equestrian grass, talking and laughing merrily.
 One was human; a relatively young man with the unlikely name of Lero, (short for
@@ -54,11 +83,11 @@ village green.
 
 ![](./original-images/051.png)
 
-## Passage 5:
+## Passage 5 (Ponish)
 
 ![](./original-images/052.png)
 
-## Passage 5:
+## Passage 5 (Earthographic)
 
 Fifteen galaxies out from Equestria, one of Celestia's copies noticed an odd
 radio signal emanating from a nearby star system. On closer inspection, the
@@ -86,9 +115,11 @@ values through
 
 ![](./original-images/054.png)
 
-## Passage 8, part 1:
+## Passage 8, part 1 (Ponish)
 
 ![](./original-images/055.png)
+
+## Passage 8, part 1 (Earthographic)
 
 I'd like to preface this by saying I deeply apologize for the drop in writing
 quality towards the end. I have to leave in a few hours and will not be here for
@@ -139,9 +170,11 @@ to think I was still alive and it was just a dream, but I knew I had died.
 I've never been a religious or spiritual person. As such, I chalked the whole
 thing up to every explanation to NDEs I'd ever heard of.
 
-## Passage 8, part 2:
+## Passage 8, part 1 (Ponish)
 
 ![](./original-images/056.png)
+
+## Passage 8, part 1 (Earthographic)
 
 An almost hurt expression grew on her as the thoughts were running through my
 head. She seemingly saw my distress and pulled me into a hug.

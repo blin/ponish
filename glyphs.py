@@ -748,6 +748,24 @@ punctuation[":"] = Glyph(
     ),
 )
 
+punctuation[";"] = Glyph(
+    start_pos=RelPoint(rel_y=0.3, rel_x=0.0),
+    draw_actions=(
+        PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.02),
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.02),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.02),
+        PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.02),
+        PenAction.LIFT,
+        PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.4),
+        PenAction.PLACE,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.0, rel_x=0.4),
+            p3=RelPoint(rel_y=0.3, rel_x=0.3),
+            p4=RelPoint(rel_y=0.6, rel_x=0.0),
+        ),
+    ),
+)
+
 punctuation["!"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=(
