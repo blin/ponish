@@ -2,33 +2,34 @@
 
 ## Passage 1 (Ponish)
 
-![](./part-2/passage-1-line-01.svg)
 
-![](./part-2/passage-1-line-02.svg)
+![](./part-2/passage-1-line-01.svg) ![](./original-images/part-2/passage-1-line-01.png)
 
-![](./part-2/passage-1-line-03.svg)
+![](./part-2/passage-1-line-02.svg) ![](./original-images/part-2/passage-1-line-02.png)
 
-![](./part-2/passage-1-line-04.svg)
+![](./part-2/passage-1-line-03.svg) ![](./original-images/part-2/passage-1-line-03.png)
 
-![](./part-2/passage-1-line-05.svg)
+![](./part-2/passage-1-line-04.svg) ![](./original-images/part-2/passage-1-line-04.png)
 
-![](./part-2/passage-1-line-06.svg)
+![](./part-2/passage-1-line-05.svg) ![](./original-images/part-2/passage-1-line-05.png)
 
-![](./part-2/passage-1-line-07.svg)
+![](./part-2/passage-1-line-06.svg) ![](./original-images/part-2/passage-1-line-06.png)
 
-![](./part-2/passage-1-line-08.svg)
+![](./part-2/passage-1-line-07.svg) ![](./original-images/part-2/passage-1-line-07.png)
 
-![](./part-2/passage-1-line-09.svg)
+![](./part-2/passage-1-line-08.svg) ![](./original-images/part-2/passage-1-line-08.png)
 
-![](./part-2/passage-1-line-10.svg)
+![](./part-2/passage-1-line-09.svg) ![](./original-images/part-2/passage-1-line-09.png)
 
-![](./part-2/passage-1-line-11.svg)
+![](./part-2/passage-1-line-10.svg) ![](./original-images/part-2/passage-1-line-10.png)
 
-![](./part-2/passage-1-line-12.svg)
+![](./part-2/passage-1-line-11.svg) ![](./original-images/part-2/passage-1-line-11.png)
 
-![](./part-2/passage-1-line-13.svg)
+![](./part-2/passage-1-line-12.svg) ![](./original-images/part-2/passage-1-line-12.png)
 
-![](./part-2/passage-1-line-14.svg)
+![](./part-2/passage-1-line-13.svg) ![](./original-images/part-2/passage-1-line-13.png)
+
+![](./part-2/passage-1-line-14.svg) ![](./original-images/part-2/passage-1-line-14.png)
 
 ![](./original-images/048.png)
 
