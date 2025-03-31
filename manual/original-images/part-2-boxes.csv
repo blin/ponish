@@ -1,8 +1,8 @@
 infile,outfile,x,y,width,height
 048.png,part-2/passage-1-line-01.png,0,28,1080,51
-048.png,part-2/passage-1-line-02.png,0,81,1080,50
+048.png,part-2/passage-1-line-02.png,0,81,1080,60
 048.png,part-2/passage-1-line-03.png,0,141,1080,65
-048.png,part-2/passage-1-line-04.png,0,204,1080,67
+048.png,part-2/passage-1-line-04.png,0,204,650,67
 048.png,part-2/passage-1-line-05.png,0,300,1080,71
 048.png,part-2/passage-1-line-06.png,0,364,1080,56
 048.png,part-2/passage-1-line-07.png,0,418,1080,76
