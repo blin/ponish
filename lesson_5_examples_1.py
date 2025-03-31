@@ -22,25 +22,27 @@ texts = [
         # TODO: 2 as a number in a circle
         "Ons upon a tim n the majikal land of Eqes$(TR)ea $(TH)r wer two regal $(SS)$(TR)s wo ruld",
         "toge$(TH)er nd $(CR)e$(AT)ed harmony for $(AL) the land . Todo$(TH)is , the eldest usd her unikorn powers",
-        "toraz the sun $(AT)dawn ; the yo$(NG)er $(BR)ot ot the mon tobegin the nit . $(TH)us , the two $(SS)$(TR)s mintind balans for $(TH)r",
+        "toraz the sun $(AT)dawn ; the $(Y-consonant)o$(NG)r $(BR)ot ot the mon tobegin the nit . $(TH)us , the two $(SS)$(TR)s mintind balans for $(TH)r",
         "ki$(ng)dom nd $(TH)r $(sub)jekts , $(AL) the di$(FR)ent typs of pones .",
         # paragraph
-        "But as time went on , the younger $(SS)$(TR) became resentful . The ponies relished nd played in the day",
-        "her elder $(SS)$(TR) brought for$(TH) , but shunnd , nd slept $(TH)rough her beautiful nit . One fateful",
-        "day , the younger unikorn refused to lower the moon to make way for the dawn . The elder $(SS)$(TR) $(TR)ied to reason",
-        "wi$(TH) her , but the bitterness in the young ones heart had $(TR)ansformed her into a wicked mare of darkness :",
-        "nitmare Moon !",
+        "But $(AS) tim went on , the $(Y-consonant)o$(NG)r $(SS)$(TR) bekam resent$(full) . The pones reli$(SH)ed nd $(PL)ayd n the dy",
+        # TODO: make "rth" in "forth" look better
+        "her el$(DR) $(SS)$(TR) $(BR)ot for$(TH) , but $(SH)unnd , nd slept $(TH)ru her buti$(full) nit . On fat$(full)",
+        "dy , the $(Y-consonant)o$(NG)r unikorn refusd tolower the mon tomak wy for the dawn . The el$(DR) $(SS)$(TR) $(TR)id toreson",
+        "wi$(TH) her but the bi$(tr)$(ness) n the $(Y-consonant)o$(NG) ons hart had $(TR)ansformed her nto$(awa)iked mar of dark$(ness) :",
+        "nitmar mon !",
         # paragraph
-        "She vowed $(TH)at she would shroud the land in eternal nit . Reluctantly , the elder $(SS)$(TR) harnessed",
-        "the most powerful magic known to Ponydom: the Elements of Harmony . Using the magic of",
-        "the Elements of Harmony , she defeated her younger $(SS)$(TR) , nd banished her permanently in the moon .",
-        "The elder $(SS)$(TR) took on responsibility for bo$(TH) sun , nd moon , nd harmony has",
-        "been mintind in Eques$(TR)ea for generations since .",
+        "$(SH)evowed $(TH)at $(SH)ewould $(SH)roud the land n eternal nit . Reluktantly , the elder $(SS)$(TR) har$(ness)ed",
+        # TODO: make "using" look better
+        "the most power$(full) majik nown toPonydom : the Ele$(ment)s of Harmony . Us$(ING) the majik of",
+        "the Ele$(ment)s of Harmony , $(SH)edefeted her $(Y-consonant)o$(NG)r $(SS)$(TR) nd bani$(SH)d her permanently to the mon .",
+        "The elder $(SS)$(TR) tok on responsibility for bo$(TH) sun nd mon , nd harmony has",
+        "ben mintind n Eqes$(TR)ea for jenera$(SH)ns sins .",
     ),
 ]
 if __name__ == "__main__":
     for tid, text in enumerate(texts):
-        for lid, line in list(enumerate(text))[2:6]:
+        for lid, line in list(enumerate(text)):
             dc = DrawingContext(
                 output_path=dir / f"passage-{tid + 1}-line-{lid + 1:02}.svg",
                 drawing_width=1100,

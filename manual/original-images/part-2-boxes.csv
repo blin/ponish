@@ -7,9 +7,9 @@ infile,outfile,x,y,width,height
 048.png,part-2/passage-1-line-06.png,0,364,1080,56
 048.png,part-2/passage-1-line-07.png,0,418,1080,76
 048.png,part-2/passage-1-line-08.png,0,481,1080,74
-048.png,part-2/passage-1-line-09.png,0,569,1080,58
+048.png,part-2/passage-1-line-09.png,0,569,200,58
 048.png,part-2/passage-1-line-10.png,0,645,1080,69
 048.png,part-2/passage-1-line-11.png,0,715,1080,67
 048.png,part-2/passage-1-line-12.png,0,775,1080,67
 048.png,part-2/passage-1-line-13.png,0,824,1080,65
-048.png,part-2/passage-1-line-14.png,0,890,1080,52
+048.png,part-2/passage-1-line-14.png,0,890,550,52

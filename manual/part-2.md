@@ -19,7 +19,9 @@
 
 ![](./part-2/passage-1-line-08.svg) ![](./original-images/part-2/passage-1-line-08.png)
 
-![](./part-2/passage-1-line-09.svg) ![](./original-images/part-2/passage-1-line-09.png)
+![](./part-2/passage-1-line-09.svg)
+
+![](./original-images/part-2/passage-1-line-09.png)
 
 ![](./part-2/passage-1-line-10.svg) ![](./original-images/part-2/passage-1-line-10.png)
 
@@ -30,8 +32,6 @@
 ![](./part-2/passage-1-line-13.svg) ![](./original-images/part-2/passage-1-line-13.png)
 
 ![](./part-2/passage-1-line-14.svg) ![](./original-images/part-2/passage-1-line-14.png)
-
-![](./original-images/048.png)
 
 Once upon a time, in the magical land of Equestria, there were two regal sisters
 who ruled together and created harmony for all the land. To do this, the eldest
