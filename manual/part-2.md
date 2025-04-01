@@ -91,8 +91,44 @@ The problem is that Johnny doesn't know what thinking is;
 he confuses it with feeling.
 </details>
 
-
 ## Passage 3 (Ponish)
+
+![](./part-2/passage-3-line-01.svg)
+![](./original-images/part-2/passage-3-line-01.png)
+
+![](./part-2/passage-3-line-02.svg)
+![](./original-images/part-2/passage-3-line-02.png)
+
+![](./part-2/passage-3-line-03.svg)
+![](./original-images/part-2/passage-3-line-03.png)
+
+![](./part-2/passage-3-line-04.svg)
+![](./original-images/part-2/passage-3-line-04.png)
+
+![](./part-2/passage-3-line-05.svg)
+![](./original-images/part-2/passage-3-line-05.png)
+
+![](./part-2/passage-3-line-06.svg)
+![](./original-images/part-2/passage-3-line-06.png)
+
+![](./part-2/passage-3-line-07.svg)
+![](./original-images/part-2/passage-3-line-07.png)
+
+![](./part-2/passage-3-line-08.svg)
+![](./original-images/part-2/passage-3-line-08.png)
+
+![](./part-2/passage-3-line-09.svg)
+![](./original-images/part-2/passage-3-line-09.png)
+
+![](./part-2/passage-3-line-10.svg)
+![](./original-images/part-2/passage-3-line-10.png)
+
+![](./part-2/passage-3-line-11.svg)
+![](./original-images/part-2/passage-3-line-11.png)
+
+![](./part-2/passage-3-line-12.svg)
+
+![](./original-images/part-2/passage-3-line-12.png)
 
 ![](./original-images/050.png)
 
