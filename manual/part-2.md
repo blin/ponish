@@ -67,7 +67,30 @@ Equestria for generations since.
 
 ## Passage 2:
 
-![](./original-images/049.png)
+![](./part-2/passage-2-line-01.svg)
+![](./original-images/part-2/passage-2-line-01.png)
+
+![](./part-2/passage-2-line-02.svg)
+![](./original-images/part-2/passage-2-line-02.png)
+
+![](./part-2/passage-2-line-03.svg)
+![](./original-images/part-2/passage-2-line-03.png)
+
+![](./part-2/passage-2-line-04.svg)
+![](./original-images/part-2/passage-2-line-04.png)
+
+![](./part-2/passage-2-line-05.svg)
+
+![](./original-images/part-2/passage-2-line-05.png)
+
+<details>
+<summary>Earthographic</summary>
+The problem isn't that Johnny can't read .
+The problem isn't even that Johnny can't think.
+The problem is that Johnny doesn't know what thinking is;
+he confuses it with feeling.
+</details>
+
 
 ## Passage 3 (Ponish)
 

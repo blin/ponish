@@ -18,7 +18,7 @@ dir = Path("manual/part-2")
 dir.mkdir(parents=True, exist_ok=True)
 
 texts = [
-    (
+    [
         # TODO: 2 as a number in a circle
         "Ons upon a tim n the majikal land of Eqes$(TR)ea $(TH)r wer two regal $(SS)$(TR)s wo ruld",
         "toge$(TH)er nd $(CR)e$(AT)ed harmony for $(AL) the land . Todo$(TH)is , the eldest usd her unikorn powers",
@@ -38,10 +38,20 @@ texts = [
         "the Ele$(ment)s of Harmony , $(SH)edefeted her $(Y-consonant)o$(NG)r $(SS)$(TR) nd bani$(SH)d her permanently to the mon .",
         "The elder $(SS)$(TR) tok on responsibility for bo$(TH) sun nd mon , nd harmony has",
         "ben mintind n Eqes$(TR)ea for jenera$(SH)ns sins .",
-    ),
+    ],
+    [
+        "The $(PR)oblem isnt $(TH)at Joni kant red .",
+        "The $(PR)oblem isnt evn $(TH)at Joni kant",
+        # TODO: check the "the" dot before "problem"
+        "$(think) . The $(PR)oblem is $(TH)at Joni doznt",
+        # TODO: make "thinking" look better
+        "nowat $(think)$(ng) is ; he$(con)fu$(SS) it",
+        # TODO: make "feeling" look better
+        "wi$(TH) fel$(ng) ."
+    ]
 ]
 if __name__ == "__main__":
-    for tid, text in enumerate(texts):
+    for tid, text in list(enumerate(texts))[1:]:
         for lid, line in list(enumerate(text)):
             dc = DrawingContext(
                 output_path=dir / f"passage-{tid + 1}-line-{lid + 1:02}.svg",
