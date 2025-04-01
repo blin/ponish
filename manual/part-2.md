@@ -2,36 +2,48 @@
 
 ## Passage 1 (Ponish)
 
+![](./part-2/passage-1-line-01.svg)
+![](./original-images/part-2/passage-1-line-01.png)
 
-![](./part-2/passage-1-line-01.svg) ![](./original-images/part-2/passage-1-line-01.png)
+![](./part-2/passage-1-line-02.svg)
+![](./original-images/part-2/passage-1-line-02.png)
 
-![](./part-2/passage-1-line-02.svg) ![](./original-images/part-2/passage-1-line-02.png)
+![](./part-2/passage-1-line-03.svg)
+![](./original-images/part-2/passage-1-line-03.png)
 
-![](./part-2/passage-1-line-03.svg) ![](./original-images/part-2/passage-1-line-03.png)
+![](./part-2/passage-1-line-04.svg)
+![](./original-images/part-2/passage-1-line-04.png)
 
-![](./part-2/passage-1-line-04.svg) ![](./original-images/part-2/passage-1-line-04.png)
+![](./part-2/passage-1-line-05.svg)
+![](./original-images/part-2/passage-1-line-05.png)
 
-![](./part-2/passage-1-line-05.svg) ![](./original-images/part-2/passage-1-line-05.png)
+![](./part-2/passage-1-line-06.svg)
+![](./original-images/part-2/passage-1-line-06.png)
 
-![](./part-2/passage-1-line-06.svg) ![](./original-images/part-2/passage-1-line-06.png)
+![](./part-2/passage-1-line-07.svg)
+![](./original-images/part-2/passage-1-line-07.png)
 
-![](./part-2/passage-1-line-07.svg) ![](./original-images/part-2/passage-1-line-07.png)
-
-![](./part-2/passage-1-line-08.svg) ![](./original-images/part-2/passage-1-line-08.png)
+![](./part-2/passage-1-line-08.svg)
+![](./original-images/part-2/passage-1-line-08.png)
 
 ![](./part-2/passage-1-line-09.svg)
 
 ![](./original-images/part-2/passage-1-line-09.png)
 
-![](./part-2/passage-1-line-10.svg) ![](./original-images/part-2/passage-1-line-10.png)
+![](./part-2/passage-1-line-10.svg)
+![](./original-images/part-2/passage-1-line-10.png)
 
-![](./part-2/passage-1-line-11.svg) ![](./original-images/part-2/passage-1-line-11.png)
+![](./part-2/passage-1-line-11.svg)
+![](./original-images/part-2/passage-1-line-11.png)
 
-![](./part-2/passage-1-line-12.svg) ![](./original-images/part-2/passage-1-line-12.png)
+![](./part-2/passage-1-line-12.svg)
+![](./original-images/part-2/passage-1-line-12.png)
 
-![](./part-2/passage-1-line-13.svg) ![](./original-images/part-2/passage-1-line-13.png)
+![](./part-2/passage-1-line-13.svg)
+![](./original-images/part-2/passage-1-line-13.png)
 
-![](./part-2/passage-1-line-14.svg) ![](./original-images/part-2/passage-1-line-14.png)
+![](./part-2/passage-1-line-14.svg)
+![](./original-images/part-2/passage-1-line-14.png)
 
 Once upon a time, in the magical land of Equestria, there were two regal sisters
 who ruled together and created harmony for all the land. To do this, the eldest
@@ -62,7 +74,6 @@ Equestria for generations since.
 ![](./original-images/050.png)
 
 ## Passage 3 (Earthographic)
-
 
 Two figures lay sprawled on the Equestrian grass, talking and laughing merrily.
 One was human; a relatively young man with the unlikely name of Lero, (short for
