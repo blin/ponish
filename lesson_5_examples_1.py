@@ -50,25 +50,27 @@ texts = [
         "wi$(TH) fel$(ng) .",
     ],
     [
-        "Two figures lay sprawled on the Equestrian grass , talking nd laughing merrily . One was",
+        "Two figurs ly sprawld on the Eqes$(TR)e$(AN) $(GR)as talk$(ing) nd laf$(ing) merily . On was",
         # TODO: braces around Bellerophon
-        "human ; a relatively young man wi$(TH) the unlikely name of Lero , $(SH)ort for Bellerophon",
-        "for his parents had been odd folk , whod ended up here $(TH)rogh no me$(CH)anism he or anyone",
-        "else had yet been able to discern , nd who as yet was unable to return home . He was",
-        "slitly stocky , wi$(TH) fairly wide $(SH)olders nd a barrel $(CH)est , nd had $(SH)olderleng$(TH) , reddi$(SH)blonde hair",
-        "and a neatly trimmed red musta$(CH)e nd goatee .",
+        # TODO: chunk after second consecutive vowel
+        # TODO: "quote mode"
+        "human ; a relativly $(Y-consonant)o$(ng) man wi$(TH) the unlikly nam of Lero , $(SH)ort for Bie lilie rio pihio n",
+        "for his parents had ben od folk , wod ndd up her $(TH)ru nomekanism he or $(AN)yon",
+        "els had $(Y-consonant)et ben $(AB)l to$(dis)ern nd wo $(AS) $(Y-consonant)et waz unabl toreturn hom . Hewas",
+        "slitly stoky wi$(TH) farly wid $(SH)ol$(DR)s nd a barel $(CH)est nd had $(SH)ol$(DR) le$(NG)$(TH-top-start) redi$(SH)blond har",
+        "nd a netly $(tr)imed red musta$(SH) nd gote .",
         # paragraph
-        "the $(other)figure was mu$(CH) smaller . the skyblue coat nd rainbowstriped mane nd tail of the pegasus aptly",
-        "named Rainbow Da$(SH) stood out against the deep $(GR)een of the grass . $(SH)ed flopped down half atop the human",
-        "when theyd stopped to rest , nd now lay wi$(TH) her head nd one foreleg across his",
-        "$(CH)est nd one wing s$(PR)ead across his torso . the human idly stroked her mane wi$(TH) one",
-        "hand while the two $(CH)eerfully revisited the pickup hoofball game theyd just fini$(SH)ed in the village",
-        "$(GR)een .",
+        "the $(other)figure was mu$(CH) smaller . the skyblue coat nd rainbows$(tr)iped mane nd tail of the pegasus aptly",
+        "named Rainbow Da$(SH) stood out against the dep $(GR)en of the $(GR)as . $(SH)ed flopped down half atop the human",
+        "wen theyd stopped to rest nd now lay wi$(TH) her head nd one foreleg across his",
+        "$(CH)est nd one wing s$(PR)ead across his torso . the human idly s$(tr)oked her mane wi$(TH) one",
+        "hand wile the two $(CH)erfully revisited the pickup hoofball game theyd just fini$(SH)ed in the village",
+        "$(GR)en .",
     ],
 ]
 if __name__ == "__main__":
     for tid, text in list(enumerate(texts))[2:]:
-        for lid, line in list(enumerate(text)):
+        for lid, line in list(enumerate(text))[5:6]:
             dc = DrawingContext(
                 output_path=dir / f"passage-{tid + 1}-line-{lid + 1:02}.svg",
                 drawing_width=1100,

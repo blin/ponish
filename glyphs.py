@@ -557,6 +557,7 @@ blends["BR"] = derive_from_letter(
 
 blends["CR"] = derive_from_letter("C", more_actions=letters["R"].draw_actions[-1:])
 
+# TODO: fix DR
 blends["DR"] = derive_from_letter("D", more_actions=letters["R"].draw_actions[-1:])
 
 blends["GR"] = derive_from_letter("G", more_actions=letters["R"].draw_actions[-1:])
