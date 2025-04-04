@@ -79,7 +79,19 @@ texts = [
         "$(DR)esd n .",
     ],
     [
-        "passage 5",  # TODO
+        "fiften galaxis $(out)$(FR)om eqes$(TR)ea on of seleste$(AS) copes notisd an od radio signal",
+        "manat$(ing) $(FR)om a nerby star $(SS)tem . on klosr nspek$(SH)n the signal aperd tobecom$(ING) $(FR)om a $(PL)anet",
+        "$(SH)ehad sin many $(PL)anets giv of $(com)$(PL)ex nonregular radio signals but upon nvestiga$(SH)n non",
+        "of $(TH)es $(PL)anets had human lif , mak$(ING) $(TH)em saf toreus $(AS) raw materi$(AL) to$(GR)o eqes$(TR)ea .",
+        # paragraph
+        "$(SH)estuded the signals ker$(full)y for $(Y-consonant)ers wil $(SH)e$(TR)avld $(TH)ru n$(TR)stelar spas . the mor $(SH)esaw the mor",
+        "$(con)fident $(SH)ewas $(TH)at $(TH)ez signals wer sent by humans . selestea $(PR)edikted $(TH)at if $(SH)e $(SH)owd",
+        "the dekodd videos to the $(very)ld pones bak n eqes$(TR)ea non of $(TH)em would hav rekognizd",
+        "the $(CR)e$(CH)rs wi$(TH) six apendajes $(AS) humans but $(TH)at didnt ma$(TR) . hana had ritn the defini$(SH)n of",
+        "wat a human was ntoher cor utility fu$(NK)$(SH)n .",
+        # paragraph
+        "the kopy of $(PR)in$(SS) selestia nu wat $(SH)ehad todo $(SH)ehad tosatisfy $(TH)r valus $(TH)ru $(FR)ind$(SH)ip",
+        "nd pones",
     ],
     [
         "Hewolnot reson is a bigot ;",
@@ -98,8 +110,8 @@ texts = [
     ],
 ]
 if __name__ == "__main__":
-    for tid, text in list(enumerate(texts))[6:]:
-        for lid, line in list(enumerate(text)):
+    for tid, text in list(enumerate(texts))[4:5]:
+        for lid, line in list(enumerate(text))[7:]:
             dc = DrawingContext(
                 output_path=dir / f"passage-{tid + 1}-line-{lid + 1:02}.svg",
                 drawing_width=1100,

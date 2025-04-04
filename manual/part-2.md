@@ -176,7 +176,39 @@ pet position are pretty ugly no matter what they're dressed in.
 
 ## Passage 5 (Ponish)
 
-![](./original-images/052.png)
+![](./part-2/passage-5-line-01.svg)
+![](./original-images/part-2/passage-5-line-01.png)
+
+![](./part-2/passage-5-line-02.svg)
+![](./original-images/part-2/passage-5-line-02.png)
+
+![](./part-2/passage-5-line-03.svg)
+![](./original-images/part-2/passage-5-line-03.png)
+
+![](./part-2/passage-5-line-04.svg)
+![](./original-images/part-2/passage-5-line-04.png)
+
+![](./part-2/passage-5-line-05.svg)
+![](./original-images/part-2/passage-5-line-05.png)
+
+![](./part-2/passage-5-line-06.svg)
+![](./original-images/part-2/passage-5-line-06.png)
+
+![](./part-2/passage-5-line-07.svg)
+![](./original-images/part-2/passage-5-line-07.png)
+
+![](./part-2/passage-5-line-08.svg)
+![](./original-images/part-2/passage-5-line-08.png)
+
+![](./part-2/passage-5-line-09.svg)
+![](./original-images/part-2/passage-5-line-09.png)
+
+![](./part-2/passage-5-line-10.svg)
+![](./original-images/part-2/passage-5-line-10.png)
+
+![](./part-2/passage-5-line-11.svg)
+
+![](./original-images/part-2/passage-5-line-11.png)
 
 ## Passage 5 (Earthographic)
 
@@ -196,7 +228,7 @@ Hanna had written a definition of what a human was into her core utility
 function.
 
 The copy of Princess Celestia knew what she had to do. She had to satisfy their
-values through
+values through friendship and ponies.
 
 ## Passage 6:
 
