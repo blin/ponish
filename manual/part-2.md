@@ -202,7 +202,21 @@ values through
 
 ## Passage 6:
 
-![](./original-images/053.png)
+![](./part-2/passage-6-line-01.svg)
+![](./original-images/part-2/passage-6-line-01.png)
+
+![](./part-2/passage-6-line-02.svg)
+![](./original-images/part-2/passage-6-line-02.png)
+
+![](./part-2/passage-6-line-03.svg)
+![](./original-images/part-2/passage-6-line-03.png)
+
+<details>
+<summary>Earthographic</summary>
+He who will not reason is a bigot;
+he who cannot , is a fool;
+and he who dares not, is a slave.
+</details>
 
 ## Passage 7:
 

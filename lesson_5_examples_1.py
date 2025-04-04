@@ -76,11 +76,19 @@ texts = [
         "sujestiv nd wat thy $(con)sil is vital but",
         "nakura$(SS) mad n a efort to$(pr)omot a pet",
         "posi$(SH)n $(AR) $(PR)ety ugly noma$(TR) wat $(TH)er",
-        "$(DR)esd n ."
+        "$(DR)esd n .",
+    ],
+    [
+        "passage 5",  # TODO
+    ],
+    [
+        "Hewolnot reson is a bigot ;",
+        "hewo kanot is a ful ;",
+        "nd he wo dars not is a slav",
     ],
 ]
 if __name__ == "__main__":
-    for tid, text in list(enumerate(texts))[3:]:
+    for tid, text in list(enumerate(texts))[5:]:
         for lid, line in list(enumerate(text)):
             dc = DrawingContext(
                 output_path=dir / f"passage-{tid + 1}-line-{lid + 1:02}.svg",
