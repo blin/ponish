@@ -174,8 +174,6 @@ inaccuracies made in an effort to promote a
 pet position are pretty ugly no matter what they're dressed in.
 </details>
 
-![](./original-images/051.png)
-
 ## Passage 5 (Ponish)
 
 ![](./original-images/052.png)
