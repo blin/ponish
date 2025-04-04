@@ -86,9 +86,19 @@ texts = [
         "hewo kanot is a ful ;",
         "nd he wo dars not is a slav",
     ],
+    [
+        "wat we xperiens n $(DR)ems $(AS)um$(ING) $(TH)at",
+        # TODO: make "ngs" in "belongs" look better
+        "wexperiens it often belo$(NG)s n the nd",
+        "just $(AS) mu$(CH) to the $(over)al ekonomy of",
+        # TODO: make "our" look better
+        "our soul $(AS) ny$(THING) xperinsd $(AK)$(CH)u$(AL)y ; we$(AR)",
+        # TODO: "chr" in "richer" look better
+        "ri$(CH)r or purer on $(AK)ount of it .",
+    ],
 ]
 if __name__ == "__main__":
-    for tid, text in list(enumerate(texts))[5:]:
+    for tid, text in list(enumerate(texts))[6:]:
         for lid, line in list(enumerate(text)):
             dc = DrawingContext(
                 output_path=dir / f"passage-{tid + 1}-line-{lid + 1:02}.svg",

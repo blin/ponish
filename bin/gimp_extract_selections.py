@@ -4,8 +4,8 @@
 # list suitable for use with imagemagick.
 # Note that GIMP 2.10 python is Python 2.7
 
-infile = "053.png"
-names = ["part-2/passage-6-line-{:02}.png".format(i) for i in range(1,4)]
+infile = "054.png"
+names = ["part-2/passage-7-line-{:02}.png".format(i) for i in range(1,6)]
 
 
 def print_selection_channels(image):

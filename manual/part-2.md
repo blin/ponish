@@ -220,7 +220,20 @@ and he who dares not, is a slave.
 
 ## Passage 7:
 
-![](./original-images/054.png)
+![](./part-2/passage-7-line-01.svg)
+![](./original-images/part-2/passage-7-line-01.png)
+
+![](./part-2/passage-7-line-02.svg)
+![](./original-images/part-2/passage-7-line-02.png)
+
+![](./part-2/passage-7-line-03.svg)
+![](./original-images/part-2/passage-7-line-03.png)
+
+![](./part-2/passage-7-line-04.svg)
+![](./original-images/part-2/passage-7-line-04.png)
+
+![](./part-2/passage-7-line-05.svg)
+![](./original-images/part-2/passage-7-line-05.png)
 
 ## Passage 8, part 1 (Ponish)
 
