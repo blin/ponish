@@ -60,17 +60,20 @@ texts = [
         "slitly stoky wi$(TH) farly wid $(SH)ol$(DR)s nd a barel $(CH)est nd had $(SH)ol$(DR) le$(NG)$(TH-top-start) redi$(SH)blond har",
         "nd a netly $(tr)imed red musta$(SH) nd gote .",
         # paragraph
-        "the $(other)figure was mu$(CH) smaller . the skyblue coat nd rainbows$(tr)iped mane nd tail of the pegasus aptly",
-        "named Rainbow Da$(SH) stood out against the dep $(GR)en of the $(GR)as . $(SH)ed flopped down half atop the human",
-        "wen theyd stopped to rest nd now lay wi$(TH) her head nd one foreleg across his",
-        "$(CH)est nd one wing s$(PR)ead across his torso . the human idly s$(tr)oked her mane wi$(TH) one",
-        "hand wile the two $(CH)erfully revisited the pickup hoofball game theyd just fini$(SH)ed in the village",
+        # TODO: "AP" blend
+        "the $(other)figur waz mu$(CH) smalr . the skyblu cot nd ranbow man nd tal of the pega$(SS) aptly",
+        # TOOD: "AG" blend
+        "named RanboDa$(SH) stod $(out) aganst the dep $(GR)en of the $(GR)as . $(SH)ed flopd down half $(AT)op the human",
+        # TODO: what to do with "acr" in "across"?
+        "wen $(TH)eyd stopd torest nd now ly wi$(TH) her hed nd on forleg a$(CR)os his",
+        "$(CH)est nd on wi$(NG) spred $(AK)ros his torso . the human idly s$(tr)okd her man wi$(TH) on",
+        "hand wil the two $(CH)er$(full)y revisited the pikup hofbal gam $(TH)ed just fini$(SH)d n the vilaj",
         "$(GR)en .",
     ],
 ]
 if __name__ == "__main__":
     for tid, text in list(enumerate(texts))[2:]:
-        for lid, line in list(enumerate(text))[5:6]:
+        for lid, line in list(enumerate(text)):
             dc = DrawingContext(
                 output_path=dir / f"passage-{tid + 1}-line-{lid + 1:02}.svg",
                 drawing_width=1100,

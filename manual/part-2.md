@@ -130,8 +130,6 @@ he confuses it with feeling.
 
 ![](./original-images/part-2/passage-3-line-12.png)
 
-![](./original-images/050.png)
-
 ## Passage 3 (Earthographic)
 
 Two figures lay sprawled on the Equestrian grass, talking and laughing merrily.
