@@ -110,10 +110,75 @@ texts = [
     ],
 ]
 if __name__ == "__main__":
-    for tid, text in list(enumerate(texts))[4:5]:
-        for lid, line in list(enumerate(text))[7:]:
+    for tid, text in list(enumerate(texts))[7:]:
+        for lid, line in list(enumerate(text)):
             dc = DrawingContext(
                 output_path=dir / f"passage-{tid + 1}-line-{lid + 1:02}.svg",
+                drawing_width=1100,
+                drawing_height=150,
+            )
+            with dc as (p, t):
+                draw_sentence(t, p, line)
+
+texts = [
+    [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+    ],
+    [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+    ],
+]
+if __name__ == "__main__":
+    for tid, text in list(enumerate(texts)):
+        for lid, line in list(enumerate(text)):
+            dc = DrawingContext(
+                output_path=dir / f"passage-8-part-{tid + 1}-line-{lid + 1:02}.svg",
                 drawing_width=1100,
                 drawing_height=150,
             )

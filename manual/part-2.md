@@ -276,6 +276,94 @@ are richer or poorer on account of it.
 
 ## Passage 8, part 1 (Ponish)
 
+![](./part-2/passage-8-part-1-line-01.svg)
+![](./original-images/part-2/passage-8-part-1-line-01.png)
+
+![](./part-2/passage-8-part-1-line-02.svg)
+![](./original-images/part-2/passage-8-part-1-line-02.png)
+
+![](./part-2/passage-8-part-1-line-03.svg)
+
+![](./original-images/part-2/passage-8-part-1-line-03.png)
+
+![](./part-2/passage-8-part-1-line-04.svg)
+![](./original-images/part-2/passage-8-part-1-line-04.png)
+
+![](./part-2/passage-8-part-1-line-05.svg)
+![](./original-images/part-2/passage-8-part-1-line-05.png)
+
+![](./part-2/passage-8-part-1-line-06.svg)
+![](./original-images/part-2/passage-8-part-1-line-06.png)
+
+![](./part-2/passage-8-part-1-line-07.svg)
+![](./original-images/part-2/passage-8-part-1-line-07.png)
+
+![](./part-2/passage-8-part-1-line-08.svg)
+![](./original-images/part-2/passage-8-part-1-line-08.png)
+
+![](./part-2/passage-8-part-1-line-09.svg)
+![](./original-images/part-2/passage-8-part-1-line-09.png)
+
+![](./part-2/passage-8-part-1-line-10.svg)
+![](./original-images/part-2/passage-8-part-1-line-10.png)
+
+![](./part-2/passage-8-part-1-line-11.svg)
+![](./original-images/part-2/passage-8-part-1-line-11.png)
+
+![](./part-2/passage-8-part-1-line-12.svg)
+![](./original-images/part-2/passage-8-part-1-line-12.png)
+
+![](./part-2/passage-8-part-1-line-13.svg)
+![](./original-images/part-2/passage-8-part-1-line-13.png)
+
+![](./part-2/passage-8-part-1-line-14.svg)
+![](./original-images/part-2/passage-8-part-1-line-14.png)
+
+![](./part-2/passage-8-part-1-line-15.svg)
+![](./original-images/part-2/passage-8-part-1-line-15.png)
+
+![](./part-2/passage-8-part-1-line-16.svg)
+![](./original-images/part-2/passage-8-part-1-line-16.png)
+
+![](./part-2/passage-8-part-1-line-17.svg)
+![](./original-images/part-2/passage-8-part-1-line-17.png)
+
+![](./part-2/passage-8-part-1-line-18.svg)
+![](./original-images/part-2/passage-8-part-1-line-18.png)
+
+![](./part-2/passage-8-part-1-line-19.svg)
+![](./original-images/part-2/passage-8-part-1-line-19.png)
+
+![](./part-2/passage-8-part-1-line-20.svg)
+![](./original-images/part-2/passage-8-part-1-line-20.png)
+
+![](./part-2/passage-8-part-1-line-21.svg)
+![](./original-images/part-2/passage-8-part-1-line-21.png)
+
+![](./part-2/passage-8-part-1-line-22.svg)
+
+![](./original-images/part-2/passage-8-part-1-line-22.png)
+
+![](./part-2/passage-8-part-1-line-23.svg)
+
+![](./original-images/part-2/passage-8-part-1-line-23.png)
+
+![](./part-2/passage-8-part-1-line-24.svg)
+![](./original-images/part-2/passage-8-part-1-line-24.png)
+
+![](./part-2/passage-8-part-1-line-25.svg)
+![](./original-images/part-2/passage-8-part-1-line-25.png)
+
+![](./part-2/passage-8-part-1-line-26.svg)
+![](./original-images/part-2/passage-8-part-1-line-26.png)
+
+![](./part-2/passage-8-part-1-line-27.svg)
+![](./original-images/part-2/passage-8-part-1-line-27.png)
+
+![](./part-2/passage-8-part-1-line-28.svg)
+
+![](./original-images/part-2/passage-8-part-1-line-28.png)
+
 ![](./original-images/055.png)
 
 ## Passage 8, part 1 (Earthographic)
@@ -319,7 +407,7 @@ moment, I thought I was actually awake.
 
 That's when I heard her.
 
-&gt;'Everything is going to be all right, Anon.'
+\> "Everything is going to be all right, Anon."
 
 I recognized that voice as soon as I heard it. I turned to look at her, but
 couldn't say anything. For some reason, everything suddenly made sense. I
@@ -329,11 +417,78 @@ to think I was still alive and it was just a dream, but I knew I had died.
 I've never been a religious or spiritual person. As such, I chalked the whole
 thing up to every explanation to NDEs I'd ever heard of.
 
-## Passage 8, part 1 (Ponish)
+## Passage 8, part 2 (Ponish)
+
+![](./part-2/passage-8-part-2-line-01.svg)
+![](./original-images/part-2/passage-8-part-2-line-01.png)
+
+![](./part-2/passage-8-part-2-line-02.svg)
+
+![](./original-images/part-2/passage-8-part-2-line-02.png)
+
+![](./part-2/passage-8-part-2-line-03.svg)
+![](./original-images/part-2/passage-8-part-2-line-03.png)
+
+![](./part-2/passage-8-part-2-line-04.svg)
+![](./original-images/part-2/passage-8-part-2-line-04.png)
+
+![](./part-2/passage-8-part-2-line-05.svg)
+![](./original-images/part-2/passage-8-part-2-line-05.png)
+
+![](./part-2/passage-8-part-2-line-06.svg)
+![](./original-images/part-2/passage-8-part-2-line-06.png)
+
+![](./part-2/passage-8-part-2-line-07.svg)
+![](./original-images/part-2/passage-8-part-2-line-07.png)
+
+![](./part-2/passage-8-part-2-line-08.svg)
+
+![](./original-images/part-2/passage-8-part-2-line-08.png)
+
+![](./part-2/passage-8-part-2-line-09.svg)
+
+![](./original-images/part-2/passage-8-part-2-line-09.png)
+
+![](./part-2/passage-8-part-2-line-10.svg)
+![](./original-images/part-2/passage-8-part-2-line-10.png)
+
+![](./part-2/passage-8-part-2-line-11.svg)
+![](./original-images/part-2/passage-8-part-2-line-11.png)
+
+![](./part-2/passage-8-part-2-line-12.svg)
+
+![](./original-images/part-2/passage-8-part-2-line-12.png)
+
+![](./part-2/passage-8-part-2-line-13.svg)
+
+![](./original-images/part-2/passage-8-part-2-line-13.png)
+
+![](./part-2/passage-8-part-2-line-14.svg)
+![](./original-images/part-2/passage-8-part-2-line-14.png)
+
+![](./part-2/passage-8-part-2-line-15.svg)
+![](./original-images/part-2/passage-8-part-2-line-15.png)
+
+![](./part-2/passage-8-part-2-line-16.svg)
+![](./original-images/part-2/passage-8-part-2-line-16.png)
+
+![](./part-2/passage-8-part-2-line-17.svg)
+![](./original-images/part-2/passage-8-part-2-line-17.png)
+
+![](./part-2/passage-8-part-2-line-18.svg)
+
+![](./original-images/part-2/passage-8-part-2-line-18.png)
+
+![](./part-2/passage-8-part-2-line-19.svg)
+![](./original-images/part-2/passage-8-part-2-line-19.png)
+
+![](./part-2/passage-8-part-2-line-20.svg)
+
+![](./original-images/part-2/passage-8-part-2-line-20.png)
 
 ![](./original-images/056.png)
 
-## Passage 8, part 1 (Earthographic)
+## Passage 8, part 2 (Earthographic)
 
 An almost hurt expression grew on her as the thoughts were running through my
 head. She seemingly saw my distress and pulled me into a hug.
@@ -349,14 +504,14 @@ breathing, we sat in dead silence. It seemed like an eternity. In reality, it
 was only two and a half minutes or so. Finally I managed to choke out a few
 words and asked her to confirm my suspicions.
 
-&gt;'Yes Anon, but you must know everything will be all right.'
+\> "Yes Anon, but you must know everything will be all right."
 
 I began to contemplate what to do next, when I was blinded by a bright flash of
 light. It dimmed after a few seconds, and I realized I was being pulled back.
 Before I woke up for the fourth and final time, I asked if I would ever see her
 again. There was a brief pause and she smiled lightly.
 
-&gt;'When you are meant to. You are not yet supposed to be here, Anon.'
+\> "When you are meant to. You are not yet supposed to be here, Anon."
 
 And that was it. I woke up in the cot, gasping for air. I immediately looked
 over at the clock and was met with 4:21pm. One of the first things I did was ask
@@ -368,5 +523,4 @@ a dead relative or even God, but not a cartoon horse that by all logic should
 not exist.
 
 All I can say for certain is that my belief in an afterlife has been reaffirmed
-and I hope you faggots tone down the &gt;you will never x thanks to my
-experience.
+and I hope you faggots tone down the \>you will never x thanks to my experience.
