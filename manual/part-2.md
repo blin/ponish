@@ -265,6 +265,15 @@ and he who dares not, is a slave.
 ![](./part-2/passage-7-line-05.svg)
 ![](./original-images/part-2/passage-7-line-05.png)
 
+<details>
+<summary>Earthographic</summary>
+What we experience in dreams - assuming that
+we experience it often - belongs in the end
+just as much to the overall economy of
+our soul as anything experienced "actually;" we
+are richer or poorer on account of it.
+</details>
+
 ## Passage 8, part 1 (Ponish)
 
 ![](./original-images/055.png)
