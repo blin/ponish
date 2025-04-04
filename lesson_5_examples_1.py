@@ -70,9 +70,17 @@ texts = [
         "hand wil the two $(CH)er$(full)y revisited the pikup hofbal gam $(TH)ed just fini$(SH)d n the vilaj",
         "$(GR)en .",
     ],
+    [
+        "statistiks $(AR) lik bikinis ; wat thy revel is",
+        # TODO: make "jest" in "suggestive" look better
+        "sujestiv nd wat thy $(con)sil is vital but",
+        "nakura$(SS) mad n a efort to$(pr)omot a pet",
+        "posi$(SH)n $(AR) $(PR)ety ugly noma$(TR) wat $(TH)er",
+        "$(DR)esd n ."
+    ],
 ]
 if __name__ == "__main__":
-    for tid, text in list(enumerate(texts))[2:]:
+    for tid, text in list(enumerate(texts))[3:]:
         for lid, line in list(enumerate(text)):
             dc = DrawingContext(
                 output_path=dir / f"passage-{tid + 1}-line-{lid + 1:02}.svg",

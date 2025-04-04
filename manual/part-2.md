@@ -150,6 +150,30 @@ village green.
 
 ## Passage 4:
 
+![](./part-2/passage-4-line-01.svg)
+![](./original-images/part-2/passage-4-line-01.png)
+
+![](./part-2/passage-4-line-02.svg)
+![](./original-images/part-2/passage-4-line-02.png)
+
+![](./part-2/passage-4-line-03.svg)
+![](./original-images/part-2/passage-4-line-03.png)
+
+![](./part-2/passage-4-line-04.svg)
+![](./original-images/part-2/passage-4-line-04.png)
+
+![](./part-2/passage-4-line-05.svg)
+
+![](./original-images/part-2/passage-4-line-05.png)
+
+<details>
+<summary>Earthographic</summary>
+Satistics are like bikinis; what they reveal is
+suggestive, and what they conceal is vital... but
+inaccuracies made in an effort to promote a
+pet position are pretty ugly no matter what they're dressed in.
+</details>
+
 ![](./original-images/051.png)
 
 ## Passage 5 (Ponish)
