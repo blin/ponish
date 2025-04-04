@@ -293,6 +293,7 @@ are richer or poorer on account of it.
 ![](./original-images/part-2/passage-8-part-1-line-05.png)
 
 ![](./part-2/passage-8-part-1-line-06.svg)
+
 ![](./original-images/part-2/passage-8-part-1-line-06.png)
 
 ![](./part-2/passage-8-part-1-line-07.svg)

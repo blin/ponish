@@ -122,15 +122,20 @@ if __name__ == "__main__":
 
 texts = [
     [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "id lik to$(PR)efas $(TH)is bysa$(ING) I de$(PL)y apolojiz for the $(DR)op n rit$(ING) qality to$(ward)s the nd . I have tolev",
+        "n a few hours nd wilnot beher for somtim . I wantd tofini$(SH) qicly soikan $(AN)ser $(AN)y qes$(CH)ons if",
+        "$(AN)yons evn her ritnow",
+        # paragraph
+        "iv $(AL)redy posted $(TH)is part , so$(TH)ers nopoint n go$(ING) ntodetel . Bak n desem$(BR) of twenty $(TH)irten Iwaz",
+        # TODO: "I-consonant" in "I bled"
+        "nvolved n a kar kra$(SH) $(TH)at ultimatly ndd n mybe$(ING) $(PR)onaunsed $(BR)anded . $(AS) I bled $(out) just $(AS)",
+        "the paramediks $(AR)ivd nd did $(about) forty min la$(TR) .",
+        # paragraph
+        "it tuk $(PL)as n $(TH)re diferent loka$(SH)ns . $(AT) first ifekam $(self)ewar n an $(AB)ys . $(TH)is n nd of it$(self) was",
+        # TODO: make "ving" in "having" look better
+        "no$(THING) spe$(SH)al , I figurd I must behav$(ing) a lusid $(DR)em wi$(TH) noactu$(AL) $(DR)em$(ING) okur$(ing) . af$(TR) resid$(ing)",
+        "n the $(AB)ys for around a minut I began to$(DR)ift of nd lost $(con)$(SH)es$(ness) for the se$(con)d tim .",
+        # paragraph
         "",
         "",
         "",
@@ -175,8 +180,8 @@ texts = [
     ],
 ]
 if __name__ == "__main__":
-    for tid, text in list(enumerate(texts)):
-        for lid, line in list(enumerate(text)):
+    for tid, text in list(enumerate(texts))[0:1]:
+        for lid, line in list(enumerate(text))[8:]:
             dc = DrawingContext(
                 output_path=dir / f"passage-8-part-{tid + 1}-line-{lid + 1:02}.svg",
                 drawing_width=1100,
