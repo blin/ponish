@@ -136,25 +136,31 @@ texts = [
         "no$(THING) spe$(SH)al , I figurd I must behav$(ing) a lusid $(DR)em wi$(TH) noactu$(AL) $(DR)em$(ING) okur$(ing) . af$(TR) resid$(ing)",
         "n the $(AB)ys for around a minut I began to$(DR)ift of nd lost $(con)$(SH)es$(ness) for the se$(con)d tim .",
         # paragraph
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "the se$(con)d loka$(SH)n was posibly the most jenerik on . iwas n the hospital rom . $(AL)$(TH)o ihad nofisikal body",
+        "myvi$(ZH)n was posi$(SH)nd $(AS) if I was len$(ING) $(over) the cot nd star$(ING) $(AT) my$(self) n $(TH)is staj of the xperiens .",
+        "I couldnt fokus on $(AN)y$(THING) . I$(TR)id to$(under)stand wat was hapene$(NG) but $(com)$(PL)itly forgot my$(TR)al of $(TH)ot",
+        "$(AF)$(TR) a fu sekonds . the only $(THING) I kould a$(CH)u$(AL)y focus on was a klok on a tabl next to the cot",
+        "wi$(CH) red for etin P M . the same $(DR)owsy fel$(ING) $(FR)om the $(AB)ys returnd nd I fadd $(FR)om $(con)$(SH)es$(ness) $(AG)an .",
+        # paragraph
+        "I had now spent a colektiv tim of two minus n the $(AB)ys nd the rum .",
+        # paragraph
+        "the $(TH)ird loka$(SH)n waz nterly nexplikabl .ra$(TH)r $(TH)an be$(ING) n the hospital bed Iwaz $(PR)oped up $(AG)anst",
+        "a $(TR)e n a smal fild . the sun waz begini$(NG) toset $(over) the o$(SH)n n the $(dis)tans nd loca$(SH)n $(AS)id no$(THING) was $(out)",
+        "of the ordinary . $(con)$(TR)ary to the $(over)welm$(ING) majority of $(DR)ems $(TH)r was noblur bak$(DR)op $(TH)at faded ntno$(THING) . $(TH)r waz",
+        "no$(GR)ogi haf $(awa)ak fel$(ING) $(TH)at $(AL)was li$(NG)rs n evn lusid $(DR)ems . I was wid $(awa)ak nd bri$(THING) nd",
+        "swalo$(ING) manu$(AL)y . icould se perfektly klerly $(AL) the wyup to the horizon . I kould evn fel the vari$(ING)",
+        "levels of pan wan I tested . For a mo$(ment) I $(TH)ot I was $(AK)$(CH)u$(AL)y $(awa)ak .",
+        # paragraph
+        "$(TH)ats wen I herd her .",
+        # paragraph
+        "$(every)$(THING) is go$(ING) tobe$(AL)rit , $(AN)on .",
+        # paragraph
+        "I rekognizd $(TH)at vois $(AS) sun $(AS) I herd it . I turnd toluk $(AT) her but couldnt say $(AN)i$(THING) .",
+        "For som reson $(every)$(THING) sudnly mad sens . I remem$(BR)d the $(CR)a$(SH) , I remem$(BR)d the $(AB)ys , nd luk$(ing) $(AT) mybody . I wantd",
+        "to$(THINK) I waz stil $(AL)iv nd it was just a $(DR)im , but I nu I had did .",
+        # paragraph
+        "Iv n$(ever) ben a relijius or spiri$(CH)u$(AL) person . $(AS) su$(CH) I $(CH)alkd the hol $(THING) up to$(every) x$(PL)ana$(SH)n to N D E S",
+        "Id $(ever) herd of .",
     ],
     [
         "",
@@ -181,7 +187,7 @@ texts = [
 ]
 if __name__ == "__main__":
     for tid, text in list(enumerate(texts))[0:1]:
-        for lid, line in list(enumerate(text))[8:]:
+        for lid, line in list(enumerate(text))[20:]:
             dc = DrawingContext(
                 output_path=dir / f"passage-8-part-{tid + 1}-line-{lid + 1:02}.svg",
                 drawing_width=1100,

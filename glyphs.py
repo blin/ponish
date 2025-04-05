@@ -476,6 +476,16 @@ blends["AD"] = derive_from_letter(
     more_actions=letters["D"].draw_actions,
 )
 
+blends["AF"] = derive_from_letter(
+    "A-one-leg",
+    more_actions=letters["F"].draw_actions,
+)
+
+blends["AG"] = derive_from_letter(
+    "A-one-leg",
+    more_actions=letters["G"].draw_actions,
+)
+
 blends["AJ"] = derive_from_letter(
     "A-one-leg",
     more_actions=(
