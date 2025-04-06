@@ -487,8 +487,6 @@ thing up to every explanation to NDEs I'd ever heard of.
 
 ![](./original-images/part-2/passage-8-part-2-line-20.png)
 
-![](./original-images/056.png)
-
 ## Passage 8, part 2 (Earthographic)
 
 An almost hurt expression grew on her as the thoughts were running through my

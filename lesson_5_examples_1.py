@@ -163,31 +163,40 @@ texts = [
         "Id $(ever) herd of .",
     ],
     [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "An $(AL)most hurt x$(PR)e$(SH)n $(GR)ew on her $(AS) the $(TH)ots wer run$(ING) $(TH)ru myhed . $(SH)esem$(ING)ly saw my$(dis)$(TR)es nd puld mento",
+        "a hug .",
+        # paragraph
+        "I could fel her body warm$(TH) I could fel a tuft on her $(CH)est . I could fel ndividu$(AL) s$(TR)ands of",
+        "her man on the bak of my nek . I kould evn her her bre$(THING) . $(every)$(THING) $(AB)out her was far toliflik",
+        "tobe a $(DR)em or som fukd up halusina$(SH)n . Its wat leds metobeliv the hol $(THING) was n fakt rel .",
+        # paragraph
+        # TODO: "O-consonant" in "our" ?
+        "sav for a soft $(BR)ez $(TH)at oka$(ZH)naly $(SH)uk the levs of the $(TR)e nd our bre$(THING) , we sat n ded silens . it semd",
+        "lik an eternity . n re$(AL)ity it was only two and a half minuts or so . fanily i manajd to$(CH)ok $(out) a few words nd",
+        "$(AS)ked her to$(con)firm my $(SS)pi$(SH)ns .",
+        # paragraph
+        "$(Y-consonant)es $(AN)on , but $(Y-consonant)umust no$(every)$(THING) wil be$(AL)rit .",
+        # paragraph
+        "I began to$(con)tem$(PL)at wat todonext wen I was blindd by a $(BR)it fla$(SH) of lit . it dimd $(AF)$(TR) a fuse$(con)ds nd I",
+        "relizd i was be$(ING) puld bak . Befor i wok up for the for$(TH) nd final tim . I $(AS)ked if I would",
+        "$(ever) seher $(AG)an . $(TH)r was a $(BR)if paus nd $(SH)e smild litly .",
+        # paragraph
+        "Wen $(Y-consonant)u$(AR) ment to . $(Y-consonant)u$(AR) not $(Y-consonant)et suposd tobeher , $(AN)on .",
+        # paragraph
+        "nd $(TH)at waz it . I wok up n the kot gasp$(ING) for $(AR) . I mede$(AT)ly luk $(over) $(AT) the klok nd was",
+        "met with for twenty on P M . on of the first $(THING)s i did was $(AS)k a nurs wen xaktly i did . for sixten P M . I was",
+        "ded for just $(over) fiv minuts nd $(TH)is litl klus$(TR)fuk okurd $(over) the cours of , $(PR)esumably $(TH)is fiv minuts .",
+        # paragraph
+        "to$(TH)is day I havnt spokn to$(AN)yon $(AB)out it . $(TH)ey kould $(under)stand met$(ING) a ded relativ or evn god , but",
+        "not a kartun hors $(TH)at by $(AL) lojik $(SH)ud not xist .",
+        # paragraph
+        "$(AL) I kan say for surtan is $(TH)at mybelif n a $(AF)$(TR)lif has bin re$(AF)irmd nd I hop $(Y-consonant)ufagots",
+        "ton down the $(Y-consonant)uwil n$(ever) x $(TH)i$(NK)$(ING) tomy xperiens .",
     ],
 ]
 if __name__ == "__main__":
-    for tid, text in list(enumerate(texts))[0:1]:
-        for lid, line in list(enumerate(text))[20:]:
+    for tid, text in list(enumerate(texts))[1:2]:
+        for lid, line in list(enumerate(text))[16:]:
             dc = DrawingContext(
                 output_path=dir / f"passage-8-part-{tid + 1}-line-{lid + 1:02}.svg",
                 drawing_width=1100,
