@@ -8,8 +8,6 @@ counterparts; A, for example has 3 strokes, like so, on the far left:
 
 ![](./original-images/001.png)
 
-TODO: Alphabet drawing with stroke direction arrows
-
 But in Ponish, the 2 figures to its right, it is written with only 2 strokes, or
 even 1.
 
@@ -25,39 +23,20 @@ the normal Roman letters, and compare them to the number required for their
 Ponish counterparts via the complete chart below, and see for yourselves just
 how much writing is being saved with just a new alphabet.
 
-| Letter | Image                                                           |
-| ------ | --------------------------------------------------------------- |
-| A      | ![](./alphabet/A-two-legs.svg) or ![](./alphabet/A-one-leg.svg) |
-| B      | ![](./alphabet/B.svg)                                           |
-| C      | ![](./alphabet/C.svg)                                           |
-| D      | ![](./alphabet/D.svg)                                           |
-| E      | ![](./alphabet/E.svg)                                           |
-| F      | ![](./alphabet/F.svg)                                           |
-| G      | ![](./alphabet/G.svg)                                           |
-| H      | ![](./alphabet/H.svg)                                           |
-| I      | ![](./alphabet/I.svg)                                           |
-| J      | ![](./alphabet/J.svg)                                           |
-| K      | ![](./alphabet/K.svg)                                           |
-| L      | ![](./alphabet/L.svg)                                           |
-| M      | ![](./alphabet/M.svg)                                           |
-| N      | ![](./alphabet/N.svg)                                           |
-| O      | ![](./alphabet/O.svg)                                           |
-| P      | ![](./alphabet/P.svg)                                           |
-| Q      | ![](./alphabet/Q.svg)                                           |
-| R      | ![](./alphabet/R.svg)                                           |
-| S      | ![](./alphabet/S.svg)                                           |
-| T      | ![](./alphabet/T.svg)                                           |
-| U      | ![](./alphabet/U.svg)                                           |
-| V      | ![](./alphabet/V.svg)                                           |
-| W      | ![](./alphabet/W.svg)                                           |
-| X      | ![](./alphabet/X.svg)                                           |
-| Y      | ![](./alphabet/Y.svg)                                           |
-| Z      | ![](./alphabet/Z.svg)                                           |
-| TH     | ![](./alphabet/ð.svg)                                           |
-| SH     | ![](./alphabet/ʃ.svg)                                           |
-| CH     | ![](./alphabet/ʧ.svg)                                           |
+<!-- A-K -->
+| A | B | C | D | E | F | G | H | I | J | K |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ![](./alphabet/A-two-legs.svg) or ![](./alphabet/A-one-leg.svg) | ![](./alphabet/B.svg) | ![](./alphabet/C.svg) | ![](./alphabet/D.svg) | ![](./alphabet/E.svg) | ![](./alphabet/F.svg) | ![](./alphabet/G.svg) | ![](./alphabet/H.svg) | ![](./alphabet/I.svg) | ![](./alphabet/J.svg) | ![](./alphabet/K.svg) |
 
-TODO: transpose the table to match the original format
+<!-- L-W -->
+| L | M | N | O | P | Q | R | S | T | U | V | W |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| ![](./alphabet/L.svg) | ![](./alphabet/M.svg) | ![](./alphabet/N.svg) | ![](./alphabet/O.svg) | ![](./alphabet/P.svg) | ![](./alphabet/Q.svg) | ![](./alphabet/R.svg) | ![](./alphabet/S.svg) | ![](./alphabet/T.svg) | ![](./alphabet/U.svg) | ![](./alphabet/V.svg) | ![](./alphabet/W.svg) |
+
+<!-- X-Z plus special characters -->
+| X | Y | Z | TH | SH | CH |
+|---|---|---|----|----|-----|
+| ![](./alphabet/X.svg) | ![](./alphabet/Y.svg) | ![](./alphabet/Z.svg) | ![](./alphabet/ð.svg) | ![](./alphabet/ʃ.svg) | ![](./alphabet/ʧ.svg) |
 
 ![](./original-images/003.png)
 
