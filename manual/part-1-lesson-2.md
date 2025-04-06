@@ -455,36 +455,78 @@ Cool, hunh? And so simple.
 We're only on the 2 nd lesson, and just look at how much space is saved in these
 example sentences:
 
-| My                             | armor                             | is                             | contempt                             |
-| ------------------------------ | --------------------------------- | ------------------------------ | ------------------------------------ |
-| ![](./lesson-2/example-my.svg) | ![](./lesson-2/example-armor.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-contempt.svg) |
+![](./lesson-2/my-armor-line-1.svg)
 
-| My                             | shield                             | is                             | disgust                             |
-| ------------------------------ | ---------------------------------- | ------------------------------ | ----------------------------------- |
-| ![](./lesson-2/example-my.svg) | ![](./lesson-2/example-shield.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-disgust.svg) |
+![](./lesson-2/my-armor-line-2.svg)
 
-| My                             | sword                             | is                             | hatred                             |
-| ------------------------------ | --------------------------------- | ------------------------------ | ---------------------------------- |
-| ![](./lesson-2/example-my.svg) | ![](./lesson-2/example-sword.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-hatred.svg) |
+![](./lesson-2/my-armor-line-3.svg)
 
----
+<details>
+<summary>Earthographic</summary>
 
-| There                             | is                             | no                             | difference                             |
-| --------------------------------- | ------------------------------ | ------------------------------ | -------------------------------------- |
-| ![](./lesson-2/example-there.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-no.svg) | ![](./lesson-2/example-difference.svg) |
+My armor is contempt
 
-| between                             | what                             | is                             | right                             |
-| ----------------------------------- | -------------------------------- | ------------------------------ | --------------------------------- |
-| ![](./lesson-2/example-between.svg) | ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-right.svg) |
+My shield is disgust
 
-| and                             | what                             | is                             | necessary                             |
-| ------------------------------- | -------------------------------- | ------------------------------ | ------------------------------------- |
-| ![](./lesson-2/example-and.svg) | ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-necessary.svg) |
+My sword is hatred
+
+</details>
 
 <details>
 <summary>Original manual image</summary>
 <img src="./original-images/030.png" alt="">
 <!-- TODO: cut original image into 2 -->
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<tbody>
+<tr><td><img src="./lesson-2/my-armor-line-1.svg" width="100%"><br><img src="./original-images/lesson-2/my-armor-line-1.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-2/my-armor-line-2.svg" width="100%"><br><img src="./original-images/lesson-2/my-armor-line-2.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-2/my-armor-line-3.svg" width="100%"><br><img src="./original-images/lesson-2/my-armor-line-3.png" width="100%"></td></tr>
+</tbody>
+</table>
+
+</details>
+
+---
+
+![](./lesson-2/no-difference-line-1.svg)
+
+![](./lesson-2/no-difference-line-2.svg)
+
+![](./lesson-2/no-difference-line-3.svg)
+
+<details>
+<summary>Earthographic</summary>
+
+There is no difference between
+
+what is right and what is
+
+necessary
+
+</details>
+
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/030.png" alt="">
+<!-- TODO: cut original image into 2 -->
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<tbody>
+<tr><td><img src="./lesson-2/no-difference-line-1.svg" width="100%"><br><img src="./original-images/lesson-2/no-difference-line-1.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-2/no-difference-line-2.svg" width="100%"><br><img src="./original-images/lesson-2/no-difference-line-2.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-2/no-difference-line-3.svg" width="100%"><br><img src="./original-images/lesson-2/no-difference-line-3.png" width="100%"></td></tr>
+</tbody>
+</table>
+
 </details>
 
 ---
