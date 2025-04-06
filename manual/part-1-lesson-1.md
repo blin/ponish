@@ -81,7 +81,11 @@ usable level of skill with the minimum of time, and effort expended.
 <details>
 <summary>Earthographic</summary>
 
-The quick cute unicorn jumped over the lazy gryphon.
+The quick cute unicorn jumped
+
+<br/>
+
+over the lazy gryphon.
 
 </details>
 
@@ -101,7 +105,11 @@ The quick cute unicorn jumped over the lazy gryphon.
 <details>
 <summary>Earthographic</summary>
 
-The vexed pegasus flew high, and shat on the land-bound Hydra.
+The vexed pegasus flew high,
+
+<br/>
+
+and shat on the land-bound Hydra.
 
 </details>
 
@@ -121,7 +129,11 @@ The vexed pegasus flew high, and shat on the land-bound Hydra.
 <details>
 <summary>Earthographic</summary>
 
-The cheery and dutiful earth pony's pie won first place!
+The cheery and dutiful earth
+
+<br/>
+
+pony's pie won first place!
 
 </details>
 

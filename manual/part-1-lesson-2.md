@@ -466,7 +466,11 @@ example sentences:
 
 My armor is contempt
 
+<br/>
+
 My shield is disgust
+
+<br/>
 
 My sword is hatred
 
@@ -504,7 +508,11 @@ My sword is hatred
 
 There is no difference between
 
+<br/>
+
 what is right and what is
+
+<br/>
 
 necessary
 
@@ -597,13 +605,23 @@ Ready for the answer? Here you go:
 
 Between the times when the oceans drank Atlantis, and the rise of
 
+<br/>
+
 the sons of Aryas, there was an age undreamed of. And
+
+<br/>
 
 unto this: Conan. Destined to bear the jeweled crown of
 
+<br/>
+
 Aquilonia upon a troubled brow. It is I, his
 
+<br/>
+
 chronicler who alone can tell thee of his saga.
+
+<br/>
 
 Let me tell you of the days of high adventure!
 
