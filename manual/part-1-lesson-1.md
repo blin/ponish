@@ -88,7 +88,7 @@ The quick cute unicorn jumped over the lazy gryphon.
 <details>
 <summary>Original manual image</summary>
 
-![](./original-images/004.png)
+<img src="./original-images/004.png" alt="">
 
 </details>
 
@@ -108,7 +108,7 @@ The vexed pegasus flew high, and shat on the land-bound Hydra.
 <details>
 <summary>Original manual image</summary>
 
-![](./original-images/005.png)
+<img src="./original-images/005.png" alt="">
 
 </details>
 
@@ -128,7 +128,7 @@ The cheery and dutiful earth pony's pie won first place!
 <details>
 <summary>Original manual image</summary>
 
-![](./original-images/006.png)
+<img src="./original-images/006.png" alt="">
 
 </details>
 
