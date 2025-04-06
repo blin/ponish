@@ -2,39 +2,47 @@
 
 Now we're going to introduce a few little refinements into the system. These
 will greatly decrease the space, and strain required, while also increasing your
-speed! The first one is Ponish cursive ! I can hear you groan despite our
+speed! **The first one is Ponish cursive** ! I can hear you groan despite our
 displacement in time, and space. There is no need; unlike in English cursive,
 Ponish letters don't change. Ponish cursive is simple, and follows one rule:
 DON'T LIFT THE PEN UNLESS THERE IS A VOWEL. See how simple that is? Merely begin
 one letter from the ending of its predecessor. Like so:
 
-| B-L-U-E | BL-U-E |
-| ------- | ------ |
-| ![](./lesson-2/example-1.svg)  | ![](./lesson-2/example-2.svg) |
+| B-L-U-E                       | BL-U-E                        |
+| ----------------------------- | ----------------------------- |
+| ![](./lesson-2/example-1.svg) | ![](./lesson-2/example-2.svg) |
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+| B-L-U-E                        | BL-U-E                         |
+| ------------------------------ | ------------------------------ |
+| ![](./lesson-2/example-1.svg)  | ![](./lesson-2/example-2.svg)  |
 | ![](./original-images/007.png) | ![](./original-images/008.png) |
 
+</details>
 
 Notice how the B and L have been combined into a single character? Because we
 didn't lift the pen until the vowel came. Here, again, this time B and R:
 
-| B-R-E-A-K | BR-E-A-K |
-| --------- | -------- |
-| ![](./lesson-2/example-3.svg)  | ![](./lesson-2/example-4.svg) |
+| B-R-E-A-K                      | BR-E-A-K                       |
+| ------------------------------ | ------------------------------ |
+| ![](./lesson-2/example-3.svg)  | ![](./lesson-2/example-4.svg)  |
 | ![](./original-images/009.png) | ![](./original-images/010.png) |
 
-| S-T-A-N-D | ST-A-ND |
-| --------- | ------- |
-| ![](./lesson-2/example-5.svg)  | ![](./lesson-2/example-6.svg) |
+| S-T-A-N-D                      | ST-A-ND                        |
+| ------------------------------ | ------------------------------ |
+| ![](./lesson-2/example-5.svg)  | ![](./lesson-2/example-6.svg)  |
 | ![](./original-images/011.png) | ![](./original-images/012.png) |
 
-| S-T-R-I-K-E | STR-I-K-E |
-| ----------- | --------- |
-| ![](./lesson-2/example-7.svg)  | ![](./lesson-2/example-8.svg) |
+| S-T-R-I-K-E                    | STR-I-K-E                      |
+| ------------------------------ | ------------------------------ |
+| ![](./lesson-2/example-7.svg)  | ![](./lesson-2/example-8.svg)  |
 | ![](./original-images/013.png) | ![](./original-images/014.png) |
 
-| E-N-V-I-S-I-O-N | E-NV-I-SION |
-| --------------- | ----------- |
-| ![](./lesson-2/example-9.svg) | ![](./lesson-2/example-10.svg) |
+| E-N-V-I-S-I-O-N                | E-NV-I-SION                    |
+| ------------------------------ | ------------------------------ |
+| ![](./lesson-2/example-9.svg)  | ![](./lesson-2/example-10.svg) |
 | ![](./original-images/015.png) | ![](./original-images/016.png) |
 
 Woah! What happened with this one? Well, this is an example of both the
@@ -48,13 +56,13 @@ vowel, thus 'SION' becomes 'SHN,' in Ponish.
 
 Other similar examples:
 
-| N-A-T-I-O-N | N-A-TION |
-| ----------- | -------- |
+| N-A-T-I-O-N                    | N-A-TION                       |
+| ------------------------------ | ------------------------------ |
 | ![](./lesson-2/example-11.svg) | ![](./lesson-2/example-12.svg) |
 | ![](./original-images/017.png) | ![](./original-images/020.png) |
 
-| P-A-S-S-I-O-N | P-A-SSION |
-| ------------- | --------- |
+| P-A-S-S-I-O-N                  | P-A-SSION                      |
+| ------------------------------ | ------------------------------ |
 | ![](./lesson-2/example-13.svg) | ![](./lesson-2/example-14.svg) |
 | ![](./original-images/018.png) | ![](./original-images/019.png) |
 
@@ -67,8 +75,6 @@ matters! You see, in Ponish, the line of writing can be divided up into 3 areas
 like so:
 
 ![](./original-images/021.png)
-
-TODO: line of writing
 
 The first letter of the word, in this example 'A' forms the 'base' of the word,
 its anchor. Anything in the space above it is in the A/E line, anything even
@@ -112,16 +118,16 @@ able to read the passages in which those examples are couched.
 
 Here are some more examples of line-position vowels in action:
 
-| TAME or TEAM | TIME | TOME or TOMB |
-| ------------ | ---- | ------------ |
+| TAME or TEAM                       | TIME                               | TOME or TOMB                       |
+| ---------------------------------- | ---------------------------------- | ---------------------------------- |
 | ![](./lesson-2/example-t-AE-m.svg) | ![](./lesson-2/example-t-IY-m.svg) | ![](./lesson-2/example-t-OU-m.svg) |
 
-| FAN | FINE | FUN |
-| --- | ---- | --- |
+| FAN                                | FINE                               | FUN                                |
+| ---------------------------------- | ---------------------------------- | ---------------------------------- |
 | ![](./lesson-2/example-f-AE-n.svg) | ![](./lesson-2/example-f-IY-n.svg) | ![](./lesson-2/example-f-OU-n.svg) |
 
-| LAP | LIP | LOOP |
-| --- | --- | ---- |
+| LAP                                | LIP                                | LOOP                               |
+| ---------------------------------- | ---------------------------------- | ---------------------------------- |
 | ![](./lesson-2/example-l-AE-p.svg) | ![](./lesson-2/example-l-IY-p.svg) | ![](./lesson-2/example-l-OU-p.svg) |
 
 ![](./original-images/025.png)
@@ -132,13 +138,12 @@ But what if it's a dipthong, i.e. if the next discernible sound is also a vowel?
 No problem, just write the second vowel in the line-position of the first, like
 so:
 
-
-| POND | POUND |
-| ---- | ----- |
+| POND                             | POUND                             |
+| -------------------------------- | --------------------------------- |
 | ![](./lesson-2/example-pond.svg) | ![](./lesson-2/example-pound.svg) |
 
-| CRATE | CREATE |
-| ----- | ------ |
+| CRATE                             | CREATE                             |
+| --------------------------------- | ---------------------------------- |
 | ![](./lesson-2/example-crate.svg) | ![](./lesson-2/example-create.svg) |
 
 ![](./original-images/026.png)
@@ -147,12 +152,12 @@ TODO: cut original image into 2
 
 And if the final sound in a word is a vowel? Indicate it with a dot, like this:
 
-| DAY | DYE | DOE |
-| --- | --- | --- |
+| DAY                                       | DYE                                       | DOE                                       |
+| ----------------------------------------- | ----------------------------------------- | ----------------------------------------- |
 | ![](./lesson-2/example-d-AE-high-dot.svg) | ![](./lesson-2/example-d-IY-high-dot.svg) | ![](./lesson-2/example-d-OU-high-dot.svg) |
 
-| SEE | SIGH | SEW |
-| --- | ---- | --- |
+| SEE                                       | SIGH                                      | SEW                                       |
+| ----------------------------------------- | ----------------------------------------- | ----------------------------------------- |
 | ![](./lesson-2/example-s-AE-high-dot.svg) | ![](./lesson-2/example-s-IY-high-dot.svg) | ![](./lesson-2/example-s-OU-high-dot.svg) |
 
 ![](./original-images/027.png)
@@ -161,21 +166,21 @@ TODO: cut original image into 2
 
 What if it starts with a vowel? Write it, then proceed as normal:
 
-| EGG |
-| --- |
+| EGG                             |
+| ------------------------------- |
 | ![](./lesson-2/example-egg.svg) |
 
-| OVEN |
-| ---- |
+| OVEN                             |
+| -------------------------------- |
 | ![](./lesson-2/example-oven.svg) |
 
 ![](./original-images/028.png)
 
 TODO: cut original image into 2
 
-**The third, and final refinement** we're going to introduce in this lesson is also
-the simplest, thank Celestia. After all this, you're probably glad to hear it.
-This is a lot to take in in a single lesson, believe me, I know, but these 3
+**The third, and final refinement** we're going to introduce in this lesson is
+also the simplest, thank Celestia. After all this, you're probably glad to hear
+it. This is a lot to take in in a single lesson, believe me, I know, but these 3
 techniques of Ponish work synergistically together, and so should be introduced
 together, that they might be practiced together, from the first. Chin up, if the
 little colts, and fillies can handle it, so can you!
@@ -186,31 +191,28 @@ you put it in the top left corner of the word you are writing, it stands in for
 the indefinite articles 'a,' and 'an,' but if you put it in the bottom left
 corner, it stands for 'the,' like so:
 
-| a pony | the pony |
-| ---- | ----- |
+| a pony                             | the pony                             |
+| ---------------------------------- | ------------------------------------ |
 | ![](./lesson-2/example-a-pony.svg) | ![](./lesson-2/example-the-pony.svg) |
 
-| a bottle | the bottle |
-| ---- | ----- |
+| a bottle                             | the bottle                             |
+| ------------------------------------ | -------------------------------------- |
 | ![](./lesson-2/example-a-bottle.svg) | ![](./lesson-2/example-the-bottle.svg) |
 
-| a starship | the starship |
-| ---- | ----- |
+| a starship                             | the starship                             |
+| -------------------------------------- | ---------------------------------------- |
 | ![](./lesson-2/example-a-starship.svg) | ![](./lesson-2/example-the-starship.svg) |
 
-
-| an orange | the orange |
-| ---- | ----- |
+| an orange                            | the orange                             |
+| ------------------------------------ | -------------------------------------- |
 | ![](./lesson-2/example-a-orange.svg) | ![](./lesson-2/example-the-orange.svg) |
 
-
-| a edge | the edge |
-| ---- | ----- |
+| a edge                             | the edge                             |
+| ---------------------------------- | ------------------------------------ |
 | ![](./lesson-2/example-a-edge.svg) | ![](./lesson-2/example-the-edge.svg) |
 
-
-| a buffalo | the buffalo |
-| ---- | ----- |
+| a buffalo                             | the buffalo                             |
+| ------------------------------------- | --------------------------------------- |
 | ![](./lesson-2/example-a-buffalo.svg) | ![](./lesson-2/example-the-buffalo.svg) |
 
 ![](./original-images/029.png)
@@ -228,31 +230,30 @@ Cool, hunh? And so simple.
 We're only on the 2 nd lesson, and just look at how much space is saved in these
 example sentences:
 
-| My | armor | is | contempt |
-| ---- | ----- | --- | --- |
+| My                             | armor                             | is                             | contempt                             |
+| ------------------------------ | --------------------------------- | ------------------------------ | ------------------------------------ |
 | ![](./lesson-2/example-my.svg) | ![](./lesson-2/example-armor.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-contempt.svg) |
 
-| My | shield | is | disgust |
-| ---- | ----- | --- | --- |
+| My                             | shield                             | is                             | disgust                             |
+| ------------------------------ | ---------------------------------- | ------------------------------ | ----------------------------------- |
 | ![](./lesson-2/example-my.svg) | ![](./lesson-2/example-shield.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-disgust.svg) |
 
-| My | sword | is | hatred |
-| ---- | ----- | --- | --- |
+| My                             | sword                             | is                             | hatred                             |
+| ------------------------------ | --------------------------------- | ------------------------------ | ---------------------------------- |
 | ![](./lesson-2/example-my.svg) | ![](./lesson-2/example-sword.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-hatred.svg) |
 
 ---
 
-| There | is | no | difference |
-| ---- | ----- | --- | --- |
+| There                             | is                             | no                             | difference                             |
+| --------------------------------- | ------------------------------ | ------------------------------ | -------------------------------------- |
 | ![](./lesson-2/example-there.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-no.svg) | ![](./lesson-2/example-difference.svg) |
 
-
-| between | what | is | right |
-| ---- | ----- | --- | --- |
+| between                             | what                             | is                             | right                             |
+| ----------------------------------- | -------------------------------- | ------------------------------ | --------------------------------- |
 | ![](./lesson-2/example-between.svg) | ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-right.svg) |
 
-| and | what | is | necessary |
-| --- | ---- | ----- | --- |
+| and                             | what                             | is                             | necessary                             |
+| ------------------------------- | -------------------------------- | ------------------------------ | ------------------------------------- |
 | ![](./lesson-2/example-and.svg) | ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-necessary.svg) |
 
 ![](./original-images/030.png)
@@ -261,12 +262,12 @@ TODO: cut original image into 2
 
 ---
 
-| The rewards | of | tolerance | are |
-| ---- | ----- | --- | --- |
+| The rewards                             | of                             | tolerance                             | are                             |
+| --------------------------------------- | ------------------------------ | ------------------------------------- | ------------------------------- |
 | ![](./lesson-2/example-the-rewards.svg) | ![](./lesson-2/example-of.svg) | ![](./lesson-2/example-tolerance.svg) | ![](./lesson-2/example-are.svg) |
 
-| treachery | and | betrayal |
-| --- | --- | --- |
+| treachery                             | and                             | betrayal                             |
+| ------------------------------------- | ------------------------------- | ------------------------------------ |
 | ![](./lesson-2/example-treachery.svg) | ![](./lesson-2/example-and.svg) | ![](./lesson-2/example-betrayal.svg) |
 
 ![](./original-images/031.png)
@@ -294,36 +295,31 @@ the Earthographic, and Ponish passages; the difference is significant, isn't it?
 Imagine how much time, and space you'll be saving writing this way, and we
 aren't even through with the lessons yet!
 
-While you're reading, keep in mind: no wrong spelling , and sound, not spelling .
+While you're reading, keep in mind: no wrong spelling , and sound, not spelling
+.
 
 ## Lesson 2 Passage (Ponish)
 
-![](./lesson-2/passage-1-line-1.svg)
-![](./original-images/conan-line-1.png)
+![](./lesson-2/passage-1-line-1.svg) ![](./original-images/conan-line-1.png)
 
-![](./lesson-2/passage-1-line-2.svg)
-![](./original-images/conan-line-2.png)
+![](./lesson-2/passage-1-line-2.svg) ![](./original-images/conan-line-2.png)
 
-![](./lesson-2/passage-1-line-3.svg)
-![](./original-images/conan-line-3.png)
+![](./lesson-2/passage-1-line-3.svg) ![](./original-images/conan-line-3.png)
 
-![](./lesson-2/passage-1-line-4.svg)
-![](./original-images/conan-line-4.png)
+![](./lesson-2/passage-1-line-4.svg) ![](./original-images/conan-line-4.png)
 
-![](./lesson-2/passage-1-line-5.svg)
-![](./original-images/conan-line-5.png)
+![](./lesson-2/passage-1-line-5.svg) ![](./original-images/conan-line-5.png)
 
-![](./lesson-2/passage-1-line-6.svg)
-![](./original-images/conan-line-6.png)
+![](./lesson-2/passage-1-line-6.svg) ![](./original-images/conan-line-6.png)
 
 Ready for the answer? Here you go:
 
 ## Lesson 2 Passage (Earthographic)
 
-*Between the times when the oceans drank Atlantis, and the rise of the sons of
+_Between the times when the oceans drank Atlantis, and the rise of the sons of
 Aryas, there was an age undreamed of. And unto this: Conan. Destined to bear the
 jeweled crown of Aquilonia upon a troubled brow. It is I, his chronicler who
-alone can tell thee of his saga. Let me tell you of the days of high adventure!*
+alone can tell thee of his saga. Let me tell you of the days of high adventure!_
 
 ---
 
@@ -335,15 +331,15 @@ together. You need to both read, and write, so practice both reading, and
 writing. I would not have taken the time to write this paragraph if I did not
 think it important, so please, take it to heart, and practice both skills.
 
-
 ### Editor notes on lesson 2 passage
 
-EDITOR NOTE [single-size-downward]: "AT" in "Atlantis" is single-size
-since the last stroke is downward and next character is a consonant.
+EDITOR NOTE [single-size-downward]: "AT" in "Atlantis" is single-size since the
+last stroke is downward and next character is a consonant.
 
 EDITOR NOTE [single-size-downward]: "AJ" in "age"
 
-TODO [double-size-upward]: AN blend ends in top-right corner, so the overall glyph can be double-sized
+TODO [double-size-upward]: AN blend ends in top-right corner, so the overall
+glyph can be double-sized
 
 TODO [double-size-upward]: U into N
 
