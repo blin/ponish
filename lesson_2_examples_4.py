@@ -36,3 +36,16 @@ if __name__ == "__main__":
         )
         with dc as (p, t):
             draw_sentence(t, p, line)
+
+text = [
+    "the rewards of tolerans $(AR) $(TR)e$(CH)ery $(AN)d be$(TR)a$(Y-consonant)al",
+]
+if __name__ == "__main__":
+    for i, line in list(enumerate(text)):
+        dc = DrawingContext(
+            output_path=dir / f"rewards-line-{i + 1}.svg",
+            drawing_width=750,
+            drawing_height=150,
+        )
+        with dc as (p, t):
+            draw_sentence(t, p, line)

@@ -531,17 +531,29 @@ necessary
 
 ---
 
-| The rewards                             | of                             | tolerance                             | are                             |
-| --------------------------------------- | ------------------------------ | ------------------------------------- | ------------------------------- |
-| ![](./lesson-2/example-the-rewards.svg) | ![](./lesson-2/example-of.svg) | ![](./lesson-2/example-tolerance.svg) | ![](./lesson-2/example-are.svg) |
+![](./lesson-2/rewards-line-1.svg)
 
-| treachery                             | and                             | betrayal                             |
-| ------------------------------------- | ------------------------------- | ------------------------------------ |
-| ![](./lesson-2/example-treachery.svg) | ![](./lesson-2/example-and.svg) | ![](./lesson-2/example-betrayal.svg) |
+<details>
+<summary>Earthographic</summary>
+
+The rewards of tolerance are treachery and betrayal
+
+</details>
 
 <details>
 <summary>Original manual image</summary>
 <img src="./original-images/031.png" alt="">
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<tbody>
+<tr><td><img src="./lesson-2/rewards-line-1.svg" width="100%"><br><img src="./original-images/lesson-2/rewards-line-1.png" width="100%"></td></tr>
+</tbody>
+</table>
+
 </details>
 
 ---
