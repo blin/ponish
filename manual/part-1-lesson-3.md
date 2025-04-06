@@ -320,3 +320,7 @@ to be pleasant, and accommodate him, but my head began to hurt from his
 banality. I almost didn't notice it had happened, but I threw up all over him.
 He was not pleased. I couldn't stop laughing.
 </details>
+
+[Next: Lesson 4](./part-1-lesson-4.md)
+
+[Back: Lesson 2](./part-1-lesson-2.md)

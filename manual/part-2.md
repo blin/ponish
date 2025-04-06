@@ -523,3 +523,5 @@ not exist.
 
 All I can say for certain is that my belief in an afterlife has been reaffirmed
 and I hope you faggots tone down the \>you will never x thanks to my experience.
+
+[Back: Index](./index.md)

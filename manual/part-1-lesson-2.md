@@ -346,3 +346,7 @@ EDITOR NOTE [single-size-downward]: "AJ" in "age"
 TODO [double-size-upward]: AN blend ends in top-right corner, so the overall glyph can be double-sized
 
 TODO [double-size-upward]: U into N
+
+[Next: Lesson 3](./part-1-lesson-3.md)
+
+[Back: Lesson 1](./part-1-lesson-1.md)

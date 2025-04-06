@@ -101,3 +101,7 @@ prepared, and even if you don't, it's still a useful skill to possess on this
 side of The Dreaming.
 
 Now then, let's end the booklet with some more practice material. Enjoy!
+
+[Next: Part 2](./part-2.md)
+
+[Back: Lesson 3](./part-1-lesson-4.md)

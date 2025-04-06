@@ -133,3 +133,7 @@ you are missing out, but will still possess a writing method marginally faster
 than standard English, and likely to prevent casual spying on your journal.
 
 But you really would be missing out!
+
+[Next: Lesson 2](./part-1-lesson-2.md)
+
+[Back: Part 1](./part-1.md)
