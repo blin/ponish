@@ -15,35 +15,151 @@ one letter from the ending of its predecessor. Like so:
 <details>
 <summary>Side by side with original manual image</summary>
 
-| B-L-U-E                        | BL-U-E                         |
-| ------------------------------ | ------------------------------ |
-| ![](./lesson-2/example-1.svg)  | ![](./lesson-2/example-2.svg)  |
-| ![](./original-images/007.png) | ![](./original-images/008.png) |
+<table>
+<thead>
+<tr>
+<th>B-L-U-E</th>
+<th>BL-U-E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./lesson-2/example-1.svg"></td>
+<td><img src="./lesson-2/example-2.svg"></td>
+</tr>
+<tr>
+<td><img src="./original-images/007.png"></td>
+<td><img src="./original-images/008.png"></td>
+</tr>
+</tbody>
+</table>
 
 </details>
+
+---
 
 Notice how the B and L have been combined into a single character? Because we
 didn't lift the pen until the vowel came. Here, again, this time B and R:
 
-| B-R-E-A-K                      | BR-E-A-K                       |
-| ------------------------------ | ------------------------------ |
-| ![](./lesson-2/example-3.svg)  | ![](./lesson-2/example-4.svg)  |
-| ![](./original-images/009.png) | ![](./original-images/010.png) |
+| B-R-E-A-K                     | BR-E-A-K                      |
+| ----------------------------- | ----------------------------- |
+| ![](./lesson-2/example-3.svg) | ![](./lesson-2/example-4.svg) |
 
-| S-T-A-N-D                      | ST-A-ND                        |
-| ------------------------------ | ------------------------------ |
-| ![](./lesson-2/example-5.svg)  | ![](./lesson-2/example-6.svg)  |
-| ![](./original-images/011.png) | ![](./original-images/012.png) |
+<details>
+<summary>Side by side with original manual image</summary>
 
-| S-T-R-I-K-E                    | STR-I-K-E                      |
-| ------------------------------ | ------------------------------ |
-| ![](./lesson-2/example-7.svg)  | ![](./lesson-2/example-8.svg)  |
-| ![](./original-images/013.png) | ![](./original-images/014.png) |
+<table>
+<thead>
+<tr>
+<th>B-R-E-A-K</th>
+<th>BR-E-A-K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./lesson-2/example-3.svg"></td>
+<td><img src="./lesson-2/example-4.svg"></td>
+</tr>
+<tr>
+<td><img src="./original-images/009.png"></td>
+<td><img src="./original-images/010.png"></td>
+</tr>
+</tbody>
+</table>
 
-| E-N-V-I-S-I-O-N                | E-NV-I-SION                    |
-| ------------------------------ | ------------------------------ |
-| ![](./lesson-2/example-9.svg)  | ![](./lesson-2/example-10.svg) |
-| ![](./original-images/015.png) | ![](./original-images/016.png) |
+</details>
+
+---
+
+| S-T-A-N-D                     | ST-A-ND                       |
+| ----------------------------- | ----------------------------- |
+| ![](./lesson-2/example-5.svg) | ![](./lesson-2/example-6.svg) |
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<thead>
+<tr>
+<th>S-T-A-N-D</th>
+<th>ST-A-ND</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./lesson-2/example-5.svg"></td>
+<td><img src="./lesson-2/example-6.svg"></td>
+</tr>
+<tr>
+<td><img src="./original-images/011.png"></td>
+<td><img src="./original-images/012.png"></td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+---
+
+| S-T-R-I-K-E                   | STR-I-K-E                     |
+| ----------------------------- | ----------------------------- |
+| ![](./lesson-2/example-7.svg) | ![](./lesson-2/example-8.svg) |
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<thead>
+<tr>
+<th>S-T-R-I-K-E</th>
+<th>STR-I-K-E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./lesson-2/example-7.svg"></td>
+<td><img src="./lesson-2/example-8.svg"></td>
+</tr>
+<tr>
+<td><img src="./original-images/013.png"></td>
+<td><img src="./original-images/014.png"></td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+---
+
+| E-N-V-I-S-I-O-N               | E-NV-I-SION                    |
+| ----------------------------- | ------------------------------ |
+| ![](./lesson-2/example-9.svg) | ![](./lesson-2/example-10.svg) |
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<thead>
+<tr>
+<th>E-N-V-I-S-I-O-N</th>
+<th>E-NV-I-SION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./lesson-2/example-9.svg"></td>
+<td><img src="./lesson-2/example-10.svg"></td>
+</tr>
+<tr>
+<td><img src="./original-images/015.png"></td>
+<td><img src="./original-images/016.png"></td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+---
 
 Woah! What happened with this one? Well, this is an example of both the
 unfortunate disconnect between English spelling, and pronunciation (GHOTI,
@@ -59,12 +175,62 @@ Other similar examples:
 | N-A-T-I-O-N                    | N-A-TION                       |
 | ------------------------------ | ------------------------------ |
 | ![](./lesson-2/example-11.svg) | ![](./lesson-2/example-12.svg) |
-| ![](./original-images/017.png) | ![](./original-images/020.png) |
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<thead>
+<tr>
+<th>N-A-T-I-O-N</th>
+<th>N-A-TION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./lesson-2/example-11.svg"></td>
+<td><img src="./lesson-2/example-12.svg"></td>
+</tr>
+<tr>
+<td><img src="./original-images/017.png"></td>
+<td><img src="./original-images/020.png"></td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+---
 
 | P-A-S-S-I-O-N                  | P-A-SSION                      |
 | ------------------------------ | ------------------------------ |
 | ![](./lesson-2/example-13.svg) | ![](./lesson-2/example-14.svg) |
-| ![](./original-images/018.png) | ![](./original-images/019.png) |
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<thead>
+<tr>
+<th>P-A-S-S-I-O-N</th>
+<th>P-A-SSION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./lesson-2/example-13.svg"></td>
+<td><img src="./lesson-2/example-14.svg"></td>
+</tr>
+<tr>
+<td><img src="./original-images/018.png"></td>
+<td><img src="./original-images/019.png"></td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+---
 
 Written by sound, not 'spelling.' Cool, hunh? And practical. I did include some
 silent letters, which I normally wouldn't have done, for the sake of clarity,
@@ -74,7 +240,7 @@ Moving right along to the second part of the lesson : letter placement. It
 matters! You see, in Ponish, the line of writing can be divided up into 3 areas
 like so:
 
-![](./original-images/021.png)
+<img src="./original-images/021.png" alt="">
 
 The first letter of the word, in this example 'A' forms the 'base' of the word,
 its anchor. Anything in the space above it is in the A/E line, anything even
@@ -90,20 +256,41 @@ anchor, then the next consonant, G with its top even with the A/E line:
 
 ![](./lesson-2/example-b-AE-g.svg)
 
-![](./original-images/022.png)
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/022.png" alt="">
+
+</details>
+
+---
 
 This can also mean beg, of course, but context will tell you which you mean. If
 you write the G along the I/Y line, you instead write the word 'big:'
 
 ![](./lesson-2/example-b-IY-g.svg)
 
-![](./original-images/023.png)
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/023.png" alt="">
+
+</details>
+
+---
 
 And if you write the G with the O/U line, you produce both 'bog,' and 'bug:'
 
 ![](./lesson-2/example-b-OU-g.svg)
 
-![](./original-images/024.png)
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/024.png" alt="">
+
+</details>
+
+---
 
 As before, context will be your guide; 'there's a bug in my rice,' vs. 'there's
 a bog in my rice;' one makes sense, the other doesn't. For those instances where
@@ -118,65 +305,93 @@ able to read the passages in which those examples are couched.
 
 Here are some more examples of line-position vowels in action:
 
-| TAME or TEAM                       | TIME                               | TOME or TOMB                       |
-| ---------------------------------- | ---------------------------------- | ---------------------------------- |
-| ![](./lesson-2/example-t-AE-m.svg) | ![](./lesson-2/example-t-IY-m.svg) | ![](./lesson-2/example-t-OU-m.svg) |
+| Earthographic | Ponish                             |
+| ------------- | ---------------------------------- |
+| TAME or TEAM  | ![](./lesson-2/example-t-AE-m.svg) |
+| TIME          | ![](./lesson-2/example-t-IY-m.svg) |
+| TOME or TOMB  | ![](./lesson-2/example-t-OU-m.svg) |
 
-| FAN                                | FINE                               | FUN                                |
-| ---------------------------------- | ---------------------------------- | ---------------------------------- |
-| ![](./lesson-2/example-f-AE-n.svg) | ![](./lesson-2/example-f-IY-n.svg) | ![](./lesson-2/example-f-OU-n.svg) |
+| Earthographic | Ponish                             |
+| ------------- | ---------------------------------- |
+| FAN           | ![](./lesson-2/example-f-AE-n.svg) |
+| FINE          | ![](./lesson-2/example-f-IY-n.svg) |
+| FUN           | ![](./lesson-2/example-f-OU-n.svg) |
 
-| LAP                                | LIP                                | LOOP                               |
-| ---------------------------------- | ---------------------------------- | ---------------------------------- |
-| ![](./lesson-2/example-l-AE-p.svg) | ![](./lesson-2/example-l-IY-p.svg) | ![](./lesson-2/example-l-OU-p.svg) |
+| Earthographic | Ponish                             |
+| ------------- | ---------------------------------- |
+| LAP           | ![](./lesson-2/example-l-AE-p.svg) |
+| LIP           | ![](./lesson-2/example-l-IY-p.svg) |
+| LOOP          | ![](./lesson-2/example-l-OU-p.svg) |
 
-![](./original-images/025.png)
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/025.png" alt="">
+<!-- TODO: cut original image into 3 -->
+</details>
 
-TODO: cut original image into 3
+---
 
 But what if it's a dipthong, i.e. if the next discernible sound is also a vowel?
 No problem, just write the second vowel in the line-position of the first, like
 so:
 
-| POND                             | POUND                             |
-| -------------------------------- | --------------------------------- |
-| ![](./lesson-2/example-pond.svg) | ![](./lesson-2/example-pound.svg) |
+| Earthographic | Ponish                            |
+| ------------- | --------------------------------- |
+| POND          | ![](./lesson-2/example-pond.svg)  |
+| POUND         | ![](./lesson-2/example-pound.svg) |
 
-| CRATE                             | CREATE                             |
-| --------------------------------- | ---------------------------------- |
-| ![](./lesson-2/example-crate.svg) | ![](./lesson-2/example-create.svg) |
+| Earthographic | Ponish                             |
+| ------------- | ---------------------------------- |
+| CRATE         | ![](./lesson-2/example-crate.svg)  |
+| CREATE        | ![](./lesson-2/example-create.svg) |
 
-![](./original-images/026.png)
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/026.png" alt="">
+<!-- TODO: cut original image into 2 -->
+</details>
 
-TODO: cut original image into 2
+---
 
 And if the final sound in a word is a vowel? Indicate it with a dot, like this:
 
-| DAY                                       | DYE                                       | DOE                                       |
-| ----------------------------------------- | ----------------------------------------- | ----------------------------------------- |
-| ![](./lesson-2/example-d-AE-high-dot.svg) | ![](./lesson-2/example-d-IY-high-dot.svg) | ![](./lesson-2/example-d-OU-high-dot.svg) |
+| Earthographic | Ponish                                    |
+| ------------- | ----------------------------------------- |
+| DAY           | ![](./lesson-2/example-d-AE-high-dot.svg) |
+| DYE           | ![](./lesson-2/example-d-IY-high-dot.svg) |
+| DOE           | ![](./lesson-2/example-d-OU-high-dot.svg) |
 
-| SEE                                       | SIGH                                      | SEW                                       |
-| ----------------------------------------- | ----------------------------------------- | ----------------------------------------- |
-| ![](./lesson-2/example-s-AE-high-dot.svg) | ![](./lesson-2/example-s-IY-high-dot.svg) | ![](./lesson-2/example-s-OU-high-dot.svg) |
+| Earthographic | Ponish                                    |
+| ------------- | ----------------------------------------- |
+| SEE           | ![](./lesson-2/example-s-AE-high-dot.svg) |
+| SIGH          | ![](./lesson-2/example-s-IY-high-dot.svg) |
+| SEW           | ![](./lesson-2/example-s-OU-high-dot.svg) |
 
-![](./original-images/027.png)
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/027.png" alt="">
+<!-- TODO: cut original image into 2 -->
+</details>
 
-TODO: cut original image into 2
+---
 
 What if it starts with a vowel? Write it, then proceed as normal:
 
-| EGG                             |
-| ------------------------------- |
-| ![](./lesson-2/example-egg.svg) |
+| Earthographic | Ponish                          |
+| ------------- | ------------------------------- |
+| EGG           | ![](./lesson-2/example-egg.svg) |
 
-| OVEN                             |
-| -------------------------------- |
-| ![](./lesson-2/example-oven.svg) |
+| Earthographic | Ponish                           |
+| ------------- | -------------------------------- |
+| OVEN          | ![](./lesson-2/example-oven.svg) |
 
-![](./original-images/028.png)
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/028.png" alt="">
+<!-- TODO: cut original image into 2 -->
+</details>
 
-TODO: cut original image into 2
+---
 
 **The third, and final refinement** we're going to introduce in this lesson is
 also the simplest, thank Celestia. After all this, you're probably glad to hear
@@ -191,33 +406,43 @@ you put it in the top left corner of the word you are writing, it stands in for
 the indefinite articles 'a,' and 'an,' but if you put it in the bottom left
 corner, it stands for 'the,' like so:
 
-| a pony                             | the pony                             |
-| ---------------------------------- | ------------------------------------ |
-| ![](./lesson-2/example-a-pony.svg) | ![](./lesson-2/example-the-pony.svg) |
+| Earthographic | Ponish                               |
+| ------------- | ------------------------------------ |
+| a pony        | ![](./lesson-2/example-a-pony.svg)   |
+| the pony      | ![](./lesson-2/example-the-pony.svg) |
 
-| a bottle                             | the bottle                             |
-| ------------------------------------ | -------------------------------------- |
-| ![](./lesson-2/example-a-bottle.svg) | ![](./lesson-2/example-the-bottle.svg) |
+| Earthographic | Ponish                                 |
+| ------------- | -------------------------------------- |
+| a bottle      | ![](./lesson-2/example-a-bottle.svg)   |
+| the bottle    | ![](./lesson-2/example-the-bottle.svg) |
 
-| a starship                             | the starship                             |
-| -------------------------------------- | ---------------------------------------- |
-| ![](./lesson-2/example-a-starship.svg) | ![](./lesson-2/example-the-starship.svg) |
+| Earthographic | Ponish                                   |
+| ------------- | ---------------------------------------- |
+| a starship    | ![](./lesson-2/example-a-starship.svg)   |
+| the starship  | ![](./lesson-2/example-the-starship.svg) |
 
-| an orange                            | the orange                             |
-| ------------------------------------ | -------------------------------------- |
-| ![](./lesson-2/example-a-orange.svg) | ![](./lesson-2/example-the-orange.svg) |
+| Earthographic | Ponish                                 |
+| ------------- | -------------------------------------- |
+| an orange     | ![](./lesson-2/example-a-orange.svg)   |
+| the orange    | ![](./lesson-2/example-the-orange.svg) |
 
-| a edge                             | the edge                             |
-| ---------------------------------- | ------------------------------------ |
-| ![](./lesson-2/example-a-edge.svg) | ![](./lesson-2/example-the-edge.svg) |
+| Earthographic | Ponish                               |
+| ------------- | ------------------------------------ |
+| a edge        | ![](./lesson-2/example-a-edge.svg)   |
+| the edge      | ![](./lesson-2/example-the-edge.svg) |
 
-| a buffalo                             | the buffalo                             |
-| ------------------------------------- | --------------------------------------- |
-| ![](./lesson-2/example-a-buffalo.svg) | ![](./lesson-2/example-the-buffalo.svg) |
+| Earthographic | Ponish                                  |
+| ------------- | --------------------------------------- |
+| a buffalo     | ![](./lesson-2/example-a-buffalo.svg)   |
+| the buffalo   | ![](./lesson-2/example-the-buffalo.svg) |
 
-![](./original-images/029.png)
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/029.png" alt="">
+<!-- TODO: cut original image into 6 -->
+</details>
 
-TODO: cut original image into 6
+---
 
 Did you know those are the most commonly written words? Well they are. Think of
 how many times you use them, and by reducing them to mere dots, think of all the
@@ -256,9 +481,11 @@ example sentences:
 | ------------------------------- | -------------------------------- | ------------------------------ | ------------------------------------- |
 | ![](./lesson-2/example-and.svg) | ![](./lesson-2/example-what.svg) | ![](./lesson-2/example-is.svg) | ![](./lesson-2/example-necessary.svg) |
 
-![](./original-images/030.png)
-
-TODO: cut original image into 2
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/030.png" alt="">
+<!-- TODO: cut original image into 2 -->
+</details>
 
 ---
 
@@ -270,7 +497,12 @@ TODO: cut original image into 2
 | ------------------------------------- | ------------------------------- | ------------------------------------ |
 | ![](./lesson-2/example-treachery.svg) | ![](./lesson-2/example-and.svg) | ![](./lesson-2/example-betrayal.svg) |
 
-![](./original-images/031.png)
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/031.png" alt="">
+</details>
+
+---
 
 You should also notice that the 'A' in 'Armor,' 'Are,' and 'And,' are written
 with a single stroke. This is done when the A leads into another letter so as to
@@ -298,28 +530,46 @@ aren't even through with the lessons yet!
 While you're reading, keep in mind: no wrong spelling , and sound, not spelling
 .
 
-## Lesson 2 Passage (Ponish)
+## Lesson 2 Passage
 
-![](./lesson-2/passage-1-line-1.svg) ![](./original-images/conan-line-1.png)
-
-![](./lesson-2/passage-1-line-2.svg) ![](./original-images/conan-line-2.png)
-
-![](./lesson-2/passage-1-line-3.svg) ![](./original-images/conan-line-3.png)
-
-![](./lesson-2/passage-1-line-4.svg) ![](./original-images/conan-line-4.png)
-
-![](./lesson-2/passage-1-line-5.svg) ![](./original-images/conan-line-5.png)
-
-![](./lesson-2/passage-1-line-6.svg) ![](./original-images/conan-line-6.png)
+![](./lesson-2/passage-1-line-1.svg) ![](./lesson-2/passage-1-line-2.svg)
+![](./lesson-2/passage-1-line-3.svg) ![](./lesson-2/passage-1-line-4.svg)
+![](./lesson-2/passage-1-line-5.svg) ![](./lesson-2/passage-1-line-6.svg)
 
 Ready for the answer? Here you go:
 
-## Lesson 2 Passage (Earthographic)
+<details>
+<summary>Earthographic</summary>
 
 _Between the times when the oceans drank Atlantis, and the rise of the sons of
 Aryas, there was an age undreamed of. And unto this: Conan. Destined to bear the
 jeweled crown of Aquilonia upon a troubled brow. It is I, his chronicler who
 alone can tell thee of his saga. Let me tell you of the days of high adventure!_
+
+</details>
+
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/032.png" alt="">
+
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<tbody>
+<tr><td><img src="./lesson-2/passage-1-line-1.svg" width="100%"><br><img src="./original-images/conan-line-1.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-2/passage-1-line-2.svg" width="100%"><br><img src="./original-images/conan-line-2.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-2/passage-1-line-3.svg" width="100%"><br><img src="./original-images/conan-line-3.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-2/passage-1-line-4.svg" width="100%"><br><img src="./original-images/conan-line-4.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-2/passage-1-line-5.svg" width="100%"><br><img src="./original-images/conan-line-5.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-2/passage-1-line-6.svg" width="100%"><br><img src="./original-images/conan-line-6.png" width="100%"></td></tr>
+</tbody>
+</table>
+
+</details>
 
 ---
 
@@ -330,18 +580,6 @@ clumsy. The 2 skills will not grow up together unless you practice them
 together. You need to both read, and write, so practice both reading, and
 writing. I would not have taken the time to write this paragraph if I did not
 think it important, so please, take it to heart, and practice both skills.
-
-### Editor notes on lesson 2 passage
-
-EDITOR NOTE [single-size-downward]: "AT" in "Atlantis" is single-size since the
-last stroke is downward and next character is a consonant.
-
-EDITOR NOTE [single-size-downward]: "AJ" in "age"
-
-TODO [double-size-upward]: AN blend ends in top-right corner, so the overall
-glyph can be double-sized
-
-TODO [double-size-upward]: U into N
 
 [Next: Lesson 3](./part-1-lesson-3.md)
 

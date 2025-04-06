@@ -1,14 +1,19 @@
 # Ponish Mechanised
 
-This project is dedicated to making it easier to learn and practice the shortand system described in
+This project is dedicated to making it easier to learn and practice the shortand
+system described in
 ["My Little Ponish, Theory and Practice" manual](https://www.deviantart.com/poisonhorsie/art/My-Little-Ponish-Theory-and-Practice-800852076).
 
 Specifically, this project encodes Ponish glyphs and rules in Python, and uses
-[Turtle Graphics](https://en.wikipedia.org/wiki/Turtle_graphics) to simulate writing
-Ponish by hand.
+[Turtle Graphics](https://en.wikipedia.org/wiki/Turtle_graphics) to simulate
+writing Ponish by hand.
 
 ## Ponish Manual Mechanised
 
-To ensure consistency with the original manual, everything that was hand written for the
-manual has been also written using Turtle Graphics and compiled into
+To ensure consistency with the original manual, everything that was hand written
+for the manual has been also written using Turtle Graphics and compiled into
 [Ponish Manual Mechanised](./manual/index.md) .
+
+I have tried to stay as close to the original as I could, but I did not always
+succeed, see [Editor's notes](./editors-notes.md) and [TODOs](./TODO.md) for
+clarification of some differences.

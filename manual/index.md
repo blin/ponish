@@ -6,12 +6,12 @@ How to Write Like a Pony; A Superior Method for the Discerning Wordsmith
 
 Table of contents:
 
-* [Part 1](./part-1.md)
-    * [Lesson 1](./part-1-lesson-1.md)
-    * [Lesson 2](./part-1-lesson-2.md)
-    * [Lesson 3](./part-1-lesson-3.md)
-    * [Lesson 4](./part-1-lesson-4.md)
-* [Part 2](./part-2.md)
+- [Part 1](./part-1.md)
+  - [Lesson 1](./part-1-lesson-1.md)
+  - [Lesson 2](./part-1-lesson-2.md)
+  - [Lesson 3](./part-1-lesson-3.md)
+  - [Lesson 4](./part-1-lesson-4.md)
+- [Part 2](./part-2.md)
 
 ## Forward
 
