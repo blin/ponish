@@ -595,10 +595,17 @@ Ready for the answer? Here you go:
 <details>
 <summary>Earthographic</summary>
 
-_Between the times when the oceans drank Atlantis, and the rise of the sons of
-Aryas, there was an age undreamed of. And unto this: Conan. Destined to bear the
-jeweled crown of Aquilonia upon a troubled brow. It is I, his chronicler who
-alone can tell thee of his saga. Let me tell you of the days of high adventure!_
+Between the times when the oceans drank Atlantis, and the rise of
+
+the sons of Aryas, there was an age undreamed of. And
+
+unto this: Conan. Destined to bear the jeweled crown of
+
+Aquilonia upon a troubled brow. It is I, his
+
+chronicler who alone can tell thee of his saga.
+
+Let me tell you of the days of high adventure!
 
 </details>
 
