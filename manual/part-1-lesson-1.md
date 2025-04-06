@@ -23,22 +23,17 @@ the normal Roman letters, and compare them to the number required for their
 Ponish counterparts via the complete chart below, and see for yourselves just
 how much writing is being saved with just a new alphabet.
 
-<!-- A-K -->
-| A | B | C | D | E | F | G | H | I | J | K |
-|---|---|---|---|---|---|---|---|---|---|---|
+| A                                                               | B                     | C                     | D                     | E                     | F                     | G                     | H                     | I                     | J                     | K                     |
+| --------------------------------------------------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- |
 | ![](./alphabet/A-two-legs.svg) or ![](./alphabet/A-one-leg.svg) | ![](./alphabet/B.svg) | ![](./alphabet/C.svg) | ![](./alphabet/D.svg) | ![](./alphabet/E.svg) | ![](./alphabet/F.svg) | ![](./alphabet/G.svg) | ![](./alphabet/H.svg) | ![](./alphabet/I.svg) | ![](./alphabet/J.svg) | ![](./alphabet/K.svg) |
 
-<!-- L-W -->
-| L | M | N | O | P | Q | R | S | T | U | V | W |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+| L                     | M                     | N                     | O                     | P                     | Q                     | R                     | S                     | T                     | U                     | V                     | W                     |
+| --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- |
 | ![](./alphabet/L.svg) | ![](./alphabet/M.svg) | ![](./alphabet/N.svg) | ![](./alphabet/O.svg) | ![](./alphabet/P.svg) | ![](./alphabet/Q.svg) | ![](./alphabet/R.svg) | ![](./alphabet/S.svg) | ![](./alphabet/T.svg) | ![](./alphabet/U.svg) | ![](./alphabet/V.svg) | ![](./alphabet/W.svg) |
 
-<!-- X-Z plus special characters -->
-| X | Y | Z | TH | SH | CH |
-|---|---|---|----|----|-----|
+| X                     | Y                     | Z                     | TH                    | SH                    | CH                    |
+| --------------------- | --------------------- | --------------------- | --------------------- | --------------------- | --------------------- |
 | ![](./alphabet/X.svg) | ![](./alphabet/Y.svg) | ![](./alphabet/Z.svg) | ![](./alphabet/ð.svg) | ![](./alphabet/ʃ.svg) | ![](./alphabet/ʧ.svg) |
-
-![](./original-images/003.png)
 
 You notice that A has 2 ways it can be written. This will be explained later,
 but the important thing to keep in mind now, and always, is that each way is
@@ -47,10 +42,6 @@ equally valid. Not only this, but 'Q' can mean either 'Q' alone, or 'QU,' and
 Ponies, even those who have mastered the chirographic arts, will mix and match
 spellings according to their own tastes, and the speed, space, or formality
 restrictions under which they write.
-
-EDITOR NOTE: one leg A - ![A](./alphabet/A-one-leg.svg) - can be distinguished
-from T - ![T](./alphabet/T.svg) - by the direction of drawing,
-A is drawn from bottom to top, T is drawn from top to bottom.
 
 This may seem strange, but reflect on how, for example, headlines are written on
 Earth. Articles (a, an, the) can be dropped, capitalization, and punctuation
@@ -81,31 +72,67 @@ and don't yet possess sufficient facility to shake-n-bake. Writing words, rather
 than letters from the get-go, will aid you in both learning, and attaining a
 usable level of skill with the minimum of time, and effort expended.
 
-## Examples:
-
-The quick cute unicorn jumped over the lazy gryphon.
+## Examples
 
 ![example-1](./lesson-1/example-1.svg)
 
 ![example-2](./lesson-1/example-2.svg)
 
+<details>
+<summary>Earthographic</summary>
+
+The quick cute unicorn jumped over the lazy gryphon.
+
+</details>
+
+<details>
+<summary>Original manual image</summary>
+
 ![](./original-images/004.png)
 
-The vexed pegasus flew high, and shat on the land-bound Hydra.
+</details>
+
+---
 
 ![example-3](./lesson-1/example-3.svg)
 
 ![example-4](./lesson-1/example-4.svg)
 
+<details>
+<summary>Earthographic</summary>
+
+The vexed pegasus flew high, and shat on the land-bound Hydra.
+
+</details>
+
+<details>
+<summary>Original manual image</summary>
+
 ![](./original-images/005.png)
 
-The cheery and dutiful earth pony's pie won first place!
+</details>
+
+---
 
 ![example-5](./lesson-1/example-5.svg)
 
 ![example-6](./lesson-1/example-6.svg)
 
+<details>
+<summary>Earthographic</summary>
+
+The cheery and dutiful earth pony's pie won first place!
+
+</details>
+
+<details>
+<summary>Original manual image</summary>
+
 ![](./original-images/006.png)
+
+</details>
+
+---
 
 All 29 letters are demonstrated above. If you choose to stop your study here,
 you are missing out, but will still possess a writing method marginally faster
