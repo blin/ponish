@@ -191,6 +191,7 @@ def test_split_into_chunks(word: str, expected_chunks: list[str]):
     assert split_into_chunks(word) == expected_chunks
 
 
+# TODO: braille snapshot tests for lesson_3_examples_1 and lesson_3_examples_3
 @pytest.mark.parametrize(
     "line_index, line_text",
     enumerate(

@@ -618,11 +618,10 @@ blends["ʧR"] = derive_from_letter(
 blends["NG"] = Glyph(
     start_pos=RelPoint(rel_y=0.3, rel_x=0.6),
     draw_actions=(
-        Circle(
-            rel_radius=0.3,
-            extent_deg=360,
-            rotation=Rotation.CW,
-            heading_deg=Direction.S.value,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.0, rel_x=-0.75),
+            p3=RelPoint(rel_y=-0.75, rel_x=0.0),
+            p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.2),
         RelCubicBezier(
@@ -639,11 +638,10 @@ blends["THING"] = blends["NG"]
 blends["NK"] = Glyph(
     start_pos=RelPoint(rel_y=0.3, rel_x=0.0),
     draw_actions=(
-        Circle(
-            rel_radius=0.3,
-            extent_deg=360,
-            rotation=Rotation.CCW,
-            heading_deg=Direction.S.value,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.0, rel_x=0.75),
+            p3=RelPoint(rel_y=-0.75, rel_x=0.0),
+            p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
         PolarLine(angle_deg=Direction.S.value, rel_magnitude=0.2),
         RelCubicBezier(
@@ -661,11 +659,10 @@ blends["THANK"] = blends["NK"]
 blends["PR"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.3),
     draw_actions=(
-        Circle(
-            rel_radius=0.3,
-            extent_deg=360,
-            rotation=Rotation.CW,
-            heading_deg=Direction.E.value,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.75, rel_x=0.0),
+            p3=RelPoint(rel_y=0.0, rel_x=-0.75),
+            p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.2),
         RelCubicBezier(
@@ -679,11 +676,10 @@ blends["PR"] = Glyph(
 blends["PL"] = Glyph(
     start_pos=RelPoint(rel_y=0.6, rel_x=0.3),
     draw_actions=(
-        Circle(
-            rel_radius=0.3,
-            extent_deg=360,
-            rotation=Rotation.CCW,
-            heading_deg=Direction.E.value,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=-0.75, rel_x=0.0),
+            p3=RelPoint(rel_y=0.0, rel_x=-0.75),
+            p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
         PolarLine(angle_deg=Direction.E.value, rel_magnitude=0.2),
         RelCubicBezier(

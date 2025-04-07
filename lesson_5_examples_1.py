@@ -1,5 +1,6 @@
 # %%
 import importlib
+from itertools import chain
 
 import draw
 import glyphs
@@ -16,6 +17,9 @@ from draw_jupyturtle import DrawingContext
 
 dir = Path("manual/part-2")
 dir.mkdir(parents=True, exist_ok=True)
+
+text_combined: list[str] = []
+texts: list[list[str]] = []
 
 texts = [
     [
@@ -109,6 +113,7 @@ texts = [
         "ri$(CH)r or purer on $(AK)ount of it .",
     ],
 ]
+text_combined.extend(chain.from_iterable(texts))
 if __name__ == "__main__":
     for tid, text in list(enumerate(texts))[7:]:
         for lid, line in list(enumerate(text)):
@@ -194,6 +199,7 @@ texts = [
         "ton down the $(Y-consonant)uwil n$(ever) x $(TH)i$(NK)$(ING) tomy xperiens .",
     ],
 ]
+text_combined.extend(chain.from_iterable(texts))
 if __name__ == "__main__":
     for tid, text in list(enumerate(texts))[1:2]:
         for lid, line in list(enumerate(text))[16:]:
