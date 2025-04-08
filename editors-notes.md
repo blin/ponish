@@ -10,6 +10,14 @@
     original is "if glyph ends in the top side of an imaginary glyph box
     (one-leg-A, E, L, P, R, U, V) it can be double-sized even if followed by a
     consonant.
+- In lesson 3 the "success" example implies that the starting point of the S-S
+  symbol is at the bottom of the circle. Drawing S-S from the bottom requires
+  one and a half circle-strokes and one line-stroke or one circle-stroke and two
+  line-strokes (one up and one down). "No wrong spelling", so I consider S-S
+  starting point to be at the top of the circle.
+- Only one version of "fect" and "logy" is implemented K-line/L-line second
+  forms are used when affix precedes K or L, so that the combination forms a
+  sine wave.
 
 ## Comments on the original
 

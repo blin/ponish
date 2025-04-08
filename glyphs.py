@@ -843,8 +843,6 @@ affixes["each"] = derive_from_letter(
     more_actions=n_strike(RelPoint(rel_y=-0.5, rel_x=0.2), 0.5),
 )
 
-# TODO [k-l-second-form]: K-line/L-line second forms are used when affix
-# precedes K or L, so that the combination forms a sine wave.
 affixes["fect"] = derive_from_letter(
     "F",
     more_actions=(
@@ -904,7 +902,6 @@ affixes["less"] = derive_from_letter(
     more_actions=n_strike(RelPoint(rel_y=0.2, rel_x=-0.3), 0.5),
 )
 
-# TODO [k-l-second-form]
 # The base is J not G, because of pronounciation.
 affixes["logy"] = derive_from_letter(
     "J",

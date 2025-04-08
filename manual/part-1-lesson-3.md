@@ -106,11 +106,6 @@ combination it represents, in this case 'S.'
 
 </details>
 
-EDITOR NOTE: the "success" example in the original implies that the starting
-point of the S-S symbol is at the bottom of the circle, drawing S-S from the
-bottom requires one and a half circle-strokes and one line-stroke or one
-circle-stroke and two line-strokes (one up and one down). "No wrong spelling",
-so I consider S-S starting point to be at the top of the circle.
 
 ## Prefixes and suffixes
 
@@ -148,6 +143,15 @@ talk! Have at thee!
 | under             | ![](./lesson-3/affixes/under.svg)     | ![](./original-images/affixes/under.png)     |
 | ever, every, very | ![](./lesson-3/affixes/ever.svg)      | ![](./original-images/affixes/ever.png)      |
 | ward              | ![](./lesson-3/affixes/ward.svg)      | ![](./original-images/affixes/ward.png)      |
+
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/038.png" alt="">
+
+</details>
+
+---
 
 This may seem like a lot, but keep in mind that you don't have to use them, they
 will simply make you better than you might have otherwise been, which is still
