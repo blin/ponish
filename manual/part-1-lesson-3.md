@@ -21,7 +21,12 @@ letters can mean that, or stand for the very common NG sound combination:
 | going          | ![](./lesson-3/going.svg)     |
 | twang          | ![](./lesson-3/twang.svg)     |
 
+<details>
+<summary>Original manual image</summary>
+
 ![](./original-images/033.png)
+
+</details>
 
 ## 2. (th(vowel)NK)
 
@@ -36,7 +41,12 @@ hard C-sound only.
 | flunk                | ![](./lesson-3/flunk.svg)     |
 | thank you            | ![](./lesson-3/thank-you.svg) |
 
+<details>
+<summary>Original manual image</summary>
+
 ![](./original-images/034.png)
+
+</details>
 
 ## 3. (pr(vowel))
 
@@ -51,7 +61,12 @@ the usual way.
 | project       | ![](./lesson-3/project.svg) |
 | preview       | ![](./lesson-3/preview.svg) |
 
+<details>
+<summary>Original manual image</summary>
+
 ![](./original-images/035.png)
+
+</details>
 
 ## 4. (pl(vowel))
 
@@ -65,7 +80,12 @@ an L. Isn't that convenient?
 | plastic       | ![](./lesson-3/plastic.svg)  |
 | plebian       | ![](./lesson-3/plebian.svg)  |
 
+<details>
+<summary>Original manual image</summary>
+
 ![](./original-images/036.png)
+
+</details>
 
 ## 5 (S(vowel)S)
 
@@ -79,7 +99,12 @@ combination it represents, in this case 'S.'
 | success       | ![](./lesson-3/success.svg)  |
 | misses        | ![](./lesson-3/misses.svg)   |
 
+<details>
+<summary>Original manual image</summary>
+
 ![](./original-images/037.png)
+
+</details>
 
 EDITOR NOTE: the "success" example in the original implies that the starting
 point of the S-S symbol is at the bottom of the circle, drawing S-S from the
