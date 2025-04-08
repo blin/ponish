@@ -24,7 +24,7 @@ letters can mean that, or stand for the very common NG sound combination:
 <details>
 <summary>Original manual image</summary>
 
-![](./original-images/033.png)
+<img src="./original-images/033.png" alt="">
 
 </details>
 
@@ -44,7 +44,7 @@ hard C-sound only.
 <details>
 <summary>Original manual image</summary>
 
-![](./original-images/034.png)
+<img src="./original-images/034.png" alt="">
 
 </details>
 
@@ -64,7 +64,7 @@ the usual way.
 <details>
 <summary>Original manual image</summary>
 
-![](./original-images/035.png)
+<img src="./original-images/035.png" alt="">
 
 </details>
 
@@ -83,7 +83,7 @@ an L. Isn't that convenient?
 <details>
 <summary>Original manual image</summary>
 
-![](./original-images/036.png)
+<img src="./original-images/036.png" alt="">
 
 </details>
 
@@ -102,7 +102,7 @@ combination it represents, in this case 'S.'
 <details>
 <summary>Original manual image</summary>
 
-![](./original-images/037.png)
+<img src="./original-images/037.png" alt="">
 
 </details>
 
