@@ -207,6 +207,20 @@ included directly below, if you need a translation.
 
 TODO [automobile]: prefix ending in a vowel has vowel effect on the next glyph?
 
+| Earthographic | Ponish                                         |
+| ------------- | ---------------------------------------------- |
+| above ground  | ![](./lesson-3/affix-phrases/aboveground.svg)  |
+| lay about     | ![](./lesson-3/affix-phrases/layabout.svg)     |
+| antidote      | ![](./lesson-3/affix-phrases/antidote.svg)     |
+| automobile    | ![](./lesson-3/affix-phrases/automobile.svg)   |
+| await         | ![](./lesson-3/affix-phrases/await.svg)        |
+| go away       | ![](./lesson-3/affix-phrases/goaway.svg)       |
+| circulate     | ![](./lesson-3/affix-phrases/circulate.svg)    |
+| circumscribe  | ![](./lesson-3/affix-phrases/circumscribe.svg) |
+
+<details>
+<summary>Side by side with original manual image</summary>
+
 | Earthographic | Ponish                                         | Original image                                        |
 | ------------- | ---------------------------------------------- | ----------------------------------------------------- |
 | above ground  | ![](./lesson-3/affix-phrases/aboveground.svg)  | ![](./original-images/affix-phrases/aboveground.png)  |
@@ -218,9 +232,25 @@ TODO [automobile]: prefix ending in a vowel has vowel effect on the next glyph?
 | circulate     | ![](./lesson-3/affix-phrases/circulate.svg)    | ![](./original-images/affix-phrases/circulate.png)    |
 | circumscribe  | ![](./lesson-3/affix-phrases/circumscribe.svg) | ![](./original-images/affix-phrases/circumscribe.png) |
 
+</details>
+
 ### Examples, Row 2: Compose, Construct, Contradiction, Disparage, Destitute, Peach, Infect, Infection
 
 TODO [peach]: suffix starting with a vowel acts like a vowel?
+
+| Earthographic | Ponish                                          |
+| ------------- | ----------------------------------------------- |
+| compose       | ![](./lesson-3/affix-phrases/compose.svg)       |
+| construct     | ![](./lesson-3/affix-phrases/construct.svg)     |
+| contradiction | ![](./lesson-3/affix-phrases/contradiction.svg) |
+| disparage     | ![](./lesson-3/affix-phrases/disparage.svg)     |
+| destitute     | ![](./lesson-3/affix-phrases/destitute.svg)     |
+| peach         | ![](./lesson-3/affix-phrases/peach.svg)         |
+| infect        | ![](./lesson-3/affix-phrases/infect.svg)        |
+| infection     | ![](./lesson-3/affix-phrases/infection.svg)     |
+
+<details>
+<summary>Side by side with original manual image</summary>
 
 | Earthographic | Ponish                                          | Original image                                         |
 | ------------- | ----------------------------------------------- | ------------------------------------------------------ |
@@ -233,7 +263,24 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 | infect        | ![](./lesson-3/affix-phrases/infect.svg)        | ![](./original-images/affix-phrases/infect.png)        |
 | infection     | ![](./lesson-3/affix-phrases/infection.svg)     | ![](./original-images/affix-phrases/infection.png)     |
 
+</details>
+
 ### Examples, Row 3: Spiteful, Spitefulness, Graphic, Grammar, Sluthood, Pacify, Pacification, Guileless, Guilelessness
+
+| Earthographic | Ponish                                          |
+| ------------- | ----------------------------------------------- |
+| spiteful      | ![](./lesson-3/affix-phrases/spiteful.svg)      |
+| spitefulness  | ![](./lesson-3/affix-phrases/spitefulness.svg)  |
+| graphic       | ![](./lesson-3/affix-phrases/graphic.svg)       |
+| grammar       | ![](./lesson-3/affix-phrases/grammar.svg)       |
+| sluthood      | ![](./lesson-3/affix-phrases/sluthood.svg)      |
+| pacify        | ![](./lesson-3/affix-phrases/pacify.svg)        |
+| pacification  | ![](./lesson-3/affix-phrases/pacification.svg)  |
+| guileless     | ![](./lesson-3/affix-phrases/guileless.svg)     |
+| guilelessness | ![](./lesson-3/affix-phrases/guilelessness.svg) |
+
+<details>
+<summary>Side by side with original manual image</summary>
 
 | Earthographic | Ponish                                          | Original image                                         |
 | ------------- | ----------------------------------------------- | ------------------------------------------------------ |
@@ -247,9 +294,23 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 | guileless     | ![](./lesson-3/affix-phrases/guileless.svg)     | ![](./original-images/affix-phrases/guileless.png)     |
 | guilelessness | ![](./lesson-3/affix-phrases/guilelessness.svg) | ![](./original-images/affix-phrases/guilelessness.png) |
 
-### Examples, Row 4: Biology, Illogical, Misrepresent, Mismanagement, Cleanliness, Overdone,
+</details>
 
-Otherwise, Outspoken
+### Examples, Row 4: Biology, Illogical, Misrepresent, Mismanagement, Cleanliness, Overdone, Otherwise, Outspoken
+
+| Earthographic | Ponish                                          |
+| ------------- | ----------------------------------------------- |
+| biology       | ![](./lesson-3/affix-phrases/biology.svg)       |
+| illogical     | ![](./lesson-3/affix-phrases/illogical.svg)     |
+| misrepresent  | ![](./lesson-3/affix-phrases/misrepresent.svg)  |
+| mismanagement | ![](./lesson-3/affix-phrases/mismanagement.svg) |
+| cleanliness   | ![](./lesson-3/affix-phrases/cleanliness.svg)   |
+| overdone      | ![](./lesson-3/affix-phrases/overdone.svg)      |
+| otherwise     | ![](./lesson-3/affix-phrases/otherwise.svg)     |
+| outspoken     | ![](./lesson-3/affix-phrases/outspoken.svg)     |
+
+<details>
+<summary>Side by side with original manual image</summary>
 
 | Earthographic | Ponish                                          | Original image                                         |
 | ------------- | ----------------------------------------------- | ------------------------------------------------------ |
@@ -262,7 +323,23 @@ Otherwise, Outspoken
 | otherwise     | ![](./lesson-3/affix-phrases/otherwise.svg)     | ![](./original-images/affix-phrases/otherwise.png)     |
 | outspoken     | ![](./lesson-3/affix-phrases/outspoken.svg)     | ![](./original-images/affix-phrases/outspoken.png)     |
 
+</details>
+
 ### Examples, Row 5: Self publish, Semi truck, Battleship, Shipment, Subway, Subject, Supersonic, Superluminal
+
+| Earthographic | Ponish                                         |
+| ------------- | ---------------------------------------------- |
+| self publish  | ![](./lesson-3/affix-phrases/selfpublish.svg)  |
+| semi truck    | ![](./lesson-3/affix-phrases/semitruck.svg)    |
+| battleship    | ![](./lesson-3/affix-phrases/battleship.svg)   |
+| shipment      | ![](./lesson-3/affix-phrases/shipment.svg)     |
+| subway        | ![](./lesson-3/affix-phrases/subway.svg)       |
+| subject       | ![](./lesson-3/affix-phrases/subject.svg)      |
+| supersonic    | ![](./lesson-3/affix-phrases/supersonic.svg)   |
+| superluminal  | ![](./lesson-3/affix-phrases/superluminal.svg) |
+
+<details>
+<summary>Side by side with original manual image</summary>
 
 | Earthographic | Ponish                                         | Original image                                        |
 | ------------- | ---------------------------------------------- | ----------------------------------------------------- |
@@ -275,7 +352,23 @@ Otherwise, Outspoken
 | supersonic    | ![](./lesson-3/affix-phrases/supersonic.svg)   | ![](./original-images/affix-phrases/supersonic.png)   |
 | superluminal  | ![](./lesson-3/affix-phrases/superluminal.svg) | ![](./original-images/affix-phrases/superluminal.png) |
 
-### Examples, Row 5: Transit, Transfer, Undergo, Blunder, Forever, Everybody, Variable, Very good
+</details>
+
+### Examples, Row 6: Transit, Transfer, Undergo, Blunder, Forever, Everybody, Variable, Very good
+
+| Earthographic | Ponish                                      |
+| ------------- | ------------------------------------------- |
+| transit       | ![](./lesson-3/affix-phrases/transit.svg)   |
+| transfer      | ![](./lesson-3/affix-phrases/transfer.svg)  |
+| undergo       | ![](./lesson-3/affix-phrases/undergo.svg)   |
+| blunder       | ![](./lesson-3/affix-phrases/blunder.svg)   |
+| forever       | ![](./lesson-3/affix-phrases/forever.svg)   |
+| everybody     | ![](./lesson-3/affix-phrases/everybody.svg) |
+| variable      | ![](./lesson-3/affix-phrases/variable.svg)  |
+| very good     | ![](./lesson-3/affix-phrases/verygood.svg)  |
+
+<details>
+<summary>Side by side with original manual image</summary>
 
 | Earthographic | Ponish                                      | Original image                                     |
 | ------------- | ------------------------------------------- | -------------------------------------------------- |
@@ -288,7 +381,19 @@ Otherwise, Outspoken
 | variable      | ![](./lesson-3/affix-phrases/variable.svg)  | ![](./original-images/affix-phrases/variable.png)  |
 | very good     | ![](./lesson-3/affix-phrases/verygood.svg)  | ![](./original-images/affix-phrases/verygood.png)  |
 
-### Examples, Row 5: Toward, Downwards, Warden, Ward away.
+</details>
+
+### Examples, Row 7: Toward, Downwards, Warden, Ward away.
+
+| Earthographic | Ponish                                      |
+| ------------- | ------------------------------------------- |
+| toward        | ![](./lesson-3/affix-phrases/toward.svg)    |
+| downwards     | ![](./lesson-3/affix-phrases/downwards.svg) |
+| warden        | ![](./lesson-3/affix-phrases/warden.svg)    |
+| ward away     | ![](./lesson-3/affix-phrases/wardaway.svg)  |
+
+<details>
+<summary>Side by side with original manual image</summary>
 
 | Earthographic | Ponish                                      | Original image                                     |
 | ------------- | ------------------------------------------- | -------------------------------------------------- |
@@ -296,6 +401,8 @@ Otherwise, Outspoken
 | downwards     | ![](./lesson-3/affix-phrases/downwards.svg) | ![](./original-images/affix-phrases/downwards.png) |
 | warden        | ![](./lesson-3/affix-phrases/warden.svg)    | ![](./original-images/affix-phrases/warden.png)    |
 | ward away     | ![](./lesson-3/affix-phrases/wardaway.svg)  | ![](./original-images/affix-phrases/wardaway.png)  |
+
+</details>
 
 And to close up the lesson, here is some more reading practice:
 
