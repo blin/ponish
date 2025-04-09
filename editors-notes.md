@@ -2,6 +2,10 @@
 
 ## Differences from original
 
+- Original manual has detailed photographs of written text on paper, some of
+  them a bit blurry. I have compressed them using
+  `convert -colorspace Gray -normalize -threshold 55%` for faster serving.
+  If you can't read some of them here, check out the original PDF.
 - Simplification to single-size vs double-size glyph choice is adopted: if the
   glyph in I/Y position is followed by a consonant, it is single-sized .
   - The original manual has a simple to describe but hard to implement choice:
@@ -18,6 +22,8 @@
 - Only one version of "fect" and "logy" is implemented K-line/L-line second
   forms are used when affix precedes K or L, so that the combination forms a
   sine wave.
+- In lesson 3 the prefixes and suffixes and corresponding examples are put into
+  tables for easier scanning.
 
 ## Comments on the original
 
