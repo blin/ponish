@@ -153,35 +153,152 @@ talk! Have at thee!
 <details>
 <summary>Side by side with original manual image</summary>
 
-| Earthographic     | Ponish                                | Original image                               |
-| ----------------- | ------------------------------------- | -------------------------------------------- |
-| above, about      | ![](./lesson-3/affixes/above.svg)     | ![](./original-images/affixes/above.png)     |
-| anti, auto        | ![](./lesson-3/affixes/anti.svg)      | ![](./original-images/affixes/anti.png)      |
-| awa(y)            | ![](./lesson-3/affixes/away.svg)      | ![](./original-images/affixes/away.png)      |
-| circ(u)(um)       | ![](./lesson-3/affixes/circ.svg)      | ![](./original-images/affixes/circ.png)      |
-| com, con, contr   | ![](./lesson-3/affixes/com.svg)       | ![](./original-images/affixes/com.png)       |
-| dis, des          | ![](./lesson-3/affixes/dis.svg)       | ![](./original-images/affixes/dis.png)       |
-| each              | ![](./lesson-3/affixes/each.svg)      | ![](./original-images/affixes/each.png)      |
-| fect              | ![](./lesson-3/affixes/fect.svg)      | ![](./original-images/affixes/fect.png)      |
-| full              | ![](./lesson-3/affixes/full.svg)      | ![](./original-images/affixes/full.png)      |
-| graph, gram       | ![](./lesson-3/affixes/graph.svg)     | ![](./original-images/affixes/graph.png)     |
-| hood              | ![](./lesson-3/affixes/hood.svg)      | ![](./original-images/affixes/hood.png)      |
-| ify               | ![](./lesson-3/affixes/ify.svg)       | ![](./original-images/affixes/ify.png)       |
-| ifycation         | ![](./lesson-3/affixes/ifycation.svg) | ![](./original-images/affixes/ifycation.png) |
-| less              | ![](./lesson-3/affixes/less.svg)      | ![](./original-images/affixes/less.png)      |
-| logy, logic       | ![](./lesson-3/affixes/logy.svg)      | ![](./original-images/affixes/logy.png)      |
-| mis, ment         | ![](./lesson-3/affixes/mis.svg)       | ![](./original-images/affixes/mis.png)       |
-| ness              | ![](./lesson-3/affixes/ness.svg)      | ![](./original-images/affixes/ness.png)      |
-| over, other, out  | ![](./lesson-3/affixes/over.svg)      | ![](./original-images/affixes/over.png)      |
-| self              | ![](./lesson-3/affixes/self.svg)      | ![](./original-images/affixes/self.png)      |
-| semi              | ![](./lesson-3/affixes/semi.svg)      | ![](./original-images/affixes/semi.png)      |
-| ship              | ![](./lesson-3/affixes/ship.svg)      | ![](./original-images/affixes/ship.png)      |
-| sub               | ![](./lesson-3/affixes/sub.svg)       | ![](./original-images/affixes/sub.png)       |
-| super             | ![](./lesson-3/affixes/super.svg)     | ![](./original-images/affixes/super.png)     |
-| trans             | ![](./lesson-3/affixes/trans.svg)     | ![](./original-images/affixes/trans.png)     |
-| under             | ![](./lesson-3/affixes/under.svg)     | ![](./original-images/affixes/under.png)     |
-| ever, every, very | ![](./lesson-3/affixes/ever.svg)      | ![](./original-images/affixes/ever.png)      |
-| ward              | ![](./lesson-3/affixes/ward.svg)      | ![](./original-images/affixes/ward.png)      |
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>above, about</td>
+<td><img src="./lesson-3/affixes/above.svg" alt="above"></td>
+<td><img src="./original-images/affixes/above.png" alt="above original"></td>
+</tr>
+<tr>
+<td>anti, auto</td>
+<td><img src="./lesson-3/affixes/anti.svg" alt="anti"></td>
+<td><img src="./original-images/affixes/anti.png" alt="anti original"></td>
+</tr>
+<tr>
+<td>awa(y)</td>
+<td><img src="./lesson-3/affixes/away.svg" alt="away"></td>
+<td><img src="./original-images/affixes/away.png" alt="away original"></td>
+</tr>
+<tr>
+<td>circ(u)(um)</td>
+<td><img src="./lesson-3/affixes/circ.svg" alt="circ"></td>
+<td><img src="./original-images/affixes/circ.png" alt="circ original"></td>
+</tr>
+<tr>
+<td>com, con, contr</td>
+<td><img src="./lesson-3/affixes/com.svg" alt="com"></td>
+<td><img src="./original-images/affixes/com.png" alt="com original"></td>
+</tr>
+<tr>
+<td>dis, des</td>
+<td><img src="./lesson-3/affixes/dis.svg" alt="dis"></td>
+<td><img src="./original-images/affixes/dis.png" alt="dis original"></td>
+</tr>
+<tr>
+<td>each</td>
+<td><img src="./lesson-3/affixes/each.svg" alt="each"></td>
+<td><img src="./original-images/affixes/each.png" alt="each original"></td>
+</tr>
+<tr>
+<td>fect</td>
+<td><img src="./lesson-3/affixes/fect.svg" alt="fect"></td>
+<td><img src="./original-images/affixes/fect.png" alt="fect original"></td>
+</tr>
+<tr>
+<td>full</td>
+<td><img src="./lesson-3/affixes/full.svg" alt="full"></td>
+<td><img src="./original-images/affixes/full.png" alt="full original"></td>
+</tr>
+<tr>
+<td>graph, gram</td>
+<td><img src="./lesson-3/affixes/graph.svg" alt="graph"></td>
+<td><img src="./original-images/affixes/graph.png" alt="graph original"></td>
+</tr>
+<tr>
+<td>hood</td>
+<td><img src="./lesson-3/affixes/hood.svg" alt="hood"></td>
+<td><img src="./original-images/affixes/hood.png" alt="hood original"></td>
+</tr>
+<tr>
+<td>ify</td>
+<td><img src="./lesson-3/affixes/ify.svg" alt="ify"></td>
+<td><img src="./original-images/affixes/ify.png" alt="ify original"></td>
+</tr>
+<tr>
+<td>ifycation</td>
+<td><img src="./lesson-3/affixes/ifycation.svg" alt="ifycation"></td>
+<td><img src="./original-images/affixes/ifycation.png" alt="ifycation original"></td>
+</tr>
+<tr>
+<td>less</td>
+<td><img src="./lesson-3/affixes/less.svg" alt="less"></td>
+<td><img src="./original-images/affixes/less.png" alt="less original"></td>
+</tr>
+<tr>
+<td>logy, logic</td>
+<td><img src="./lesson-3/affixes/logy.svg" alt="logy"></td>
+<td><img src="./original-images/affixes/logy.png" alt="logy original"></td>
+</tr>
+<tr>
+<td>mis, ment</td>
+<td><img src="./lesson-3/affixes/mis.svg" alt="mis"></td>
+<td><img src="./original-images/affixes/mis.png" alt="mis original"></td>
+</tr>
+<tr>
+<td>ness</td>
+<td><img src="./lesson-3/affixes/ness.svg" alt="ness"></td>
+<td><img src="./original-images/affixes/ness.png" alt="ness original"></td>
+</tr>
+<tr>
+<td>over, other, out</td>
+<td><img src="./lesson-3/affixes/over.svg" alt="over"></td>
+<td><img src="./original-images/affixes/over.png" alt="over original"></td>
+</tr>
+<tr>
+<td>self</td>
+<td><img src="./lesson-3/affixes/self.svg" alt="self"></td>
+<td><img src="./original-images/affixes/self.png" alt="self original"></td>
+</tr>
+<tr>
+<td>semi</td>
+<td><img src="./lesson-3/affixes/semi.svg" alt="semi"></td>
+<td><img src="./original-images/affixes/semi.png" alt="semi original"></td>
+</tr>
+<tr>
+<td>ship</td>
+<td><img src="./lesson-3/affixes/ship.svg" alt="ship"></td>
+<td><img src="./original-images/affixes/ship.png" alt="ship original"></td>
+</tr>
+<tr>
+<td>sub</td>
+<td><img src="./lesson-3/affixes/sub.svg" alt="sub"></td>
+<td><img src="./original-images/affixes/sub.png" alt="sub original"></td>
+</tr>
+<tr>
+<td>super</td>
+<td><img src="./lesson-3/affixes/super.svg" alt="super"></td>
+<td><img src="./original-images/affixes/super.png" alt="super original"></td>
+</tr>
+<tr>
+<td>trans</td>
+<td><img src="./lesson-3/affixes/trans.svg" alt="trans"></td>
+<td><img src="./original-images/affixes/trans.png" alt="trans original"></td>
+</tr>
+<tr>
+<td>under</td>
+<td><img src="./lesson-3/affixes/under.svg" alt="under"></td>
+<td><img src="./original-images/affixes/under.png" alt="under original"></td>
+</tr>
+<tr>
+<td>ever, every, very</td>
+<td><img src="./lesson-3/affixes/ever.svg" alt="ever"></td>
+<td><img src="./original-images/affixes/ever.png" alt="ever original"></td>
+</tr>
+<tr>
+<td>ward</td>
+<td><img src="./lesson-3/affixes/ward.svg" alt="ward"></td>
+<td><img src="./original-images/affixes/ward.png" alt="ward original"></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
@@ -221,16 +338,57 @@ TODO [automobile]: prefix ending in a vowel has vowel effect on the next glyph?
 <details>
 <summary>Side by side with original manual image</summary>
 
-| Earthographic | Ponish                                         | Original image                                        |
-| ------------- | ---------------------------------------------- | ----------------------------------------------------- |
-| above ground  | ![](./lesson-3/affix-phrases/aboveground.svg)  | ![](./original-images/affix-phrases/aboveground.png)  |
-| lay about     | ![](./lesson-3/affix-phrases/layabout.svg)     | ![](./original-images/affix-phrases/layabout.png)     |
-| antidote      | ![](./lesson-3/affix-phrases/antidote.svg)     | ![](./original-images/affix-phrases/antidote.png)     |
-| automobile    | ![](./lesson-3/affix-phrases/automobile.svg)   | ![](./original-images/affix-phrases/automobile.png)   |
-| await         | ![](./lesson-3/affix-phrases/await.svg)        | ![](./original-images/affix-phrases/await.png)        |
-| go away       | ![](./lesson-3/affix-phrases/goaway.svg)       | ![](./original-images/affix-phrases/goaway.png)       |
-| circulate     | ![](./lesson-3/affix-phrases/circulate.svg)    | ![](./original-images/affix-phrases/circulate.png)    |
-| circumscribe  | ![](./lesson-3/affix-phrases/circumscribe.svg) | ![](./original-images/affix-phrases/circumscribe.png) |
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>above ground</td>
+<td><img src="./lesson-3/affix-phrases/aboveground.svg" alt="aboveground"></td>
+<td><img src="./original-images/affix-phrases/aboveground.png" alt="aboveground original"></td>
+</tr>
+<tr>
+<td>lay about</td>
+<td><img src="./lesson-3/affix-phrases/layabout.svg" alt="layabout"></td>
+<td><img src="./original-images/affix-phrases/layabout.png" alt="layabout original"></td>
+</tr>
+<tr>
+<td>antidote</td>
+<td><img src="./lesson-3/affix-phrases/antidote.svg" alt="antidote"></td>
+<td><img src="./original-images/affix-phrases/antidote.png" alt="antidote original"></td>
+</tr>
+<tr>
+<td>automobile</td>
+<td><img src="./lesson-3/affix-phrases/automobile.svg" alt="automobile"></td>
+<td><img src="./original-images/affix-phrases/automobile.png" alt="automobile original"></td>
+</tr>
+<tr>
+<td>await</td>
+<td><img src="./lesson-3/affix-phrases/await.svg" alt="await"></td>
+<td><img src="./original-images/affix-phrases/await.png" alt="await original"></td>
+</tr>
+<tr>
+<td>go away</td>
+<td><img src="./lesson-3/affix-phrases/goaway.svg" alt="goaway"></td>
+<td><img src="./original-images/affix-phrases/goaway.png" alt="goaway original"></td>
+</tr>
+<tr>
+<td>circulate</td>
+<td><img src="./lesson-3/affix-phrases/circulate.svg" alt="circulate"></td>
+<td><img src="./original-images/affix-phrases/circulate.png" alt="circulate original"></td>
+</tr>
+<tr>
+<td>circumscribe</td>
+<td><img src="./lesson-3/affix-phrases/circumscribe.svg" alt="circumscribe"></td>
+<td><img src="./original-images/affix-phrases/circumscribe.png" alt="circumscribe original"></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
@@ -252,16 +410,57 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 <details>
 <summary>Side by side with original manual image</summary>
 
-| Earthographic | Ponish                                          | Original image                                         |
-| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
-| compose       | ![](./lesson-3/affix-phrases/compose.svg)       | ![](./original-images/affix-phrases/compose.png)       |
-| construct     | ![](./lesson-3/affix-phrases/construct.svg)     | ![](./original-images/affix-phrases/construct.png)     |
-| contradiction | ![](./lesson-3/affix-phrases/contradiction.svg) | ![](./original-images/affix-phrases/contradiction.png) |
-| disparage     | ![](./lesson-3/affix-phrases/disparage.svg)     | ![](./original-images/affix-phrases/disparage.png)     |
-| destitute     | ![](./lesson-3/affix-phrases/destitute.svg)     | ![](./original-images/affix-phrases/destitute.png)     |
-| peach         | ![](./lesson-3/affix-phrases/peach.svg)         | ![](./original-images/affix-phrases/peach.png)         |
-| infect        | ![](./lesson-3/affix-phrases/infect.svg)        | ![](./original-images/affix-phrases/infect.png)        |
-| infection     | ![](./lesson-3/affix-phrases/infection.svg)     | ![](./original-images/affix-phrases/infection.png)     |
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>compose</td>
+<td><img src="./lesson-3/affix-phrases/compose.svg" alt="compose"></td>
+<td><img src="./original-images/affix-phrases/compose.png" alt="compose original"></td>
+</tr>
+<tr>
+<td>construct</td>
+<td><img src="./lesson-3/affix-phrases/construct.svg" alt="construct"></td>
+<td><img src="./original-images/affix-phrases/construct.png" alt="construct original"></td>
+</tr>
+<tr>
+<td>contradiction</td>
+<td><img src="./lesson-3/affix-phrases/contradiction.svg" alt="contradiction"></td>
+<td><img src="./original-images/affix-phrases/contradiction.png" alt="contradiction original"></td>
+</tr>
+<tr>
+<td>disparage</td>
+<td><img src="./lesson-3/affix-phrases/disparage.svg" alt="disparage"></td>
+<td><img src="./original-images/affix-phrases/disparage.png" alt="disparage original"></td>
+</tr>
+<tr>
+<td>destitute</td>
+<td><img src="./lesson-3/affix-phrases/destitute.svg" alt="destitute"></td>
+<td><img src="./original-images/affix-phrases/destitute.png" alt="destitute original"></td>
+</tr>
+<tr>
+<td>peach</td>
+<td><img src="./lesson-3/affix-phrases/peach.svg" alt="peach"></td>
+<td><img src="./original-images/affix-phrases/peach.png" alt="peach original"></td>
+</tr>
+<tr>
+<td>infect</td>
+<td><img src="./lesson-3/affix-phrases/infect.svg" alt="infect"></td>
+<td><img src="./original-images/affix-phrases/infect.png" alt="infect original"></td>
+</tr>
+<tr>
+<td>infection</td>
+<td><img src="./lesson-3/affix-phrases/infection.svg" alt="infection"></td>
+<td><img src="./original-images/affix-phrases/infection.png" alt="infection original"></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
@@ -282,17 +481,62 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 <details>
 <summary>Side by side with original manual image</summary>
 
-| Earthographic | Ponish                                          | Original image                                         |
-| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
-| spiteful      | ![](./lesson-3/affix-phrases/spiteful.svg)      | ![](./original-images/affix-phrases/spiteful.png)      |
-| spitefulness  | ![](./lesson-3/affix-phrases/spitefulness.svg)  | ![](./original-images/affix-phrases/spitefulness.png)  |
-| graphic       | ![](./lesson-3/affix-phrases/graphic.svg)       | ![](./original-images/affix-phrases/graphic.png)       |
-| grammar       | ![](./lesson-3/affix-phrases/grammar.svg)       | ![](./original-images/affix-phrases/grammar.png)       |
-| sluthood      | ![](./lesson-3/affix-phrases/sluthood.svg)      | ![](./original-images/affix-phrases/sluthood.png)      |
-| pacify        | ![](./lesson-3/affix-phrases/pacify.svg)        | ![](./original-images/affix-phrases/pacify.png)        |
-| pacification  | ![](./lesson-3/affix-phrases/pacification.svg)  | ![](./original-images/affix-phrases/pacification.png)  |
-| guileless     | ![](./lesson-3/affix-phrases/guileless.svg)     | ![](./original-images/affix-phrases/guileless.png)     |
-| guilelessness | ![](./lesson-3/affix-phrases/guilelessness.svg) | ![](./original-images/affix-phrases/guilelessness.png) |
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spiteful</td>
+<td><img src="./lesson-3/affix-phrases/spiteful.svg" alt="spiteful"></td>
+<td><img src="./original-images/affix-phrases/spiteful.png" alt="spiteful original"></td>
+</tr>
+<tr>
+<td>spitefulness</td>
+<td><img src="./lesson-3/affix-phrases/spitefulness.svg" alt="spitefulness"></td>
+<td><img src="./original-images/affix-phrases/spitefulness.png" alt="spitefulness original"></td>
+</tr>
+<tr>
+<td>graphic</td>
+<td><img src="./lesson-3/affix-phrases/graphic.svg" alt="graphic"></td>
+<td><img src="./original-images/affix-phrases/graphic.png" alt="graphic original"></td>
+</tr>
+<tr>
+<td>grammar</td>
+<td><img src="./lesson-3/affix-phrases/grammar.svg" alt="grammar"></td>
+<td><img src="./original-images/affix-phrases/grammar.png" alt="grammar original"></td>
+</tr>
+<tr>
+<td>sluthood</td>
+<td><img src="./lesson-3/affix-phrases/sluthood.svg" alt="sluthood"></td>
+<td><img src="./original-images/affix-phrases/sluthood.png" alt="sluthood original"></td>
+</tr>
+<tr>
+<td>pacify</td>
+<td><img src="./lesson-3/affix-phrases/pacify.svg" alt="pacify"></td>
+<td><img src="./original-images/affix-phrases/pacify.png" alt="pacify original"></td>
+</tr>
+<tr>
+<td>pacification</td>
+<td><img src="./lesson-3/affix-phrases/pacification.svg" alt="pacification"></td>
+<td><img src="./original-images/affix-phrases/pacification.png" alt="pacification original"></td>
+</tr>
+<tr>
+<td>guileless</td>
+<td><img src="./lesson-3/affix-phrases/guileless.svg" alt="guileless"></td>
+<td><img src="./original-images/affix-phrases/guileless.png" alt="guileless original"></td>
+</tr>
+<tr>
+<td>guilelessness</td>
+<td><img src="./lesson-3/affix-phrases/guilelessness.svg" alt="guilelessness"></td>
+<td><img src="./original-images/affix-phrases/guilelessness.png" alt="guilelessness original"></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
@@ -312,16 +556,57 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 <details>
 <summary>Side by side with original manual image</summary>
 
-| Earthographic | Ponish                                          | Original image                                         |
-| ------------- | ----------------------------------------------- | ------------------------------------------------------ |
-| biology       | ![](./lesson-3/affix-phrases/biology.svg)       | ![](./original-images/affix-phrases/biology.png)       |
-| illogical     | ![](./lesson-3/affix-phrases/illogical.svg)     | ![](./original-images/affix-phrases/illogical.png)     |
-| misrepresent  | ![](./lesson-3/affix-phrases/misrepresent.svg)  | ![](./original-images/affix-phrases/misrepresent.png)  |
-| mismanagement | ![](./lesson-3/affix-phrases/mismanagement.svg) | ![](./original-images/affix-phrases/mismanagement.png) |
-| cleanliness   | ![](./lesson-3/affix-phrases/cleanliness.svg)   | ![](./original-images/affix-phrases/cleanliness.png)   |
-| overdone      | ![](./lesson-3/affix-phrases/overdone.svg)      | ![](./original-images/affix-phrases/overdone.png)      |
-| otherwise     | ![](./lesson-3/affix-phrases/otherwise.svg)     | ![](./original-images/affix-phrases/otherwise.png)     |
-| outspoken     | ![](./lesson-3/affix-phrases/outspoken.svg)     | ![](./original-images/affix-phrases/outspoken.png)     |
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>biology</td>
+<td><img src="./lesson-3/affix-phrases/biology.svg" alt="biology"></td>
+<td><img src="./original-images/affix-phrases/biology.png" alt="biology original"></td>
+</tr>
+<tr>
+<td>illogical</td>
+<td><img src="./lesson-3/affix-phrases/illogical.svg" alt="illogical"></td>
+<td><img src="./original-images/affix-phrases/illogical.png" alt="illogical original"></td>
+</tr>
+<tr>
+<td>misrepresent</td>
+<td><img src="./lesson-3/affix-phrases/misrepresent.svg" alt="misrepresent"></td>
+<td><img src="./original-images/affix-phrases/misrepresent.png" alt="misrepresent original"></td>
+</tr>
+<tr>
+<td>mismanagement</td>
+<td><img src="./lesson-3/affix-phrases/mismanagement.svg" alt="mismanagement"></td>
+<td><img src="./original-images/affix-phrases/mismanagement.png" alt="mismanagement original"></td>
+</tr>
+<tr>
+<td>cleanliness</td>
+<td><img src="./lesson-3/affix-phrases/cleanliness.svg" alt="cleanliness"></td>
+<td><img src="./original-images/affix-phrases/cleanliness.png" alt="cleanliness original"></td>
+</tr>
+<tr>
+<td>overdone</td>
+<td><img src="./lesson-3/affix-phrases/overdone.svg" alt="overdone"></td>
+<td><img src="./original-images/affix-phrases/overdone.png" alt="overdone original"></td>
+</tr>
+<tr>
+<td>otherwise</td>
+<td><img src="./lesson-3/affix-phrases/otherwise.svg" alt="otherwise"></td>
+<td><img src="./original-images/affix-phrases/otherwise.png" alt="otherwise original"></td>
+</tr>
+<tr>
+<td>outspoken</td>
+<td><img src="./lesson-3/affix-phrases/outspoken.svg" alt="outspoken"></td>
+<td><img src="./original-images/affix-phrases/outspoken.png" alt="outspoken original"></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
@@ -341,16 +626,57 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 <details>
 <summary>Side by side with original manual image</summary>
 
-| Earthographic | Ponish                                         | Original image                                        |
-| ------------- | ---------------------------------------------- | ----------------------------------------------------- |
-| self publish  | ![](./lesson-3/affix-phrases/selfpublish.svg)  | ![](./original-images/affix-phrases/selfpublish.png)  |
-| semi truck    | ![](./lesson-3/affix-phrases/semitruck.svg)    | ![](./original-images/affix-phrases/semitruck.png)    |
-| battleship    | ![](./lesson-3/affix-phrases/battleship.svg)   | ![](./original-images/affix-phrases/battleship.png)   |
-| shipment      | ![](./lesson-3/affix-phrases/shipment.svg)     | ![](./original-images/affix-phrases/shipment.png)     |
-| subway        | ![](./lesson-3/affix-phrases/subway.svg)       | ![](./original-images/affix-phrases/subway.png)       |
-| subject       | ![](./lesson-3/affix-phrases/subject.svg)      | ![](./original-images/affix-phrases/subject.png)      |
-| supersonic    | ![](./lesson-3/affix-phrases/supersonic.svg)   | ![](./original-images/affix-phrases/supersonic.png)   |
-| superluminal  | ![](./lesson-3/affix-phrases/superluminal.svg) | ![](./original-images/affix-phrases/superluminal.png) |
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self publish</td>
+<td><img src="./lesson-3/affix-phrases/selfpublish.svg" alt="selfpublish"></td>
+<td><img src="./original-images/affix-phrases/selfpublish.png" alt="selfpublish original"></td>
+</tr>
+<tr>
+<td>semi truck</td>
+<td><img src="./lesson-3/affix-phrases/semitruck.svg" alt="semitruck"></td>
+<td><img src="./original-images/affix-phrases/semitruck.png" alt="semitruck original"></td>
+</tr>
+<tr>
+<td>battleship</td>
+<td><img src="./lesson-3/affix-phrases/battleship.svg" alt="battleship"></td>
+<td><img src="./original-images/affix-phrases/battleship.png" alt="battleship original"></td>
+</tr>
+<tr>
+<td>shipment</td>
+<td><img src="./lesson-3/affix-phrases/shipment.svg" alt="shipment"></td>
+<td><img src="./original-images/affix-phrases/shipment.png" alt="shipment original"></td>
+</tr>
+<tr>
+<td>subway</td>
+<td><img src="./lesson-3/affix-phrases/subway.svg" alt="subway"></td>
+<td><img src="./original-images/affix-phrases/subway.png" alt="subway original"></td>
+</tr>
+<tr>
+<td>subject</td>
+<td><img src="./lesson-3/affix-phrases/subject.svg" alt="subject"></td>
+<td><img src="./original-images/affix-phrases/subject.png" alt="subject original"></td>
+</tr>
+<tr>
+<td>supersonic</td>
+<td><img src="./lesson-3/affix-phrases/supersonic.svg" alt="supersonic"></td>
+<td><img src="./original-images/affix-phrases/supersonic.png" alt="supersonic original"></td>
+</tr>
+<tr>
+<td>superluminal</td>
+<td><img src="./lesson-3/affix-phrases/superluminal.svg" alt="superluminal"></td>
+<td><img src="./original-images/affix-phrases/superluminal.png" alt="superluminal original"></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
@@ -370,16 +696,57 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 <details>
 <summary>Side by side with original manual image</summary>
 
-| Earthographic | Ponish                                      | Original image                                     |
-| ------------- | ------------------------------------------- | -------------------------------------------------- |
-| transit       | ![](./lesson-3/affix-phrases/transit.svg)   | ![](./original-images/affix-phrases/transit.png)   |
-| transfer      | ![](./lesson-3/affix-phrases/transfer.svg)  | ![](./original-images/affix-phrases/transfer.png)  |
-| undergo       | ![](./lesson-3/affix-phrases/undergo.svg)   | ![](./original-images/affix-phrases/undergo.png)   |
-| blunder       | ![](./lesson-3/affix-phrases/blunder.svg)   | ![](./original-images/affix-phrases/blunder.png)   |
-| forever       | ![](./lesson-3/affix-phrases/forever.svg)   | ![](./original-images/affix-phrases/forever.png)   |
-| everybody     | ![](./lesson-3/affix-phrases/everybody.svg) | ![](./original-images/affix-phrases/everybody.png) |
-| variable      | ![](./lesson-3/affix-phrases/variable.svg)  | ![](./original-images/affix-phrases/variable.png)  |
-| very good     | ![](./lesson-3/affix-phrases/verygood.svg)  | ![](./original-images/affix-phrases/verygood.png)  |
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>transit</td>
+<td><img src="./lesson-3/affix-phrases/transit.svg" alt="transit"></td>
+<td><img src="./original-images/affix-phrases/transit.png" alt="transit original"></td>
+</tr>
+<tr>
+<td>transfer</td>
+<td><img src="./lesson-3/affix-phrases/transfer.svg" alt="transfer"></td>
+<td><img src="./original-images/affix-phrases/transfer.png" alt="transfer original"></td>
+</tr>
+<tr>
+<td>undergo</td>
+<td><img src="./lesson-3/affix-phrases/undergo.svg" alt="undergo"></td>
+<td><img src="./original-images/affix-phrases/undergo.png" alt="undergo original"></td>
+</tr>
+<tr>
+<td>blunder</td>
+<td><img src="./lesson-3/affix-phrases/blunder.svg" alt="blunder"></td>
+<td><img src="./original-images/affix-phrases/blunder.png" alt="blunder original"></td>
+</tr>
+<tr>
+<td>forever</td>
+<td><img src="./lesson-3/affix-phrases/forever.svg" alt="forever"></td>
+<td><img src="./original-images/affix-phrases/forever.png" alt="forever original"></td>
+</tr>
+<tr>
+<td>everybody</td>
+<td><img src="./lesson-3/affix-phrases/everybody.svg" alt="everybody"></td>
+<td><img src="./original-images/affix-phrases/everybody.png" alt="everybody original"></td>
+</tr>
+<tr>
+<td>variable</td>
+<td><img src="./lesson-3/affix-phrases/variable.svg" alt="variable"></td>
+<td><img src="./original-images/affix-phrases/variable.png" alt="variable original"></td>
+</tr>
+<tr>
+<td>very good</td>
+<td><img src="./lesson-3/affix-phrases/verygood.svg" alt="verygood"></td>
+<td><img src="./original-images/affix-phrases/verygood.png" alt="verygood original"></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
@@ -395,12 +762,37 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 <details>
 <summary>Side by side with original manual image</summary>
 
-| Earthographic | Ponish                                      | Original image                                     |
-| ------------- | ------------------------------------------- | -------------------------------------------------- |
-| toward        | ![](./lesson-3/affix-phrases/toward.svg)    | ![](./original-images/affix-phrases/toward.png)    |
-| downwards     | ![](./lesson-3/affix-phrases/downwards.svg) | ![](./original-images/affix-phrases/downwards.png) |
-| warden        | ![](./lesson-3/affix-phrases/warden.svg)    | ![](./original-images/affix-phrases/warden.png)    |
-| ward away     | ![](./lesson-3/affix-phrases/wardaway.svg)  | ![](./original-images/affix-phrases/wardaway.png)  |
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>toward</td>
+<td><img src="./lesson-3/affix-phrases/toward.svg" alt="toward"></td>
+<td><img src="./original-images/affix-phrases/toward.png" alt="toward original"></td>
+</tr>
+<tr>
+<td>downwards</td>
+<td><img src="./lesson-3/affix-phrases/downwards.svg" alt="downwards"></td>
+<td><img src="./original-images/affix-phrases/downwards.png" alt="downwards original"></td>
+</tr>
+<tr>
+<td>warden</td>
+<td><img src="./lesson-3/affix-phrases/warden.svg" alt="warden"></td>
+<td><img src="./original-images/affix-phrases/warden.png" alt="warden original"></td>
+</tr>
+<tr>
+<td>ward away</td>
+<td><img src="./lesson-3/affix-phrases/wardaway.svg" alt="wardaway"></td>
+<td><img src="./original-images/affix-phrases/wardaway.png" alt="wardaway original"></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
