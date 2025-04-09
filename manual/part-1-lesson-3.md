@@ -322,8 +322,6 @@ included directly below, if you need a translation.
 
 ### Examples, Row 1: Above ground, Lay about, Antidote, Automobile, Await, Go away, Circulate, Circumscribe
 
-TODO [automobile]: prefix ending in a vowel has vowel effect on the next glyph?
-
 | Earthographic | Ponish                                         |
 | ------------- | ---------------------------------------------- |
 | above ground  | ![](./lesson-3/affix-phrases/aboveground.svg)  |
@@ -334,6 +332,12 @@ TODO [automobile]: prefix ending in a vowel has vowel effect on the next glyph?
 | go away       | ![](./lesson-3/affix-phrases/goaway.svg)       |
 | circulate     | ![](./lesson-3/affix-phrases/circulate.svg)    |
 | circumscribe  | ![](./lesson-3/affix-phrases/circumscribe.svg) |
+
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/039.png" alt="">
+<!-- TODO: cut original image into 7 -->
+</details>
 
 <details>
 <summary>Side by side with original manual image</summary>
@@ -394,8 +398,6 @@ TODO [automobile]: prefix ending in a vowel has vowel effect on the next glyph?
 
 ### Examples, Row 2: Compose, Construct, Contradiction, Disparage, Destitute, Peach, Infect, Infection
 
-TODO [peach]: suffix starting with a vowel acts like a vowel?
-
 | Earthographic | Ponish                                          |
 | ------------- | ----------------------------------------------- |
 | compose       | ![](./lesson-3/affix-phrases/compose.svg)       |
@@ -406,6 +408,12 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 | peach         | ![](./lesson-3/affix-phrases/peach.svg)         |
 | infect        | ![](./lesson-3/affix-phrases/infect.svg)        |
 | infection     | ![](./lesson-3/affix-phrases/infection.svg)     |
+
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/039.png" alt="">
+<!-- TODO: cut original image into 7 -->
+</details>
 
 <details>
 <summary>Side by side with original manual image</summary>
@@ -477,6 +485,12 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 | pacification  | ![](./lesson-3/affix-phrases/pacification.svg)  |
 | guileless     | ![](./lesson-3/affix-phrases/guileless.svg)     |
 | guilelessness | ![](./lesson-3/affix-phrases/guilelessness.svg) |
+
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/039.png" alt="">
+<!-- TODO: cut original image into 7 -->
+</details>
 
 <details>
 <summary>Side by side with original manual image</summary>
@@ -554,6 +568,12 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 | outspoken     | ![](./lesson-3/affix-phrases/outspoken.svg)     |
 
 <details>
+<summary>Original manual image</summary>
+<img src="./original-images/039.png" alt="">
+<!-- TODO: cut original image into 7 -->
+</details>
+
+<details>
 <summary>Side by side with original manual image</summary>
 
 <table>
@@ -622,6 +642,12 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 | subject       | ![](./lesson-3/affix-phrases/subject.svg)      |
 | supersonic    | ![](./lesson-3/affix-phrases/supersonic.svg)   |
 | superluminal  | ![](./lesson-3/affix-phrases/superluminal.svg) |
+
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/039.png" alt="">
+<!-- TODO: cut original image into 7 -->
+</details>
 
 <details>
 <summary>Side by side with original manual image</summary>
@@ -694,6 +720,12 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 | very good     | ![](./lesson-3/affix-phrases/verygood.svg)  |
 
 <details>
+<summary>Original manual image</summary>
+<img src="./original-images/039.png" alt="">
+<!-- TODO: cut original image into 7 -->
+</details>
+
+<details>
 <summary>Side by side with original manual image</summary>
 
 <table>
@@ -750,7 +782,7 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 
 </details>
 
-### Examples, Row 7: Toward, Downwards, Warden, Ward away.
+### Examples, Row 7: Toward, Downwards, Warden, Ward away
 
 | Earthographic | Ponish                                      |
 | ------------- | ------------------------------------------- |
@@ -758,6 +790,12 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 | downwards     | ![](./lesson-3/affix-phrases/downwards.svg) |
 | warden        | ![](./lesson-3/affix-phrases/warden.svg)    |
 | ward away     | ![](./lesson-3/affix-phrases/wardaway.svg)  |
+
+<details>
+<summary>Original manual image</summary>
+<img src="./original-images/039.png" alt="">
+<!-- TODO: cut original image into 7 -->
+</details>
 
 <details>
 <summary>Side by side with original manual image</summary>
@@ -795,6 +833,8 @@ TODO [peach]: suffix starting with a vowel acts like a vowel?
 </table>
 
 </details>
+
+---
 
 And to close up the lesson, here is some more reading practice:
 

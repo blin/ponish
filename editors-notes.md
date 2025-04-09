@@ -4,8 +4,8 @@
 
 - Original manual has detailed photographs of written text on paper, some of
   them a bit blurry. I have compressed them using
-  `convert -colorspace Gray -normalize -threshold 55%` for faster serving.
-  If you can't read some of them here, check out the original PDF.
+  `convert -colorspace Gray -normalize -threshold 55%` for faster serving. If
+  you can't read some of them here, check out the original PDF.
 - Simplification to single-size vs double-size glyph choice is adopted: if the
   glyph in I/Y position is followed by a consonant, it is single-sized .
   - The original manual has a simple to describe but hard to implement choice:
@@ -27,8 +27,9 @@
 
 ## Comments on the original
 
-## Part 1 Lesson 1
-
 - one leg A - ![A](./manual/alphabet/A-one-leg.svg) - can be distinguished from
   T - ![T](./manual/alphabet/T.svg) - by the direction of drawing, A is drawn
   from bottom to top, T is drawn from top to bottom.
+- Handling of leading and trailing vowels in prefixes and suffixes is
+  inconsistent. In "anti-dot" "antid" is written WITHOUT a break after "i", but
+  in "auto-mobile" "autom" is written WITH a break after "o". See also "peach".
