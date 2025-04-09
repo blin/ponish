@@ -840,32 +840,74 @@ And to close up the lesson, here is some more reading practice:
 
 ## Practice
 
-EDITOR NOTE: original images have earthographic and ponish side-by-side, which
-makes it hard not to read earthographic. I've split the images to remove the
-earthographic, but some overhang from earthographic is left, please ignore.
-
 ### Practice 1
 
 ![](./lesson-3/every-corpse-1.svg)
-![](./original-images/lesson-3/every-corpse-1.png)
 
 ![](./lesson-3/every-corpse-2.svg)
-![](./original-images/lesson-3/every-corpse-2.png)
 
 <details>
 <summary>Earthographic</summary>
-Every corpse on mount everest was once an extremly motivated person
+Every corpse on mount everest was
+
+<br/>
+
+once an extremly motivated person
+
+</details>
+
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/040.png" alt="">
+
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<tbody>
+<tr><td><img src="./lesson-3/every-corpse-1.svg" width="100%"><br><img src="./original-images/lesson-3/every-corpse-1.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/every-corpse-2.svg" width="100%"><br><img src="./original-images/lesson-3/every-corpse-2.png" width="100%"></td></tr>
+</tbody>
+</table>
+
 </details>
 
 ### Practice 2
 
-![](./lesson-3/bonfire-1.svg) ![](./original-images/lesson-3/bonfire-1.png)
+![](./lesson-3/bonfire-1.svg)
 
-![](./lesson-3/bonfire-2.svg) ![](./original-images/lesson-3/bonfire-2.png)
+![](./lesson-3/bonfire-2.svg)
 
 <details>
 <summary>Earthographic</summary>
-The bigger you build the bonfire, the more darkness is revealed
+The bigger you build the bonfire,
+
+<br/>
+
+the more darkness is revealed
+
+</details>
+
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/041.png" alt="">
+
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<tbody>
+<tr><td><img src="./lesson-3/bonfire-1.svg" width="100%"><br><img src="./original-images/lesson-3/bonfire-1.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/bonfire-2.svg" width="100%"><br><img src="./original-images/lesson-3/bonfire-2.png" width="100%"></td></tr>
+</tbody>
+</table>
+
 </details>
 
 ### Practice 3
@@ -875,53 +917,123 @@ the images, but you'll get the most out of it if you read, and copy it on your
 own.
 
 ![](./lesson-3/homo-intended-1.svg)
-![](./original-images/lesson-3/homo-intended-1.png)
-
-EDITOR NOTE: In the original image two spellings of "other" are used, separated
-by "/"
 
 ![](./lesson-3/homo-intended-2.svg)
-![](./original-images/lesson-3/homo-intended-2.png)
 
 ![](./lesson-3/homo-intended-3.svg)
-![](./original-images/lesson-3/homo-intended-3.png)
 
 ![](./lesson-3/homo-intended-4.svg)
-![](./original-images/lesson-3/homo-intended-4.png)
 
 ![](./lesson-3/homo-intended-5.svg)
-![](./original-images/lesson-3/homo-intended-5.png)
 
 ![](./lesson-3/homo-intended-6.svg)
-![](./original-images/lesson-3/homo-intended-6.png)
 
 <details>
 <summary>Earthographic</summary>
-It's so frustrating being a girl and trying to flirt with other girls.
-Like you tell them they're cute and they go "aww thank you!"
-No. No I'm being gay with you. Homo intended. Damnit.
+It's so frustrating being a girl
+
+<br/>
+
+and trying to flirt with other girls.
+
+<br/>
+
+Like you tell them they're
+
+<br/>
+
+cute and they go "aww thank you!"
+
+<br/>
+
+No. No I'm being gay with you.
+
+<br/>
+
+Homo intended. Damnit.
+
+</details>
+
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/042.png" alt="">
+
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<tbody>
+<tr><td><img src="./lesson-3/homo-intended-1.svg" width="100%"><br><img src="./original-images/lesson-3/homo-intended-1.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/homo-intended-2.svg" width="100%"><br><img src="./original-images/lesson-3/homo-intended-2.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/homo-intended-3.svg" width="100%"><br><img src="./original-images/lesson-3/homo-intended-3.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/homo-intended-4.svg" width="100%"><br><img src="./original-images/lesson-3/homo-intended-4.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/homo-intended-5.svg" width="100%"><br><img src="./original-images/lesson-3/homo-intended-5.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/homo-intended-6.svg" width="100%"><br><img src="./original-images/lesson-3/homo-intended-6.png" width="100%"></td></tr>
+</tbody>
+</table>
+
 </details>
 
 ### Lesson 3 Passage
 
-![](./lesson-3/subway-1.svg) ![](./original-images/lesson-3/subway-1.png)
+![](./lesson-3/subway-1.svg)
 
-![](./lesson-3/subway-2.svg) ![](./original-images/lesson-3/subway-2.png)
+![](./lesson-3/subway-2.svg)
 
-![](./lesson-3/subway-3.svg) ![](./original-images/lesson-3/subway-3.png)
+![](./lesson-3/subway-3.svg)
 
-![](./lesson-3/subway-4.svg) ![](./original-images/lesson-3/subway-4.png)
+![](./lesson-3/subway-4.svg)
 
-![](./lesson-3/subway-5.svg) ![](./original-images/lesson-3/subway-5.png)
+![](./lesson-3/subway-5.svg)
 
 <details>
 <summary>And the answer to the above example:</summary>
-On the subway, today a man came up to me to start a conversation. He made small
-talk. He was a lonely man, talking about the weather, and other things. I tried
-to be pleasant, and accommodate him, but my head began to hurt from his
-banality. I almost didn't notice it had happened, but I threw up all over him.
-He was not pleased. I couldn't stop laughing.
+On the subway, today a man came up to me to start a conversation. He made
+
+<br/>
+
+small talk. He was a lonely man, talking about the weather, and other things. I
+
+<br/>
+
+tried to be pleasant, and accommodate him, but my head began to hurt
+
+<br/>
+
+from his banality. I almost didn't notice it had happened, but I
+
+<br/>
+
+threw up all over him. He was not pleased. I couldn't stop laughing.
+
 </details>
+
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/043.png" alt="">
+
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<tbody>
+<tr><td><img src="./lesson-3/subway-1.svg" width="100%"><br><img src="./original-images/lesson-3/subway-1.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/subway-2.svg" width="100%"><br><img src="./original-images/lesson-3/subway-2.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/subway-3.svg" width="100%"><br><img src="./original-images/lesson-3/subway-3.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/subway-4.svg" width="100%"><br><img src="./original-images/lesson-3/subway-4.png" width="100%"></td></tr>
+<tr><td><img src="./lesson-3/subway-5.svg" width="100%"><br><img src="./original-images/lesson-3/subway-5.png" width="100%"></td></tr>
+</tbody>
+</table>
+
+</details>
+
+---
 
 [Next: Lesson 4](./part-1-lesson-4.md)
 

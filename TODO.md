@@ -14,3 +14,4 @@
 - Implement "if a chunk fits, glyphs can be double-sized" rule.
   - Implement "if glyph ends in the top side of an imaginary glyph box" as a
     stop-gap solution
+- Quotes, like in "aww, thank you!"

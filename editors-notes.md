@@ -2,6 +2,10 @@
 
 ## Differences from original
 
+- In some cases original images have earthographic and ponish side-by-side,
+  which makes it hard to NOT read earthographic. I've split the images to remove
+  the earthographic, but some overhang from earthographic is left, if you find
+  some of the overhang confusing see the uncut original.
 - Original manual has detailed photographs of written text on paper, some of
   them a bit blurry. I have compressed them using
   `convert -colorspace Gray -normalize -threshold 55%` for faster serving. If
@@ -24,6 +28,8 @@
   sine wave.
 - In lesson 3 the prefixes and suffixes and corresponding examples are put into
   tables for easier scanning.
+- In lesson 3 practice 3 the original image has two spellings of "other" ,
+  separated by "/" , this is not re-produced.
 
 ## Comments on the original
 
