@@ -35,6 +35,7 @@ if __name__ == "__main__":
         with dc as (p, t):
             draw_sentence(t, p, line)
 
+# TODO: "the" before "bigger" is written as "a"?
 text = [
     "The bi$(GR) yu bild the bonfir",
     "the mor dark$(ness) is reveld",

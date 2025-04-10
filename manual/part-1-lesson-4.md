@@ -24,15 +24,15 @@ only a little.
 The words this is most commonly done with are prepositions, and possessive
 pronouns. 'To go to' becomes:
 
-| Earthographic | Ponish                        |
-| ------------- | ----------------------------- |
-| to go to      | ![](./lesson-4/phrase-01.svg) |
-| to go to      | ![](./lesson-4/phrase-02.svg) |
+| Earthographic     | Ponish                        |
+| ----------------- | ----------------------------- |
+| to go to          | ![](./lesson-4/phrase-01.svg) |
+| to go to the mall | ![](./lesson-4/phrase-02.svg) |
 
 <details>
 <summary>Original manual image</summary>
 
-<img src="./original-images/043.png" alt="">
+<img src="./original-images/044.png" alt="">
 
 </details>
 
@@ -63,6 +63,8 @@ pronouns. 'To go to' becomes:
 
 </details>
 
+---
+
 While 'I have to' yields:
 
 | Earthographic            | Ponish                        |
@@ -73,7 +75,7 @@ While 'I have to' yields:
 <details>
 <summary>Original manual image</summary>
 
-<img src="./original-images/043.png" alt="">
+<img src="./original-images/045.png" alt="">
 
 </details>
 
@@ -104,6 +106,8 @@ While 'I have to' yields:
 
 </details>
 
+---
+
 And so on. Just look at all that saved space! Here are some more examples:
 
 | Earthographic                               | Ponish                        |
@@ -122,10 +126,12 @@ And so on. Just look at all that saved space! Here are some more examples:
 | You will not be able to                     | ![](./lesson-4/phrase-16.svg) |
 | We are the priests of the temples of syrinx | ![](./lesson-4/phrase-17.svg) |
 
+TODO: "sts" in "priests"
+
 <details>
 <summary>Original manual image</summary>
 
-<img src="./original-images/043.png" alt="">
+<img src="./original-images/046.png" alt="">
 
 </details>
 
@@ -211,6 +217,8 @@ And so on. Just look at all that saved space! Here are some more examples:
 
 </details>
 
+---
+
 Other times, words which are written separately Earthographicaly, like street
 light, or clothes horse, would be joined together as one, like so:
 
@@ -232,7 +240,7 @@ light, or clothes horse, would be joined together as one, like so:
 <details>
 <summary>Original manual image</summary>
 
-<img src="./original-images/043.png" alt="">
+<img src="./original-images/047.png" alt="">
 
 </details>
 
@@ -312,6 +320,8 @@ light, or clothes horse, would be joined together as one, like so:
 </table>
 
 </details>
+
+---
 
 The last technique is the utilization of short forms. These are not
 standardized, and are not often used for communication wherein some outside
