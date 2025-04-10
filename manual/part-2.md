@@ -1,23 +1,14 @@
 # Part 2: Further Readings, and Their Earthographic Transcriptions
 
-## Passage 1 (Ponish)
+## Passage 1
 
-|   |
-|---|
-| ![](./part-2/passage-1-line-01.svg) |
-| ![](./part-2/passage-1-line-02.svg) |
-| ![](./part-2/passage-1-line-03.svg) |
-| ![](./part-2/passage-1-line-04.svg) |
-| ![](./part-2/passage-1-line-05.svg) |
-| ![](./part-2/passage-1-line-06.svg) |
-| ![](./part-2/passage-1-line-07.svg) |
-| ![](./part-2/passage-1-line-08.svg) |
-| ![](./part-2/passage-1-line-09.svg) |
-| ![](./part-2/passage-1-line-10.svg) |
-| ![](./part-2/passage-1-line-11.svg) |
-| ![](./part-2/passage-1-line-12.svg) |
-| ![](./part-2/passage-1-line-13.svg) |
-| ![](./part-2/passage-1-line-14.svg) |
+![](./part-2/passage-1-line-01.svg) ![](./part-2/passage-1-line-02.svg)
+![](./part-2/passage-1-line-03.svg) ![](./part-2/passage-1-line-04.svg)
+![](./part-2/passage-1-line-05.svg) ![](./part-2/passage-1-line-06.svg)
+![](./part-2/passage-1-line-07.svg) ![](./part-2/passage-1-line-08.svg)
+![](./part-2/passage-1-line-09.svg) ![](./part-2/passage-1-line-10.svg)
+![](./part-2/passage-1-line-11.svg) ![](./part-2/passage-1-line-12.svg)
+![](./part-2/passage-1-line-13.svg) ![](./part-2/passage-1-line-14.svg)
 
 <details>
 <summary>Earthographic</summary>
@@ -79,13 +70,10 @@ Equestria for generations since.
 
 ## Passage 2:
 
-|   |
-|---|
-| ![](./part-2/passage-2-line-01.svg) |
-| ![](./part-2/passage-2-line-02.svg) |
-| ![](./part-2/passage-2-line-03.svg) |
-| ![](./part-2/passage-2-line-04.svg) |
-| ![](./part-2/passage-2-line-05.svg) |
+![](./part-2/passage-2-line-01.svg) ![](./part-2/passage-2-line-02.svg)
+![](./part-2/passage-2-line-03.svg) ![](./part-2/passage-2-line-04.svg)
+
+![](./part-2/passage-2-line-05.svg)
 
 <details>
 <summary>Earthographic</summary>
@@ -118,20 +106,12 @@ he confuses it with feeling.
 
 ## Passage 3
 
-|   |
-|---|
-| ![](./part-2/passage-3-line-01.svg) |
-| ![](./part-2/passage-3-line-02.svg) |
-| ![](./part-2/passage-3-line-03.svg) |
-| ![](./part-2/passage-3-line-04.svg) |
-| ![](./part-2/passage-3-line-05.svg) |
-| ![](./part-2/passage-3-line-06.svg) |
-| ![](./part-2/passage-3-line-07.svg) |
-| ![](./part-2/passage-3-line-08.svg) |
-| ![](./part-2/passage-3-line-09.svg) |
-| ![](./part-2/passage-3-line-10.svg) |
-| ![](./part-2/passage-3-line-11.svg) |
-| ![](./part-2/passage-3-line-12.svg) |
+![](./part-2/passage-3-line-01.svg) ![](./part-2/passage-3-line-02.svg)
+![](./part-2/passage-3-line-03.svg) ![](./part-2/passage-3-line-04.svg)
+![](./part-2/passage-3-line-05.svg) ![](./part-2/passage-3-line-06.svg)
+![](./part-2/passage-3-line-07.svg) ![](./part-2/passage-3-line-08.svg)
+![](./part-2/passage-3-line-09.svg) ![](./part-2/passage-3-line-10.svg)
+![](./part-2/passage-3-line-11.svg) ![](./part-2/passage-3-line-12.svg)
 
 <details>
 <summary>Earthographic</summary>
@@ -185,13 +165,9 @@ village green.
 
 ## Passage 4:
 
-|   |
-|---|
-| ![](./part-2/passage-4-line-01.svg) |
-| ![](./part-2/passage-4-line-02.svg) |
-| ![](./part-2/passage-4-line-03.svg) |
-| ![](./part-2/passage-4-line-04.svg) |
-| ![](./part-2/passage-4-line-05.svg) |
+![](./part-2/passage-4-line-01.svg) ![](./part-2/passage-4-line-02.svg)
+![](./part-2/passage-4-line-03.svg) ![](./part-2/passage-4-line-04.svg)
+![](./part-2/passage-4-line-05.svg)
 
 <details>
 <summary>Earthographic</summary>
@@ -224,19 +200,12 @@ pet position are pretty ugly no matter what they're dressed in.
 
 ## Passage 5
 
-|   |
-|---|
-| ![](./part-2/passage-5-line-01.svg) |
-| ![](./part-2/passage-5-line-02.svg) |
-| ![](./part-2/passage-5-line-03.svg) |
-| ![](./part-2/passage-5-line-04.svg) |
-| ![](./part-2/passage-5-line-05.svg) |
-| ![](./part-2/passage-5-line-06.svg) |
-| ![](./part-2/passage-5-line-07.svg) |
-| ![](./part-2/passage-5-line-08.svg) |
-| ![](./part-2/passage-5-line-09.svg) |
-| ![](./part-2/passage-5-line-10.svg) |
-| ![](./part-2/passage-5-line-11.svg) |
+![](./part-2/passage-5-line-01.svg) ![](./part-2/passage-5-line-02.svg)
+![](./part-2/passage-5-line-03.svg) ![](./part-2/passage-5-line-04.svg)
+![](./part-2/passage-5-line-05.svg) ![](./part-2/passage-5-line-06.svg)
+![](./part-2/passage-5-line-07.svg) ![](./part-2/passage-5-line-08.svg)
+![](./part-2/passage-5-line-09.svg) ![](./part-2/passage-5-line-10.svg)
+![](./part-2/passage-5-line-11.svg)
 
 <details>
 <summary>Earthographic</summary>
@@ -293,11 +262,11 @@ values through friendship and ponies.
 
 ## Passage 6:
 
-|   |
-|---|
-| ![](./part-2/passage-6-line-01.svg) |
-| ![](./part-2/passage-6-line-02.svg) |
-| ![](./part-2/passage-6-line-03.svg) |
+![](./part-2/passage-6-line-01.svg)
+
+![](./part-2/passage-6-line-02.svg)
+
+![](./part-2/passage-6-line-03.svg)
 
 <details>
 <summary>Earthographic</summary>
@@ -327,13 +296,9 @@ and he who dares not, is a slave.
 
 ## Passage 7:
 
-|   |
-|---|
-| ![](./part-2/passage-7-line-01.svg) |
-| ![](./part-2/passage-7-line-02.svg) |
-| ![](./part-2/passage-7-line-03.svg) |
-| ![](./part-2/passage-7-line-04.svg) |
-| ![](./part-2/passage-7-line-05.svg) |
+![](./part-2/passage-7-line-01.svg) ![](./part-2/passage-7-line-02.svg)
+![](./part-2/passage-7-line-03.svg) ![](./part-2/passage-7-line-04.svg)
+![](./part-2/passage-7-line-05.svg)
 
 <details>
 <summary>Earthographic</summary>
@@ -367,36 +332,34 @@ are richer or poorer on account of it.
 
 ## Passage 8, part 1
 
-|   |
-|---|
-| ![](./part-2/passage-8-part-1-line-01.svg) |
-| ![](./part-2/passage-8-part-1-line-02.svg) |
-| ![](./part-2/passage-8-part-1-line-03.svg) |
-| ![](./part-2/passage-8-part-1-line-04.svg) |
-| ![](./part-2/passage-8-part-1-line-05.svg) |
-| ![](./part-2/passage-8-part-1-line-06.svg) |
-| ![](./part-2/passage-8-part-1-line-07.svg) |
-| ![](./part-2/passage-8-part-1-line-08.svg) |
-| ![](./part-2/passage-8-part-1-line-09.svg) |
-| ![](./part-2/passage-8-part-1-line-10.svg) |
-| ![](./part-2/passage-8-part-1-line-11.svg) |
-| ![](./part-2/passage-8-part-1-line-12.svg) |
-| ![](./part-2/passage-8-part-1-line-13.svg) |
-| ![](./part-2/passage-8-part-1-line-14.svg) |
-| ![](./part-2/passage-8-part-1-line-15.svg) |
-| ![](./part-2/passage-8-part-1-line-16.svg) |
-| ![](./part-2/passage-8-part-1-line-17.svg) |
-| ![](./part-2/passage-8-part-1-line-18.svg) |
-| ![](./part-2/passage-8-part-1-line-19.svg) |
-| ![](./part-2/passage-8-part-1-line-20.svg) |
-| ![](./part-2/passage-8-part-1-line-21.svg) |
-| ![](./part-2/passage-8-part-1-line-22.svg) |
-| ![](./part-2/passage-8-part-1-line-23.svg) |
-| ![](./part-2/passage-8-part-1-line-24.svg) |
-| ![](./part-2/passage-8-part-1-line-25.svg) |
-| ![](./part-2/passage-8-part-1-line-26.svg) |
-| ![](./part-2/passage-8-part-1-line-27.svg) |
-| ![](./part-2/passage-8-part-1-line-28.svg) |
+![](./part-2/passage-8-part-1-line-01.svg)
+![](./part-2/passage-8-part-1-line-02.svg)
+![](./part-2/passage-8-part-1-line-03.svg)
+![](./part-2/passage-8-part-1-line-04.svg)
+![](./part-2/passage-8-part-1-line-05.svg)
+![](./part-2/passage-8-part-1-line-06.svg)
+![](./part-2/passage-8-part-1-line-07.svg)
+![](./part-2/passage-8-part-1-line-08.svg)
+![](./part-2/passage-8-part-1-line-09.svg)
+![](./part-2/passage-8-part-1-line-10.svg)
+![](./part-2/passage-8-part-1-line-11.svg)
+![](./part-2/passage-8-part-1-line-12.svg)
+![](./part-2/passage-8-part-1-line-13.svg)
+![](./part-2/passage-8-part-1-line-14.svg)
+![](./part-2/passage-8-part-1-line-15.svg)
+![](./part-2/passage-8-part-1-line-16.svg)
+![](./part-2/passage-8-part-1-line-17.svg)
+![](./part-2/passage-8-part-1-line-18.svg)
+![](./part-2/passage-8-part-1-line-19.svg)
+![](./part-2/passage-8-part-1-line-20.svg)
+![](./part-2/passage-8-part-1-line-21.svg)
+![](./part-2/passage-8-part-1-line-22.svg)
+![](./part-2/passage-8-part-1-line-23.svg)
+![](./part-2/passage-8-part-1-line-24.svg)
+![](./part-2/passage-8-part-1-line-25.svg)
+![](./part-2/passage-8-part-1-line-26.svg)
+![](./part-2/passage-8-part-1-line-27.svg)
+![](./part-2/passage-8-part-1-line-28.svg)
 
 <details>
 <summary>Earthographic</summary>
@@ -515,28 +478,26 @@ thing up to every explanation to NDEs I'd ever heard of.
 
 ## Passage 8, part 2
 
-|   |
-|---|
-| ![](./part-2/passage-8-part-2-line-01.svg) |
-| ![](./part-2/passage-8-part-2-line-02.svg) |
-| ![](./part-2/passage-8-part-2-line-03.svg) |
-| ![](./part-2/passage-8-part-2-line-04.svg) |
-| ![](./part-2/passage-8-part-2-line-05.svg) |
-| ![](./part-2/passage-8-part-2-line-06.svg) |
-| ![](./part-2/passage-8-part-2-line-07.svg) |
-| ![](./part-2/passage-8-part-2-line-08.svg) |
-| ![](./part-2/passage-8-part-2-line-09.svg) |
-| ![](./part-2/passage-8-part-2-line-10.svg) |
-| ![](./part-2/passage-8-part-2-line-11.svg) |
-| ![](./part-2/passage-8-part-2-line-12.svg) |
-| ![](./part-2/passage-8-part-2-line-13.svg) |
-| ![](./part-2/passage-8-part-2-line-14.svg) |
-| ![](./part-2/passage-8-part-2-line-15.svg) |
-| ![](./part-2/passage-8-part-2-line-16.svg) |
-| ![](./part-2/passage-8-part-2-line-17.svg) |
-| ![](./part-2/passage-8-part-2-line-18.svg) |
-| ![](./part-2/passage-8-part-2-line-19.svg) |
-| ![](./part-2/passage-8-part-2-line-20.svg) |
+![](./part-2/passage-8-part-2-line-01.svg)
+![](./part-2/passage-8-part-2-line-02.svg)
+![](./part-2/passage-8-part-2-line-03.svg)
+![](./part-2/passage-8-part-2-line-04.svg)
+![](./part-2/passage-8-part-2-line-05.svg)
+![](./part-2/passage-8-part-2-line-06.svg)
+![](./part-2/passage-8-part-2-line-07.svg)
+![](./part-2/passage-8-part-2-line-08.svg)
+![](./part-2/passage-8-part-2-line-09.svg)
+![](./part-2/passage-8-part-2-line-10.svg)
+![](./part-2/passage-8-part-2-line-11.svg)
+![](./part-2/passage-8-part-2-line-12.svg)
+![](./part-2/passage-8-part-2-line-13.svg)
+![](./part-2/passage-8-part-2-line-14.svg)
+![](./part-2/passage-8-part-2-line-15.svg)
+![](./part-2/passage-8-part-2-line-16.svg)
+![](./part-2/passage-8-part-2-line-17.svg)
+![](./part-2/passage-8-part-2-line-18.svg)
+![](./part-2/passage-8-part-2-line-19.svg)
+![](./part-2/passage-8-part-2-line-20.svg)
 
 <details>
 <summary>Earthographic</summary>
