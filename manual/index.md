@@ -60,3 +60,7 @@ all.
 ~Cirrus Dawn,
 
 5 June, 2019
+
+---
+
+[Next: Part 1](./part-1.md)

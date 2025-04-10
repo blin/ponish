@@ -21,6 +21,8 @@ functionality!
 
 Are you ready? Of course you are!
 
+---
+
 - [Lesson 1](./part-1-lesson-1.md)
 - [Lesson 2](./part-1-lesson-2.md)
 - [Lesson 3](./part-1-lesson-3.md)

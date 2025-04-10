@@ -660,6 +660,8 @@ together. You need to both read, and write, so practice both reading, and
 writing. I would not have taken the time to write this paragraph if I did not
 think it important, so please, take it to heart, and practice both skills.
 
+---
+
 [Next: Lesson 3](./part-1-lesson-3.md)
 
 [Back: Lesson 1](./part-1-lesson-1.md)
