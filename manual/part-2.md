@@ -102,7 +102,7 @@ he confuses it with feeling.
 
 <details>
 <summary>Original manual image</summary>
-<img src="./original-images/048.png" alt="">
+<img src="./original-images/049.png" alt="">
 </details>
 
 <details>
@@ -120,7 +120,7 @@ he confuses it with feeling.
 
 </details>
 
-## Passage 3 (Ponish)
+## Passage 3
 
 <table>
 <tbody>
@@ -164,7 +164,7 @@ village green.
 
 <details>
 <summary>Original manual image</summary>
-<img src="./original-images/048.png" alt="">
+<img src="./original-images/050.png" alt="">
 </details>
 
 <details>
@@ -212,7 +212,7 @@ pet position are pretty ugly no matter what they're dressed in.
 
 <details>
 <summary>Original manual image</summary>
-<img src="./original-images/048.png" alt="">
+<img src="./original-images/051.png" alt="">
 </details>
 
 <details>
@@ -230,7 +230,7 @@ pet position are pretty ugly no matter what they're dressed in.
 
 </details>
 
-## Passage 5 (Ponish)
+## Passage 5
 
 <table>
 <tbody>
@@ -277,7 +277,7 @@ values through friendship and ponies.
 
 <details>
 <summary>Original manual image</summary>
-<img src="./original-images/048.png" alt="">
+<img src="./original-images/052.png" alt="">
 </details>
 
 <details>
@@ -321,7 +321,7 @@ and he who dares not, is a slave.
 
 <details>
 <summary>Original manual image</summary>
-<img src="./original-images/048.png" alt="">
+<img src="./original-images/053.png" alt="">
 </details>
 
 <details>
@@ -361,7 +361,7 @@ are richer or poorer on account of it.
 
 <details>
 <summary>Original manual image</summary>
-<img src="./original-images/048.png" alt="">
+<img src="./original-images/054.png" alt="">
 </details>
 
 <details>
@@ -379,7 +379,7 @@ are richer or poorer on account of it.
 
 </details>
 
-## Passage 8, part 1 (Ponish)
+## Passage 8, part 1
 
 <table>
 <tbody>
@@ -529,7 +529,7 @@ thing up to every explanation to NDEs I'd ever heard of.
 
 </details>
 
-## Passage 8, part 2 (Ponish)
+## Passage 8, part 2
 
 <table>
 <tbody>
@@ -614,7 +614,7 @@ and I hope you faggots tone down the \>you will never x thanks to my experience.
 
 <details>
 <summary>Original manual image</summary>
-<img src="./original-images/048.png" alt="">
+<img src="./original-images/056.png" alt="">
 </details>
 
 <details>
@@ -646,5 +646,7 @@ and I hope you faggots tone down the \>you will never x thanks to my experience.
 </table>
 
 </details>
+
+---
 
 [Back: Index](./index.md)
