@@ -24,53 +24,294 @@ only a little.
 The words this is most commonly done with are prepositions, and possessive
 pronouns. 'To go to' becomes:
 
-| Earthographic | Ponish                        | Original image                                |
-| ------------- | ----------------------------- | --------------------------------------------- |
-| to go to      | ![](./lesson-4/phrase-01.svg) | ![](./original-images/lesson-4/phrase-01.png) |
-| to go to      | ![](./lesson-4/phrase-02.svg) | ![](./original-images/lesson-4/phrase-02.png) |
+| Earthographic | Ponish                        |
+| ------------- | ----------------------------- |
+| to go to      | ![](./lesson-4/phrase-01.svg) |
+| to go to      | ![](./lesson-4/phrase-02.svg) |
+
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/043.png" alt="">
+
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>to go to</td>
+<td><img src="./lesson-4/phrase-01.svg" alt="to go to"></td>
+<td><img src="./original-images/lesson-4/phrase-01.png" alt="to go to original"></td>
+</tr>
+<tr>
+<td>to go to</td>
+<td><img src="./lesson-4/phrase-02.svg" alt="to go to"></td>
+<td><img src="./original-images/lesson-4/phrase-02.png" alt="to go to original"></td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 While 'I have to' yields:
 
-| Earthographic            | Ponish                        | Original image                                |
-| ------------------------ | ----------------------------- | --------------------------------------------- |
-| I have to                | ![](./lesson-4/phrase-03.svg) | ![](./original-images/lesson-4/phrase-03.png) |
-| I have to go to the mall | ![](./lesson-4/phrase-04.svg) | ![](./original-images/lesson-4/phrase-04.png) |
+| Earthographic            | Ponish                        |
+| ------------------------ | ----------------------------- |
+| I have to                | ![](./lesson-4/phrase-03.svg) |
+| I have to go to the mall | ![](./lesson-4/phrase-04.svg) |
+
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/043.png" alt="">
+
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I have to</td>
+<td><img src="./lesson-4/phrase-03.svg" alt="I have to"></td>
+<td><img src="./original-images/lesson-4/phrase-03.png" alt="I have to original"></td>
+</tr>
+<tr>
+<td>I have to go to the mall</td>
+<td><img src="./lesson-4/phrase-04.svg" alt="I have to go to the mall"></td>
+<td><img src="./original-images/lesson-4/phrase-04.png" alt="I have to go to the mall original"></td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 And so on. Just look at all that saved space! Here are some more examples:
 
-| Earthographic                               | Ponish                        | Original image                                |
-| ------------------------------------------- | ----------------------------- | --------------------------------------------- |
-| As fast as possible                         | ![](./lesson-4/phrase-05.svg) | ![](./original-images/lesson-4/phrase-05.png) |
-| Be right back                               | ![](./lesson-4/phrase-06.svg) | ![](./original-images/lesson-4/phrase-06.png) |
-| Before you know it                          | ![](./lesson-4/phrase-07.svg) | ![](./original-images/lesson-4/phrase-07.png) |
-| By all means                                | ![](./lesson-4/phrase-08.svg) | ![](./original-images/lesson-4/phrase-08.png) |
-| By the way                                  | ![](./lesson-4/phrase-09.svg) | ![](./original-images/lesson-4/phrase-09.png) |
-| Here and there                              | ![](./lesson-4/phrase-10.svg) | ![](./original-images/lesson-4/phrase-10.png) |
-| In fact                                     | ![](./lesson-4/phrase-11.svg) | ![](./original-images/lesson-4/phrase-11.png) |
-| In my defense                               | ![](./lesson-4/phrase-12.svg) | ![](./original-images/lesson-4/phrase-12.png) |
-| A lot of                                    | ![](./lesson-4/phrase-13.svg) | ![](./original-images/lesson-4/phrase-13.png) |
-| Now and then                                | ![](./lesson-4/phrase-14.svg) | ![](./original-images/lesson-4/phrase-14.png) |
-| They can not                                | ![](./lesson-4/phrase-15.svg) | ![](./original-images/lesson-4/phrase-15.png) |
-| You will not be able to                     | ![](./lesson-4/phrase-16.svg) | ![](./original-images/lesson-4/phrase-16.png) |
-| We are the priests of the temples of syrinx | ![](./lesson-4/phrase-17.svg) | ![](./original-images/lesson-4/phrase-17.png) |
+| Earthographic                               | Ponish                        |
+| ------------------------------------------- | ----------------------------- |
+| As fast as possible                         | ![](./lesson-4/phrase-05.svg) |
+| Be right back                               | ![](./lesson-4/phrase-06.svg) |
+| Before you know it                          | ![](./lesson-4/phrase-07.svg) |
+| By all means                                | ![](./lesson-4/phrase-08.svg) |
+| By the way                                  | ![](./lesson-4/phrase-09.svg) |
+| Here and there                              | ![](./lesson-4/phrase-10.svg) |
+| In fact                                     | ![](./lesson-4/phrase-11.svg) |
+| In my defense                               | ![](./lesson-4/phrase-12.svg) |
+| A lot of                                    | ![](./lesson-4/phrase-13.svg) |
+| Now and then                                | ![](./lesson-4/phrase-14.svg) |
+| They can not                                | ![](./lesson-4/phrase-15.svg) |
+| You will not be able to                     | ![](./lesson-4/phrase-16.svg) |
+| We are the priests of the temples of syrinx | ![](./lesson-4/phrase-17.svg) |
+
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/043.png" alt="">
+
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>As fast as possible</td>
+<td><img src="./lesson-4/phrase-05.svg" alt="As fast as possible"></td>
+<td><img src="./original-images/lesson-4/phrase-05.png" alt="As fast as possible original"></td>
+</tr>
+<tr>
+<td>Be right back</td>
+<td><img src="./lesson-4/phrase-06.svg" alt="Be right back"></td>
+<td><img src="./original-images/lesson-4/phrase-06.png" alt="Be right back original"></td>
+</tr>
+<tr>
+<td>Before you know it</td>
+<td><img src="./lesson-4/phrase-07.svg" alt="Before you know it"></td>
+<td><img src="./original-images/lesson-4/phrase-07.png" alt="Before you know it original"></td>
+</tr>
+<tr>
+<td>By all means</td>
+<td><img src="./lesson-4/phrase-08.svg" alt="By all means"></td>
+<td><img src="./original-images/lesson-4/phrase-08.png" alt="By all means original"></td>
+</tr>
+<tr>
+<td>By the way</td>
+<td><img src="./lesson-4/phrase-09.svg" alt="By the way"></td>
+<td><img src="./original-images/lesson-4/phrase-09.png" alt="By the way original"></td>
+</tr>
+<tr>
+<td>Here and there</td>
+<td><img src="./lesson-4/phrase-10.svg" alt="Here and there"></td>
+<td><img src="./original-images/lesson-4/phrase-10.png" alt="Here and there original"></td>
+</tr>
+<tr>
+<td>In fact</td>
+<td><img src="./lesson-4/phrase-11.svg" alt="In fact"></td>
+<td><img src="./original-images/lesson-4/phrase-11.png" alt="In fact original"></td>
+</tr>
+<tr>
+<td>In my defense</td>
+<td><img src="./lesson-4/phrase-12.svg" alt="In my defense"></td>
+<td><img src="./original-images/lesson-4/phrase-12.png" alt="In my defense original"></td>
+</tr>
+<tr>
+<td>A lot of</td>
+<td><img src="./lesson-4/phrase-13.svg" alt="A lot of"></td>
+<td><img src="./original-images/lesson-4/phrase-13.png" alt="A lot of original"></td>
+</tr>
+<tr>
+<td>Now and then</td>
+<td><img src="./lesson-4/phrase-14.svg" alt="Now and then"></td>
+<td><img src="./original-images/lesson-4/phrase-14.png" alt="Now and then original"></td>
+</tr>
+<tr>
+<td>They can not</td>
+<td><img src="./lesson-4/phrase-15.svg" alt="They can not"></td>
+<td><img src="./original-images/lesson-4/phrase-15.png" alt="They can not original"></td>
+</tr>
+<tr>
+<td>You will not be able to</td>
+<td><img src="./lesson-4/phrase-16.svg" alt="You will not be able to"></td>
+<td><img src="./original-images/lesson-4/phrase-16.png" alt="You will not be able to original"></td>
+</tr>
+<tr>
+<td>We are the priests of the temples of syrinx</td>
+<td><img src="./lesson-4/phrase-17.svg" alt="We are the priests of the temples of syrinx"></td>
+<td><img src="./original-images/lesson-4/phrase-17.png" alt="We are the priests of the temples of syrinx original"></td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 Other times, words which are written separately Earthographicaly, like street
 light, or clothes horse, would be joined together as one, like so:
 
-| Earthographic     | Ponish                        | Original image                                |
-| ----------------- | ----------------------------- | --------------------------------------------- |
-| clothes horse     | ![](./lesson-4/phrase-18.svg) | ![](./original-images/lesson-4/phrase-18.png) |
-| crotch tits       | ![](./lesson-4/phrase-19.svg) | ![](./original-images/lesson-4/phrase-19.png) |
-| flood insurance   | ![](./lesson-4/phrase-20.svg) | ![](./original-images/lesson-4/phrase-20.png) |
-| horse pussy       | ![](./lesson-4/phrase-21.svg) | ![](./original-images/lesson-4/phrase-21.png) |
-| mouse pad         | ![](./lesson-4/phrase-22.svg) | ![](./original-images/lesson-4/phrase-22.png) |
-| poison joke       | ![](./lesson-4/phrase-23.svg) | ![](./original-images/lesson-4/phrase-23.png) |
-| rocking chair     | ![](./lesson-4/phrase-24.svg) | ![](./original-images/lesson-4/phrase-24.png) |
-| street light      | ![](./lesson-4/phrase-25.svg) | ![](./original-images/lesson-4/phrase-25.png) |
-| sugar cube corner | ![](./lesson-4/phrase-26.svg) | ![](./original-images/lesson-4/phrase-26.png) |
-| swimming pool     | ![](./lesson-4/phrase-27.svg) | ![](./original-images/lesson-4/phrase-27.png) |
-| swing set         | ![](./lesson-4/phrase-28.svg) | ![](./original-images/lesson-4/phrase-28.png) |
-| water bottle      | ![](./lesson-4/phrase-29.svg) | ![](./original-images/lesson-4/phrase-29.png) |
+| Earthographic     | Ponish                        |
+| ----------------- | ----------------------------- |
+| clothes horse     | ![](./lesson-4/phrase-18.svg) |
+| crotch tits       | ![](./lesson-4/phrase-19.svg) |
+| flood insurance   | ![](./lesson-4/phrase-20.svg) |
+| horse pussy       | ![](./lesson-4/phrase-21.svg) |
+| mouse pad         | ![](./lesson-4/phrase-22.svg) |
+| poison joke       | ![](./lesson-4/phrase-23.svg) |
+| rocking chair     | ![](./lesson-4/phrase-24.svg) |
+| street light      | ![](./lesson-4/phrase-25.svg) |
+| sugar cube corner | ![](./lesson-4/phrase-26.svg) |
+| swimming pool     | ![](./lesson-4/phrase-27.svg) |
+| swing set         | ![](./lesson-4/phrase-28.svg) |
+| water bottle      | ![](./lesson-4/phrase-29.svg) |
+
+<details>
+<summary>Original manual image</summary>
+
+<img src="./original-images/043.png" alt="">
+
+</details>
+
+<details>
+<summary>Side by side with original manual image</summary>
+
+<table>
+<thead>
+<tr>
+<th>Earthographic</th>
+<th>Ponish</th>
+<th>Original image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clothes horse</td>
+<td><img src="./lesson-4/phrase-18.svg" alt="clothes horse"></td>
+<td><img src="./original-images/lesson-4/phrase-18.png" alt="clothes horse original"></td>
+</tr>
+<tr>
+<td>crotch tits</td>
+<td><img src="./lesson-4/phrase-19.svg" alt="crotch tits"></td>
+<td><img src="./original-images/lesson-4/phrase-19.png" alt="crotch tits original"></td>
+</tr>
+<tr>
+<td>flood insurance</td>
+<td><img src="./lesson-4/phrase-20.svg" alt="flood insurance"></td>
+<td><img src="./original-images/lesson-4/phrase-20.png" alt="flood insurance original"></td>
+</tr>
+<tr>
+<td>horse pussy</td>
+<td><img src="./lesson-4/phrase-21.svg" alt="horse pussy"></td>
+<td><img src="./original-images/lesson-4/phrase-21.png" alt="horse pussy original"></td>
+</tr>
+<tr>
+<td>mouse pad</td>
+<td><img src="./lesson-4/phrase-22.svg" alt="mouse pad"></td>
+<td><img src="./original-images/lesson-4/phrase-22.png" alt="mouse pad original"></td>
+</tr>
+<tr>
+<td>poison joke</td>
+<td><img src="./lesson-4/phrase-23.svg" alt="poison joke"></td>
+<td><img src="./original-images/lesson-4/phrase-23.png" alt="poison joke original"></td>
+</tr>
+<tr>
+<td>rocking chair</td>
+<td><img src="./lesson-4/phrase-24.svg" alt="rocking chair"></td>
+<td><img src="./original-images/lesson-4/phrase-24.png" alt="rocking chair original"></td>
+</tr>
+<tr>
+<td>street light</td>
+<td><img src="./lesson-4/phrase-25.svg" alt="street light"></td>
+<td><img src="./original-images/lesson-4/phrase-25.png" alt="street light original"></td>
+</tr>
+<tr>
+<td>sugar cube corner</td>
+<td><img src="./lesson-4/phrase-26.svg" alt="sugar cube corner"></td>
+<td><img src="./original-images/lesson-4/phrase-26.png" alt="sugar cube corner original"></td>
+</tr>
+<tr>
+<td>swimming pool</td>
+<td><img src="./lesson-4/phrase-27.svg" alt="swimming pool"></td>
+<td><img src="./original-images/lesson-4/phrase-27.png" alt="swimming pool original"></td>
+</tr>
+<tr>
+<td>swing set</td>
+<td><img src="./lesson-4/phrase-28.svg" alt="swing set"></td>
+<td><img src="./original-images/lesson-4/phrase-28.png" alt="swing set original"></td>
+</tr>
+<tr>
+<td>water bottle</td>
+<td><img src="./lesson-4/phrase-29.svg" alt="water bottle"></td>
+<td><img src="./original-images/lesson-4/phrase-29.png" alt="water bottle original"></td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 The last technique is the utilization of short forms. These are not
 standardized, and are not often used for communication wherein some outside
