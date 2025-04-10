@@ -378,17 +378,24 @@ letters["S"] = Glyph(
 )
 
 
-# TODO: make "up" combination look okay
 letters["U"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=(
-        PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=0.5),
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.0, rel_x=0.0),
+            p3=RelPoint(rel_y=0.0, rel_x=1.0),
+            p4=RelPoint(rel_y=0.5, rel_x=1.0),
+        ),
         RelCubicBezier(
             p2=RelPoint(rel_y=0.75, rel_x=0.75),
             p3=RelPoint(rel_y=0.75, rel_x=-0.75),
             p4=RelPoint(rel_y=0.0, rel_x=0.0),
         ),
-        PolarLine(angle_deg=Direction.NNE.value, rel_magnitude=0.5),
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0, rel_x=0.0),
+            p3=RelPoint(rel_y=-0.5, rel_x=0.0),
+            p4=RelPoint(rel_y=-0.5, rel_x=1.0),
+        ),
     ),
     is_vowel=True,
 )
@@ -991,7 +998,7 @@ affixes["trans"] = derive_from_letter(
 
 affixes["under"] = derive_from_letter(
     "U",
-    more_actions=n_strike(RelPoint(rel_y=0.4, rel_x=-0.5), 0.7),
+    more_actions=n_strike(RelPoint(rel_y=0.4, rel_x=-1.5), 1.0),
 )
 
 affixes["ever"] = derive_from_letter(
