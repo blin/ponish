@@ -36,11 +36,11 @@ texts = [
         "wi$(TH) her but the bi$(tr)$(ness) n the $(Y-consonant)o$(NG) ons hart had $(TR)ansformed her nto$(awa)iked mar of dark$(ness) :",
         "nitmar mon !",
         # paragraph
-        "$(SH)evowed $(TH)at $(SH)ewould $(SH)roud the land n eternal nit . Reluktantly , the elder $(SS)$(TR) har$(ness)ed",
+        "$(SH)evowed $(TH)at $(SH)ewould $(SH)roud the land n eternal nit . Reluktantly , the el$(DR) $(SS)$(TR) har$(ness)ed",
         # TODO: make "using" look better
         "the most power$(full) majik nown toPonydom : the Ele$(ment)s of Harmony . Us$(ING) the majik of",
         "the Ele$(ment)s of Harmony , $(SH)edefeted her $(Y-consonant)o$(NG)r $(SS)$(TR) nd bani$(SH)d her permanently to the mon .",
-        "The elder $(SS)$(TR) tok on responsibility for bo$(TH) sun nd mon , nd harmony has",
+        "The el$(DR) $(SS)$(TR) tok on responsibility for bo$(TH) sun nd mon , nd harmony has",
         "ben mintind n Eqes$(TR)ea for jenera$(SH)ns sins .",
     ],
     [
@@ -115,7 +115,7 @@ texts = [
 ]
 text_combined.extend(chain.from_iterable(texts))
 if __name__ == "__main__":
-    for tid, text in list(enumerate(texts))[7:]:
+    for tid, text in list(enumerate(texts)):
         for lid, line in list(enumerate(text)):
             dc = DrawingContext(
                 output_path=dir / f"passage-{tid + 1}-line-{lid + 1:02}.svg",
@@ -201,8 +201,8 @@ texts = [
 ]
 text_combined.extend(chain.from_iterable(texts))
 if __name__ == "__main__":
-    for tid, text in list(enumerate(texts))[1:2]:
-        for lid, line in list(enumerate(text))[16:]:
+    for tid, text in list(enumerate(texts)):
+        for lid, line in list(enumerate(text)):
             dc = DrawingContext(
                 output_path=dir / f"passage-8-part-{tid + 1}-line-{lid + 1:02}.svg",
                 drawing_width=1100,
