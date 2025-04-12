@@ -248,11 +248,10 @@ letters["ʧ"] = Glyph(
 letters["D"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=(
-        Circle(
-            rel_radius=0.5,
-            extent_deg=180,
-            rotation=Rotation.CW,
-            heading_deg=Direction.E.value,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.0, rel_x=0.5),
+            p3=RelPoint(rel_y=1.0, rel_x=0.5),
+            p4=RelPoint(rel_y=1.0, rel_x=0.0),
         ),
     ),
 )
@@ -575,7 +574,17 @@ blends["BR"] = derive_from_letter(
 blends["CR"] = derive_from_letter("C", more_actions=letters["R"].draw_actions[-1:])
 
 # TODO: fix DR
-blends["DR"] = derive_from_letter("D", more_actions=letters["R"].draw_actions[-1:])
+blends["DR"] = derive_from_letter(
+    "D",
+    more_actions=(
+        Circle(
+            rel_radius=0.5,
+            extent_deg=75,
+            rotation=Rotation.CW,
+            heading_deg=Direction.NE.value,
+        ),
+    ),
+)
 
 blends["GR"] = derive_from_letter("G", more_actions=letters["R"].draw_actions[-1:])
 

@@ -58,7 +58,7 @@ def image_to_braille(image_path: str | Path) -> list[str]:
 
 def chunk_braile(lines: list[str], max_line_width: int) -> list[list[str]]:
     line_length = len(lines[0])
-    chunks: list[list[str]] = [list() for _ in range(1+(line_length // max_line_width))]
+    chunks: list[list[str]] = [list() for _ in range(1 + (line_length // max_line_width))]
     for i, chunk in enumerate(chunks):
         for line in lines:
             line_adj = line[i * max_line_width : (i + 1) * max_line_width]
