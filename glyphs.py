@@ -312,13 +312,12 @@ letters["L"] = Glyph(
 )
 
 letters["O"] = Glyph(
-    start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.25),
     draw_actions=(
-        Circle(
-            rel_radius=0.5,
-            extent_deg=180,
-            rotation=Rotation.CCW,
-            heading_deg=Direction.W.value,
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.0, rel_x=-0.5),
+            p3=RelPoint(rel_y=1.0, rel_x=-0.5),
+            p4=RelPoint(rel_y=1.0, rel_x=0.0),
         ),
     ),
     is_vowel=True,
