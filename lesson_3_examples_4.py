@@ -35,7 +35,6 @@ if __name__ == "__main__":
         with dc as (p, t):
             draw_sentence(t, p, line)
 
-# TODO: "the" before "bigger" is written as "a"?
 text = [
     "The bi$(GR) yu bild the bonfir",
     "the mor dark$(ness) is reveld",
@@ -51,13 +50,11 @@ if __name__ == "__main__":
         with dc as (p, t):
             draw_sentence(t, p, line)
 
-# TODO: quotes in "aww thank you"
-# TODO: "AW" blend
 text = [
     "Its so $(FR)us$(TR)at$(ing) bi$(ing) a girl",
     "nd $(TR)y$(ing) to flirt wi$(TH) $(other)girls",
     "Lik yu tel $(TH)em $(TH)er",
-    "cut nd $(TH)y go , aw $(thank) yu ! ,",
+    "cut nd $(TH)y go , $(awa) $(thank) yu ! ,",
     "No No Im bi$(ing) ge wi$(TH) yu",
     "Homo ntendd . Damit .",
 ]
@@ -72,14 +69,12 @@ if __name__ == "__main__":
         with dc as (p, t):
             draw_sentence(t, p, line)
 
-# TODO: make "otherthings" look good.
-# TODO: blend AK, AL
 text = [
     "On the $(sub)way today a man kam up to me to start a $(con)versa$(SH)n . He mad",
     "smal talk , He was a lonly man talk$(ing) $(about) the we$(TH)r nd $(other)$(thing)s . I",
-    "$(TR)id to be $(pl)esant nd akomodat him but my hed began to hurt",
-    "from his banality . I almost didnt notice it had hapened but I",
-    "$(TH)ru up al $(over) him . He waz not $(PL)ezd . I culdnt stop laf$(ing) .",
+    "$(TR)id to be $(pl)esant nd $(AK)omodat him but my hed began to hurt",
+    "from his banality . I $(AL)most didnt notice it had hapened but I",
+    "$(TH)ru up $(AL) $(over) him . He waz not $(PL)ezd . I culdnt stop laf$(ing) .",
 ]
 text_combined.extend(text)
 if __name__ == "__main__":

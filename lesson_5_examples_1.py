@@ -117,13 +117,11 @@ texts = [
         "$(AN)yons evn her ritnow",
         # paragraph
         "iv $(AL)redy posted $(TH)is part , so$(TH)ers nopoint n go$(ING) ntodetel . Bak n desem$(BR) of twenty $(TH)irten Iwaz",
-        # TODO: "I-consonant" in "I bled"
-        "nvolved n a kar kra$(SH) $(TH)at ultimatly ndd n mybe$(ING) $(PR)onaunsed $(BR)anded . $(AS) I bled $(out) just $(AS)",
+        "nvolved n a kar kra$(SH) $(TH)at ultimatly ndd n mybe$(ING) $(PR)onaunsed $(BR)anded . $(AS) Ibled $(out) just $(AS)",
         "the paramediks $(AR)ivd nd did $(about) forty min la$(TR) .",
         # paragraph
         "it tuk $(PL)as n $(TH)re diferent loka$(SH)ns . $(AT) first ifekam $(self)ewar n an $(AB)ys . $(TH)is n nd of it$(self) was",
-        # TODO: make "ving" in "having" look better
-        "no$(THING) spe$(SH)al , I figurd I must behav$(ing) a lusid $(DR)em wi$(TH) noactu$(AL) $(DR)em$(ING) okur$(ing) . af$(TR) resid$(ing)",
+        "no$(THING) spe$(SH)al , I figurd I must behavi$(NG) a lusid $(DR)em wi$(TH) noactu$(AL) $(DR)em$(ING) okur$(ing) . af$(TR) resid$(ing)",
         "n the $(AB)ys for around a minut I began to$(DR)ift of nd lost $(con)$(SH)es$(ness) for the se$(con)d tim .",
         # paragraph
         "the se$(con)d loka$(SH)n was posibly the most jenerik on . iwas n the hospital rom . $(AL)$(TH)o ihad nofisikal body",
@@ -143,7 +141,7 @@ texts = [
         # paragraph
         "$(TH)ats wen I herd her .",
         # paragraph
-        "$(every)$(THING) is go$(ING) tobe$(AL)rit , $(AN)on .",
+        "$(ever)y$(THING) is go$(ING) tobe$(AL)rit , $(AN)on .",
         # paragraph
         "I rekognizd $(TH)at vois $(AS) sun $(AS) I herd it . I turnd toluk $(AT) her but couldnt say $(AN)i$(THING) .",
         "For som reson $(every)$(THING) sudnly mad sens . I remem$(BR)d the $(CR)a$(SH) , I remem$(BR)d the $(AB)ys , nd luk$(ing) $(AT) mybody . I wantd",
@@ -160,7 +158,6 @@ texts = [
         "her man on the bak of my nek . I kould evn her her bre$(THING) . $(every)$(THING) $(AB)out her was far toliflik",
         "tobe a $(DR)em or som fukd up halusina$(SH)n . Its wat leds metobeliv the hol $(THING) was n fakt rel .",
         # paragraph
-        # TODO: "O-consonant" in "our" ?
         "sav for a soft $(BR)ez $(TH)at oka$(ZH)naly $(SH)uk the levs of the $(TR)e nd our bre$(THING) , we sat n ded silens . it semd",
         "lik an eternity . n re$(AL)ity it was only two and a half minuts or so . fanily i manajd to$(CH)ok $(out) a few words nd",
         "$(AS)ked her to$(con)firm my $(SS)pi$(SH)ns .",

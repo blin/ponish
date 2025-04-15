@@ -33,6 +33,8 @@
 - In part 2 passage 3 two-legged A is used in "across" instead of one-legged A.
   When using one-legged A you need to stroke forward and then back for the top
   of "c", which does not feel right.
+- In part 2 passage 8 part 1 I chose to use `havi$(NG)` instead of `hav$(ING)`
+  and `$(ever)y$(THING)` instead of `$(every)$(THING)` as it looks cleaner.
 
 ## Comments on the original
 
@@ -44,10 +46,10 @@
   in "auto-mobile" "autom" is written WITH a break after "o". See also "peach".
 - Y can be a vowel (my, happy, myth) or it can be a consonant (you, beyond),
   which makes it difficult to classify automatically.
-  - For the "intermediate representation" I introduced "$(Y-consonant)" as a
+  - For the "intermediate representation" I introduced `$(Y-consonant)` as a
     crutch to avoid making decision procedure too complicated. When writing from
     IPA this problem does not exist, as the consonant "Y" is translated to /j/ ,
     and vowel "Y" is translated to /aɪ/ or /i/ or /ɪ/ .
   - In my own writing I have switched to using "J" for the consonant Y, as in
-    "you -> ju" and "beyond -> bijond", and to using "ai" or "i" for the vowel
-    Y, as in "my -> mai" and "happy -> hapi" and "myth -> mi$(TH)" .
+    `you -> ju` and `beyond -> bijond`, and to using "ai" or "i" for the vowel
+    Y, as in `my -> mai` and `happy -> hapi` and `myth -> mi$(TH)` .

@@ -192,6 +192,7 @@ def test_split_into_chunks(word: str, expected_chunks: list[str]):
 
 
 # TODO: braille snapshot tests for lesson_3_examples_1 and lesson_3_examples_3
+# TODO: use line numbers instead of actual text for snapshot names
 @pytest.mark.parametrize(
     "line_index, line_text",
     enumerate(
