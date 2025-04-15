@@ -478,7 +478,7 @@ def draw_punctuation(
     match punct:
         case "," | ".":
             gs = GlyphSize.SINGLE
-        case ":" | "!":
+        case ":" | "!" | "(" | ")":
             gpos = VowelPosition.IY
     draw_glyph(t, p, punctuation[punct], pos=gpos, gs=gs)
     advance_after_word(t, p)

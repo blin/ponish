@@ -5,56 +5,29 @@ from pathlib import Path
 from draw import draw_sentence
 from draw_jupyturtle import DrawingContext
 
-dir = Path("texts/desiderata")
+dir = Path("texts/orwell-1984")
 dir.mkdir(parents=True, exist_ok=True)
 
 
 ipa_text = """\
-ɡəʊ ˈplæsɪdli əˈmɪd ðə nɔɪz ænd ðə heɪst,
-ænd rɪˈmɛmbə wɒt piːs ðeə meɪ biː ɪn ˈsaɪləns.
-æz fɑːr æz ˈpɒsəbᵊl, wɪˈðaʊt səˈrɛndə,
-biː ɒn ɡʊd tɜːmz wɪð ɔːl ˈpɜːsᵊnz.
-spiːk jɔː truːθ ˈkwaɪətli ænd ˈklɪəli;
-ænd ˈlɪsᵊn tuː ˈʌðəz,
-ˈiːvᵊn tuː ðə dʌl ænd ði ˈɪɡnᵊrᵊnt;
-ðeɪ tuː hæv ðeə ˈstɔːri.
-əˈvɔɪd laʊd ænd əˈɡrɛsɪv ˈpɜːsᵊnz;
-ðeɪ ɑː vɛkˈseɪʃəs tuː ðə ˈspɪrɪt.
-ɪf juː kəmˈpeə jɔːˈsɛlf wɪð ˈʌðəz,
-juː meɪ bɪˈkʌm veɪn ɔː ˈbɪtə,
-fɔːr ˈɔːlweɪz ðeə wɪl biː ˈɡreɪtər ænd ˈlɛsə ˈpɜːsᵊnz ðæn jɔːˈsɛlf.
-ɪnˈʤɔɪ jɔːr əˈʧiːvmənts æz wɛl æz jɔː plænz.
-kiːp ˈɪntrɛstɪd ɪn jɔːr əʊn kəˈrɪə, haʊˈɛvə ˈhʌmbᵊl;
-ɪt ɪz ə rɪəl pəˈzɛʃᵊn ɪn ðə ˈʧeɪnʤɪŋ ˈfɔːʧuːnz ɒv taɪm.
-ˈɛksəsaɪz ˈkɔːʃᵊn ɪn jɔː ˈbɪznɪs əˈfeəz,
-fɔː ðə wɜːld ɪz fʊl ɒv ˈtrɪkᵊri.
-bʌt lɛt ðɪs nɒt blaɪnd juː tuː wɒt ˈvɜːʧuː ðeər ɪz;
-ˈmɛni ˈpɜːsᵊnz straɪv fɔː haɪ aɪˈdɪəlz,
-ænd ˈɛvriweə laɪf ɪz fʊl ɒv ˈhɛrəʊɪzᵊm.
-biː jɔːˈsɛlf. ɪˈspɛʃᵊli duː nɒt feɪn əˈfɛkʃᵊn.
-ˈnaɪðə biː ˈsɪnɪkᵊl əˈbaʊt lʌv,
-fɔːr ɪn ðə feɪs ɒv ɔːl æˈrɪdəti ænd ˌdɪsɪnˈʧɑːntmənt,
-ɪt ɪz æz pəˈrɛniəl æz ðə ɡrɑːs.
-teɪk ˈkaɪndli ðə ˈkaʊnsᵊl ɒv ðə jɪəz,
-ˈɡreɪsfᵊli səˈrɛndərɪŋ ðə θɪŋz ɒv juːθ.
-ˈnɜːʧə strɛŋθ ɒv ˈspɪrɪt tuː ʃiːld juː ɪn ˈsʌdᵊn ˌmɪsˈfɔːʧuːn.
-bʌt duː nɒt dɪˈstrɛs jɔːˈsɛlf wɪð dɑːk ɪˈmæʤɪnɪŋz.
-ˈmɛni fɪəz ɑː bɔːn ɒv fəˈtiːɡ ænd ˈləʊnlɪnəs.
-bɪˈjɒnd ə ˈhəʊlsəm ˈdɪsəplɪn,
-biː ˈʤɛntᵊl wɪð jɔːˈsɛlf.
-juː ɑːr ə ʧaɪld ɒv ðə ˈjuːnɪvɜːs
-nəʊ lɛs ðæn ðə triːz ænd ðə stɑːz;
-juː hæv ə raɪt tuː biː hɪə.
-ænd ˈwɛðər ɔː nɒt ɪt ɪz klɪə tuː juː,
-nəʊ daʊt ðə ˈjuːnɪvɜːs ɪz ʌnˈfəʊldɪŋ æz ɪt ʃʊd.
-ˈðeəfɔː biː æt piːs wɪð ɡɒd,
-wɒtˈɛvə juː kənˈsiːv hɪm tuː biː.
-ænd wɒtˈɛvə jɔː ˈleɪbəz ænd ˌæspɪˈreɪʃᵊnz,
-ɪn ðə ˈnɔɪzi kənˈfjuːʒᵊn ɒv laɪf,
-kiːp piːs ɪn jɔː səʊl.
-wɪð ɔːl ɪts ʃæm, ˈdrʌʤᵊri, ænd ˈbrəʊkᵊn driːmz,
-ɪt ɪz stɪl ə ˈbjuːtɪfᵊl wɜːld.
-biː ˈʧɪəfᵊl. straɪv tuː biː ˈhæpi.\
+ðə θɪŋ ðæt hi wʌz əˈbaʊt tu du wʌz tu ˈoʊpən ə ˈdaɪəri. ðɪs
+wʌz nɑt ɪˈliɡəl (ˈnʌθɪŋ wʌz ɪˈliɡəl, sɪns ðɛr wɜr noʊ
+ˈlɔŋɡər ˈɛni lɔz), bʌt ɪf dɪˈtɛktɪd ɪt wʌz ˈrizənəbli
+ˈsɜrtən ðæt ɪt wʊd bi ˈpʌnɪʃt baɪ dɛθ, ɔr æt list baɪ
+ˈtwɛnti-faɪv jɪrz ɪn ə fɔrst-ˈleɪˌbaʊr kæmp. ˈwɪnstən ˈfɪtɪd
+ə nɪb ˈɪntu ðə ˈpɛnˌhəʊldər ænd sʌkt ɪt tu ɡɛt ðə ɡris ɔf.
+ðə pɛn wʌz ən ɑrˈkeɪɪk ˈɪnstrəmənt, ˈsɛldəm juzd ˈivɪn fɔr
+ˈsɪɡnəʧərz, ænd hi hæd proʊˈkjʊrd wʌn, ˈfɜrtɪvli ænd wɪð sʌm
+ˈdɪfəkəlti, ˈsɪmpli bɪˈkɔz ʌv ə ˈfilɪŋ ðæt ðə ˈbjutəfəl
+ˈkrimi ˈpeɪpər dɪˈzɜrvd tu bi ˈrɪtən ɑn wɪð ə riəl nɪb
+ɪnˈstɛd ʌv ˈbiɪŋ skræʧt wɪð ən ɪŋk-ˈpɛnsəl. ˈækʧuəli hi wʌz
+nɑt juzd tu ˈraɪtɪŋ baɪ hænd. əˈpɑrt frʌm ˈvɛri ʃɔrt noʊts,
+ɪt wʌz ˈjuʒəwəl tu dɪkˈteɪt ˈɛvriˌθɪŋ ˈɪntu ði spik-raɪt wɪʧ
+wʌz ʌv kɔrs ɪmˈpɑsəbəl fɔr hɪz ˈprɛzənt ˈpɜrpəs. hi dɪpt ðə
+pɛn ˈɪntu ði ɪŋk ænd ðɛn ˈfɑltərd fɔr ʤʌst ə ˈsɛkənd. eɪ
+ˈtrɛmər hæd ɡɔn θru hɪz ˈbaʊəlz. tu mɑrk ðə ˈpeɪpər wʌz ðə
+dɪˈsaɪsɪv ækt. ɪn smɔl ˈklʌmzi ˈlɛtərz hi roʊt: ˈeɪprəl
+fɔrθ, ˈnaɪnˈtin ˈeɪti fɔr.\
 """
 
 ipa_replacements = {
@@ -80,17 +53,21 @@ ipa_replacements = {
 }
 punct_replacements = {
     ",": " ,",  # punctuation offset
-    "\\.": " .",  # punctuation offset
+    r"\.": " .",  # punctuation offset
     ";": " ;",  # punctuation offset
+    r"\(": "( ",  # punctuation offset
+    r"\)": " )",  # punctuation offset
+    "-": " ",  # punctuation ignored
 }
 replacements = {
-    **ipa_replacements,
     **punct_replacements,
-    " ða ": " the ",
-    " ði ": " the ",
+    **ipa_replacements,
+    r"(^|(?<=\s))ða ": "the ",
+    r"(^|(?<=\s))ði ": "the ",
     " and ": " nd ",
     r"\band ": "nd ",
     #
+    "fr": "$(FR)",
     "tr": "$(TR)",
     "gr": "$(GR)",
     "pl": "$(PL)",
@@ -108,6 +85,14 @@ replacements = {
     "nas": "$(ness)",
     "abaut": "$(about)",
     "dis": "$(dis)",
+    r"\$\(TH\)i\$\(NG\)": "$(THING)",
+    r"\$\(NG\)g": "$(NG)",
+    r"\$\(NG\)k": "$(NK)",
+    r"(^|(?<=\s))ak": "$(AK)",
+    r"(^|(?<=\s))al": "$(AL)",
+    r"ai\b": "y",
+    r"(^|(?<=\s))ei ": "a ",
+    r"\$\(every\)\$\(THING\)": "$(ever)i$(THING)",
 }
 
 for src, dst in replacements.items():

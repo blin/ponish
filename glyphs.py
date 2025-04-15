@@ -815,6 +815,30 @@ punctuation["!"] = Glyph(
     ),
 )
 
+punctuation["("] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.25),
+    draw_actions=(
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.25, rel_x=-0.25),
+            p3=RelPoint(rel_y=0.75, rel_x=-0.25),
+            p4=RelPoint(rel_y=1.0, rel_x=0.0),
+        ),
+    ),
+    is_vowel=True,
+)
+
+punctuation[")"] = Glyph(
+    start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
+    draw_actions=(
+        RelCubicBezier(
+            p2=RelPoint(rel_y=0.25, rel_x=0.25),
+            p3=RelPoint(rel_y=0.75, rel_x=0.25),
+            p4=RelPoint(rel_y=1.0, rel_x=0.0),
+        ),
+    ),
+    is_vowel=True,
+)
+
 
 affixes: dict[str, Glyph] = dict()
 
@@ -855,7 +879,7 @@ affixes["circum"] = affixes["circ"]
 # The base is K not C, because of pronounciation.
 affixes["com"] = derive_from_letter(
     "K",
-    more_actions=n_strike(RelPoint(rel_y=-0.2, rel_x=-0.3), 0.5),
+    more_actions=n_strike(RelPoint(rel_y=-0.2, rel_x=-0.3), 0.8),
 )
 affixes["con"] = affixes["com"]
 affixes["contr"] = affixes["com"]
