@@ -56,11 +56,8 @@ texts = [
         "slitly stoky wi$(TH) farly wid $(SH)ol$(DR)s nd a barel $(CH)est nd had $(SH)ol$(DR) le$(NG)$(TH-top-start) redi$(SH)blond har",
         "nd a netly $(tr)imed red musta$(SH) nd gote .",
         # paragraph
-        # TODO: "AP" blend
-        "the $(other)figur waz mu$(CH) smalr . the skyblu cot nd ranbow man nd tal of the pega$(SS) aptly",
-        # TOOD: "AG" blend
-        "named RanboDa$(SH) stod $(out) aganst the dep $(GR)en of the $(GR)as . $(SH)ed flopd down half $(AT)op the human",
-        # TODO: what to do with "acr" in "across"?
+        "the $(other)figur waz mu$(CH) smalr . the skyblu cot nd ranbow man nd tal of the pega$(SS) $(AP)tly",
+        "named RanboDa$(SH) stod $(out) $(AG)anst the dep $(GR)en of the $(GR)as . $(SH)ed flopd down half $(AT)op the human",
         "wen $(TH)eyd stopd torest nd now ly wi$(TH) her hed nd on forleg a$(CR)os his",
         "$(CH)est nd on wi$(NG) spred $(AK)ros his torso . the human idly s$(tr)okd her man wi$(TH) on",
         "hand wil the two $(CH)er$(full)y revisited the pikup hofbal gam $(TH)ed just fini$(SH)d n the vilaj",
@@ -95,13 +92,10 @@ texts = [
     ],
     [
         "wat we xperiens n $(DR)ems $(AS)um$(ING) $(TH)at",
-        # TODO: make "ngs" in "belongs" look better
         "wexperiens it often belo$(NG)s n the nd",
         "just $(AS) mu$(CH) to the $(over)al ekonomy of",
-        # TODO: make "our" look better
         "our soul $(AS) ny$(THING) xperinsd $(AK)$(CH)u$(AL)y ; we$(AR)",
-        # TODO: "chr" in "richer" look better
-        "ri$(CH)r or purer on $(AK)ount of it .",
+        "ri$(ʧR) or purer on $(AK)ount of it .",
     ],
 ]
 text_combined.extend(chain.from_iterable(texts))

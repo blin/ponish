@@ -30,6 +30,9 @@
   tables for easier scanning.
 - In lesson 3 practice 3 the original image has two spellings of "other" ,
   separated by "/" , this is not re-produced.
+- In part 2 passage 3 two-legged A is used in "across" instead of one-legged A.
+  When using one-legged A you need to stroke forward and then back for the top
+  of "c", which does not feel right.
 
 ## Comments on the original
 

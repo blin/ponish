@@ -523,6 +523,11 @@ blends["AN"] = derive_from_letter(
     more_actions=letters["N"].draw_actions,
 )
 
+blends["AP"] = derive_from_letter(
+    "A-one-leg",
+    more_actions=letters["P"].draw_actions,
+)
+
 blends["AR"] = derive_from_letter(
     "A-one-leg",
     more_actions=(
