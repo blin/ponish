@@ -23,21 +23,18 @@ texts: list[list[str]] = []
 
 texts = [
     [
-        # TODO: 2 as a number in a circle
         "Ons upon a tim n the majikal land of Eqes$(TR)ea $(TH)r wer two regal $(SS)$(TR)s wo ruld",
         "toge$(TH)er nd $(CR)e$(AT)ed harmony for $(AL) the land . Todo$(TH)is , the eldest usd her unikorn powers",
         "toraz the sun $(AT)dawn ; the $(Y-consonant)o$(NG)r $(BR)ot ot the mon tobegin the nit . $(TH)us , the two $(SS)$(TR)s mintind balans for $(TH)r",
         "ki$(ng)dom nd $(TH)r $(sub)jekts , $(AL) the di$(FR)ent typs of pones .",
         # paragraph
         "But $(AS) tim went on , the $(Y-consonant)o$(NG)r $(SS)$(TR) bekam resent$(full) . The pones reli$(SH)ed nd $(PL)ayd n the dy",
-        # TODO: make "rth" in "forth" look better
-        "her el$(DR) $(SS)$(TR) $(BR)ot for$(TH) , but $(SH)unnd , nd slept $(TH)ru her buti$(full) nit . On fat$(full)",
+        "her el$(DR) $(SS)$(TR) $(BR)ot for$(TH-left-start) , but $(SH)unnd , nd slept $(TH)ru her buti$(full) nit . On fat$(full)",
         "dy , the $(Y-consonant)o$(NG)r unikorn refusd tolower the mon tomak wy for the dawn . The el$(DR) $(SS)$(TR) $(TR)id toreson",
         "wi$(TH) her but the bi$(tr)$(ness) n the $(Y-consonant)o$(NG) ons hart had $(TR)ansformed her nto$(awa)iked mar of dark$(ness) :",
         "nitmar mon !",
         # paragraph
         "$(SH)evowed $(TH)at $(SH)ewould $(SH)roud the land n eternal nit . Reluktantly , the el$(DR) $(SS)$(TR) har$(ness)ed",
-        # TODO: make "using" look better
         "the most power$(full) majik nown toPonydom : the Ele$(ment)s of Harmony . Us$(ING) the majik of",
         "the Ele$(ment)s of Harmony , $(SH)edefeted her $(Y-consonant)o$(NG)r $(SS)$(TR) nd bani$(SH)d her permanently to the mon .",
         "The el$(DR) $(SS)$(TR) tok on responsibility for bo$(TH) sun nd mon , nd harmony has",
@@ -46,18 +43,13 @@ texts = [
     [
         "The $(PR)oblem isnt $(TH)at Joni kant red .",
         "The $(PR)oblem isnt evn $(TH)at Joni kant",
-        # TODO: check the "the" dot before "problem"
         "$(think) . The $(PR)oblem is $(TH)at Joni doznt",
-        # TODO: make "thinking" look better
         "nowat $(think)$(ng) is ; he$(con)fu$(SS) it",
-        # TODO: make "feeling" look better
         "wi$(TH) fel$(ng) .",
     ],
     [
         "Two figurs ly sprawld on the Eqes$(TR)e$(AN) $(GR)as talk$(ing) nd laf$(ing) merily . On was",
-        # TODO: braces around Bellerophon
         # TODO: chunk after second consecutive vowel
-        # TODO: "quote mode"
         "human ; a relativly $(Y-consonant)o$(ng) man wi$(TH) the unlikly nam of Lero , $(SH)ort for Bie lilie rio pihio n",
         "for his parents had ben od folk , wod ndd up her $(TH)ru nomekanism he or $(AN)yon",
         "els had $(Y-consonant)et ben $(AB)l to$(dis)ern nd wo $(AS) $(Y-consonant)et waz unabl toreturn hom . Hewas",

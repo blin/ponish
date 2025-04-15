@@ -423,6 +423,18 @@ letters["TH-top-start"] = Glyph(
     ),
 )
 
+letters["TH-left-start"] = Glyph(
+    start_pos=RelPoint(rel_y=0.5, rel_x=0.0),
+    draw_actions=(
+        Circle(
+            rel_radius=0.5,
+            extent_deg=360,
+            rotation=Rotation.CCW,
+            heading_deg=Direction.S.value,
+        ),
+    ),
+)
+
 # SH - https://en.wikipedia.org/wiki/Voiceless_postalveolar_fricative
 letters["ʃ"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.4),

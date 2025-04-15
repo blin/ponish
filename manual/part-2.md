@@ -68,7 +68,7 @@ Equestria for generations since.
 
 </details>
 
-## Passage 2:
+## Passage 2
 
 ![](./part-2/passage-2-line-01.svg) ![](./part-2/passage-2-line-02.svg)
 ![](./part-2/passage-2-line-03.svg) ![](./part-2/passage-2-line-04.svg)
@@ -163,7 +163,7 @@ village green.
 
 </details>
 
-## Passage 4:
+## Passage 4
 
 ![](./part-2/passage-4-line-01.svg) ![](./part-2/passage-4-line-02.svg)
 ![](./part-2/passage-4-line-03.svg) ![](./part-2/passage-4-line-04.svg)
@@ -260,7 +260,7 @@ values through friendship and ponies.
 
 </details>
 
-## Passage 6:
+## Passage 6
 
 ![](./part-2/passage-6-line-01.svg)
 
@@ -294,7 +294,7 @@ and he who dares not, is a slave.
 
 </details>
 
-## Passage 7:
+## Passage 7
 
 ![](./part-2/passage-7-line-01.svg) ![](./part-2/passage-7-line-02.svg)
 ![](./part-2/passage-7-line-03.svg) ![](./part-2/passage-7-line-04.svg)

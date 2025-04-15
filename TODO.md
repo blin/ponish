@@ -16,9 +16,12 @@
   - Implement "if glyph ends in the top side of an imaginary glyph box" as a
     stop-gap solution
 - Quotes, like in "aww, thank you!"
+- Brackets, like around Bellerophon
 - Do "X-from-left" automatically in cases like "NX"
-- Do "TH-top-start" automatically in cases like "forth"
+- Do "TH-top-start" or "TH-left-start" automatically in cases like "forth"
 - Make "M$(PL)" look better. Currently the circle in "$(PL)" goes below "M", it
   should go above "M".
 - Implement both "L-line" and "K-line" for "fect" and "super" and choose the
   right one automatically
+- Implement numbers in circles
+- Add a "quote mode" for spelling names, abbreviations and the like

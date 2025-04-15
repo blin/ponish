@@ -501,8 +501,10 @@ def draw_sentence(
             draw_punctuation(t, p, word)
             continue
 
+        # TODO: Fix. word_is_last assumes that sentence ends on last word,
+        # in reality "draw sentence" is actually "draw line"
         if word.lower() in ["a", "an", "the"] and not word_is_last:
-            draw_article(t, p, word)
+            draw_article(t, p, word.lower())
             continue
 
         draw_word(t, p, word)
