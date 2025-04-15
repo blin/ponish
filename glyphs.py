@@ -140,6 +140,8 @@ letters["H"] = Glyph(
     ),
 )
 
+# I and J have different horizontal stroke lengths compared to C and F,
+# this is done to make "IT" look better.
 letters["I"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=(
@@ -149,7 +151,6 @@ letters["I"] = Glyph(
     is_vowel=True,
 )
 
-# TODO: make bottom line shorter to match "C" and "F"
 letters["J"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
     draw_actions=(
@@ -163,7 +164,6 @@ letters["M"] = Glyph(
     draw_actions=(PolarLine(angle_deg=Direction.SSE.value, rel_magnitude=1.0),),
 )
 
-# TODO: consider having a short "N" and long "N"
 letters["N"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=(PolarLine(angle_deg=Direction.E.value, rel_magnitude=1.0),),
@@ -201,7 +201,6 @@ letters["X"] = Glyph(
     ),
 )
 
-# TODO: ugh...
 letters["X-from-left"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.0),
     draw_actions=(
@@ -412,8 +411,6 @@ letters["ð"] = Glyph(
     ),
 )
 
-# TODO: figure out what to do with this...
-# I guess at the beginning of the chunk it should start at bottom?
 letters["TH-top-start"] = Glyph(
     start_pos=RelPoint(rel_y=0.0, rel_x=0.5),
     draw_actions=(
@@ -441,7 +438,7 @@ letters["ʃ"] = Glyph(
 
 aliases: dict[str, Glyph] = dict()
 aliases["A"] = letters["A-two-legs"]
-aliases["Y-consonant"] = letters["Y"]  # TODO: do something...
+aliases["Y-consonant"] = letters["Y"]
 aliases["CH"] = letters["ʧ"]
 aliases["TH"] = letters["ð"]
 aliases["SH"] = letters["ʃ"]
@@ -572,7 +569,6 @@ blends["BR"] = derive_from_letter(
 
 blends["CR"] = derive_from_letter("C", more_actions=letters["R"].draw_actions[-1:])
 
-# TODO: fix DR
 blends["DR"] = derive_from_letter(
     "D",
     more_actions=(
@@ -885,7 +881,6 @@ affixes["graph"] = derive_from_letter(
 )
 affixes["gram"] = affixes["graph"]
 
-# TODO: adjust start_pos
 affixes["hood"] = derive_from_letter(
     "H",
     more_actions=n_strike(RelPoint(rel_y=-0.5, rel_x=-0.7), 0.5),
@@ -954,7 +949,6 @@ affixes["ness"] = derive_from_letter(
     ),
 )
 
-# TODO: adjust start_pos
 affixes["over"] = derive_from_letter(
     "O",
     more_actions=n_strike(RelPoint(rel_y=-0.5, rel_x=-0.8), 1.0),
@@ -982,7 +976,6 @@ affixes["sub"] = derive_from_letter(
     more_actions=n_strike(RelPoint(rel_y=-0.4, rel_x=-0.2), 0.4),
 )
 
-# TODO [k-l-second-form]
 affixes["super"] = derive_from_letter(
     "S",
     more_actions=(

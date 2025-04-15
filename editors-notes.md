@@ -39,3 +39,12 @@
 - Handling of leading and trailing vowels in prefixes and suffixes is
   inconsistent. In "anti-dot" "antid" is written WITHOUT a break after "i", but
   in "auto-mobile" "autom" is written WITH a break after "o". See also "peach".
+- Y can be a vowel (my, happy, myth) or it can be a consonant (you, beyond),
+  which makes it difficult to classify automatically.
+  - For the "intermediate representation" I introduced "$(Y-consonant)" as a
+    crutch to avoid making decision procedure too complicated. When writing from
+    IPA this problem does not exist, as the consonant "Y" is translated to /j/ ,
+    and vowel "Y" is translated to /aɪ/ or /i/ or /ɪ/ .
+  - In my own writing I have switched to using "J" for the consonant Y, as in
+    "you -> ju" and "beyond -> bijond", and to using "ai" or "i" for the vowel
+    Y, as in "my -> mai" and "happy -> hapi" and "myth -> mi$(TH)" .

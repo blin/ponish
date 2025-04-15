@@ -76,7 +76,6 @@ texts = [
     ],
     [
         "statistiks $(AR) lik bikinis ; wat thy revel is",
-        # TODO: make "jest" in "suggestive" look better
         "sujestiv nd wat thy $(con)sil is vital but",
         "nakura$(SS) mad n a efort to$(pr)omot a pet",
         "posi$(SH)n $(AR) $(PR)ety ugly noma$(TR) wat $(TH)er",

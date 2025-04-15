@@ -24,7 +24,7 @@ text = [
     "iha$(VT)ogoto the mal",
     "$(AS)fastasposibl",
     "beritbak",
-    "befor$(Y-consonant)unoit",  # TODO: Y is a consonant here...
+    "befor$(Y-consonant)unoit",
     "by$(AL)mens",
     "b the wa",
     "herand$(TH-top-start)er",
@@ -34,18 +34,18 @@ text = [
     "nowand$(TH-top-start)en",
     "$(TH)ekanot",
     "$(Y-consonant)uwilnotba$(AB)lto",  # TODO: "A" in "$(AB)" should give an AE vowel position
-    "we$(AR) the $(PR)isetsof the tem$(PL)sofsyrin$(X-from-left)",  # TODO: make "m$(PL)" look better
+    "we$(AR) the $(PR)isetsof the tem$(PL)sofsyrin$(X-from-left)",
     "clo$(TH)shors",
     "$(CR)o$(CH)tits",
     "fludin$(SH)urans",
     "horspusy",
-    "mouspad",  # TODO: make "usp" look better
+    "mouspad",
     "poisonjok",
     "rok$(ING)$(CH)er",
     "s$(TR)etlit",
     "$(SH)ugarkubkornr",
-    "swim$(ING)pul",  # TODO: make "swim$(ING)p" look better
-    "swi$(ING)set",  # TODO: make "swi$(ING)s" look better
+    "swim$(ING)pul",
+    "swi$(ING)set",
     "wa$(TR)botl",
 ]
 if __name__ == "__main__":
