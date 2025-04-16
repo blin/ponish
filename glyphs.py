@@ -284,6 +284,8 @@ letters["G"] = Glyph(
     ),
 )
 
+# TODO: Move K closer to the top of the box
+# to avoid confusion between I/Y and O/U positions
 letters["K"] = Glyph(
     start_pos=RelPoint(rel_y=1.0, rel_x=0.0),
     draw_actions=(

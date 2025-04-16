@@ -34,8 +34,6 @@ Since there is no manually generated "intermediate representation", the results
 are not as polished as in the manual. Specifically many of the "letter blends"
 and affixes were not yet adjusted for IPA and so are not picked up.
 
-TODO: redo Desiderata in American English.
-
 - [Desiderata](./texts/desiderata/desiderata.md)
 - [Orwell 1984 passage](./texts/orwell-1984/orwell-1984.md)
 
