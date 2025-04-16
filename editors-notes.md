@@ -2,6 +2,9 @@
 
 ## Differences from original
 
+- In the original, K/L glyphs in I/Y position are 4x the size of K/L glyphs in
+  A/E and O/U positions, I've changed that to 2x to match the size difference
+  between positions of other glyphs. See "B-L-U-E" vs "BL-U-E" in lesson 2.
 - In some cases original images have earthographic and ponish side-by-side,
   which makes it hard to NOT read earthographic. I've split the images to remove
   the earthographic, but some overhang from earthographic is left, if you find
@@ -23,7 +26,7 @@
   one and a half circle-strokes and one line-stroke or one circle-stroke and two
   line-strokes (one up and one down). "No wrong spelling", so I consider S-S
   starting point to be at the top of the circle.
-- Only one version of "fect" and "logy" is implemented K-line/L-line second
+- Only one version of "fect" and "logy" is implemented. K-line/L-line second
   forms are used when affix precedes K or L, so that the combination forms a
   sine wave.
 - In lesson 3 the prefixes and suffixes and corresponding examples are put into
