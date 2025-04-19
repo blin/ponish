@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="804.7880577693085" height="93.3723137837514" style="fill:none; stroke-linecap:round;">
+<svg xmlns="http://www.w3.org/2000/svg" width="791.81334745534" height="93.3723137837514" style="fill:none; stroke-linecap:round;">
     <rect width="100%" height="100%" fill="#FFFFFF" />
 <path stroke="#000000" stroke-width="2" d="M 550,75" />
 <path stroke="#000000" stroke-width="2" d="M 20,30 60,30" />
@@ -48,15 +48,14 @@
 <path stroke="#000000" stroke-width="2" d="M 623.2,70" />
 <path stroke="#000000" stroke-width="2" d="M 623.2,20 643.2,20" />
 <path stroke="#000000" stroke-width="2" d="M 673.2,70" />
-<path stroke="#000000" stroke-width="2" d="M 673.2,30 688.5,67" />
-<path stroke="#000000" stroke-width="2" d="M 695.1,70" />
-<path stroke="#000000" stroke-width="2" d="M 695.1,35" />
-<path stroke="#000000" stroke-width="2" d="M 695.1,35 697.2,34.9 698.8,34.6 700,34.1 700.9,33.6 701.5,32.9 701.8,32.2 701.8,31.4 701.6,30.7 701.3,30 700.8,29.4 700.2,28.9 699.5,28.5 698.7,28.3 698,28.4 697.3,28.7 696.6,29.2 696,30.1 695.6,31.4 695.3,33 695.1,35 695.1,50 700.1,50 700.1,70" />
-<path stroke="#000000" stroke-width="2" d="M 708.5,70" />
-<path stroke="#000000" stroke-width="2" d="M 708.5,50 708.5,70 708.5,64 708.5,63.1 708.5,62.3 708.7,61.4 708.9,60.6 709.2,59.7 709.6,58.9 710,58.2 710.5,57.5 711.1,56.8 711.7,56.2 712.4,55.6 713.1,55.1 713.8,54.7 714.6,54.3 715.5,54 716.3,53.8 717.2,53.6 718,53.6 727.9,63.5 718,73.4" />
-<path stroke="#000000" stroke-width="2" d="M 734.6,70" />
-<path stroke="#000000" stroke-width="2" d="M 734.6,20 754.6,20" />
-<path stroke="#000000" stroke-width="2" d="M 784.6,70" />
-<path stroke="#000000" stroke-width="2" d="M 784.6,70 784.8,70 784.8,70.2 784.6,70.2 784.6,70" />
-<path stroke="#000000" stroke-width="2" d="M 814.8,70" />
+<path stroke="#000000" stroke-width="2" d="M 673.2,30 680.8,48.5" />
+<path stroke="#000000" stroke-width="2" d="M 680.8,38.5" />
+<path stroke="#000000" stroke-width="2" d="M 669.8,38.5 683.8,38.5 688.8,38.5 688.8,58.5" />
+<path stroke="#000000" stroke-width="2" d="M 695.5,70" />
+<path stroke="#000000" stroke-width="2" d="M 695.5,50 695.5,70 695.5,64 695.5,63.1 695.6,62.3 695.7,61.4 695.9,60.6 696.2,59.7 696.6,58.9 697,58.2 697.5,57.5 698.1,56.8 698.7,56.2 699.4,55.6 700.1,55.1 700.9,54.7 701.7,54.3 702.5,54 703.3,53.8 704.2,53.6 705,53.6 714.9,63.5 705,73.4" />
+<path stroke="#000000" stroke-width="2" d="M 721.6,70" />
+<path stroke="#000000" stroke-width="2" d="M 721.6,20 741.6,20" />
+<path stroke="#000000" stroke-width="2" d="M 771.6,70" />
+<path stroke="#000000" stroke-width="2" d="M 771.6,70 771.8,70 771.8,70.2 771.6,70.2 771.6,70" />
+<path stroke="#000000" stroke-width="2" d="M 801.8,70" />
 </svg>

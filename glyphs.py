@@ -900,10 +900,10 @@ affixes["fect"] = derive_from_letter(
     more_actions=(
         PenAction.LIFT,
         PolarLine(angle_deg=Direction.N.value, rel_magnitude=0.7),
-        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.2),
+        PolarLine(angle_deg=Direction.W.value, rel_magnitude=0.4),
         PenAction.PLACE,
         Circle(
-            rel_radius=0.2,
+            rel_radius=0.4,
             extent_deg=180,
             rotation=Rotation.CCW,
             heading_deg=Direction.S.value,

@@ -38,6 +38,7 @@ REPLACEMENTS = {
     r"\band ": "nd ",
     # TODO: use all consonant-consonant blends automatically
     "br": "$(BR)",
+    "dr": "$(DR)",
     "fr": "$(FR)",
     "gr": "$(GR)",
     "pl": "$(PL)",
@@ -51,7 +52,11 @@ REPLACEMENTS = {
     "dis": "$(dis)",
     "evar": "$(ever)",
     "evri": "$(every)",
+    # "ful" MUST be applied before "fal"
+    "ful": "$(full)",
     "fal": "$(full)",
+    "fekt": "$(fect)",
+    "fek": "$(fect)",
     "kam": "$(com)",
     "kan": "$(con)",
     "les": "$(less)",
@@ -59,6 +64,7 @@ REPLACEMENTS = {
     "nas": "$(ness)",
     "nis": "$(ness)",
     "self": "$(self)",
+    "mis": "$(mis)",
     #
     r"\$\(TH\)i\$\(NG\)": "$(THING)",
     r"\$\(NG\)g": "$(NG)",

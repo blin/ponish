@@ -35,8 +35,6 @@ fɔrθ, ˈnaɪnˈtin ˈeɪti fɔr.\
 """
 
 ir_text = ipa.ipa_text_to_ir(ipa_text)
-print(ir_text)
-
 
 if __name__ == "__main__":
     for lid, line in list(enumerate(ir_text.split("\n"))):
@@ -48,6 +46,7 @@ if __name__ == "__main__":
         with dc as (p, t):
             draw_sentence(t, p, line)
 
+print(ir_text)
 
 dir = Path("texts/desiderata")
 dir.mkdir(parents=True, exist_ok=True)
@@ -102,7 +101,6 @@ bi ˈʧɪrfəl. straɪv tu bi ˈhæpi.\
 """
 
 ir_text = ipa.ipa_text_to_ir(ipa_text)
-print(ir_text)
 
 
 if __name__ == "__main__":
@@ -114,3 +112,5 @@ if __name__ == "__main__":
         )
         with dc as (p, t):
             draw_sentence(t, p, line)
+
+print(ir_text)
